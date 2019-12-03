@@ -6,5 +6,70 @@
   "ignore_pattern": "[Ee]xample",
   "solution_pattern": "[Ee]xample",
   "test_pattern": "[Tt]est",
-  "exercises": null
+  "exercises": [
+    {
+      "slug": "csharp-1-a",
+      "uuid": "d9afa8e1-2688-472e-b95b-b932a084a99a",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "csharp-2-a",
+      "uuid": "54582449-e183-44d1-af49-51fa027dca69",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "csharp-1-b",
+      "uuid": "5459cb7a-1de3-4f37-942b-e77104b31ebe",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "csharp-2-b",
+      "uuid": "f4eeb02f-4340-4833-9136-f5ca95fca72e",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "ruby-1-a",
+      "uuid": "ddf82893-adaf-4821-8697-9e447cd5502a",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "ruby-2-a",
+      "uuid": "97c8e1ad-5e13-49c2-9b58-198a8da15f29",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "ruby-1-b",
+      "uuid": "cf807b20-53a6-45fb-bb4e-93970d8dbbf2",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "ruby-2-b",
+      "uuid": "e8c83d72-eb59-4839-bdf5-fff4f17ecf8b",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    }
+  ]
 }
