@@ -6,6 +6,8 @@ This is a language track which holds the exercises for Exercism Research's first
 
 ## Exercises
 
+All exercises in this track will be bonus exercises. This means that their `core` property will be set to `false` and the `unlocked_by` property set to `null` in the [`config.json` file](https://github.com/exercism/research_experiment_1/blob/master/config.json). Here's an [example exercise entry](https://github.com/exercism/research_experiment_1/blob/master/config.json#L10).
+
 Each exercise must use the following naming format: `<track>-[1|2]-[a|b]`. The number part indicates which part of the exercise it represents (first part is start from scratch; second part is start with existing code). The letter part indicates which exercise (remember: each track should have two exercises).
 
 These are examples of valid exercise names:
