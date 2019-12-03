@@ -1,8 +1,8 @@
-# Introduction
+## Introduction
 
 This is Part 1 of our research into how people write C# differently. This exercise should take 10-15 minutes. There is no right or wrong way to approach it - just do what feels the most natural to you. Feel free to use books, Google or Stack Overflow, just like you would if you were programming normally, but please don't actively look for a solution to the problem as this will negatively affect the research.
 
-# Instructions
+## Instructions
 
 Your task is to determine which word in a sentence has the most vowels (a, e, i, o, u).
 
