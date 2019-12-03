@@ -70,6 +70,14 @@
       "unlocked_by": null,
       "difficulty": 1,
       "topics": []
+    },
+    {
+      "slug": "haskell-1-a",
+      "uuid": "26bcf25a-5e74-43f0-be74-4d3d31e7b19f",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
     }
   ]
 }
