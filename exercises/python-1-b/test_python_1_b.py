@@ -9,7 +9,11 @@ from python_1_b import transmit, receive
 
 DATA = [
     ("", "", ""),
-    ("Hello!", "HOTEL ECHO LIMA LIMA OSCAR", "HELLO"),
+    (
+        "Hello, World!",
+        "HOTEL ECHO LIMA LIMA OSCAR WHISKEY OSCAR ROMEO LIMA DELTA",
+        "HELLOWORLD",
+    ),
     ("NCC-1701-D", "NOVEMBER CHARLIE CHARLIE ONE SEVEN ZERO ONE DELTA", "NCC1701D"),
     ("1,2-3|4", "ONE TWO TREE FOUR", "1234"),
     ("1am s0 l33t!", "ONE ALFA MIKE SIERRA ZERO LIMA TREE TREE TANGO", "1AMS0L33T"),
