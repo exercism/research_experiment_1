@@ -15,7 +15,7 @@ public class LetterCountTest
         { "Circle Area ", "Area" },
         { "evening Aeon multiple", "evening" },
         { "amoebae denim", "amoebae" },
-        { "his own hints", "hints" },
+        { "her old dad", "old" },
         { "abide Moiety apace", "Moiety" },
         { "Quaver Queer Moiety Quite", "Moiety" },
     };

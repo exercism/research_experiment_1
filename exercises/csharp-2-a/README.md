@@ -13,7 +13,7 @@ Sentence.WordWithMostVowels("Hi there aunt jeanie")
 // Returns: "jeanie"
 ```
 
-Currently, which word is returned when multiple words have the same (maximum) number of vowels is undefined. In these tie-breaker situations, the word with the most consecutive consonants (non-vowel letters) should be returned.
+Your job is to extend this code to deal with tie-breaks - the situation where there are multiple words with the same number of vowels. In these cases the word with the most consecutive consonants (non-vowel letters) should be returned.
 
 For example:
 
