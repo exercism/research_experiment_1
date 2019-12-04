@@ -18,5 +18,5 @@ public class SentenceTest
     [Theory]
     [MemberData(nameof(SentenceAndWordWithMostVowels))]
     public void WordWithMostVowels(string sentence, string expected) =>
-        Assert.Equal(expected, Sentence.WordWithMostVowels(sentence), "Hallow");
+        Assert.Equal(expected, Sentence.WordWithMostVowels(sentence));
 }
