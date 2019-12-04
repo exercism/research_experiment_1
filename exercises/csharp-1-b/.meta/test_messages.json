@@ -1,0 +1,9 @@
+{
+  "OnlyEmptyQueueIsQueue1": "We ran `Store.QueueWithMinimalWaitingTime(customersInQueue1: 0, customersInQueue2: 1, customersInQueue3: 2)` and got the following error:\n\n%{message}",
+  "OnlyEmptyQueueIsQueue2": "We ran `Store.QueueWithMinimalWaitingTime(customersInQueue1: 3, customersInQueue2: 0, customersInQueue3: 2)` and got the following error:\n\n%{message}",
+  "OnlyEmptyQueueIsQueue3": "We ran `Store.QueueWithMinimalWaitingTime(customersInQueue1: 1, customersInQueue2: 1, customersInQueue3: 0)` and got the following error:\n\n%{message}",
+  "AllQueuesHaveSameNumberOfCustomersInQueue": "We ran `Store.QueueWithMinimalWaitingTime(customersInQueue1: 5, customersInQueue2: 5, customersInQueue3: 5)` and got the following error:\n\n%{message}",
+  "NonEmptyQueuesWithFastestQueueHasMinimalWaitingTime": "We ran `Store.QueueWithMinimalWaitingTime(customersInQueue1: 2, customersInQueue2: 5, customersInQueue3: 4)` and got the following error:\n\n%{message}",
+  "NonEmptyQueuesWithMiddleQueueHasMinimalWaitingTime": "We ran `Store.QueueWithMinimalWaitingTime(customersInQueue1: 1, customersInQueue2: 2, customersInQueue3: 6)` and got the following error:\n\n%{message}",
+  "NonEmptyQueuesWithSlowestQueueHasMinimalWaitingTime": "We ran `Store.QueueWithMinimalWaitingTime(customersInQueue1: 2, customersInQueue2: 6, customersInQueue3: 11)` and got the following error:\n\n%{message}"
+}
