@@ -2,21 +2,31 @@ using Xunit;
 
 public class SentenceTest
 {
-    public static TheoryData<string, string> SentenceAndWordWithMostVowels = new TheoryData<string, string>
-    {
-        { "at", "at" },
-        { "air", "air" },
-        { "lungs air", "air" },
-        { "breathe lungs air", "breathe" },
-        { "at the races", "races" },
-        { "Where will you go to tomorrow", "tomorrow" },
-        { "Circle Area", "Area" },
-        { "Test Your Might", "Your" },
-        { "Extremely fresh vegetables", "vegetables" }
-    };
-
-    [Theory]
-    [MemberData(nameof(SentenceAndWordWithMostVowels))]
-    public void WordWithMostVowels(string sentence, string expected) =>
-        Assert.Equal(expected, Sentence.WordWithMostVowels(sentence));
+    [Fact]
+    public void OneWordWithOneVowel() =>
+        Assert.Equal("a", Sentence.WordWithMostVowels("a"));
+    
+    [Fact]
+    public void OneWordWithOneVowelAndOneConsonant() =>
+        Assert.Equal("at", Sentence.WordWithMostVowels("at"));
+    
+    [Fact]
+    public void OneWordWithTwoVowelsAndOneConsonant() =>
+        Assert.Equal("tea", Sentence.WordWithMostVowels("tea"));
+    
+    [Fact]
+    public void LongestWordIsNotWordWithMostVowels() =>
+        Assert.Equal("area", Sentence.WordWithMostVowels("the area of a circle"));
+    
+    [Fact]
+    public void LastWordIsWordWithMostVowels() =>
+        Assert.Equal("vegetables", Sentence.WordWithMostVowels("extremely fresh vegetables"));
+    
+    [Fact]
+    public void MixedCasing() =>
+        Assert.Equal("YOUR", Sentence.WordWithMostVowels("TEST YOUR MIGHT"));
+    
+    [Fact]
+    public void IgnoreWordWithoutVowels() =>
+        Assert.Equal("great", Sentence.WordWithMostVowels("great rhythm"));
 }
