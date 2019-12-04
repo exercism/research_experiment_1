@@ -13,7 +13,7 @@ main = hspecWith defaultConfig {configFastFail = True} $
     for_ cases test
   where
     test Case{..} =
-      it ("finds the longest word in " ++ show input) $
+      it ("finds the word with most vowels in " ++ show input) $
         wordsWithMostVowels input `shouldBe` expected
 
 data Case = Case
