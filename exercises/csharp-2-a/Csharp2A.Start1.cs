@@ -3,11 +3,12 @@ using System.Linq;
 
 public static class Sentence
 {
-    public static string WordWithMostVowels(string sentence) =>
-        sentence
-            .Split(' ')
+    public static string WordWithMostVowels(string sentence)
+    {
+        return sentence.Split(' ')
             .OrderByDescending(word => word.Count(IsVowel))
             .First();
+    }
 
     private static bool IsVowel(char character)
     {
