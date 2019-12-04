@@ -4,10 +4,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Example.cs" />
     <Compile Remove="CSharp2A.Start1.cs" />
+    <Compile Remove="CSharp2A.Start1.Example.cs" />
     <Compile Remove="CSharp2A.Start2.cs" />
+    <Compile Remove="CSharp2A.Start2.Example.cs" />
     <Compile Remove="CSharp2A.Start3.cs" />
+    <Compile Remove="CSharp2A.Start3.Example.cs" />
   </ItemGroup>
 
   <ItemGroup>
