@@ -2,26 +2,43 @@ using Xunit;
 
 public class LetterCountTest
 {
-    public static TheoryData<string, string> SentenceAndWordWithMostVowels = new TheoryData<string, string>
-    {
-        { "at", "at" },
-        { "air", "air" },
-        { "lungs air", "air" },
-        { "breathe lungs air", "breathe" },
-        { "at the races", "races" },
-        { "plain bear", "plain" },
-        { "Reeling noses hurts", "Reeling" },
-        { "Where will you go to tomorrow", "tomorrow" },
-        { "Circle Area ", "Area" },
-        { "evening Aeon multiple", "evening" },
-        { "amoebae denim", "amoebae" },
-        { "her old dad", "old" },
-        { "abide Moiety apace", "Moiety" },
-        { "Quaver Queer Moiety Quite", "Moiety" },
-    };
-
-    [Theory]
-    [MemberData(nameof(SentenceAndWordWithMostVowels))]
-    public void WordWithMostVowels(string sentence, string expected) =>
-        Assert.Equal(expected, Sentence.WordWithMostVowels(sentence));
+    [Fact]
+    public void OneWordWithOneVowel() =>
+        Assert.Equal("a", Sentence.WordWithMostVowels("a"));
+    
+    [Fact]
+    public void OneWordWithOneVowelAndOneConsonant() =>
+        Assert.Equal("at", Sentence.WordWithMostVowels("at"));
+    
+    [Fact]
+    public void OneWordWithTwoVowelsAndOneConsonant() =>
+        Assert.Equal("tea", Sentence.WordWithMostVowels("tea"));
+    
+    [Fact]
+    public void LongestWordIsNotWordWithMostVowels() =>
+        Assert.Equal("area", Sentence.WordWithMostVowels("the area of a circle"));
+    
+    [Fact]
+    public void LastWordIsWordWithMostVowels() =>
+        Assert.Equal("vegetables", Sentence.WordWithMostVowels("extremely fresh vegetables"));
+    
+    [Fact]
+    public void MixedCasing() =>
+        Assert.Equal("YOUR", Sentence.WordWithMostVowels("TEST YOUR MIGHT"));
+    
+    [Fact]
+    public void IgnoreWordWithoutVowels() =>
+        Assert.Equal("great", Sentence.WordWithMostVowels("great rhythm"));
+    
+    [Fact]
+    public void TieBreakerWithEquallyLongWords() =>
+        Assert.Equal("old", Sentence.WordWithMostVowels("her old dad"));
+    
+    [Fact]
+    public void TieBreakerWithFirstWordBeingWinner() =>
+        Assert.Equal("evening", Sentence.WordWithMostVowels("evening Aeon multiple"));
+    
+    [Fact]
+    public void TieBreakerWithLastWordBeingWinner() =>
+        Assert.Equal("plains", Sentence.WordWithMostVowels("a bear was seen on the plains"));
 }
