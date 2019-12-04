@@ -10,6 +10,8 @@ All exercises in this track will be bonus exercises. This means that their `core
 
 Each exercise must use the following naming format: `<track>-[1|2]-[a|b]`. The number part indicates which part of the exercise it represents (first part is start from scratch; second part is start with existing code). The letter part indicates which of the two exercises it is (remember: each track should have two exercises).
 
+Each exercise in this repository must be unique, so copying exercises from another language is not an option.
+
 These are examples of valid exercise names:
 
 - `csharp-1-a` : first part of exercise A for C#.
