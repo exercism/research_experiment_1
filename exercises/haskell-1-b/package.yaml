@@ -1,0 +1,19 @@
+name: haskell1b
+version: 0.1.0.0
+
+dependencies:
+  - base
+  - containers
+
+library:
+  exposed-modules: Haskell1B
+  source-dirs: src
+  ghc-options: -Wall
+
+tests:
+  test:
+    main: Tests.hs
+    source-dirs: test
+    dependencies:
+      - haskell1b
+      - hspec
