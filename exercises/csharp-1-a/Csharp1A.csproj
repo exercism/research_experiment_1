@@ -4,7 +4,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Example.cs" />
+    <Compile Remove="Csharp1A.Example.Functional.cs" />
+    <Compile Remove="Csharp1A.Example.Imperative.cs" />
+    <Compile Remove="Csharp1A.Example.Regex.cs" />
   </ItemGroup>
 
   <ItemGroup>

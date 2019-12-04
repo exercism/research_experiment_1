@@ -2,3 +2,11 @@
 .DS_Store
 bin/configlet
 bin/configlet.exe
+
+# C#-specific ignores
+exercises/csharp-*/bin/
+exercises/csharp-*/obj/
+exercises/csharp-*/.idea/
+exercises/csharp-*/.ionide/
+exercises/csharp-*/.vs/
+exercises/csharp-*/.vscode/
