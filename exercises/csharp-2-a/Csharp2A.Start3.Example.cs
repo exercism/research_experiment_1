@@ -1,7 +1,7 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 
-public static class SentenceRegex
+public static class Sentence
 {
     public static string WordWithMostVowels(string sentence) =>
         Regex.Split(sentence, @"\s")
@@ -10,7 +10,7 @@ public static class SentenceRegex
                 var matches = Regex.Matches(word, @"((?<vowels>[aeiuo]+)|(?<consonants>[bcdfghjklmnpqrstvwxyz]+))", RegexOptions.IgnoreCase);
                 var vowels = matches.Sum(match => match.Groups["vowels"].Captures.Sum(capture => capture.Length));
                 var consecutiveConsonants = matches
-                    .Select(match => 
+                    .Select(match =>
                         match.Groups["consonants"].Captures
                             .Select(capture => capture.Length)
                             .DefaultIfEmpty(0)

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-public static class SentenceFunctional
+public static class Sentence
 {
     public static string WordWithMostVowels(string sentence) =>
         sentence

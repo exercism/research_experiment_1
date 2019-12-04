@@ -1,4 +1,4 @@
-public static class SentenceImperative
+public static class Sentence
 {
     public static string WordWithMostVowels(string sentence)
     {

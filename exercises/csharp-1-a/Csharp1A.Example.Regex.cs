@@ -1,7 +1,7 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 
-public static class SentenceRegex
+public static class Sentence
 {
     public static string WordWithMostVowels(string sentence) =>
         Regex.Matches(sentence, @"((?<vowels>[aeiou])|([bcdfghjklmnpqrstvwxyz]))+", RegexOptions.IgnoreCase)

@@ -1,6 +1,6 @@
 using System;
 
-public static class SentenceImperative
+public static class Sentence
 {
     public static string WordWithMostVowels(string sentence)
     {
@@ -30,7 +30,7 @@ public static class SentenceImperative
                 }
             }
 
-            if (vowels > mostVowelsPerWord || 
+            if (vowels > mostVowelsPerWord ||
                 vowels == mostVowelsPerWord && maxConsecutiveConsonants > mostConsecutiveConsonantsPerWord)
             {
                 mostVowelsPerWord = vowels;
