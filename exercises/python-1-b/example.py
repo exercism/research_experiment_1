@@ -51,7 +51,7 @@ def transmit(message: str) -> str:
     Convert a message to a NATO code word transmission.
     """
     return " ".join(
-        map(ALPHANUM_TO_NATO.get, filter(str.isalnum, message.upper()))
+        ALPHANUM_TO_NATO[c] for c in message.upper() if c.isascii() and c.isalnum()
     )
 
 
