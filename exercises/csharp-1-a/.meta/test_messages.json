@@ -1,0 +1,23 @@
+{
+  "OneWordWithOneVowel": {
+    "cmd": "Sentence.WordWithMostVowels(\"a\")"
+  },
+  "OneWordWithOneVowelAndOneConsonant": {
+    "cmd": "Sentence.WordWithMostVowels(\"at\")"
+  },
+  "OneWordWithTwoVowelsAndOneConsonant": {
+    "cmd": "Sentence.WordWithMostVowels(\"tea\")"
+  },
+  "LongestWordIsNotWordWithMostVowels": {
+    "cmd": "Sentence.WordWithMostVowels(\"the area of a circle\")"
+  },
+  "LastWordIsWordWithMostVowels": {
+    "cmd": "Sentence.WordWithMostVowels(\"extremely fresh vegetables\")"
+  },
+  "MixedCasing": {
+    "cmd": "Sentence.WordWithMostVowels(\"TEST YOUR MIGHT\")"
+  },
+  "IgnoreWordWithoutVowels": {
+    "cmd": "Sentence.WordWithMostVowels(\"great rhythm\")"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "OneWordWithOneVowel": {
+    "cmd": "Sentence.WordWithMostVowels(\"a\")"
+  },
+  "OneWordWithOneVowelAndOneConsonant": {
+    "cmd": "Sentence.WordWithMostVowels(\"at\")"
+  },
+  "OneWordWithTwoVowelsAndOneConsonant": {
+    "cmd": "Sentence.WordWithMostVowels(\"tea\")"
+  },
+  "LongestWordIsNotWordWithMostVowels": {
+    "cmd": "Sentence.WordWithMostVowels(\"the area of a circle\")"
+  },
+  "LastWordIsWordWithMostVowels": {
+    "cmd": "Sentence.WordWithMostVowels(\"extremely fresh vegetables\")"
+  },
+  "MixedCasing": {
+    "cmd": "Sentence.WordWithMostVowels(\"TEST YOUR MIGHT\")"
+  },
+  "IgnoreWordWithoutVowels": {
+    "cmd": "Sentence.WordWithMostVowels(\"great rhythm\")"
+  },
+  "TieBreakerWithEquallyLongWords": {
+    "cmd": "Sentence.WordWithMostVowels(\"her old dad\")"
+  },
+  "TieBreakerWithFirstWordBeingWinner": {
+    "cmd": "Sentence.WordWithMostVowels(\"evening Aeon multiple\")"
+  },
+  "TieBreakerWithLastWordBeingWinner": {
+    "cmd": "Sentence.WordWithMostVowels(\"a bear was seen on the plains\")"
+  }
+}
