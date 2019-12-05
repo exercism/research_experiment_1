@@ -1,0 +1,9 @@
+# IDE files
+.idea/
+.ionide/
+.vs/
+.vscode/
+
+# Build output
+bin/
+obj/
