@@ -16,7 +16,7 @@ First, we expect you to define a function `transmit` that will take an arbitrary
 "NOVEMBER CHARLIE CHARLIE ONE SEVEN ZERO ONE DELTA"
 ```
 
-Next, we expect you to define a function `receive` that will take a NATO code word transmission formatted as described above and convert it back to a readable message. Because the phonetic alphabet is a lossy transmission format only the letters and digits from the original message will be included in the output. To avoid introducing ambiguity all whitespace will be stripped from the output and letters will be in uppercase.
+Next, we expect you to define a function `receive` that will take a NATO code word transmission formatted as described above and convert it back to a readable message. Because the phonetic alphabet is a lossy transmission format only the letters and digits from the original message will be included in the output. Additionally all whitespace will be stripped from the output and letters will be in uppercase.
 
 ```python
 >>> receive("HOTEL ECHO LIMA LIMA OSCAR WHISKEY OSCAR ROMEO LIMA DELTA")
