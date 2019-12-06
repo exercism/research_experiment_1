@@ -26,7 +26,7 @@ To try and keep customers happy, the store has issued two new rules:
 
 If a queue violates one of these rules (or both), one or more temporary tills should be opened. The store manager will ensure just enough customers are diverted to these new, temporary tills to have the queue match the above rules again. New tills will process 1 customer per 20 seconds.
 
-Your job is to define a method `Store.ExtraTillsToOpen`, which takes the number of customers in each queue and can return how many extra tills should be opened in order to satisfy the above two rules (this can be zero).
+Your job is to define a method `Store.ExtraTillsToOpen`, which takes the number of customers in each queue and returns how many extra tills should be opened in order to satisfy the above two rules (this can be zero).
 
 For example:
 
