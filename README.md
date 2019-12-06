@@ -62,7 +62,9 @@ This definition is functionally equivalent to the explicit version that specifie
 
 ### Stub files
 
-Each exercise should have a stub file that provides the minimal amount of code to help the user get started. If the user submits the stub file without modifications, the resulting error message should explain precisely what is expected of the user.
+Each exercise should have a stub file that provides the minimal amount of code to help the user get started. It is vital that the stub file doesn't guide the user towards any specific approach.
+
+If the user submits the stub file without modifications, the resulting error message should explain precisely what is expected of the user.
 
 For example consider the following C# stub:
 
