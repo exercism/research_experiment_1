@@ -10,14 +10,19 @@ public static class Store
     {
         var queues = new[]
         {
-            (Number: 1, SecondsPerCustomer: Queue1SecondsPerCustomer, Customers: customersInQueue1),
-            (Number: 2, SecondsPerCustomer: Queue2SecondsPerCustomer, Customers: customersInQueue2),
-            (Number: 3, SecondsPerCustomer: Queue3SecondsPerCustomer, Customers: customersInQueue3),
-        };
+           (Number: 1, SecondsPerCustomer: Queue1SecondsPerCustomer, Customers: customersInQueue1),
+           (Number: 2, SecondsPerCustomer: Queue2SecondsPerCustomer, Customers: customersInQueue2),
+           (Number: 3, SecondsPerCustomer: Queue3SecondsPerCustomer, Customers: customersInQueue3),
+       };
 
         return queues
             .OrderBy(queue => queue.Customers * queue.SecondsPerCustomer)
             .Select(queue => queue.Number)
             .First();
+    }
+
+    public static int ExtraTillsToOpen(int customersInQueue1, int customersInQueue2, int customersInQueue3)
+    {
+        throw new System.NotImplementedException("Please implement the Store.ExtraTillsToOpen method");
     }
 }

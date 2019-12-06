@@ -19,5 +19,26 @@
   },
   "NonEmptyQueuesWithSlowestQueueHasMinimalWaitingTime": {
     "cmd": "Store.QueueWithMinimalWaitingTime(customersInQueue1: 2, customersInQueue2: 6, customersInQueue3: 11)"
+  },
+  "EmptyQueuesDontRequireExtraTills": {
+    "cmd": "Store.ExtraTillsToOpen(customersInQueue1: 0, customersInQueue2: 0, customersInQueue3: 0)"
+  },
+  "OneQueueExactlyMatchingMaximumWaitingTimeDoesntRequireExtraTills": {
+    "cmd": "Store.ExtraTillsToOpen(customersInQueue1: 2, customersInQueue2: 2, customersInQueue3: 2)"
+  },
+  "OneQueueExactlyMatchingMaximumWaitingTimeRequiresOneExtraTill": {
+    "cmd": "Store.ExtraTillsToOpen(customersInQueue1: 5, customersInQueue2: 1, customersInQueue3: 5)"
+  },
+  "OneQueueExactlyMatchingMaximumCapacityDoesntRequireExtraTills": {
+    "cmd": "Store.ExtraTillsToOpen(customersInQueue1: 1, customersInQueue2: 1, customersInQueue3: 6)"
+  },
+  "MultipleQueuesExceedMaximumCapacityRequiresOneExtraTill": {
+    "cmd": "Store.ExtraTillsToOpen(customersInQueue1: 5, customersInQueue2: 7, customersInQueue3: 0)"
+  },
+  "MultipleQueuesExceedMaximumCapacityRequireTwoExtraTills": {
+    "cmd": "Store.ExtraTillsToOpen(customersInQueue1: 9, customersInQueue2: 7, customersInQueue3: 8)"
+  },
+  "MultipleQueuesExceedMaximumWaitingTimeRequireTwoExtraTills": {
+    "cmd": "Store.ExtraTillsToOpen(customersInQueue1: 5, customersInQueue2: 1, customersInQueue3: 5)"
   }
 }

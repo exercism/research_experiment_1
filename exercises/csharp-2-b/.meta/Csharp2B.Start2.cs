@@ -1,8 +1,8 @@
 public static class Store
 {
-    private const int Queue1SecondsPerCustomer = 5;
-    private const int Queue2SecondsPerCustomer = 2;
-    private const int Queue3SecondsPerCustomer = 1;
+    private const int Queue1SecondsPerCustomer = 45;
+    private const int Queue2SecondsPerCustomer = 30;
+    private const int Queue3SecondsPerCustomer = 12;
 
     public static int QueueWithMinimalWaitingTime(int customersInQueue1, int customersInQueue2, int customersInQueue3)
     {
@@ -17,5 +17,10 @@ public static class Store
             return 2;
 
         return 3;
+    }
+
+    public static int ExtraTillsToOpen(int customersInQueue1, int customersInQueue2, int customersInQueue3)
+    {
+        throw new System.NotImplementedException("Please implement the Store.ExtraTillsToOpen method");
     }
 }

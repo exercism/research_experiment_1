@@ -6,9 +6,9 @@ This is Part 1 of our research into how people write C# differently. This exerci
 
 You are standing in a store and want to pay. Your task is to determine which of the three available queues to join, depending on the number of customers in the queue and its processing speed. The three queues process customers at the following rate:
 
-- Queue 1: 1 customer per 5 seconds
-- Queue 2: 1 customer per 2 seconds
-- Queue 3: 1 customer per second
+- Queue 1: 1 customer per 45 seconds
+- Queue 2: 1 customer per 30 seconds
+- Queue 3: 1 customer per 12 seconds
 
 We expect you to define a method with the signature `Store.QueueWithMinimalWaitingTime`, which takes the number of customers in each queue and returns the number of the queue with the minimal waiting time.
 
