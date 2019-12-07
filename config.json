@@ -70,6 +70,14 @@
       "unlocked_by": null,
       "difficulty": 1,
       "topics": []
+    },
+    {
+      "slug": "javascript-1-a",
+      "uuid": "8e917282-3504-43fc-82fb-060895177a3e",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
     }
   ]
 }
