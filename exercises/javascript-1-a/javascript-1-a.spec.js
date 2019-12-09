@@ -5,7 +5,7 @@ import { rearrange, arrange } from './javascript-1-a';
 const CARDS = ['\u2660', '\u2663', '\u2665', '\u2666', '\u2728']
 
 /**
- * SLice the fruit
+ * Prepare indices (1-based) as cards
  * @param  {...number} indices
  * @returns {typeof CARDS}
  */
