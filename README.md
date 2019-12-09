@@ -60,6 +60,31 @@ As most test messages will be equal except for the called method, there is a sho
 
 This definition is functionally equivalent to the explicit version that specified the full message.
 
+### Stub files
+
+Each exercise should have a stub file that provides the minimal amount of code to help the user get started. It is vital that the stub file doesn't guide the user towards any specific approach.
+
+If the user submits the stub file without modifications, the resulting error message should explain precisely what is expected of the user.
+
+For example consider the following C# stub:
+
+```csharp
+public static string MyTestMethod(int i)
+{
+    throw new System.NotImplementedException("Please implement the MyTests.MyTestMethod method");
+}
+```
+
+If the user would submit this code, the C# test runner output's would be:
+
+> We tried running `MyTests.MyTestMethod(1)` but got the following error:
+>
+> ```
+> Please implement the MyTests.MyTestMethod method
+> ```
+
+Note that we opted for using an exception instead of a compile error, as we can control the exception message but not the compiler message.
+
 ### Examples
 
 The [`csharp-1-a`][exercise-csharp-1-a] and [`csharp-1-b`][exercise-csharp-1-b] exercises are working examples of exercises.
