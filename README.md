@@ -24,8 +24,8 @@ Each exercise should provide a `.meta/config.json` file as follows:
 
 ```json
 {
-  solution_files: ["ruby_1_a.rb"],
-  tests: []
+  "solution_files": ["ruby_1_a.rb"],
+  "tests": []
 }
 ```
 
@@ -53,7 +53,7 @@ To achieve this, each exercise should define a `tests` key in its `.meta/config.
 
 ```json
 {
-  tests: [
+  "tests": [
     {
       "name": "MyTestMethod",
       "cmd": "MyTests.MyTestMethod(1)
@@ -66,7 +66,7 @@ If you would like to provide a custom message (rather than the default interpola
 
 ```json
 {
-  tests: [
+  "tests": [
     {
       "name": "MyTestMethod",
       "cmd": "MyTests.MyTestMethod(1),
