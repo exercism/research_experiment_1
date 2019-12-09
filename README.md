@@ -80,7 +80,7 @@ If you would like to provide a custom message (rather than the default interpola
 
 We only show one error message to a user when the tests fail. If multiple tests fail, we show the first test that is listed in the `tests` array of the `.meta/config.json`. It is therefore important to structure the `tests` array from easiest to hardest (simple cases first, edge cases last).
 
-We also use this file to guarantee at a website level that the correct tests have run. By checking the results.json against this list of tests, we can confirm that the user hasn't bypassed the test-running.
+We also use this file to guarantee at a website level that the correct tests have run. By checking the `results.json` against this list of tests, we can confirm that the user hasn't bypassed the test-running.
 
 ### Stub files
 
