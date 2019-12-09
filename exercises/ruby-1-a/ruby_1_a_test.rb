@@ -4,7 +4,7 @@ require_relative 'ruby_1_a'
 # Common test data version: 1.2.0 4fc1acb
 class SentenceTest < Minitest::Test
   def test_one_word_with_one_vowel
-    assert_equal "a", word_with_most_vowels("at")
+    assert_equal "a", word_with_most_vowels("a")
   end
 
   def test_one_word_with_one_vowel_and_one_consonant
