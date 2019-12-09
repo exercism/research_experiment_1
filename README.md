@@ -56,7 +56,7 @@ To achieve this, each exercise should define a `tests` key in its `.meta/config.
   "tests": [
     {
       "name": "MyTestMethod",
-      "cmd": "MyTests.MyTestMethod(1)
+      "cmd": "MyTests.MyTestMethod(1)"
     }
   ]
 }
@@ -69,7 +69,7 @@ If you would like to provide a custom message (rather than the default interpola
   "tests": [
     {
       "name": "MyTestMethod",
-      "cmd": "MyTests.MyTestMethod(1),
+      "cmd": "MyTests.MyTestMethod(1)",
       "cmd": "We tried running `MyTests.MyTestMethod(1)` but got the following error:\n\n%{output}"
     }
   ]
