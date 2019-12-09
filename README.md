@@ -23,8 +23,10 @@ These are examples of valid exercise names:
 Each exercise should provide a `.meta/config.json` file as follows:
 
 ```json
-solution_files: ["ruby_1_a.rb"],
-tests: []
+{
+  solution_files: ["ruby_1_a.rb"],
+  tests: []
+}
 ```
 
 The `solution_files` are the files that will be presented to the user to edit in the browser, and are the only files that can be overriden by a user. The `tests` key is explained below.
@@ -50,29 +52,33 @@ For an equality assertion failure, the error with context might look as follows:
 To achieve this, each exercise should define a `tests` key in its `.meta/config.json` file. This key is a mapping of the test method's name (the `"name"` value in the [test runner output][test-runner-output-format]) to the command that we tell the user was run when the test fails:
 
 ```json
-tests: [
-  {
-    "name": "MyTestMethod",
-    "cmd": "MyTests.MyTestMethod(1)
-  }
-]
+{
+  tests: [
+    {
+      "name": "MyTestMethod",
+      "cmd": "MyTests.MyTestMethod(1)
+    }
+  ]
+}
 ```
 
 If you would like to provide a custom message (rather than the default interpolated message that we provide), you can also add a "msg" key, which must contain the command, and should in most cases also embed the [test runner's][test-runner-output-format] output (usually the assertion error message) in the message by using `%{output}`. For example:
 
 ```json
-tests: [
-  {
-    "name": "MyTestMethod",
-    "cmd": "MyTests.MyTestMethod(1),
-    "cmd": "We tried running `MyTests.MyTestMethod(1)` but got the following error:\n\n%{output}"
-  }
-]
+{
+  tests: [
+    {
+      "name": "MyTestMethod",
+      "cmd": "MyTests.MyTestMethod(1),
+      "cmd": "We tried running `MyTests.MyTestMethod(1)` but got the following error:\n\n%{output}"
+    }
+  ]
+}
 ```
 
 ### Test order
 
-We only show one error message to a user when the tests fail. If multiple tests fail, we show the first test that is listed in the `tests` array of the `.meta/config.json`. It is therefore important to structure the `tests` array from easiest to hardest (simple cases first, edge cases last). 
+We only show one error message to a user when the tests fail. If multiple tests fail, we show the first test that is listed in the `tests` array of the `.meta/config.json`. It is therefore important to structure the `tests` array from easiest to hardest (simple cases first, edge cases last).
 
 ### Stub files
 
