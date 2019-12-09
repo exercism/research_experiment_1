@@ -70,7 +70,7 @@ If you would like to provide a custom message (rather than the default interpola
     {
       "name": "MyTestMethod",
       "cmd": "MyTests.MyTestMethod(1)",
-      "cmd": "We tried running `MyTests.MyTestMethod(1)` but got the following error:\n\n%{output}"
+      "msg": "We tried running `MyTests.MyTestMethod(1)` but got the following error:\n\n%{output}"
     }
   ]
 }
