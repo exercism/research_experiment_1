@@ -1,0 +1,34 @@
+{
+  "solution_files": ["Csharp1A.cs"],
+  "test_file": "Csharp1ATest.cs",
+  "tests": [
+    {
+      "name": "OneWordWithOneVowel",
+      "cmd": "Sentence.WordWithMostVowels(\"a\")"
+    },
+    {
+      "name": "OneWordWithOneVowelAndOneConsonant",
+      "cmd": "Sentence.WordWithMostVowels(\"at\")"
+    },
+    {
+      "name": "OneWordWithTwoVowelsAndOneConsonant",
+      "cmd": "Sentence.WordWithMostVowels(\"tea\")"
+    },
+    {
+      "name": "LongestWordIsNotWordWithMostVowels",
+      "cmd": "Sentence.WordWithMostVowels(\"the area of a circle\")"
+    },
+    {
+      "name": "LastWordIsWordWithMostVowels",
+      "cmd": "Sentence.WordWithMostVowels(\"extremely fresh vegetables\")"
+    },
+    {
+      "name": "MixedCasing",
+      "cmd": "Sentence.WordWithMostVowels(\"TEST YOUR MIGHT\")"
+    },
+    {
+      "name": "IgnoreWordWithoutVowels",
+      "cmd": "Sentence.WordWithMostVowels(\"great rhythm\")"
+    }
+  ]
+}

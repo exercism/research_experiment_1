@@ -1,0 +1,62 @@
+{
+  "solution_files": ["Csharp2B.cs"],
+  "test_file": "Csharp2BTest.cs",
+  "tests": [
+    {
+      "name": "OnlyEmptyQueueIsQueue1",
+      "cmd": "Store.QueueWithMinimalWaitingTime(customersInQueue1: 0, customersInQueue2: 1, customersInQueue3: 2)"
+    },
+    {
+      "name": "OnlyEmptyQueueIsQueue2",
+      "cmd": "Store.QueueWithMinimalWaitingTime(customersInQueue1: 3, customersInQueue2: 0, customersInQueue3: 2)"
+    },
+    {
+      "name": "OnlyEmptyQueueIsQueue3",
+      "cmd": "Store.QueueWithMinimalWaitingTime(customersInQueue1: 1, customersInQueue2: 1, customersInQueue3: 0)"
+    },
+    {
+      "name": "AllQueuesHaveSameNumberOfCustomersInQueue",
+      "cmd": "Store.QueueWithMinimalWaitingTime(customersInQueue1: 5, customersInQueue2: 5, customersInQueue3: 5)"
+    },
+    {
+      "name": "NonEmptyQueuesWithFastestQueueHasMinimalWaitingTime",
+      "cmd": "Store.QueueWithMinimalWaitingTime(customersInQueue1: 2, customersInQueue2: 5, customersInQueue3: 4)"
+    },
+    {
+      "name": "NonEmptyQueuesWithMiddleQueueHasMinimalWaitingTime",
+      "cmd": "Store.QueueWithMinimalWaitingTime(customersInQueue1: 1, customersInQueue2: 2, customersInQueue3: 6)"
+    },
+    {
+      "name": "NonEmptyQueuesWithSlowestQueueHasMinimalWaitingTime",
+      "cmd": "Store.QueueWithMinimalWaitingTime(customersInQueue1: 2, customersInQueue2: 6, customersInQueue3: 11)"
+    },
+    {
+      "name": "EmptyQueuesDontRequireExtraTills",
+      "cmd": "Store.ExtraTillsToOpen(customersInQueue1: 0, customersInQueue2: 0, customersInQueue3: 0)"
+    },
+    {
+      "name": "OneQueueExactlyMatchingMaximumWaitingTimeDoesntRequireExtraTills",
+      "cmd": "Store.ExtraTillsToOpen(customersInQueue1: 2, customersInQueue2: 2, customersInQueue3: 2)"
+    },
+    {
+      "name": "OneQueueExactlyMatchingMaximumWaitingTimeRequiresOneExtraTill",
+      "cmd": "Store.ExtraTillsToOpen(customersInQueue1: 5, customersInQueue2: 1, customersInQueue3: 5)"
+    },
+    {
+      "name": "OneQueueExactlyMatchingMaximumCapacityDoesntRequireExtraTills",
+      "cmd": "Store.ExtraTillsToOpen(customersInQueue1: 1, customersInQueue2: 1, customersInQueue3: 6)"
+    },
+    {
+      "name": "MultipleQueuesExceedMaximumCapacityRequiresOneExtraTill",
+      "cmd": "Store.ExtraTillsToOpen(customersInQueue1: 5, customersInQueue2: 7, customersInQueue3: 0)"
+    },
+    {
+      "name": "MultipleQueuesExceedMaximumCapacityRequireTwoExtraTills",
+      "cmd": "Store.ExtraTillsToOpen(customersInQueue1: 9, customersInQueue2: 7, customersInQueue3: 8)"
+    },
+    {
+      "name": "MultipleQueuesExceedMaximumWaitingTimeRequireTwoExtraTills",
+      "cmd": "Store.ExtraTillsToOpen(customersInQueue1: 5, customersInQueue2: 1, customersInQueue3: 5)"
+    }
+  ]
+}
