@@ -18,6 +18,19 @@ These are examples of valid exercise names:
 - `javascript-2-b` : second part of exercise B for JavaScript.
 - `ruby-1-b` : first part of exercise B for Ruby.
 
+### Config
+
+Each exercise should provide a `.meta/config.json` file as follows:
+
+```json
+{
+  "solution_files": ["ruby_1_a.rb"],
+  "tests": []
+}
+```
+
+The `solution_files` are the files that will be presented to the user to edit in the browser, and are the only files that can be overriden by a user. The `tests` key is explained below.
+
 ### Test messages
 
 Solving exercises that are part of the experiment is different from the regular website's process in two ways:
@@ -36,29 +49,63 @@ For an equality assertion failure, the error with context might look as follows:
 >   Actual: "barfood"
 > ```
 
-To achieve this, each exercise should define a `.meta/test_messages.json` file. This file is a mapping of the test method's name (the `"name"` value in the [test runner output][test-runner-output-format]) to the message displayed when the test fails:
+To achieve this, each exercise should define a `tests` key in its `.meta/config.json` file. This key is a mapping of the test method's name (the `"name"` value in the [test runner output][test-runner-output-format]) to the command that we tell the user was run when the test fails:
 
 ```json
 {
-  "MyTestMethod": {
-    "msg": "We tried running `MyTests.MyTestMethod(1)` but got the following error:\n\n%{output}"
-  }
+  "tests": [
+    {
+      "name": "MyTestMethod",
+      "cmd": "MyTests.MyTestMethod(1)"
+    }
+  ]
 }
 ```
 
-Note that you can embed the [test runner's][test-runner-output-format] output (usually the assertion error message) in the message by using `%{output}`.
-
-As most test messages will be equal except for the called method, there is a shorthand notation that only requires the variable part (the method/command being called) to be specified:
+If you would like to provide a custom message (rather than the default interpolated message that we provide), you can also add a "msg" key, which must contain the command, and should in most cases also embed the [test runner's][test-runner-output-format] output (usually the assertion error message) in the message by using `%{output}`. For example:
 
 ```json
 {
-  "MyTestMethod": {
-    "cmd": "MyTests.MyTestMethod(1)"
-  }
+  "tests": [
+    {
+      "name": "MyTestMethod",
+      "cmd": "MyTests.MyTestMethod(1)",
+      "msg": "We tried running `MyTests.MyTestMethod(1)` but got the following error:\n\n%{output}"
+    }
+  ]
 }
 ```
 
-This definition is functionally equivalent to the explicit version that specified the full message.
+### Test order
+
+We only show one error message to a user when one or more tests fail. If multiple tests fail, we show the first test that is listed in the `tests` array of the `.meta/config.json`. It is therefore important to structure the `tests` array from easiest to hardest (simple cases first, edge cases last).
+
+We also use this file to guarantee at a website level that the correct tests have run. By checking the `results.json` against this list of tests, we can confirm that the user hasn't bypassed the test-running.
+
+### Stub files
+
+Each exercise should have a stub file that provides the minimal amount of code to help the user get started. It is vital that the stub file doesn't guide the user towards any specific approach.
+
+If the user submits the stub file without modifications, the resulting error message should explain precisely what is expected of the user.
+
+For example consider the following C# stub:
+
+```csharp
+public static string MyTestMethod(int i)
+{
+    throw new System.NotImplementedException("Please implement the MyTests.MyTestMethod method");
+}
+```
+
+If the user would submit this code, the C# test runner output's would be:
+
+> We tried running `MyTests.MyTestMethod(1)` but got the following error:
+>
+> ```
+> Please implement the MyTests.MyTestMethod method
+> ```
+
+Note that we opted for using an exception instead of a compile error, as we can control the exception message but not the compiler message.
 
 ### Examples
 
