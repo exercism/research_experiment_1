@@ -1,7 +1,7 @@
 // @ts-check
 
 /**
- * Re-arranges the input array by moving an item from from, to to.
+ * Re-arranges the input array by moving an item from one position to another position.
  * Does not mutate the input array.
  *
  * @template T
@@ -17,7 +17,7 @@ export function arrange(array, from, to) {
 }
 
 /**
- * Re-arranges the input array by moving an item from from, to to.
+ * Re-arranges the input array by moving an item from one position to another position.
  * Mutates the input array.
  *
  * @template T
