@@ -1,0 +1,34 @@
+{
+  "solution_files": ["Csharp1B.cs"],
+  "test_file": "Csharp1BTest.cs",
+  "tests": [
+    {
+      "name": "OnlyEmptyQueueIsQueue1",
+      "cmd": "Store.QueueWithMinimalWaitingTime(customersInQueue1: 0, customersInQueue2: 1, customersInQueue3: 2)"
+    },
+    {
+      "name": "OnlyEmptyQueueIsQueue2",
+      "cmd": "Store.QueueWithMinimalWaitingTime(customersInQueue1: 3, customersInQueue2: 0, customersInQueue3: 2)"
+    },
+    {
+      "name": "OnlyEmptyQueueIsQueue3",
+      "cmd": "Store.QueueWithMinimalWaitingTime(customersInQueue1: 1, customersInQueue2: 1, customersInQueue3: 0)"
+    },
+    {
+      "name": "AllQueuesHaveSameNumberOfCustomersInQueue",
+      "cmd": "Store.QueueWithMinimalWaitingTime(customersInQueue1: 5, customersInQueue2: 5, customersInQueue3: 5)"
+    },
+    {
+      "name": "NonEmptyQueuesWithFastestQueueHasMinimalWaitingTime",
+      "cmd": "Store.QueueWithMinimalWaitingTime(customersInQueue1: 2, customersInQueue2: 5, customersInQueue3: 4)"
+    },
+    {
+      "name": "NonEmptyQueuesWithMiddleQueueHasMinimalWaitingTime",
+      "cmd": "Store.QueueWithMinimalWaitingTime(customersInQueue1: 1, customersInQueue2: 2, customersInQueue3: 6)"
+    },
+    {
+      "name": "NonEmptyQueuesWithSlowestQueueHasMinimalWaitingTime",
+      "cmd": "Store.QueueWithMinimalWaitingTime(customersInQueue1: 2, customersInQueue2: 6, customersInQueue3: 11)"
+    }
+  ]
+}
