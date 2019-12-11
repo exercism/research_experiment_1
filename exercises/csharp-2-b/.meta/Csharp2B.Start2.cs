@@ -1,3 +1,5 @@
+using System;
+
 public static class Store
 {
     private const int Queue1SecondsPerCustomer = 45;
@@ -21,6 +23,6 @@ public static class Store
 
     public static int ExtraTillsToOpen(int customersInQueue1, int customersInQueue2, int customersInQueue3)
     {
-        throw new System.NotImplementedException("Please implement the Store.ExtraTillsToOpen method");
+        throw new NotImplementedException("Please implement the Store.ExtraTillsToOpen method");
     }
 }
