@@ -31,6 +31,16 @@ Your job is to define a method `Store.ExtraTillsToOpen`, which takes the number 
 For example:
 
 ```csharp
-`Store.ExtraTillsToOpen (customersInQueue1: 5, customersInQueue2: 1, customersInQueue3: 2)`
+Store.ExtraTillsToOpen (customersInQueue1: 5, customersInQueue2: 1, customersInQueue3: 2)
 // Returns: 1
 ```
+
+## Troubleshooting
+
+When a test fails, a message is displayed describing what went wrong and for which input. You can also use the fact that any [console output][programiz.com-basic-input-output] will be shown too:
+
+```csharp
+Console.WriteLine("Debug message");
+```
+
+[programiz.com-basic-input-output]: https://www.programiz.com/csharp-programming/basic-input-output
