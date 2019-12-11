@@ -40,48 +40,8 @@
       "topics": []
     },
     {
-      "slug": "ruby-1-a",
-      "uuid": "ddf82893-adaf-4821-8697-9e447cd5502a",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
-    },
-    {
-      "slug": "ruby-2-a",
-      "uuid": "97c8e1ad-5e13-49c2-9b58-198a8da15f29",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
-    },
-    {
-      "slug": "ruby-1-b",
-      "uuid": "cf807b20-53a6-45fb-bb4e-93970d8dbbf2",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
-    },
-    {
-      "slug": "ruby-2-b",
-      "uuid": "e8c83d72-eb59-4839-bdf5-fff4f17ecf8b",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
-    },
-    {
       "slug": "javascript-1-a",
       "uuid": "8e917282-3504-43fc-82fb-060895177a3e",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
-    },
-    {
-      "slug": "rust-1-a",
-      "uuid": "0ea9c484-612f-4fb5-b2fe-6fe04d1d218c",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
@@ -118,6 +78,54 @@
         "unlocked_by": null,
         "difficulty": 1,
         "topics": []
+    },
+    {
+      "slug": "ruby-1-a",
+      "uuid": "ddf82893-adaf-4821-8697-9e447cd5502a",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "ruby-2-a",
+      "uuid": "97c8e1ad-5e13-49c2-9b58-198a8da15f29",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "ruby-1-b",
+      "uuid": "cf807b20-53a6-45fb-bb4e-93970d8dbbf2",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "ruby-2-b",
+      "uuid": "e8c83d72-eb59-4839-bdf5-fff4f17ecf8b",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "rust-1-a",
+      "uuid": "0ea9c484-612f-4fb5-b2fe-6fe04d1d218c",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "x86-64-assembly-1-a",
+      "uuid": "a24e25c8-94a6-4ef9-bc57-7e2f5127b0eb",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
     }
   ]
 }
