@@ -40,6 +40,46 @@
       "topics": []
     },
     {
+      "slug": "javascript-1-a",
+      "uuid": "8e917282-3504-43fc-82fb-060895177a3e",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+        "slug": "python-1-a",
+        "uuid": "a1a32260-7a0f-4c97-9e47-3e0a0fbf1608",
+        "core": false,
+        "unlocked_by": null,
+        "difficulty": 1,
+        "topics": []
+    },
+    {
+        "slug": "python-1-b",
+        "uuid": "1bdeccdf-75a7-4338-b02f-14b4697d6729",
+        "core": false,
+        "unlocked_by": null,
+        "difficulty": 1,
+        "topics": []
+    },
+    {
+        "slug": "python-2-a",
+        "uuid": "2c61fcd6-6c6f-43e0-a0df-516a78d093f8",
+        "core": false,
+        "unlocked_by": null,
+        "difficulty": 1,
+        "topics": []
+    },
+    {
+        "slug": "python-2-b",
+        "uuid": "1f179b51-b553-4c73-96ca-a927ebd6a094",
+        "core": false,
+        "unlocked_by": null,
+        "difficulty": 1,
+        "topics": []
+    },
+    {
       "slug": "ruby-1-a",
       "uuid": "ddf82893-adaf-4821-8697-9e447cd5502a",
       "core": false,
@@ -66,14 +106,6 @@
     {
       "slug": "ruby-2-b",
       "uuid": "e8c83d72-eb59-4839-bdf5-fff4f17ecf8b",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
-    },
-    {
-      "slug": "javascript-1-a",
-      "uuid": "8e917282-3504-43fc-82fb-060895177a3e",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
