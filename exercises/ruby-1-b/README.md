@@ -10,10 +10,11 @@ Your job is to define a method with the signature `word_with_most_vowels`, which
 
 For example:
 
-```csharp
+```ruby
 word_with_most_vowels("Hi there aunt jeanie")
 // Returns: "jeanie"
 ```
 
 [docs-string]: https://ruby-doc.org/core-2.4.1/String.html
 
+**Note:** You can use `debug("some test")` to output debugging information for yourself.
