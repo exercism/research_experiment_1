@@ -34,3 +34,7 @@ For example:
 `Store.ExtraTillsToOpen (customersInQueue1: 5, customersInQueue2: 1, customersInQueue3: 2)`
 // Returns: 1
 ```
+
+## Troubleshooting
+
+When a test fails, a message is displayed describing what went wrong and for which input. You can also use the fact that any console output will be visible too.

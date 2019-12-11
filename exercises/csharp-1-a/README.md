@@ -15,4 +15,8 @@ Sentence.WordWithMostVowels("Hi there aunt jeanie")
 // Returns: "jeanie"
 ```
 
+## Troubleshooting
+
+When a test fails, a message is displayed describing what went wrong and for which input. You can also use the fact that any console output will be visible too.
+
 [docs-string]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/
