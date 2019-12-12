@@ -93,7 +93,7 @@ For example consider the following C# stub:
 ```csharp
 public static string MyTestMethod(int i)
 {
-    throw new System.NotImplementedException("Please implement the MyTests.MyTestMethod method");
+    throw new NotImplementedException("Please implement the MyTests.MyTestMethod method");
 }
 ```
 
