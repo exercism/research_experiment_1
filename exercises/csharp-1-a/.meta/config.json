@@ -3,31 +3,31 @@
   "test_file": "Csharp1ATest.cs",
   "tests": [
     {
-      "name": "OneWordWithOneVowel",
+      "name": "SentenceTest.OneWordWithOneVowel",
       "cmd": "Sentence.WordWithMostVowels(\"a\")"
     },
     {
-      "name": "OneWordWithOneVowelAndOneConsonant",
+      "name": "SentenceTest.OneWordWithOneVowelAndOneConsonant",
       "cmd": "Sentence.WordWithMostVowels(\"at\")"
     },
     {
-      "name": "OneWordWithTwoVowelsAndOneConsonant",
+      "name": "SentenceTest.OneWordWithTwoVowelsAndOneConsonant",
       "cmd": "Sentence.WordWithMostVowels(\"tea\")"
     },
     {
-      "name": "LongestWordIsNotWordWithMostVowels",
+      "name": "SentenceTest.LongestWordIsNotWordWithMostVowels",
       "cmd": "Sentence.WordWithMostVowels(\"the area of a circle\")"
     },
     {
-      "name": "LastWordIsWordWithMostVowels",
+      "name": "SentenceTest.LastWordIsWordWithMostVowels",
       "cmd": "Sentence.WordWithMostVowels(\"extremely fresh vegetables\")"
     },
     {
-      "name": "MixedCasing",
+      "name": "SentenceTest.MixedCasing",
       "cmd": "Sentence.WordWithMostVowels(\"TEST YOUR MIGHT\")"
     },
     {
-      "name": "IgnoreWordWithoutVowels",
+      "name": "SentenceTest.IgnoreWordWithoutVowels",
       "cmd": "Sentence.WordWithMostVowels(\"great rhythm\")"
     }
   ]

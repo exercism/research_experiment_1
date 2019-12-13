@@ -3,43 +3,43 @@
   "test_file": "Csharp2ATest.cs",
   "tests": [
     {
-      "name": "OneWordWithOneVowel",
+      "name": "SentenceTest.OneWordWithOneVowel",
       "cmd": "Sentence.WordWithMostVowels(\"a\")"
     },
     {
-      "name": "OneWordWithOneVowelAndOneConsonant",
+      "name": "SentenceTest.OneWordWithOneVowelAndOneConsonant",
       "cmd": "Sentence.WordWithMostVowels(\"at\")"
     },
     {
-      "name": "OneWordWithTwoVowelsAndOneConsonant",
+      "name": "SentenceTest.OneWordWithTwoVowelsAndOneConsonant",
       "cmd": "Sentence.WordWithMostVowels(\"tea\")"
     },
     {
-      "name": "LongestWordIsNotWordWithMostVowels",
+      "name": "SentenceTest.LongestWordIsNotWordWithMostVowels",
       "cmd": "Sentence.WordWithMostVowels(\"the area of a circle\")"
     },
     {
-      "name": "LastWordIsWordWithMostVowels",
+      "name": "SentenceTest.LastWordIsWordWithMostVowels",
       "cmd": "Sentence.WordWithMostVowels(\"extremely fresh vegetables\")"
     },
     {
-      "name": "MixedCasing",
+      "name": "SentenceTest.MixedCasing",
       "cmd": "Sentence.WordWithMostVowels(\"TEST YOUR MIGHT\")"
     },
     {
-      "name": "IgnoreWordWithoutVowels",
+      "name": "SentenceTest.IgnoreWordWithoutVowels",
       "cmd": "Sentence.WordWithMostVowels(\"great rhythm\")"
     },
     {
-      "name": "TieBreakerWithEquallyLongWords",
+      "name": "SentenceTest.TieBreakerWithEquallyLongWords",
       "cmd": "Sentence.WordWithMostVowels(\"her old dad\")"
     },
     {
-      "name": "TieBreakerWithFirstWordBeingWinner",
+      "name": "SentenceTest.TieBreakerWithFirstWordBeingWinner",
       "cmd": "Sentence.WordWithMostVowels(\"evening Aeon multiple\")"
     },
     {
-      "name": "TieBreakerWithLastWordBeingWinner",
+      "name": "SentenceTest.TieBreakerWithLastWordBeingWinner",
       "cmd": "Sentence.WordWithMostVowels(\"a bear was seen on the plains\")"
     }
   ]
