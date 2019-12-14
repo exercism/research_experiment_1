@@ -1,0 +1,18 @@
+{
+  "solution_files": ["python_1_a.py"],
+  "test_file": "python_1_a_test.py",
+  "tests": [
+    {
+      "name": "TestCompress.test_empty_string",
+      "cmd": "compress(b\"\")"
+    },
+    {
+      "name": "TestCompress.test_single_ascii_letter",
+      "cmd": "compress(b\"x01a\")"
+    },
+    {
+      "name": "TestCompress.test_unique_ascii_letters",
+      "cmd": "compress(b\"\x01a\x02b\x03c\")"
+    }
+  ]
+}
