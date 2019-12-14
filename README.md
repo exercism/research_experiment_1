@@ -31,6 +31,10 @@ Each exercise should provide a `.meta/config.json` file as follows:
 
 The `solution_files` are the files that will be presented to the user to edit in the browser, and are the only files that can be overriden by a user. The `tests` key is explained below.
 
+### READMEs
+
+Each exercise should provide a `README.md`, which gives instructions for completing exercise. Parts 1 and 2 have some boilerplate that should go at the top. Please refer to the `csharp-1-a` and `csharp-1-b` exercises for examples of text and formatting. Note that `##` should be used for headings.
+
 ### Test messages
 
 Solving exercises that are part of the experiment is different from the regular website's process in two ways:
