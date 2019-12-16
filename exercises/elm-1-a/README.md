@@ -6,7 +6,7 @@ This is Part 1 of our research into how people write Elm differently. This exerc
 
 Your task is to take a list of scorers for a football game, and aggregate any duplicates. The aggregated list should represent each scorer once with the number of goals after their name in brackets, if they have scored multiple goals.
 
-The aggregated list should maintain the original list order, based on the first occurence of a scorer.
+The aggregated list should be ordered alphabetically.
 
 For example, if the initial list of scorers is
 
@@ -14,4 +14,4 @@ For example, if the initial list of scorers is
 
 Then the aggregated list should look like this. Lisa is first in the list, as her name appeared first in the original list.
 
-[ "Lisa (2)", "Cedd" ] 
+[ "Anna", "Lisa (2)" ] 
