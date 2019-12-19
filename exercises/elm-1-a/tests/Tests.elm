@@ -20,7 +20,7 @@ tests =
             \() ->
                 aggregateScorers [ "Anna", "Anna" ]
                 |> Expect.equal [ "Anna (2)" ]                    
-        , test "ordersalphabetically" <|
+        , test "orders alphabetically" <|
             \() ->
                 aggregateScorers [ "Lisa", "Anna" ]
                 |> Expect.equal [ "Anna", "Lisa" ]  

@@ -12,6 +12,6 @@ For example, if the initial list of scorers is
 
 ["Lisa", "Anna", "Lisa"]
 
-Then the aggregated list should look like this. Lisa is first in the list, as her name appeared first in the original list.
+Then the aggregated list should look like this. 
 
 [ "Anna", "Lisa (2)" ] 
