@@ -1,0 +1,34 @@
+{
+  "solution_files": ["x86_64_assembly_2_b.asm"],
+  "test_file": "x86_64_assembly_2_b_test.c",
+  "tests": [
+    {
+      "name": "test_red",
+      "cmd": "buf"
+    },
+    {
+      "name": "test_orange",
+      "cmd": "buf"
+    },
+    {
+      "name": "test_yellow",
+      "cmd": "buf"
+    },
+    {
+      "name": "test_green",
+      "cmd": "buf"
+    },
+    {
+      "name": "test_blue",
+      "cmd": "buf"
+    },
+    {
+      "name": "test_indigo",
+      "cmd": "buf"
+    },
+    {
+      "name": "test_violet",
+      "cmd": "buf"
+    }
+  ]
+}
