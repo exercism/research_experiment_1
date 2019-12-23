@@ -24,7 +24,7 @@ tests =
             \() ->
                 aggregateScorers [ "Lisa", "Anna" ]
                 |> Expect.equal [ "Anna", "Lisa" ]  
-        , test "converts duplicates in to goals and maintain single scorers" <|
+        , test "converts duplicates into goals and maintain single scorers" <|
             \() ->
                 aggregateScorers [ "Lisa", "Anna", "Anna" ]
                 |> Expect.equal [ "Anna (2)", "Lisa" ]                    

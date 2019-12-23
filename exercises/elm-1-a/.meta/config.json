@@ -10,7 +10,7 @@
       "cmd": "aggregateScorers [ \"Anna\", \"Lisa\" ]"
     },
     {
-      "name": "converts duplicates in to goals",
+      "name": "converts duplicates into goals",
       "cmd": "aggregateScorers [ \"Anna\", \"Anna\" ]"
     },
     {
