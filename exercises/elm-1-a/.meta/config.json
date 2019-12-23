@@ -1,34 +1,21 @@
 {
-  "solution_files": ["ruby_1_a.rb"],
-  "test_file": "ruby_1_a_test.rb",
+  "solution_files": ["src/AggregateScorers.elm"],
   "tests": [
     {
-      "name": "test_one_word_with_one_vowel",
-      "cmd": "word_with_most_vowels(\"at\")"
+      "name": "doesn't change a single scorer",
+      "cmd": "aggregateScorers [ \"Anna\" ]"
     },
     {
-      "name": "test_one_word_with_one_vowel_and_one_consonant",
-      "cmd": "word_with_most_vowels(\"at\")"
+      "name": "doesn't change multiple unique scorers",
+      "cmd": "aggregateScorers [ \"Anna\", \"Lisa\" ]"
     },
     {
-      "name": "test_one_word_with_two_vowels_and_one_consonant",
-      "cmd": "word_with_most_vowels(\"tea\")"
+      "name": "converts duplicates in to goals",
+      "cmd": "aggregateScorers [ \"Anna\", \"Anna\" ]"
     },
     {
-      "name": "test_longest_word_is_not_word_with_most_vowels",
-      "cmd": "word_with_most_vowels(\"the area of a circle\")"
-    },
-    {
-      "name": "test_last_word_is_word_with_most_vowels",
-      "cmd": "word_with_most_vowels(\"extremely fresh vegetables\")"
-    },
-    {
-      "name": "test_mixed_casing",
-      "cmd": "word_with_most_vowels(\"TEST YOUR MIGHT\")"
-    },
-    {
-      "name": "test_ignore_word_without_vowels",
-      "cmd": "word_with_most_vowels(\"great rhythm\")"
+      "name": "orders alphabetically",
+      "cmd": "aggregateScorers [ \"Lisa\", \"Anna\" ]"
     }
   ]
 }
