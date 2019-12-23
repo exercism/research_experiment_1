@@ -10,8 +10,12 @@ The aggregated list should be ordered alphabetically.
 
 For example, if the initial list of scorers is
 
+```elm
 ["Lisa", "Anna", "Lisa"]
+```
 
 Then the aggregated list should look like this. 
 
+```elm
 [ "Anna", "Lisa (2)" ] 
+```
