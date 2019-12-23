@@ -8,14 +8,9 @@ Your task is to take a list of scorers for a football game, and aggregate any du
 
 Your job is to implement the `aggregateScorers` function which takes a `List String` (the names of the players that scored the goals, that can contain duplicate player names), and returns an aggregated `List String`, where each player only appears once, and where the number of goals that a player has scored is included in brackets after their name if they have scored multiple goals. This aggregated list should be ordered alphabetically.
 
-For example, if the initial list of scorers is
+For example:
 
 ```elm
-["Lisa", "Anna", "Lisa"]
-```
-
-Then the aggregated list should look like this. 
-
-```elm
-[ "Anna", "Lisa (2)" ] 
+aggregateScorers ["Lisa", "Anna", "Lisa"]
+-- Returns: [ "Anna", "Lisa (2)" ]
 ```
