@@ -6,7 +6,7 @@ This is Part 1 of our research into how people write x86-64 assembly differently
 
 Your task is to determine if all characters in a string are alphabetic, i.e., either an uppercase letter, or a lowercase letter.
 
-Your job is to define a function with the signature `str_isalpha`, which takes a string, and returns a non-zero value if all characters in the string are alphabetic and there is at least one character, zero otherwise.
+Your job is to define a function with the signature `str_isalpha`, which takes a pointer to a null-terminated byte string, and returns a non-zero value if all characters in the string are alphabetic and there is at least one character, zero otherwise.
 
 For example:
 
@@ -14,3 +14,5 @@ For example:
 str_isalpha("Hello");
 // Returns: non-zero
 ```
+
+The string is passed in the `rdi` register, and the return value in `rax`.
