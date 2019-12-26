@@ -4,31 +4,31 @@
   "tests": [
     {
       "name": "test_red",
-      "cmd": "buf"
+      "cmd": "color_name(buf, RED)"
     },
     {
       "name": "test_orange",
-      "cmd": "buf"
+      "cmd": "color_name(buf, ORANGE)"
     },
     {
       "name": "test_yellow",
-      "cmd": "buf"
+      "cmd": "color_name(buf, YELLOW)"
     },
     {
       "name": "test_green",
-      "cmd": "buf"
+      "cmd": "color_name(buf, GREEN)"
     },
     {
       "name": "test_blue",
-      "cmd": "buf"
+      "cmd": "color_name(buf, BLUE)"
     },
     {
       "name": "test_indigo",
-      "cmd": "buf"
+      "cmd": "color_name(buf, INDIGO)"
     },
     {
       "name": "test_violet",
-      "cmd": "buf"
+      "cmd": "color_name(buf, VIOLET)"
     }
   ]
 }
