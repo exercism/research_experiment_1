@@ -27,7 +27,7 @@ enum color {
 };
 ```
 
-Your job is to extend this code to copy the name into a user-provided storage buf.
+Your job is to modify the `color_name` function to take a user-provided buffer in addition to the enum value. Instead of returning the name of the constant in the enumeration, it should be copied into the buffer.
 
 For example:
 
@@ -37,3 +37,5 @@ char buf[BUFSIZE];
 color_name(buf, RED);
 // buf contains "RED"
 ```
+
+The user-provided buffer is passed in the `rdi` register, and the enum value in the `rsi` register.
