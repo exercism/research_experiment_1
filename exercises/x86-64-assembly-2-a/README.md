@@ -4,7 +4,7 @@ This is Part 2 of our research into how people write x86-64 assembly differently
 
 ## Instructions
 
-Your task is to extend existing code with new functionality. The code you'll be working with has a function named `str_isalpha`. This function takes a string, and returns a non-zero value if all characters in the string are alphabetic and there is at least one character, zero otherwise.
+Your task is to extend existing code with new functionality. The code you'll be working with has a function named `str_isalpha`. This function takes a pointer to a null-terminated byte string, and returns a non-zero value if all characters in the string are alphabetic and there is at least one character, zero otherwise.
 
 For example:
 
@@ -18,7 +18,7 @@ Your job is to extend this code to determine if a string is a valid identifier i
 - An identifier can only have alphanumeric characters, i.e., uppercase letters, lowercase letters, or digits.
 - The first character must be alphabetic, or an underscore.
 
-Rename the function to `str_isidentifier`. The function should take a string, and return a non-zero value if the string is a valid C identifier, zero otherwise.
+Rename the function to `str_isidentifier`. The function should take a pointer to a null-terminated byte string, and return a non-zero value if the string is a valid C identifier, zero otherwise.
 
 For example:
 
@@ -26,3 +26,5 @@ For example:
 str_isidentifier("my_variable1");
 // Returns: non-zero
 ```
+
+The string is passed into the function via the `rdi` register, and the return value should be stored in the `rax` register.
