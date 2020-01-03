@@ -50,5 +50,3 @@ When a test fails, a message is displayed describing what went wrong and for whi
 ```csharp
 print("Debug message");
 ```
-
-[geeksforgeeks.org_strings-in-golang]: https://www.geeksforgeeks.org/strings-in-golang/
