@@ -21,8 +21,8 @@ func Describe(amount int) string {
 		amount %= cutoff.amount
 
 		if count > 0 {
-			description := fmt.Sprintf("%d %s", count, cutoff.description)
-			descriptions = append(descriptions, description)
+			desc := fmt.Sprintf("%d %s", count, cutoff.description)
+			descriptions = append(descriptions, desc)
 		}
 	}
 

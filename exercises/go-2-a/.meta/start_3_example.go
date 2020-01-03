@@ -26,7 +26,8 @@ func Describe(amount int) string {
 		amount %= cutoff.amount
 
 		if count > 0 {
-			appendDesc(description, fmt.Sprintf("%d %s", count, cutoff.description))
+			desc := fmt.Sprintf("%d %s", count, cutoff.description)
+			appendDesc(description, desc)
 		}
 	}
 

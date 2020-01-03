@@ -20,8 +20,8 @@ func Describe(amount int) string {
 
 	for _, cutoff := range cutoffs {
 		if amount%cutoff.amount == 0 {
-			description := fmt.Sprintf("%d %s", amount/cutoff.amount, cutoff.description)
-			descriptions = append(descriptions, description)
+			desc := fmt.Sprintf("%d %s", amount/cutoff.amount, cutoff.description)
+			descriptions = append(descriptions, desc)
 		}
 	}
 
