@@ -16,7 +16,7 @@ tests =
             \() ->
                 aggregateScorers [ "Anna 13", "Lisa 17" ]
                 |> Expect.equal [ "Anna (13)", "Lisa (17)" ]  
-        , test "adds comma separated goal times for duplicates" <|
+        , test "adds comma separated goal times for duplicate scorers" <|
             \() ->
                 aggregateScorers [ "Anna 28", "Anna 32" ]
                 |> Expect.equal [ "Anna (28, 32)" ]                    
