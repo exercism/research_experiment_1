@@ -1,4 +1,4 @@
-package go1b
+package go2b
 
 import "testing"
 
@@ -24,6 +24,22 @@ func TestBustWin(t *testing.T) {
 
 func TestAceAsElevenWin(t *testing.T) {
 	AssertPlayerWins(t, "7A", "K7", true)
+}
+
+func TestBlackjackDrawWin(t *testing.T) {
+	AssertPlayerWins(t, "AQ", "K92", true)
+}
+
+func TestBlackjackDrawLoss(t *testing.T) {
+	AssertPlayerWins(t, "KA", "AX", false)
+}
+
+func TestAceAsOneWin(t *testing.T) {
+	AssertPlayerWins(t, "89A", "97", true)
+}
+
+func TestAceAsOneAndAceAsElevenWin(t *testing.T) {
+	AssertPlayerWins(t, "AA8", "Q9", true)
 }
 
 func AssertPlayerWins(t *testing.T, playerHand string, dealerHand string, expected bool) {

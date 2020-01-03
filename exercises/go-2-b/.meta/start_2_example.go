@@ -67,20 +67,36 @@ func ParseHand(hand string) Hand {
 	return Hand{cards: cards}
 }
 
-func HandScore(hand string) int {
-	parsedHand := ParseHand(hand)
+func IsBlackjack(hand Hand) bool {
+	return len(hand.cards) == 2 && HandScore(hand) == MaximumHandScore
+}
 
+func HandScore(hand Hand) int {
 	score := 0
+	aces := 0
 
-	for _, card := range parsedHand.cards {
+	for _, card := range hand.cards {
 		score += int(card)
+
+		if card == Ace {
+			aces++
+		}
+	}
+
+	for score > MaximumHandScore && aces > 0 {
+		score -= 10
+		aces--
 	}
 
 	return score
 }
 
 func PlayerWins(playerHand string, dealerHand string) bool {
-	return HandScore(playerHand) > HandScore(dealerHand) &&
-		HandScore(playerHand) <= MaximumHandScore ||
-		HandScore(dealerHand) > MaximumHandScore
+	parsedPlayerHand := ParseHand(playerHand)
+	parsedDealerHand := ParseHand(dealerHand)
+
+	return HandScore(parsedPlayerHand) > HandScore(parsedDealerHand) &&
+		HandScore(parsedPlayerHand) <= MaximumHandScore ||
+		HandScore(parsedDealerHand) > MaximumHandScore ||
+		IsBlackjack(parsedPlayerHand) && !IsBlackjack(parsedDealerHand)
 }

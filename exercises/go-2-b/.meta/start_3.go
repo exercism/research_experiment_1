@@ -1,4 +1,4 @@
-package go1b
+package go2b
 
 const MaximumHandScore = 21
 
