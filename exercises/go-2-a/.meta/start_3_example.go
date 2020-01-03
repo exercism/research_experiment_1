@@ -15,6 +15,8 @@ var cutoffs = []struct {
 	{12, "dozen"},
 }
 
+var matchLastCommaRegex = regexp.MustCompile(`(.*), (.+?)$`)
+
 func Describe(amount int) string {
 	var description string
 
@@ -39,6 +41,5 @@ func Describe(amount int) string {
 		description += strconv.Itoa(amount)
 	}
 
-	re := regexp.MustCompile(`(.*), (.+?)$`)
-	return re.ReplaceAllString(description, "$1 and $2")
+	return matchLastCommaRegex.ReplaceAllString(description, "$1 and $2")
 }
