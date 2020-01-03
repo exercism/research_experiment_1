@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"regexp"
 	"strconv"
+	"strings"
 )
 
 var cutoffs = []struct {
@@ -17,29 +18,33 @@ var cutoffs = []struct {
 
 var matchLastCommaRegex = regexp.MustCompile(`(.*), (.+?)$`)
 
-func concat(description string, str string) string {
-	if description != "" {
-		return description + ", " + str
+func replaceLastCommaWithAnd(description string) string {
+	return matchLastCommaRegex.ReplaceAllString(description, "$1 and $2")
+}
+
+func appendToDescription(description *strings.Builder, str string) {
+	if description.Len() != 0 {
+		description.WriteString(", ")
 	}
 
-	return description + str
+	description.WriteString(str)
 }
 
 func Describe(amount int) string {
-	var description string
+	var description = &strings.Builder{}
 
 	for _, cutoff := range cutoffs {
 		count := amount / cutoff.amount
 		amount %= cutoff.amount
 
 		if count > 0 {
-			description = concat(description, fmt.Sprintf("%d %s", count, cutoff.description))
+			appendToDescription(description, fmt.Sprintf("%d %s", count, cutoff.description))
 		}
 	}
 
 	if amount > 0 {
-		description = concat(description, strconv.Itoa(amount))
+		appendToDescription(description, strconv.Itoa(amount))
 	}
 
-	return matchLastCommaRegex.ReplaceAllString(description, "$1 and $2")
+	return replaceLastCommaWithAnd(description.String())
 }

@@ -1,4 +1,4 @@
-package go2a
+package go1a
 
 import (
 	"fmt"
