@@ -16,7 +16,7 @@ var cutoffs = []struct {
 }
 
 func Describe(amount int) string {
-	description := ""
+	var description string
 
 	for _, cutoff := range cutoffs {
 		count := amount / cutoff.amount

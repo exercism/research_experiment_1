@@ -6,7 +6,7 @@ import (
 )
 
 func Describe(amount int) string {
-	description := ""
+	var description string
 
 	gross := amount / 144
 	amount %= 144

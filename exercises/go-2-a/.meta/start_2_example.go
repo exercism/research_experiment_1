@@ -31,7 +31,7 @@ func Describe(amount int) string {
 		descriptions = append(descriptions, strconv.Itoa(amount))
 	}
 
-	description := ""
+	var description string
 
 	for index, cutoffDescription := range descriptions {
 		if index == 0 {

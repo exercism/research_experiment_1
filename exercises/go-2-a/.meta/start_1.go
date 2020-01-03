@@ -6,7 +6,7 @@ import (
 )
 
 func Describe(amount int) string {
-	description := ""
+	var description string
 
 	if amount%144 == 0 {
 		description += fmt.Sprintf("%d gross", amount/144)
