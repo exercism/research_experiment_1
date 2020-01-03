@@ -22,9 +22,9 @@ func Describe(amount int) string {
 	}
 
 	if score > 0 {
-		if len(description) > 0 && dozen+amount > 0 {
+		if description != "" && dozen+amount > 0 {
 			description += ", "
-		} else if len(description) > 0 {
+		} else if description != "" {
 			description += " and "
 		}
 
@@ -32,9 +32,9 @@ func Describe(amount int) string {
 	}
 
 	if dozen > 0 {
-		if len(description) > 0 && amount > 0 {
+		if description != "" && amount > 0 {
 			description += ", "
-		} else if len(description) > 0 {
+		} else if description != "" {
 			description += " and "
 		}
 
@@ -42,7 +42,7 @@ func Describe(amount int) string {
 	}
 
 	if amount > 0 {
-		if len(description) > 0 {
+		if description != "" {
 			description += " and "
 		}
 

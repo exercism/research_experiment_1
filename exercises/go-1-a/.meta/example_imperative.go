@@ -13,7 +13,7 @@ func Describe(amount int) string {
 	}
 
 	if amount%20 == 0 {
-		if len(description) > 0 {
+		if description != "" {
 			description += " or "
 		}
 
@@ -21,14 +21,14 @@ func Describe(amount int) string {
 	}
 
 	if amount%12 == 0 {
-		if len(description) > 0 {
+		if description != "" {
 			description += " or "
 		}
 
 		description += fmt.Sprintf("%d dozen", amount/12)
 	}
 
-	if len(description) > 0 {
+	if description != "" {
 		description += " or "
 	}
 

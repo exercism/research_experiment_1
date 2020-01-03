@@ -23,7 +23,7 @@ func Describe(amount int) string {
 		amount %= cutoff.amount
 
 		if count > 0 {
-			if len(description) > 0 {
+			if description != "" {
 				description += ", "
 			}
 
@@ -32,7 +32,7 @@ func Describe(amount int) string {
 	}
 
 	if amount > 0 {
-		if len(description) > 0 {
+		if description != "" {
 			description += ", "
 		}
 

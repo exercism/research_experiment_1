@@ -19,7 +19,7 @@ func Describe(amount int) string {
 
 	for _, cutoff := range cutoffs {
 		if amount%cutoff.amount == 0 {
-			if len(description) > 0 {
+			if description != "" {
 				description += " or "
 			}
 
@@ -27,7 +27,7 @@ func Describe(amount int) string {
 		}
 	}
 
-	if len(description) > 0 {
+	if description != "" {
 		description += " or "
 	}
 
