@@ -17,7 +17,6 @@ var cutoffs = []struct {
 
 func Describe(amount int) string {
 	var descriptions []string
-
 	for _, cutoff := range cutoffs {
 		if amount%cutoff.amount == 0 {
 			description := fmt.Sprintf("%d %s", amount/cutoff.amount, cutoff.description)
