@@ -1,3 +1,5 @@
+%include "debug.asm"
+
 section .data
 CHAR_UPPER: equ 0x0001
 CHAR_LOWER: equ 0x0002

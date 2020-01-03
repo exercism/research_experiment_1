@@ -1,3 +1,5 @@
+%include "debug.asm"
+
 section .text
 global str_isalpha
 str_isalpha:
