@@ -17,6 +17,14 @@ var cutoffs = []struct {
 
 var matchLastCommaRegex = regexp.MustCompile(`(.*), (.+?)$`)
 
+func concat(description string, str string) string {
+	if description != "" {
+		return description + ", " + str
+	}
+
+	return description + str
+}
+
 func Describe(amount int) string {
 	var description string
 
@@ -25,20 +33,12 @@ func Describe(amount int) string {
 		amount %= cutoff.amount
 
 		if count > 0 {
-			if description != "" {
-				description += ", "
-			}
-
-			description += fmt.Sprintf("%d %s", count, cutoff.description)
+			description = concat(description, fmt.Sprintf("%d %s", count, cutoff.description))
 		}
 	}
 
 	if amount > 0 {
-		if description != "" {
-			description += ", "
-		}
-
-		description += strconv.Itoa(amount)
+		description = concat(description, strconv.Itoa(amount))
 	}
 
 	return matchLastCommaRegex.ReplaceAllString(description, "$1 and $2")
