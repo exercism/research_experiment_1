@@ -16,7 +16,7 @@ var cutoffs = []struct {
 }
 
 func Describe(amount int) string {
-	descriptions := make([]string, 0)
+	var descriptions []string
 
 	for _, cutoff := range cutoffs {
 		if amount%cutoff.amount == 0 {
