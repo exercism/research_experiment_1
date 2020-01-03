@@ -15,14 +15,6 @@ var cutoffs = []struct {
 	{12, "dozen"},
 }
 
-func appendDesc(description *strings.Builder, str string) {
-	if description.Len() != 0 {
-		description.WriteString(" or ")
-	}
-
-	description.WriteString(str)
-}
-
 func Describe(amount int) string {
 	var description = &strings.Builder{}
 
@@ -35,4 +27,12 @@ func Describe(amount int) string {
 	appendDesc(description, strconv.Itoa(amount))
 
 	return description.String()
+}
+
+func appendDesc(description *strings.Builder, str string) {
+	if description.Len() != 0 {
+		description.WriteString(" or ")
+	}
+
+	description.WriteString(str)
 }
