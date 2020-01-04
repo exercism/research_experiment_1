@@ -5,29 +5,10 @@ import (
 	"strconv"
 )
 
-func split(amount int) (gross int, score int, dozen int, rest int) {
-	gross = amount / 144
-	amount %= 144
-
-	score = amount / 20
-	amount %= 20
-
-	return gross, score, amount / 12, amount % 12
-}
-
-func concat(description string, str string, remainder int) string {
-	if description != "" && remainder > 0 {
-		return description + ", " + str
-	} else if description != "" {
-		return description + " and " + str
-	} else {
-		return description + str
-	}
-}
-
+// Describe takes an amount and returns a description
 func Describe(amount int) string {
 	var description string
-	
+
 	gross, score, dozen, remainder := split(amount)
 
 	if gross > 0 {
@@ -47,4 +28,24 @@ func Describe(amount int) string {
 	}
 
 	return description
+}
+
+func split(amount int) (gross int, score int, dozen int, rest int) {
+	gross = amount / 144
+	amount %= 144
+
+	score = amount / 20
+	amount %= 20
+
+	return gross, score, amount / 12, amount % 12
+}
+
+func concat(description string, str string, remainder int) string {
+	if description != "" && remainder > 0 {
+		return description + ", " + str
+	} else if description != "" {
+		return description + " and " + str
+	} else {
+		return description + str
+	}
 }

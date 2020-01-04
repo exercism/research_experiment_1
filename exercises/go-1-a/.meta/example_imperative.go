@@ -5,14 +5,7 @@ import (
 	"strconv"
 )
 
-func concat(description string, str string) string {
-	if description != "" {
-		return description + " or " + str
-	}
-
-	return description + str
-}
-
+// Describe takes an amount and returns a description
 func Describe(amount int) string {
 	var description string
 
@@ -31,4 +24,12 @@ func Describe(amount int) string {
 	description = concat(description, strconv.Itoa(amount))
 
 	return description
+}
+
+func concat(description string, str string) string {
+	if description != "" {
+		return description + " or " + str
+	}
+
+	return description + str
 }

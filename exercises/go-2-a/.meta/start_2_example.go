@@ -14,6 +14,7 @@ var cutoffs = []struct {
 	{12, "dozen"},
 }
 
+// Describe takes an amount and returns a description
 func Describe(amount int) string {
 	var descriptions []string
 	for _, cutoff := range cutoffs {
@@ -32,15 +33,21 @@ func Describe(amount int) string {
 
 	var description string
 
-	for index, cutoffDescription := range descriptions {
-		if index == 0 {
-			description += cutoffDescription
-		} else if index == len(descriptions)-1 {
-			description += fmt.Sprintf(" and %s", cutoffDescription)
-		} else {
-			description += fmt.Sprintf(", %s", cutoffDescription)
-		}
+	for i, cutoffDesc := range descriptions {
+		description = appendDesc(description, i == 0, i == len(descriptions)-1, cutoffDesc)
 	}
 
 	return description
+}
+
+func appendDesc(description string, first bool, last bool, cutoffDescription string) string {
+	if first {
+		return cutoffDescription
+	}
+
+	if last {
+		return fmt.Sprintf("%s and %s", description, cutoffDescription)
+	}
+
+	return fmt.Sprintf("%s, %s", description, cutoffDescription)
 }

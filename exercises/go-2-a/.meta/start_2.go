@@ -15,6 +15,7 @@ var cutoffs = []struct {
 	{12, "dozen"},
 }
 
+// Describe takes an amount and returns a description
 func Describe(amount int) string {
 	var descriptions []string
 	for _, cutoff := range cutoffs {
