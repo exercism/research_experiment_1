@@ -10,7 +10,7 @@ func Describe(amount int) string {
 	var description string
 
 	if amount%144 == 0 {
-		description += concat(description, fmt.Sprintf("%d gross", amount/144))
+		description = concat(description, fmt.Sprintf("%d gross", amount/144))
 	}
 
 	if amount%20 == 0 {
