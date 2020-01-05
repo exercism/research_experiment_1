@@ -10,7 +10,7 @@ Your task is to define a function with the signature `Describe`, which takes a n
 - `20` is a `"score"`
 - `12` is a `"dozen"`
 
-If the number can be written as a multiple of one of these units, the description should include a description of the number as said unit. It is possible for a number to match multiple units or none.
+If the number can be written as a multiple of one of these units, the description should include a description of the number as said units, in descending order of unit size. It is possible for a number to match multiple units or none.
 
 For example:
 

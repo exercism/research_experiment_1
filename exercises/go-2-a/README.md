@@ -10,7 +10,7 @@ Your task is to extend existing code with new functionality. The code you'll be 
 - `20` is a `"score"`
 - `12` is a `"dozen"`
 
-If the number can be written as a multiple of one of these units, the description includes a description of the number as said unit. It is possible for a number to match multiple units or none.
+If the number can be written as a multiple of one of these units, the description includes a description of the number as said unit, in descending order of unit size. It is possible for a number to match multiple units or none.
 
 For example:
 
@@ -25,7 +25,7 @@ Describe(5)
 // Returns: "5"
 ```
 
-Your job is to change the `Describe` function to no longer return the possible descriptions, but to describe the number as a combination of the available units (with a possible remainder).
+Your job is to change the `Describe` function to no longer return the possible descriptions, but to describe the number as a combination of the available units (with a possible remainder), preferring larger units over smaller units.
 
 For example:
 
