@@ -27,9 +27,9 @@ func Describe(amount int) string {
 }
 
 func concat(description string, str string) string {
-	if description != "" {
-		return description + " or " + str
+	if description == "" {
+		return str
 	}
 
-	return description + str
+	return description + " or " + str
 }

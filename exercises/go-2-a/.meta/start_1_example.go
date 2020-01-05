@@ -12,7 +12,7 @@ func Describe(amount int) string {
 	gross, score, dozen, remainder := split(amount)
 
 	if gross > 0 {
-		description += fmt.Sprintf("%d gross", gross)
+		description = fmt.Sprintf("%d gross", gross)
 	}
 
 	if score > 0 {
@@ -43,9 +43,11 @@ func split(amount int) (gross int, score int, dozen int, rest int) {
 func concat(description string, str string, remainder int) string {
 	if description != "" && remainder > 0 {
 		return description + ", " + str
-	} else if description != "" {
-		return description + " and " + str
-	} else {
-		return description + str
 	}
+
+	if description != "" {
+		return description + " and " + str
+	}
+
+	return str
 }
