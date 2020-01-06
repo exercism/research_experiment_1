@@ -126,6 +126,30 @@
       "unlocked_by": null,
       "difficulty": 1,
       "topics": []
+    },
+    {
+      "slug": "x86-64-assembly-2-a",
+      "uuid": "a2d973f7-2717-41fb-98b5-ce73ae9eef1c",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "x86-64-assembly-1-b",
+      "uuid": "a78a9583-cb7f-4eaf-be8f-a9bc4ed7ffc9",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "x86-64-assembly-2-b",
+      "uuid": "876fb47d-a5b9-4ad4-916a-3474c3f9c9ea",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
     }
   ]
 }
