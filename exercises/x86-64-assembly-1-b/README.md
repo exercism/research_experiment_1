@@ -26,3 +26,5 @@ enum color {
     VIOLET
 };
 ```
+
+The enum value is passed into the function via the `rdi` register, and the return value should be stored in the `rax` register.
