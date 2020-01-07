@@ -1,6 +1,6 @@
 package go2b
 
-const MaximumHandScore = 21
+const MaxScore = 21
 
 type Card int
 
@@ -36,8 +36,8 @@ func PlayerWins(playerHand string, dealerHand string) bool {
 	dBlackjack := isBlackjack(dHand)
 
 	return pScore > dScore &&
-		pScore <= MaximumHandScore ||
-		dScore > MaximumHandScore ||
+		pScore <= MaxScore ||
+		dScore > MaxScore ||
 		pBlackjack && !dBlackjack
 }
 
@@ -82,7 +82,7 @@ func parseHand(hand string) Hand {
 }
 
 func isBlackjack(hand Hand) bool {
-	return len(hand.cards) == 2 && handScore(hand) == MaximumHandScore
+	return len(hand.cards) == 2 && handScore(hand) == MaxScore
 }
 
 func handScore(hand Hand) int {
@@ -96,7 +96,7 @@ func handScore(hand Hand) int {
 		}
 	}
 
-	for score > MaximumHandScore && aces > 0 {
+	for score > MaxScore && aces > 0 {
 		score -= 10
 		aces--
 	}

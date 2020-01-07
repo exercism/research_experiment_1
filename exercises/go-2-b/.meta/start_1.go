@@ -1,6 +1,6 @@
 package go2b
 
-const MaximumHandScore = 21
+const MaxScore = 21
 
 var cardValues = map[rune]int{
 	'A': 11,
@@ -23,11 +23,11 @@ func PlayerWins(playerHand string, dealerHand string) bool {
 	pScore := handScore(playerHand)
 	dScore := handScore(dealerHand)
 
-	if pScore > MaximumHandScore {
+	if pScore > MaxScore {
 		return false
 	}
 
-	if dScore > MaximumHandScore {
+	if dScore > MaxScore {
 		return true
 	}
 

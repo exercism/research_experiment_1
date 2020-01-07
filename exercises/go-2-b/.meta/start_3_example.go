@@ -1,6 +1,6 @@
 package go2b
 
-const MaximumHandScore = 21
+const MaxScore = 21
 
 // Determine if the player has a winning blackjack hand.
 func PlayerWins(playerHand string, dealerHand string) bool {
@@ -11,8 +11,8 @@ func PlayerWins(playerHand string, dealerHand string) bool {
 	dBlackjack := isBlackjack(dealerHand)
 
 	return pScore > dScore &&
-		pScore <= MaximumHandScore ||
-		dScore > MaximumHandScore ||
+		pScore <= MaxScore ||
+		dScore > MaxScore ||
 		pBlackjack && !dBlackjack
 }
 
@@ -44,7 +44,7 @@ func handScore(hand string) int {
 		}
 	}
 
-	for score > MaximumHandScore && aces > 0 {
+	for score > MaxScore && aces > 0 {
 		score -= 10
 		aces--
 	}
@@ -53,5 +53,5 @@ func handScore(hand string) int {
 }
 
 func isBlackjack(hand string) bool {
-	return handScore(hand) == MaximumHandScore && len(hand) == 2
+	return handScore(hand) == MaxScore && len(hand) == 2
 }

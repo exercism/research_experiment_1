@@ -1,6 +1,6 @@
 package go1b
 
-const MaximumHandScore = 21
+const MaxScore = 21
 
 type Card int
 
@@ -27,8 +27,8 @@ type Hand struct {
 // Determine if the player has a winning blackjack hand.
 func PlayerWins(playerHand string, dealerHand string) bool {
 	return handScore(playerHand) > handScore(dealerHand) &&
-		handScore(playerHand) <= MaximumHandScore ||
-		handScore(dealerHand) > MaximumHandScore
+		handScore(playerHand) <= MaxScore ||
+		handScore(dealerHand) > MaxScore
 }
 
 func parseCard(card rune) Card {
