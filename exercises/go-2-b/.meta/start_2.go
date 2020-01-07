@@ -63,7 +63,7 @@ func parseCard(card rune) Card {
 }
 
 func parseHand(hand string) Hand {
-	cards := make([]Card, 0)
+	var cards []Card
 
 	for _, card := range hand {
 		cards = append(cards, parseCard(card))
@@ -75,7 +75,7 @@ func parseHand(hand string) Hand {
 func handScore(hand string) int {
 	parsedHand := parseHand(hand)
 
-	score := 0
+	var score int
 
 	for _, card := range parsedHand.cards {
 		score += int(card)
