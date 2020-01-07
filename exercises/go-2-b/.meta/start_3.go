@@ -2,7 +2,14 @@ package go2b
 
 const MaximumHandScore = 21
 
-func CardValue(card rune) int {
+// Determine if the player has a winning blackjack hand.
+func PlayerWins(playerHand string, dealerHand string) bool {
+	return handScore(playerHand) > handScore(dealerHand) &&
+		handScore(playerHand) <= MaximumHandScore ||
+		handScore(dealerHand) > MaximumHandScore
+}
+
+func cardValue(card rune) int {
 	switch card {
 	case 'A':
 		return 11
@@ -19,19 +26,12 @@ func CardValue(card rune) int {
 	return int(card - '0')
 }
 
-func HandScore(hand string) int {
+func handScore(hand string) int {
 	score := 0
 
 	for _, card := range hand {
-		score += CardValue(card)
+		score += cardValue(card)
 	}
 
 	return score
-}
-
-// Determine if the player has a winning blackjack hand.
-func PlayerWins(playerHand string, dealerHand string) bool {
-	return HandScore(playerHand) > HandScore(dealerHand) &&
-		HandScore(playerHand) <= MaximumHandScore ||
-		HandScore(dealerHand) > MaximumHandScore
 }

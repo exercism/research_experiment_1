@@ -18,20 +18,10 @@ var cardValues = map[rune]int{
 	'2': 2,
 }
 
-func HandScore(hand string) int {
-	score := 0
-
-	for _, card := range hand {
-		score += cardValues[card]
-	}
-
-	return score
-}
-
 // Determine if the player has a winning blackjack hand.
 func PlayerWins(playerHand string, dealerHand string) bool {
-	playerHandScore := HandScore(playerHand)
-	dealerHandScore := HandScore(dealerHand)
+	playerHandScore := handScore(playerHand)
+	dealerHandScore := handScore(dealerHand)
 
 	if playerHandScore > MaximumHandScore {
 		return false
@@ -42,4 +32,14 @@ func PlayerWins(playerHand string, dealerHand string) bool {
 	}
 
 	return playerHandScore > dealerHandScore
+}
+
+func handScore(hand string) int {
+	score := 0
+
+	for _, card := range hand {
+		score += cardValues[card]
+	}
+
+	return score
 }

@@ -24,7 +24,14 @@ type Hand struct {
 	cards []Card
 }
 
-func ParseCard(card rune) Card {
+// Determine if the player has a winning blackjack hand.
+func PlayerWins(playerHand string, dealerHand string) bool {
+	return handScore(playerHand) > handScore(dealerHand) &&
+		handScore(playerHand) <= MaximumHandScore ||
+		handScore(dealerHand) > MaximumHandScore
+}
+
+func parseCard(card rune) Card {
 	switch card {
 	case 'A':
 		return Ace
@@ -55,18 +62,18 @@ func ParseCard(card rune) Card {
 	return Two
 }
 
-func ParseHand(hand string) Hand {
+func parseHand(hand string) Hand {
 	cards := make([]Card, 0)
 
 	for _, card := range hand {
-		cards = append(cards, ParseCard(card))
+		cards = append(cards, parseCard(card))
 	}
 
 	return Hand{cards: cards}
 }
 
-func HandScore(hand string) int {
-	parsedHand := ParseHand(hand)
+func handScore(hand string) int {
+	parsedHand := parseHand(hand)
 
 	score := 0
 
@@ -75,11 +82,4 @@ func HandScore(hand string) int {
 	}
 
 	return score
-}
-
-// Determine if the player has a winning blackjack hand.
-func PlayerWins(playerHand string, dealerHand string) bool {
-	return HandScore(playerHand) > HandScore(dealerHand) &&
-		HandScore(playerHand) <= MaximumHandScore ||
-		HandScore(dealerHand) > MaximumHandScore
 }
