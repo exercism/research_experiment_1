@@ -18,7 +18,7 @@ var cutoffs = []struct {
 
 var lastCommaRegex = regexp.MustCompile(`(.*), (.+?)$`)
 
-// Describe takes an amount and returns a description
+// Describe takes an amount and returns a description.
 func Describe(amount int) string {
 	var description = &strings.Builder{}
 

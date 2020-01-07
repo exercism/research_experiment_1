@@ -5,7 +5,7 @@ import (
 	"strconv"
 )
 
-// Describe takes an amount and returns a description
+// Describe takes an amount and returns a description.
 func Describe(amount int) string {
 	var description string
 
