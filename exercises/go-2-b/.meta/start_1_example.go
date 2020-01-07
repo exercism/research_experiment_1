@@ -41,7 +41,6 @@ func PlayerWins(playerHand string, dealerHand string) bool {
 func handScore(hand string) int {
 	var score int
 	var aces int
-
 	for _, card := range hand {
 		score += cardValues[card]
 

@@ -30,7 +30,6 @@ func cardValue(card rune) int {
 func handScore(hand string) int {
 	var score int
 	var aces int
-
 	for _, card := range hand {
 		score += cardValue(card)
 

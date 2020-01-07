@@ -76,7 +76,6 @@ func handScore(hand string) int {
 	parsedHand := parseHand(hand)
 
 	var score int
-
 	for _, card := range parsedHand.cards {
 		score += int(card)
 	}
