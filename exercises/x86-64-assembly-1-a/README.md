@@ -15,7 +15,7 @@ str_isalpha("Hello");
 // Returns: non-zero
 ```
 
-The string is passed in the `rdi` register, and the return value should be in the `rax` register.
+The string is passed into the function via the `rdi` register, and the return value should be stored in the `rax` register.
 
 ## Troubleshooting
 
