@@ -50,8 +50,6 @@ func ParseCard(card rune) Card {
 		return Four
 	case '3':
 		return Three
-	case '2':
-		return Two
 	}
 
 	return Two
