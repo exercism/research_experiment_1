@@ -20,18 +20,18 @@ var cardValues = map[rune]int{
 
 // Determine if the player has a winning blackjack hand.
 func PlayerWins(playerHand string, dealerHand string) bool {
-	playerHandScore := handScore(playerHand)
-	dealerHandScore := handScore(dealerHand)
+	pScore := handScore(playerHand)
+	dScore := handScore(dealerHand)
 
-	if playerHandScore > MaximumHandScore {
+	if pScore > MaximumHandScore {
 		return false
 	}
 
-	if dealerHandScore > MaximumHandScore {
+	if dScore > MaximumHandScore {
 		return true
 	}
 
-	return playerHandScore > dealerHandScore
+	return pScore > dScore
 }
 
 func handScore(hand string) int {

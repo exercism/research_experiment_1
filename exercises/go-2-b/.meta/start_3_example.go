@@ -4,10 +4,16 @@ const MaximumHandScore = 21
 
 // Determine if the player has a winning blackjack hand.
 func PlayerWins(playerHand string, dealerHand string) bool {
-	return handScore(playerHand) > handScore(dealerHand) &&
-		handScore(playerHand) <= MaximumHandScore ||
-		handScore(dealerHand) > MaximumHandScore ||
-		isBlackjack(playerHand) && !isBlackjack(dealerHand)
+	pScore := handScore(playerHand)
+	dScore := handScore(dealerHand)
+
+	pBlackjack := isBlackjack(playerHand)
+	dBlackjack := isBlackjack(dealerHand)
+
+	return pScore > dScore &&
+		pScore <= MaximumHandScore ||
+		dScore > MaximumHandScore ||
+		pBlackjack && !dBlackjack
 }
 
 func cardValue(card rune) int {
