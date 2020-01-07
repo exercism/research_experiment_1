@@ -1,6 +1,6 @@
 package go1b
 
-const MaxScore = 21
+const maxScore = 21
 
 var cardValues = map[rune]int{
 	'A': 11,
@@ -23,15 +23,9 @@ func PlayerWins(playerHand string, dealerHand string) bool {
 	pScore := handScore(playerHand)
 	dScore := handScore(dealerHand)
 
-	if pScore > MaxScore {
-		return false
-	}
-
-	if dScore > MaxScore {
-		return true
-	}
-
-	return pScore > dScore
+	return pScore > dScore &&
+		pScore <= maxScore ||
+		dScore > maxScore
 }
 
 func handScore(hand string) int {

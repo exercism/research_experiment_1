@@ -1,6 +1,6 @@
 package go1b
 
-const MaxScore = 21
+const maxScore = 21
 
 type Card int
 
@@ -38,8 +38,8 @@ func PlayerWins(playerHand string, dealerHand string) bool {
 	dHand := parseHand(dealerHand)
 
 	return pHand.score() > dHand.score() &&
-		pHand.score() <= MaxScore ||
-		dHand.score() > MaxScore
+		pHand.score() <= maxScore ||
+		dHand.score() > maxScore
 }
 
 func parseCard(card rune) Card {
