@@ -24,21 +24,38 @@ type Hand struct {
 	cards []Card
 }
 
+func (h Hand) score() int {
+	var score int
+	var aces int
+	for _, card := range h.cards {
+		score += int(card)
+
+		if card == Ace {
+			aces++
+		}
+	}
+
+	for score > MaxScore && aces > 0 {
+		score -= 10
+		aces--
+	}
+
+	return score
+}
+
+func (h Hand) isBlackjack() bool {
+	return len(h.cards) == 2 && h.score() == MaxScore
+}
+
 // Determine if the player has a winning blackjack hand.
 func PlayerWins(playerHand string, dealerHand string) bool {
 	pHand := parseHand(playerHand)
 	dHand := parseHand(dealerHand)
 
-	pScore := handScore(pHand)
-	dScore := handScore(dHand)
-
-	pBlackjack := isBlackjack(pHand)
-	dBlackjack := isBlackjack(dHand)
-
-	return pScore > dScore &&
-		pScore <= MaxScore ||
-		dScore > MaxScore ||
-		pBlackjack && !dBlackjack
+	return pHand.score() > dHand.score() &&
+		pHand.score() <= MaxScore ||
+		dHand.score() > MaxScore ||
+		pHand.isBlackjack() && !dHand.isBlackjack()
 }
 
 func parseCard(card rune) Card {
@@ -79,27 +96,4 @@ func parseHand(hand string) Hand {
 	}
 
 	return Hand{cards: cards}
-}
-
-func isBlackjack(hand Hand) bool {
-	return len(hand.cards) == 2 && handScore(hand) == MaxScore
-}
-
-func handScore(hand Hand) int {
-	var score int
-	var aces int
-	for _, card := range hand.cards {
-		score += int(card)
-
-		if card == Ace {
-			aces++
-		}
-	}
-
-	for score > MaxScore && aces > 0 {
-		score -= 10
-		aces--
-	}
-
-	return score
 }

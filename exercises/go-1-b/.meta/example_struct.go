@@ -24,14 +24,22 @@ type Hand struct {
 	cards []Card
 }
 
+func (h Hand) score() int {
+	var score int
+	for _, card := range h.cards {
+		score += int(card)
+	}
+	return score
+}
+
 // Determine if the player has a winning blackjack hand.
 func PlayerWins(playerHand string, dealerHand string) bool {
-	pScore := handScore(playerHand)
-	dScore := handScore(dealerHand)
+	pHand := parseHand(playerHand)
+	dHand := parseHand(dealerHand)
 
-	return pScore > dScore &&
-		pScore <= MaxScore ||
-		dScore > MaxScore
+	return pHand.score() > dHand.score() &&
+		pHand.score() <= MaxScore ||
+		dHand.score() > MaxScore
 }
 
 func parseCard(card rune) Card {
@@ -72,15 +80,4 @@ func parseHand(hand string) Hand {
 	}
 
 	return Hand{cards: cards}
-}
-
-func handScore(hand string) int {
-	pHand := parseHand(hand)
-
-	var score int
-	for _, card := range pHand.cards {
-		score += int(card)
-	}
-
-	return score
 }
