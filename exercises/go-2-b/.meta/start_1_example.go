@@ -42,6 +42,7 @@ func IsBlackjack(hand string) bool {
 	return HandScore(hand) == MaximumHandScore && len(hand) == 2
 }
 
+// Determine if the player has a winning blackjack hand.
 func PlayerWins(playerHand string, dealerHand string) bool {
 	playerHandScore := HandScore(playerHand)
 	dealerHandScore := HandScore(dealerHand)

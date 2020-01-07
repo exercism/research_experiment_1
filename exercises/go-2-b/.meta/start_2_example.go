@@ -91,6 +91,7 @@ func HandScore(hand Hand) int {
 	return score
 }
 
+// Determine if the player has a winning blackjack hand.
 func PlayerWins(playerHand string, dealerHand string) bool {
 	parsedPlayerHand := ParseHand(playerHand)
 	parsedDealerHand := ParseHand(dealerHand)
