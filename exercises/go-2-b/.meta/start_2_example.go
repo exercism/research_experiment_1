@@ -36,9 +36,9 @@ func PlayerWins(playerHand string, dealerHand string) bool {
 	dBlackjack := isBlackjack(dHand)
 
 	return pScore > dScore &&
-	pScore <= MaximumHandScore ||
-	dScore > MaximumHandScore ||
-	pBlackjack && !dBlackjack
+		pScore <= MaximumHandScore ||
+		dScore > MaximumHandScore ||
+		pBlackjack && !dBlackjack
 }
 
 func parseCard(card rune) Card {

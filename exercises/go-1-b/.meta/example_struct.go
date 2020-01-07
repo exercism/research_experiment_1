@@ -30,8 +30,8 @@ func PlayerWins(playerHand string, dealerHand string) bool {
 	dScore := handScore(dealerHand)
 
 	return pScore > dScore &&
-	pScore <= MaximumHandScore ||
-	dScore > MaximumHandScore
+		pScore <= MaximumHandScore ||
+		dScore > MaximumHandScore
 }
 
 func parseCard(card rune) Card {
