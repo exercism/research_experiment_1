@@ -4,7 +4,7 @@ This is Part 2 of our research into how people write Elm differently. This exerc
 
 ## Instructions
 
-Your task is to extend existing code with new functionality. The code you'll be working with has a function named `aggregateScorers`. This function takes a list of scorers for a football game, and aggregates any duplicates
+Your task is to extend existing code with new functionality. The code you'll be working with has a function named `aggregateScorers`. This function takes a list of scorers for a football game, and aggregates any duplicates.
 
 For example:
 
