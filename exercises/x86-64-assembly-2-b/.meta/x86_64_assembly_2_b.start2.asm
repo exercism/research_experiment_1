@@ -1,3 +1,5 @@
+%include "debug.asm"
+
 section .rodata
 red: db "RED", 0
 orange: db "ORANGE", 0

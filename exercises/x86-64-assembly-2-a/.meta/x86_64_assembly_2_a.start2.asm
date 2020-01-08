@@ -1,3 +1,5 @@
+%include "debug.asm"
+
 extern isalpha
 
 section .text
