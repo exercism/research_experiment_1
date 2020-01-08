@@ -38,7 +38,7 @@ color_name(buf, RED);
 // buf contains "RED"
 ```
 
-The user-provided buffer is passed in the `rdi` register, and the enum value in the `rsi` register.
+The user-provided buffer is passed into the function via the `rdi` register, and the enum value is passed into the function via the `rsi` register.
 
 ## Troubleshooting
 
