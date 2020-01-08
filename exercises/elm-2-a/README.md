@@ -24,4 +24,19 @@ aggregateScorers [ "Lisa 21", "Anna 34", "Lisa 76" ]
 
 Your task is to modify the `aggregateScorers` function to support this new format.
 
-You can use `String.toInt` to convert a string to an integer.
+## Elm Documentation
+
+In order to save time googling, some links to the elm documentation are here. This is designed to be a failry exhaustive list, as opposed to a list of things that any one solution will need
+
+- [Debug](https://package.elm-lang.org/packages/elm/core/latest/Debug)
+- [List](https://package.elm-lang.org/packages/elm/core/latest/List)
+- [Dict](https://package.elm-lang.org/packages/elm/core/latest/Dict)
+- [Set](https://package.elm-lang.org/packages/elm/core/latest/Set)
+- [Array](https://package.elm-lang.org/packages/elm/core/latest/Array)
+- [Maybe](https://package.elm-lang.org/packages/elm/core/latest/Maybe)
+- [String](https://package.elm-lang.org/packages/elm/core/latest/String)
+- [Tuple](https://package.elm-lang.org/packages/elm/core/latest/Tuple)
+- [Parser](https://package.elm-lang.org/packages/elm/parser/latest)
+- [Regular Expressions](9https://package.elm-lang.org/packages/elm/regex/latest/)
+- [Conditionals](https://elm-lang.org/docs/syntax#conditionals)
+- [Type Alias'](https://elm-lang.org/docs/syntax#type-aliases)
