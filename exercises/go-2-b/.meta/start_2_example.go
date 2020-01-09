@@ -2,35 +2,35 @@ package go2b
 
 const maxScore = 21
 
-type Card int
+type card int
 
 const (
-	Ace   Card = 11
-	King       = 10
-	Queen      = 10
-	Jack       = 10
-	Ten        = 10
-	Nine       = 9
-	Eight      = 8
-	Seven      = 7
-	Six        = 6
-	Five       = 5
-	Four       = 4
-	Three      = 3
-	Two        = 2
+	ace   card = 11
+	king  card = 10
+	queen card = 10
+	jack  card = 10
+	ten   card = 10
+	nine  card = 9
+	eight card = 8
+	seven card = 7
+	six   card = 6
+	five  card = 5
+	four  card = 4
+	three card = 3
+	two   card = 2
 )
 
-type Hand struct {
-	cards []Card
+type hand struct {
+	cards []card
 }
 
-func (h Hand) score() int {
+func (h hand) score() int {
 	var score int
 	var aces int
 	for _, card := range h.cards {
 		score += int(card)
 
-		if card == Ace {
+		if card == ace {
 			aces++
 		}
 	}
@@ -43,11 +43,11 @@ func (h Hand) score() int {
 	return score
 }
 
-func (h Hand) isBlackjack() bool {
+func (h hand) isBlackjack() bool {
 	return len(h.cards) == 2 && h.score() == maxScore
 }
 
-// Determine if the player has a winning blackjack hand.
+// PlayerWins determines if the player has a winning blackjack hand.
 func PlayerWins(playerHand string, dealerHand string) bool {
 	pHand := parseHand(playerHand)
 	dHand := parseHand(dealerHand)
@@ -58,42 +58,42 @@ func PlayerWins(playerHand string, dealerHand string) bool {
 		pHand.isBlackjack() && !dHand.isBlackjack()
 }
 
-func parseCard(card rune) Card {
+func parseCard(card rune) card {
 	switch card {
 	case 'A':
-		return Ace
+		return ace
 	case 'K':
-		return King
+		return king
 	case 'Q':
-		return Queen
+		return queen
 	case 'J':
-		return Jack
+		return jack
 	case 'X':
-		return Ten
+		return ten
 	case '9':
-		return Nine
+		return nine
 	case '8':
-		return Eight
+		return eight
 	case '7':
-		return Seven
+		return seven
 	case '6':
-		return Six
+		return six
 	case '5':
-		return Five
+		return five
 	case '4':
-		return Four
+		return four
 	case '3':
-		return Three
+		return three
 	}
 
-	return Two
+	return two
 }
 
-func parseHand(hand string) Hand {
-	var cards []Card
-	for _, card := range hand {
+func parseHand(h string) hand {
+	var cards []card
+	for _, card := range h {
 		cards = append(cards, parseCard(card))
 	}
 
-	return Hand{cards: cards}
+	return hand{cards: cards}
 }

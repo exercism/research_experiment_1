@@ -2,7 +2,7 @@ package go1b
 
 const maxScore = 21
 
-// Determine if the player has a winning blackjack hand.
+// PlayerWins determines if the player has a winning blackjack hand.
 func PlayerWins(playerHand string, dealerHand string) bool {
 	pScore := handScore(playerHand)
 	dScore := handScore(dealerHand)

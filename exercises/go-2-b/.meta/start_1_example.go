@@ -18,7 +18,7 @@ var cardValues = map[rune]int{
 	'2': 2,
 }
 
-// Determine if the player has a winning blackjack hand.
+// PlayerWins determines if the player has a winning blackjack hand.
 func PlayerWins(playerHand string, dealerHand string) bool {
 	pScore := handScore(playerHand)
 	dScore := handScore(dealerHand)
