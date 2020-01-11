@@ -80,6 +80,26 @@ If you would like to provide a custom message (rather than the default interpola
 }
 ```
 
+If it makes more sense for the track to describe how to run the equivalent manual test, rather than running the test case, `cmd` and `msg` can refer to how to do that, like with this example for the Bash track:
+
+```json
+{
+  "tests": [
+    {
+      "name": "no name given",
+      "cmd": "two_fer.sh",
+      "msg": "We tried running `two_fer.sh` without an argument, but got the following error:\n\n%{output}"
+    },
+    {
+      "name": "a name given",
+      "cmd": "two_fer.sh Alice",
+      "msg": "We tried running `two_fer.sh Alice`, but got the following error:\n\n%{output}"
+    }
+  ]
+}
+
+```
+
 ### Test order
 
 We only show one error message to a user when one or more tests fail. If multiple tests fail, we show the first test that is listed in the `tests` array of the `.meta/config.json`. It is therefore important to structure the `tests` array from easiest to hardest (simple cases first, edge cases last).
