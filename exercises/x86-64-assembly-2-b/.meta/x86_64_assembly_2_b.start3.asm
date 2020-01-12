@@ -10,20 +10,21 @@ indigo: db "INDIGO", 0
 violet: db "VIOLET", 0
 
 jump_table:
-dq label_red - jump_table
-dq label_orange - jump_table
-dq label_yellow - jump_table
-dq label_green - jump_table
-dq label_blue - jump_table
-dq label_indigo - jump_table
-dq label_violet - jump_table
+dd label_red - jump_table
+dd label_orange - jump_table
+dd label_yellow - jump_table
+dd label_green - jump_table
+dd label_blue - jump_table
+dd label_indigo - jump_table
+dd label_violet - jump_table
 
 section .text
 global color_name
 color_name:
     mov edi, edi
-    lea rax, [rel jump_table]
-    add rax, [rax + rdi * 8]
+    lea rdx, [rel jump_table]
+    movsx rax, dword [rdx + rdi * 4]
+    add rax, rdx
     jmp rax
 label_red:
     lea rax, [rel red]
