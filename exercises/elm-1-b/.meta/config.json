@@ -1,0 +1,17 @@
+{
+  "solution_files": ["src/Pizza.elm"],
+  "tests": [
+    {
+      "name": "retrieve single pizza",
+      "cmd": "retrieveMenu \"regina 11€\""
+    },
+    {
+      "name": "retrieve single vegetarian pizza",
+      "cmd": "retrieveMenu \"formaggio (v) 8€\""
+    },
+    {
+      "name": "retrieve multiple pizzas",
+      "cmd": "retrieveMenu \"formaggio (v) 8€, regina 11€\""
+    }
+  ]
+}
