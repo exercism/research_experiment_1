@@ -40,6 +40,38 @@
       "topics": []
     },
     {
+      "slug": "elm-1-a",
+      "uuid": "3c4508d5-50cb-43a6-9a52-df56651baafb",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "elm-1-b",
+      "uuid": "5bae8d76-7814-4c47-9352-f5a8f4387e31",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "go-1-a",
+      "uuid": "f5cf0015-1fb4-42f8-95a8-7a92e279ead6",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "go-1-b",
+      "uuid": "8b677f5e-a800-40af-a4fb-7a4b46baa200",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
       "slug": "javascript-1-a",
       "uuid": "8e917282-3504-43fc-82fb-060895177a3e",
       "core": false,
