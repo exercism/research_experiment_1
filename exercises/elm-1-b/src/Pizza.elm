@@ -10,4 +10,4 @@ type alias Pizza =
 
 retrieveMenu : String -> List Pizza
 retrieveMenu stringMenu =
-    Debug.todo "retrieveMenu"
+    Debug.todo "Please implement the `retrieveMenu` function"
