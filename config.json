@@ -56,6 +56,14 @@
       "topics": []
     },
     {
+      "slug": "elm-2-a",
+      "uuid": "a5400e06-75a8-477d-9af8-7ce569404df9",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
       "slug": "go-1-a",
       "uuid": "f5cf0015-1fb4-42f8-95a8-7a92e279ead6",
       "core": false,
@@ -72,6 +80,22 @@
       "topics": []
     },
     {
+      "slug": "go-2-a",
+      "uuid": "b8f67d5c-c44e-4c4f-90b7-5fad9cb8e29b",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "go-2-b",
+      "uuid": "f023d9c6-adf8-4158-8728-c6b97c411fe3",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
       "slug": "javascript-1-a",
       "uuid": "8e917282-3504-43fc-82fb-060895177a3e",
       "core": false,
@@ -80,36 +104,36 @@
       "topics": []
     },
     {
-        "slug": "python-1-a",
-        "uuid": "a1a32260-7a0f-4c97-9e47-3e0a0fbf1608",
-        "core": false,
-        "unlocked_by": null,
-        "difficulty": 1,
-        "topics": []
+      "slug": "python-1-a",
+      "uuid": "a1a32260-7a0f-4c97-9e47-3e0a0fbf1608",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
     },
     {
-        "slug": "python-1-b",
-        "uuid": "1bdeccdf-75a7-4338-b02f-14b4697d6729",
-        "core": false,
-        "unlocked_by": null,
-        "difficulty": 1,
-        "topics": []
+      "slug": "python-1-b",
+      "uuid": "1bdeccdf-75a7-4338-b02f-14b4697d6729",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
     },
     {
-        "slug": "python-2-a",
-        "uuid": "2c61fcd6-6c6f-43e0-a0df-516a78d093f8",
-        "core": false,
-        "unlocked_by": null,
-        "difficulty": 1,
-        "topics": []
+      "slug": "python-2-a",
+      "uuid": "2c61fcd6-6c6f-43e0-a0df-516a78d093f8",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
     },
     {
-        "slug": "python-2-b",
-        "uuid": "1f179b51-b553-4c73-96ca-a927ebd6a094",
-        "core": false,
-        "unlocked_by": null,
-        "difficulty": 1,
-        "topics": []
+      "slug": "python-2-b",
+      "uuid": "1f179b51-b553-4c73-96ca-a927ebd6a094",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
     },
     {
       "slug": "ruby-1-a",
