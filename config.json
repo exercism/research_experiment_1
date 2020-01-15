@@ -5,7 +5,7 @@
   "blurb": "",
   "ignore_pattern": "[Ee]xample",
   "solution_pattern": "[Ee]xample",
-  "test_pattern": "[Tt]est",
+  "test_pattern": "([Tt]est|[Ss]pec)",
   "exercises": [
     {
       "slug": "csharp-1-a",
