@@ -53,3 +53,4 @@ For example:
 assert_eq!(hands_match(&STANDARD, 12), 0);
 ```
 
+It is safe to assume that `clock.little.seconds` is a multiple of `clock.big.seconds`.

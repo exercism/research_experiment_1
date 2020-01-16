@@ -1,7 +1,7 @@
 pub struct Hand {
     pub name: &'static str, // for human-readable documentation only
     pub qty: u32,           // how many intervals appear on the clock face
-    pub seconds: u32,       // how many seconds are in this period of time
+    pub seconds: u64,       // how many seconds are in this period of time
 }
 
 pub struct Clock {
