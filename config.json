@@ -78,6 +78,14 @@
       "unlocked_by": null,
       "difficulty": 1,
       "topics": []
+    },
+    {
+      "slug": "rust-2-a",
+      "uuid": "92917559-d195-437f-a7ed-1857c57c6bf5",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
     }
   ]
 }
