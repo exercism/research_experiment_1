@@ -176,6 +176,14 @@
       "topics": []
     },
     {
+      "slug": "rust-2-a",
+      "uuid": "92917559-d195-437f-a7ed-1857c57c6bf5",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
       "slug": "x86-64-assembly-1-a",
       "uuid": "a24e25c8-94a6-4ef9-bc57-7e2f5127b0eb",
       "core": false,

@@ -1,0 +1,83 @@
+{
+    "solution_files": [
+        "src/lib.rs"
+    ],
+    "tests": [
+        {
+            "name": "test_std_01",
+            "cmd": "hands_match(&STANDARD, 01)"
+        },
+        {
+            "name": "test_std_02",
+            "cmd": "hands_match(&STANDARD, 02)"
+        },
+        {
+            "name": "test_std_03",
+            "cmd": "hands_match(&STANDARD, 03)"
+        },
+        {
+            "name": "test_std_04",
+            "cmd": "hands_match(&STANDARD, 04)"
+        },
+        {
+            "name": "test_std_05",
+            "cmd": "hands_match(&STANDARD, 05)"
+        },
+        {
+            "name": "test_std_06",
+            "cmd": "hands_match(&STANDARD, 06)"
+        },
+        {
+            "name": "test_std_07",
+            "cmd": "hands_match(&STANDARD, 07)"
+        },
+        {
+            "name": "test_std_08",
+            "cmd": "hands_match(&STANDARD, 08)"
+        },
+        {
+            "name": "test_std_09",
+            "cmd": "hands_match(&STANDARD, 09)"
+        },
+        {
+            "name": "test_std_10",
+            "cmd": "hands_match(&STANDARD, 10)"
+        },
+        {
+            "name": "test_std_11",
+            "cmd": "hands_match(&STANDARD, 11)"
+        },
+        {
+            "name": "test_std_12",
+            "cmd": "hands_match(&STANDARD, 12)"
+        },
+        {
+            "name": "test_24_01",
+            "cmd": "hands_match(&TWENTY_FOUR, 01)"
+        },
+        {
+            "name": "test_24_02",
+            "cmd": "hands_match(&TWENTY_FOUR, 02)"
+        },
+        {
+            "name": "test_24_03",
+            "cmd": "hands_match(&TWENTY_FOUR, 03)"
+        },
+        {
+            "name": "test_24_23",
+            "cmd": "hands_match(&TWENTY_FOUR, 23)"
+        },
+        {
+            "name": "test_long_1",
+            "cmd": "hands_match(&LONG_NOW, 1)"
+        },
+        {
+            "name": "test_long_5",
+            "cmd": "hands_match(&LONG_NOW, 5)"
+        },
+        {
+            "name": "test_long_9",
+            "cmd": "hands_match(&LONG_NOW, 9)"
+        }
+    ]
+}
