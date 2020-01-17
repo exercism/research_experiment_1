@@ -1,0 +1,25 @@
+{
+  "solution_files": ["src/AggregateScorers.elm"],
+  "tests": [
+    {
+      "name": "doesn't change a single scorer",
+      "cmd": "aggregateScorers [ \"Anna\" ]"
+    },
+    {
+      "name": "doesn't change multiple unique scorers",
+      "cmd": "aggregateScorers [ \"Anna\", \"Lisa\" ]"
+    },
+    {
+      "name": "converts duplicates into goals",
+      "cmd": "aggregateScorers [ \"Anna\", \"Anna\" ]"
+    },
+    {
+      "name": "orders alphabetically",
+      "cmd": "aggregateScorers [ \"Lisa\", \"Anna\" ]"
+    },
+    {
+      "name": "converts duplicates into goals and maintain single scorers",
+      "cmd": "aggregateScorers [ \"Lisa\", \"Anna\", \"Anna\" ]"
+    }
+  ]
+}

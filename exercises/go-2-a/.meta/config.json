@@ -1,0 +1,42 @@
+{
+  "solution_files": ["go_2_a.go"],
+  "test_file": "go_2_a_test.go",
+  "tests": [
+    {
+      "name": "TestTwelve",
+      "cmd": "Describe(12)"
+    },
+    {
+      "name": "TestTwenty",
+      "cmd": "Describe(20)"
+    },
+    {
+      "name": "TestOneHundredFourtyFour",
+      "cmd": "Describe(144)"
+    },
+    {
+      "name": "TestOne",
+      "cmd": "Describe(1)"
+    },
+    {
+      "name": "TestFourty",
+      "cmd": "Describe(40)"
+    },
+    {
+      "name": "TestSeventyTwo",
+      "cmd": "Describe(72)"
+    },
+    {
+      "name": "TestTwoHundredEightyEight",
+      "cmd": "Describe(288)"
+    },
+    {
+      "name": "TestSixtyFive",
+      "cmd": "Describe(65)"
+    },
+    {
+      "name": "TestThreeHunderedAndFourtyFive",
+      "cmd": "Describe(345)"
+    }
+  ]
+}

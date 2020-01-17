@@ -1,0 +1,38 @@
+{
+  "solution_files": ["x86_64_assembly_1_a.asm"],
+  "test_file": "x86_64_assembly_1_a_test.c",
+  "tests": [
+    {
+      "name": "test_empty_string",
+      "cmd": "str_isalpha(\"\")"
+    },
+    {
+      "name": "test_uppercase",
+      "cmd": "str_isalpha(\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\")"
+    },
+    {
+      "name": "test_uppercase_low_limit",
+      "cmd": "str_isalpha(\"@ABCDEFGHIJKLMNOPQRSTUVWXYZ\")"
+    },
+    {
+      "name": "test_uppercase_high_limit",
+      "cmd": "str_isalpha(\"ABCDEFGHIJKLMNOPQRSTUVWXYZ[\")"
+    },
+    {
+      "name": "test_lowercase",
+      "cmd": "str_isalpha(\"abcdefghijklmnopqrstuvwxyz\")"
+    },
+    {
+      "name": "test_lowercase_low_limit",
+      "cmd": "str_isalpha(\"`abcdefghijklmnopqrstuvwxyz\")"
+    },
+    {
+      "name": "test_lowercase_high_limit",
+      "cmd": "str_isalpha(\"abcdefghijklmnopqrstuvwxyz{\")"
+    },
+    {
+      "name": "test_letters",
+      "cmd": "str_isalpha(\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\")"
+    }
+  ]
+}

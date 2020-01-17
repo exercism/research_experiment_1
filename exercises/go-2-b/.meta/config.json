@@ -1,0 +1,46 @@
+{
+  "solution_files": ["go_2_b.go"],
+  "test_file": "go_2_b_test.go",
+  "tests": [
+    {
+      "name": "TestNumericWin",
+      "cmd": "PlayerWins(\"279\", \"368\")"
+    },
+    {
+      "name": "TestBlackjackWin",
+      "cmd": "PlayerWins(\"JA\", \"J8\")"
+    },
+    {
+      "name": "TestDrawLoss",
+      "cmd": "PlayerWins(\"27Q\", \"K9\")"
+    },
+    {
+      "name": "TestBustLoss",
+      "cmd": "PlayerWins(\"K67\", \"J8\")"
+    },
+    {
+      "name": "TestBustWin",
+      "cmd": "PlayerWins(\"8432\", \"J8K\")"
+    },
+    {
+      "name": "TestAceAsElevenWin",
+      "cmd": "PlayerWins(\"7A\", \"K7\")"
+    },
+    {
+      "name": "TestBlackjackDrawWin",
+      "cmd": "PlayerWins(\"AQ\", \"K92\")"
+    },
+    {
+      "name": "TestBlackjackDrawLoss",
+      "cmd": "PlayerWins(\"KA\", \"AX\")"
+    }
+    {
+      "name": "TestAceAsOneWin",
+      "cmd": "PlayerWins(\"89A\", \"97\")"
+    },
+    {
+      "name": "TestAceAsOneAndAceAsElevenWin",
+      "cmd": "PlayerWins(\"AA8\", \"Q9\")"
+    }
+  ]
+}

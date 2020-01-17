@@ -1,0 +1,62 @@
+{
+  "solution_files": ["Csharp2B.cs"],
+  "test_file": "Csharp2BTest.cs",
+  "tests": [
+    {
+      "name": "StoreTest.OnlyEmptyQueueIsQueue1",
+      "cmd": "Store.QueueWithMinimalWaitingTime(customersInQueue1: 0, customersInQueue2: 1, customersInQueue3: 2)"
+    },
+    {
+      "name": "StoreTest.OnlyEmptyQueueIsQueue2",
+      "cmd": "Store.QueueWithMinimalWaitingTime(customersInQueue1: 3, customersInQueue2: 0, customersInQueue3: 2)"
+    },
+    {
+      "name": "StoreTest.OnlyEmptyQueueIsQueue3",
+      "cmd": "Store.QueueWithMinimalWaitingTime(customersInQueue1: 1, customersInQueue2: 1, customersInQueue3: 0)"
+    },
+    {
+      "name": "StoreTest.AllQueuesHaveSameNumberOfCustomersInQueue",
+      "cmd": "Store.QueueWithMinimalWaitingTime(customersInQueue1: 5, customersInQueue2: 5, customersInQueue3: 5)"
+    },
+    {
+      "name": "StoreTest.NonEmptyQueuesWithFastestQueueHasMinimalWaitingTime",
+      "cmd": "Store.QueueWithMinimalWaitingTime(customersInQueue1: 2, customersInQueue2: 5, customersInQueue3: 4)"
+    },
+    {
+      "name": "StoreTest.NonEmptyQueuesWithMiddleQueueHasMinimalWaitingTime",
+      "cmd": "Store.QueueWithMinimalWaitingTime(customersInQueue1: 1, customersInQueue2: 2, customersInQueue3: 6)"
+    },
+    {
+      "name": "StoreTest.NonEmptyQueuesWithSlowestQueueHasMinimalWaitingTime",
+      "cmd": "Store.QueueWithMinimalWaitingTime(customersInQueue1: 2, customersInQueue2: 6, customersInQueue3: 11)"
+    },
+    {
+      "name": "StoreTest.EmptyQueuesDontRequireExtraTills",
+      "cmd": "Store.ExtraTillsToOpen(customersInQueue1: 0, customersInQueue2: 0, customersInQueue3: 0)"
+    },
+    {
+      "name": "StoreTest.OneQueueExactlyMatchingMaximumWaitingTimeDoesntRequireExtraTills",
+      "cmd": "Store.ExtraTillsToOpen(customersInQueue1: 2, customersInQueue2: 2, customersInQueue3: 2)"
+    },
+    {
+      "name": "StoreTest.OneQueueExactlyMatchingMaximumWaitingTimeRequiresOneExtraTill",
+      "cmd": "Store.ExtraTillsToOpen(customersInQueue1: 5, customersInQueue2: 1, customersInQueue3: 5)"
+    },
+    {
+      "name": "StoreTest.OneQueueExactlyMatchingMaximumCapacityDoesntRequireExtraTills",
+      "cmd": "Store.ExtraTillsToOpen(customersInQueue1: 1, customersInQueue2: 1, customersInQueue3: 6)"
+    },
+    {
+      "name": "StoreTest.MultipleQueuesExceedMaximumCapacityRequiresOneExtraTill",
+      "cmd": "Store.ExtraTillsToOpen(customersInQueue1: 5, customersInQueue2: 7, customersInQueue3: 0)"
+    },
+    {
+      "name": "StoreTest.MultipleQueuesExceedMaximumCapacityRequireTwoExtraTills",
+      "cmd": "Store.ExtraTillsToOpen(customersInQueue1: 9, customersInQueue2: 7, customersInQueue3: 8)"
+    },
+    {
+      "name": "StoreTest.MultipleQueuesExceedMaximumWaitingTimeRequireTwoExtraTills",
+      "cmd": "Store.ExtraTillsToOpen(customersInQueue1: 5, customersInQueue2: 1, customersInQueue3: 5)"
+    }
+  ]
+}

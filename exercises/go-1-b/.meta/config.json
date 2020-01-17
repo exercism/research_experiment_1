@@ -1,0 +1,30 @@
+{
+  "solution_files": ["go_1_b.go"],
+  "test_file": "go_1_b_test.go",
+  "tests": [
+    {
+      "name": "TestNumericWin",
+      "cmd": "PlayerWins(\"279\", \"368\")"
+    },
+    {
+      "name": "TestBlackjackWin",
+      "cmd": "PlayerWins(\"JA\", \"J8\")"
+    },
+    {
+      "name": "TestDrawLoss",
+      "cmd": "PlayerWins(\"27Q\", \"K9\")"
+    },
+    {
+      "name": "TestBustLoss",
+      "cmd": "PlayerWins(\"K67\", \"J8\")"
+    },
+    {
+      "name": "TestBustWin",
+      "cmd": "PlayerWins(\"8432\", \"J8K\")"
+    },
+    {
+      "name": "TestAceAsElevenWin",
+      "cmd": "PlayerWins(\"7A\", \"K7\")"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "solution_files": ["Csharp2A.cs"],
+  "test_file": "Csharp2ATest.cs",
+  "tests": [
+    {
+      "name": "SentenceTest.OneWordWithOneVowel",
+      "cmd": "Sentence.WordWithMostVowels(\"a\")"
+    },
+    {
+      "name": "SentenceTest.OneWordWithOneVowelAndOneConsonant",
+      "cmd": "Sentence.WordWithMostVowels(\"at\")"
+    },
+    {
+      "name": "SentenceTest.OneWordWithTwoVowelsAndOneConsonant",
+      "cmd": "Sentence.WordWithMostVowels(\"tea\")"
+    },
+    {
+      "name": "SentenceTest.LongestWordIsNotWordWithMostVowels",
+      "cmd": "Sentence.WordWithMostVowels(\"the area of a circle\")"
+    },
+    {
+      "name": "SentenceTest.LastWordIsWordWithMostVowels",
+      "cmd": "Sentence.WordWithMostVowels(\"extremely fresh vegetables\")"
+    },
+    {
+      "name": "SentenceTest.MixedCasing",
+      "cmd": "Sentence.WordWithMostVowels(\"TEST YOUR MIGHT\")"
+    },
+    {
+      "name": "SentenceTest.IgnoreWordWithoutVowels",
+      "cmd": "Sentence.WordWithMostVowels(\"great rhythm\")"
+    },
+    {
+      "name": "SentenceTest.TieBreakerWithEquallyLongWords",
+      "cmd": "Sentence.WordWithMostVowels(\"her old dad\")"
+    },
+    {
+      "name": "SentenceTest.TieBreakerWithFirstWordBeingWinner",
+      "cmd": "Sentence.WordWithMostVowels(\"evening Aeon multiple\")"
+    },
+    {
+      "name": "SentenceTest.TieBreakerWithLastWordBeingWinner",
+      "cmd": "Sentence.WordWithMostVowels(\"a bear was seen on the plains\")"
+    }
+  ]
+}
