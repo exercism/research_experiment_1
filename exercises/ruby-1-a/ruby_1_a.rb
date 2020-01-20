@@ -1,3 +1,13 @@
-def word_with_most_vowels(sentence)
-  # Start your code here.
+class ShoppingCart
+  def initialize(items)
+    # Start your code here.
+  end
+
+  def total_amount
+    # Start your code here.
+  end
+
+  def items_list
+    # Start your code here.
+  end
 end

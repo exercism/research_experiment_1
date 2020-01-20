@@ -1,11 +1,17 @@
-VOWELS = %w{a e i o u}
-def word_with_most_vowels(sentence)
-  words = sentence.split(" ")
-  word_vowels = words.map do |word|
-    [
-      word,
-      word.downcase.chars.select{|l|VOWELS.include?(l)}.count
-    ]
+class ShoppingCart
+  def initialize(items = {})
+    @items = items
   end
-  word_vowels.sort_by {|w,c| -c}.first.first
+
+  def total_amount
+    items.sum(0) { |key, value| value }
+  end
+
+  def items_list
+    items.keys.join(', ')
+  end
+
+  private
+
+  attr_reader :items
 end
