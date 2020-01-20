@@ -12,4 +12,4 @@ We provide a stub with this signature:
 pub fn disemvowel(s: &str) -> String
 ```
 
-Note: in Rust, regular expressions are implemented in an [external crate](https://crates.io/crates/regex), not part of the standard library. As such, they are not available for this exercise.
+Note: in Rust, regular expressions are implemented in an [external crate](https://crates.io/crates/regex), and are thus not part of the standard library. As such, they are not available for this exercise.
