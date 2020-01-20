@@ -1,0 +1,27 @@
+{
+    "solution_files": [
+        "src/lib.rs"
+    ],
+    "tests": [
+        {
+            "name": "test_disemvowel",
+            "cmd": "test_disemvowel(\"disemvowel\");"
+        },
+        {
+            "name": "test_alphabet",
+            "cmd": "test_alphabet(\"abcdefghijklmnopqrstuvwxyz\");"
+        },
+        {
+            "name": "test_uppercase",
+            "cmd": "test_uppercase(\"A HORRIBLE HATEFUL MESSAGE FROM A TROLL\");"
+        },
+        {
+            "name": "test_description",
+            "cmd": "test_description(\"This technique, called _disemvowelment_, is often employed to reduce the effectiveness of troll messages in online fora.\");"
+        },
+        {
+            "name": "test_non_ascii",
+            "cmd": "test_non_ascii(\"「Disemvowelment」はASCII文字に対してのみ有効です。\");"
+        }
+    ]
+}
