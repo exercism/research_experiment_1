@@ -4,7 +4,7 @@ This is Part 1 of our research into how people write Ruby differently. This exer
 
 ## Instructions
 
-Your task is to define a `ShoppingCart` class that can receive a hash of items where the key is the name of the item and the value the price of the item, see the example below. The `ShoppingCart` class will also have two methods: `total_amount` and `items_list`. The method `total_amount` will return the sum of all the items’ prices. The method `list` will return a string with the name of the items separated by commas.
+Your task is to develop a shopping cart that will allow us to calculate the cart's full price as well as obtain a list of the items that are going to be purchased. This will be modelled as `ShoppingCart` class that can receive a hash of items where the key is the name of the item and the value the price of the item, see the example below. The `ShoppingCart` class will also have two methods: `total_amount` and `items_list`. The method `total_amount` will return the sum of all the items’ prices. The method `items_list` will return a string with the name of the items separated by commas.
 
 For example:
 
