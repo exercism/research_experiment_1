@@ -4,7 +4,7 @@ class ShoppingCart
   end
 
   def total_amount
-    items.sum(0) { |key, value| value }
+    items.sum(0) { |_item, cost| cost }
   end
 
   def items_list
