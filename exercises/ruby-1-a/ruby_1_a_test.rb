@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'minitest/autorun'
 require_relative 'ruby_1_a'
 
@@ -48,5 +50,4 @@ class ShoppintCartTest < Minitest::Test
     cart.add(:B48C0D)
     assert_equal 'Newspaper, Rice', cart.items_list
   end
-
 end

@@ -1,17 +1,19 @@
+# frozen_string_literal: true
+
 class ShoppingCart < Hash
   StockItem = Struct.new(:name, :price) do
   end
 
   STOCK = {
-    D69856: StockItem.new("Potatoes", 10.0),
-    F55690: StockItem.new("Rice", 30.00),
-    C662F6: StockItem.new("Coffee", 14.99),
-    B48C0D: StockItem.new("Newspaper", 2.99)
-  }
+    D69856: StockItem.new('Potatoes', 10.0),
+    F55690: StockItem.new('Rice', 30.00),
+    C662F6: StockItem.new('Coffee', 14.99),
+    B48C0D: StockItem.new('Newspaper', 2.99)
+  }.freeze
 
   attr_reader :contents, :stock
   def initialize
-    super {|h,k|h[k] = 0}
+    super { |h, k| h[k] = 0 }
   end
 
   def add(sku)
@@ -19,12 +21,10 @@ class ShoppingCart < Hash
   end
 
   def total_amount
-    sum {|sku, quantity| STOCK[sku].price * quantity }.round(2)
+    sum { |sku, quantity| STOCK[sku].price * quantity }.round(2)
   end
 
   def items_list
-    keys.map{|sku| STOCK[sku].name}.
-         sort.
-         join(", ")
+    keys.map { |sku| STOCK[sku].name }.sort.join(', ')
   end
 end
