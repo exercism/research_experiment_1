@@ -3,7 +3,7 @@ require_relative 'ruby_1_a'
 
 class ShoppintCartTest < Minitest::Test
   def test_initial_total_amount
-    assert_equal 0, SShoppingCart.new.total_amounthoppingCart.new.total_amount
+    assert_equal 0, ShoppingCart.new.total_amount
   end
 
   def test_one_item
