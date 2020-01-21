@@ -8,12 +8,12 @@ Your task is to define a shopping cart for a corner shop. The cart should keep t
 
 Items are added to the basket using stock-keeping unit (SKU) codes. The items in the shop are:
 
-| Name | Price | SKU  |
-|---|---|---|---|---|
-| Potatoes | 10 | D69856 |
-| Rice | 30 | F55690 |
-| Coffee | 14.99 | C662F6 |
-| Newspaper | 2.99 | B48C0D |
+| Name      | Price | SKU    |
+|-----------|-------|--------|
+| Potatoes  | 10    | D69856 |
+| Rice      | 30    | F55690 |
+| Cofee     | 14.99 | C662F6 |
+| Newspaper | 2.99  | B48C0D |
 
 You need to define a `ShoppingCart` class, with three public methods:
 - `add`: Takes an SKU, and adds it to the cart
