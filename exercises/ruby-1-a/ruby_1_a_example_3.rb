@@ -1,17 +1,17 @@
 # frozen_string_literal: true
 
 class ShoppingCart < Hash
-  StockItem = Struct.new(:name, :price) do
-  end
+  StockItem = Struct.new(:name, :price)
 
   STOCK = {
-    D69856: StockItem.new('Potatoes', 10.0),
-    F55690: StockItem.new('Rice', 30.00),
-    C662F6: StockItem.new('Coffee', 14.99),
-    B48C0D: StockItem.new('Newspaper', 2.99)
+    STAPOT: StockItem.new('Potatoes', 10.0),
+    STARIC: StockItem.new('Rice', 30.00),
+    STACOF: StockItem.new('Coffee', 14.99),
+    MEDNEW: StockItem.new('Newspaper', 2.99)
   }.freeze
 
   attr_reader :contents, :stock
+
   def initialize
     super { |h, k| h[k] = 0 }
   end

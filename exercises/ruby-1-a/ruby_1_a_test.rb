@@ -10,44 +10,44 @@ class ShoppintCartTest < Minitest::Test
 
   def test_one_item
     cart = ShoppingCart.new
-    cart.add(:D69856)
+    cart.add(:STAPOT)
     assert_equal 10, cart.total_amount
   end
 
   def test_two_items
     cart = ShoppingCart.new
-    cart.add(:F55690)
-    cart.add(:D69856)
+    cart.add(:STAPOT)
+    cart.add(:STARIC)
     assert_equal 40, cart.total_amount
   end
 
   def test_list_items
     cart = ShoppingCart.new
-    cart.add(:D69856)
-    cart.add(:F55690)
+    cart.add(:STARIC)
+    cart.add(:STAPOT)
     assert_equal 'Potatoes, Rice', cart.items_list
   end
 
   def test_items_ordered_alphabetically
     cart = ShoppingCart.new
-    cart.add(:F55690)
-    cart.add(:D69856)
+    cart.add(:STAPOT)
+    cart.add(:STARIC)
     assert_equal 'Potatoes, Rice', cart.items_list
   end
 
   def test_duplicate_items_sums_price
     cart = ShoppingCart.new
-    cart.add(:F55690)
-    cart.add(:C662F6)
-    cart.add(:C662F6)
+    cart.add(:STARIC)
+    cart.add(:STACOF)
+    cart.add(:STACOF)
     assert_equal 59.98, cart.total_amount
   end
 
   def test_duplicate_items_uniqs_list
     cart = ShoppingCart.new
-    cart.add(:F55690)
-    cart.add(:B48C0D)
-    cart.add(:B48C0D)
+    cart.add(:STARIC)
+    cart.add(:MEDNEW)
+    cart.add(:MEDNEW)
     assert_equal 'Newspaper, Rice', cart.items_list
   end
 end

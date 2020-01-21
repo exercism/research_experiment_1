@@ -2,10 +2,10 @@
 
 class ShoppingCart
   STOCK = {
-    D69856: ['Potatoes', 10.0],
-    F55690: ['Rice', 30.00],
-    C662F6: ['Coffee', 14.99],
-    B48C0D: ['Newspaper', 2.99]
+    STAPOT: ['Potatoes', 10.0],
+    STARIC: ['Rice', 30.00],
+    STACOF: ['Coffee', 14.99],
+    MEDNEW: ['Newspaper', 2.99]
   }.freeze
 
   def initialize
