@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'ruby_1_a_example_3'
+require_relative 'ruby_1_a'
 
 class ShoppintCartTest < Minitest::Test
   def test_initial_total_amount
