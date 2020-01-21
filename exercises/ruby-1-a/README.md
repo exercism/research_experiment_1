@@ -4,18 +4,34 @@ This is Part 1 of our research into how people write Ruby differently. This exer
 
 ## Instructions
 
-Your task is to define a `ShoppingCart` class that can receive a hash of items where the key is the name of the item and the value the price of the item, see the example below. The `ShoppingCart` class will also have two methods: `total_amount` and `items_list`. The method `total_amount` will return the sum of all the items’ prices. The method `list` will return a string with the name of the items separated by commas.
+Your task is to define a shopping cart for a corner shop. The cart should keep track of the list of items added, and correctly calculate the price.
+
+Items are added to the basket using stock-keeping unit (SKU) codes. The items in the shop are:
+
+| Name | Price | SKU  |
+|---|---|---|---|---|
+| Potatoes | 10 | D69856 |
+| Rice | 30 | F55690 |
+| Coffee | 14.99 | C662F6 |
+| Newspaper | 2.99 | B48C0D |
+
+You need to define a `ShoppingCart` class, with three public methods:
+- `add`: Takes an SKU, and adds it to the cart
+- `total_amount`: The value of the items in the cart as a number with two decimal places (e.g. 3.99)
+- `items_list`: A list of the names of the items in the cart, separated by commas.
 
 For example:
 
 ```ruby
-shopping_cart = ShoppingCart.new({ potatoes: 10.00, bananas: 30.00 })
+shopping_cart = ShoppingCart.new
+shopping_cart.add(D69856)
+shopping_cart.add(F55690)
 
 shopping_cart.total_amount
 // Returns: 40
 
 shopping_cart.items_list
-// Returns: "potatoes, bananas"
+// Returns: "potatoes, rice"
 ```
 
 **Note:** You can use `debug("some test")` to output debugging information for yourself.
