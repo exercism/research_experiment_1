@@ -1,13 +1,13 @@
 class ShoppingCart
   def initialize(items)
-    # Start your code here.
+    fail NotImplementedError.new('Please implement the ShoppingCart initializer')
   end
 
   def total_amount
-    # Start your code here.
+    fail NotImplementedError.new('Please implement the ShoppingCart#total_amount method')
   end
 
   def items_list
-    # Start your code here.
+    fail NotImplementedError.new('Please implement the ShoppingCart#items_list method')
   end
 end
