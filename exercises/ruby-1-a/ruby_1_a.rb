@@ -1,10 +1,6 @@
 # frozen_string_literal: true
 
 class ShoppingCart
-  def initialize
-    raise NotImplementedError, 'Please implement the ShoppingCart#initialize method'
-  end
-
   def add(sku)
     raise NotImplementedError, 'Please implement the ShoppingCart#add method'
   end
