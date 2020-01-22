@@ -24,8 +24,8 @@ For example:
 
 ```ruby
 shopping_cart = ShoppingCart.new
-shopping_cart.add(D69856)
-shopping_cart.add(F55690)
+shopping_cart.add(STAPOT)
+shopping_cart.add(STARIC)
 
 shopping_cart.total_amount
 // Returns: 40
