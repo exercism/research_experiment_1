@@ -8,27 +8,27 @@
     },
     {
       "name": "test_initial_total_amount",
-      "cmd": "ShoppingCart.new.add(:D69856).total_amount"
+      "cmd": "ShoppingCart.new.add(:STAPOT).total_amount"
     },
     {
       "name": "test_two_items",
-      "cmd": "ShoppingCart.new.add(:D69856).add(:F55690).total_amount"
+      "cmd": "ShoppingCart.new.add(:STAPOT).add(:STARIC).total_amount"
     },
     {
       "name": "test_list_items",
-      "cmd": "ShoppingCart.new.add(:D69856).add(:F55690).list_items"
+      "cmd": "ShoppingCart.new.add(:STAPOT).add(:STARIC).list_items"
     },
     {
       "name": "test_items_ordered_alphabetically",
-      "cmd": "ShoppingCart.new.add(:F55690).add(:D69856).list_items"
+      "cmd": "ShoppingCart.new.add(:STARIC).add(:STAPOT).list_items"
     },
     {
       "name": "test_duplicate_items_sums_price",
-      "cmd": "ShoppingCart.new.add(:F55690).add(:F55690).list_items"
+      "cmd": "ShoppingCart.new.add(:STARIC).add(:STARIC).list_items"
     },
     {
       "name": "test_duplicate_items_uniqs_list",
-      "cmd": "ShoppingCart.new.add(:F55690).add(:F55690).list_items"
+      "cmd": "ShoppingCart.new.add(:STARIC).add(:STARIC).list_items"
     }
   ]
 }
