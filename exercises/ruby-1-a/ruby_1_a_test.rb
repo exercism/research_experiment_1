@@ -30,8 +30,8 @@ class ShoppintCartTest < Minitest::Test
 
   def test_items_ordered_alphabetically
     cart = ShoppingCart.new
-    cart.add(:STAPOT)
     cart.add(:STARIC)
+    cart.add(:STAPOT)
     assert_equal 'Potatoes, Rice', cart.items_list
   end
 
