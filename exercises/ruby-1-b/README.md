@@ -11,7 +11,7 @@ the problem as this will negatively affect the research.
 
 You are given a collection of library books, and your job is to import them into
 the library's catalog system. The books are in a text file which provides a title,
-ISBN, author, and publishing date for each book.
+ISBN, author, and publishing year for each book.
 
 Write the methods that will import the data for the books from the text file to
 the library's catalog system.
