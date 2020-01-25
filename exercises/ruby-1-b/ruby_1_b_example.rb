@@ -1,11 +1,12 @@
 class Library
+  BOOKS_FILE = "books.txt".freeze
+
   def self.books
     @books ||= import_books
   end
 
   def self.import_books
-    file_name = "books.txt"
-    IO.readlines(file_name, chomp: true).drop(1)
+    IO.readlines(BOOKS_FILE, chomp: true).drop(1)
       .map { |line| line.split(";") }
       .map { |fields| Book.new(*fields) }
   end
