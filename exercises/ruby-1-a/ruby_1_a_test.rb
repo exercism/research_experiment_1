@@ -23,8 +23,8 @@ class ShoppintCartTest < Minitest::Test
 
   def test_list_items
     cart = ShoppingCart.new
-    cart.add(:STARIC)
     cart.add(:STAPOT)
+    cart.add(:STARIC)
     assert_equal 'Potatoes, Rice', cart.items_list
   end
 
