@@ -29,6 +29,6 @@ func TestAceAsElevenWin(t *testing.T) {
 func AssertPlayerWins(t *testing.T, playerHand string, dealerHand string, expected bool) {
 	actual := PlayerWins(playerHand, dealerHand)
 	if actual != expected {
-		t.Errorf("PlayerWins(%q, %q) = %t, expected %t.", playerHand, dealerHand, actual, expected)
+		t.Errorf("PlayerWins(%q, %q)\n   got: %t\n  want: %t.", playerHand, dealerHand, actual, expected)
 	}
 }
