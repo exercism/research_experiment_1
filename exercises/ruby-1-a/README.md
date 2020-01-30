@@ -16,7 +16,7 @@ Items are added to the basket using stock-keeping unit (SKU) codes. The items in
 | Newspaper | 2.99  | MEDNEW |
 
 You need to define a `ShoppingCart` class, with three public methods:
-- `add`: Takes an SKU and adds it to the cart. The SKU is comprised of the first three upcased chars of the product type + the first three upcased chars of the product name.
+- `add`: Takes a SKU and adds it to the cart. The SKU is comprised of the first three upcased chars of the product type + the first three upcased chars of the product name.
 - `total_amount`: The value of the items in the cart as a number with two decimal places (e.g. 3.99).
 - `items_list`: A list of the names of the items in the cart, ordered alphabetically, separated by a comma and a space.
 
