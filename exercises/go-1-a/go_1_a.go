@@ -1,6 +1,6 @@
 package go1a
 
-// Describe takes an amount and returns a description.
-func Describe(amount int) string {
+// Describe provides an assortment of human-readable representation of numbers.
+func Describe(number int) string {
 	panic("Please implement the Describe function")
 }

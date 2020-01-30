@@ -4,7 +4,7 @@ This is Part 1 of our research into how people write Go differently. This exerci
 
 ## Instructions
 
-Your task is to define a function with the signature `Describe`, which takes a number and returns the possible descriptions of that number as a string. Besides the obvious literal representation of a number (`1` being written as `"1"`), the following units are also supported:
+Your task is to define a function named `Describe`, which takes an integer and returns the possible descriptions of that number as a string. Besides the obvious literal representation of a number (`1` being written as `"1"`), the following units are also supported:
 
 - `144` is a `"gross"`
 - `20` is a `"score"`
