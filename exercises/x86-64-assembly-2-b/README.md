@@ -1,6 +1,6 @@
 ## Introduction
 
-This is Part 2 of our research into how people write x86-64 assembly differently. This exercise should take 10-15 minutes for a programmer who is proficient in x86-64 assembly. There is no right or wrong way to approach it - just do what feels the most natural to you. Feel free to use books, Google or Stack Overflow, just like you would if you were programming normally, but please don't actively look for a solution to the problem as this will negatively affect the research.
+This is Part 2 of our research into how people write x86-64 Assembly differently. This exercise should take 10-15 minutes for a programmer who is proficient in x86-64 Assembly. There is no right or wrong way to approach it - just do what feels the most natural to you. Feel free to use books, Google or Stack Overflow, just like you would if you were programming normally, but please don't actively look for a solution to the problem as this will negatively affect the research.
 
 ## Instructions
 
