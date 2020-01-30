@@ -4,9 +4,9 @@ This is Part 1 of our research into how people write Rust in varying styles. Thi
 
 ## Instructions
 
-Your task is to find the moment when a clock's hands are perfectly aligned for a given hour. Given a standard 12-hour clock with hands which sweep continuously through time, there exists some second in each hour in which the hands are best lined up with each other. 
+Your task is to find the moment when a clock's hands are perfectly aligned for a given hour. Given a standard 12-hour clock, with hour and minute hands which sweep continuously through time, there exists some second in each hour in which the hands are best lined up with each other.
 
-We provide a method with the signature:
+We provide a stub method with the signature:
 
 ```rust
 fn hands_match(hour: u8) -> u32

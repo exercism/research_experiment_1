@@ -4,9 +4,9 @@ This is Part 1 of our research into how people write Rust in varying styles. Thi
 
 ## Instructions
 
-Your task is to remove all vowels from a string. This technique, called _disemvowelment_, is often employed to reduce the effectiveness of troll messages in online fora; it is an intermediate step of lesser consequence than removing the message outright. 
+Your task is to remove all vowels from a string. This technique, called _disemvowelment_, is often employed to reduce the effectiveness of troll messages in online fora; it is an intermediate step of lesser consequence than removing the message outright.
 
-We provide a stub with this signature:
+We provide a stub method with this signature:
 
 ```rust
 pub fn disemvowel(s: &str) -> String

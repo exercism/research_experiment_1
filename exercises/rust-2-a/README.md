@@ -4,7 +4,7 @@ This is Part 2 of our research into how people write Rust in varying styles. Thi
 
 ## Instructions
 
-Your task is to extend existing code with new functionality. The code you'll be working with has a function named `hands_match`, which finds the moment when a clock's hands are perfectly aligned for a given hour, on a standard, 12-hour clock. 
+Your task is to extend existing code with new functionality. The code you'll be working with has a function named `hands_match`, which finds the moment when a clock's hour and minute hands are perfectly aligned for a given hour, on a standard, 12-hour clock.
 
 ```rust
 fn hands_match(clock: &Clock, big_hand: u32) -> u64
@@ -28,6 +28,7 @@ const STANDARD: Clock = Clock {
     },
 }
 ```
+
 The output must be the number of seconds after the previous big hand interval at which the hands line up.
 
 For example:

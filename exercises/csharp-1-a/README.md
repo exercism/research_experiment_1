@@ -6,7 +6,7 @@ This is Part 1 of our research into how people write C# differently. This exerci
 
 Your task is to determine which word in a sentence has the most vowels (a, e, i, o, u). A sentence is defined as a [C# string][docs-string] consisting of one or more words. A word consists of one or more upper- or lowercase letters. Words are separated from each other by a single space character.
 
-Your job is to define a method with the signature `Sentence.WordWithMostVowels`, which takes a sentence, and returns the word with the most vowels.
+Your job is to define a method named `Sentence.WordWithMostVowels`, which takes a sentence, and returns the word with the most vowels.
 
 For example:
 
