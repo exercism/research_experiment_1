@@ -12,7 +12,7 @@ For example:
 
 ```python
 >>> compress("abbcccddddaaaaaa")
-b'\x01a\x02b\x03c\x04d\x05a'
+b'\x01a\x02b\x03c\x04d\x06a'
 ```
 
 [str]: https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str
