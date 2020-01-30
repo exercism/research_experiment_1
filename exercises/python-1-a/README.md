@@ -11,7 +11,7 @@ We expect you to define a function `compress` that takes a single argument which
 For example:
 
 ```python
->>> encode("abbcccddddaaaaaa")
+>>> compress("abbcccddddaaaaaa")
 b'\x01a\x02b\x03c\x04d\x05a'
 ```
 
