@@ -4,7 +4,7 @@ This is Part 1 of our research into how people write x86-64 Assembly differently
 
 ## Instructions
 
-Your job is to define a function with the signature `color_name`, which takes an enum value, and returns the name of the constant in the enumeration that has the specified value.
+Your job is to define a function named `color_name`, which takes an enum value, and returns the name of the constant in the enumeration that has the specified value.
 
 For example:
 
