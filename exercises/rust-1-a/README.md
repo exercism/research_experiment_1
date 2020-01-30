@@ -20,3 +20,9 @@ For example:
 // the clock's hands align at noon and midnight precisely
 assert_eq!(hands_match(12), 0);
 ```
+
+## Troubleshooting
+
+When a test fails, a message is displaying what went wrong and for which input. Also, anything written to standard out is captured and will be displayed for failing tests as well. For passing tests, this data is suppressed for concision.
+
+For debugging, the [`dbg!` macro](https://doc.rust-lang.org/std/macro.dbg.html) is the most useful way to report internal status information to standard out, but you can also use the [`println!` macro](https://doc.rust-lang.org/std/macro.println.html) to report arbitrary formatted data.
