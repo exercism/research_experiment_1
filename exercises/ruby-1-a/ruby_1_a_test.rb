@@ -3,7 +3,7 @@
 require 'minitest/autorun'
 require_relative 'ruby_1_a'
 
-class ShoppintCartTest < Minitest::Test
+class ShoppingCartTest < Minitest::Test
   def test_initial_total_amount
     assert_equal 0.00, ShoppingCart.new.total_amount
   end
