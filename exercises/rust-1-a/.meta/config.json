@@ -1,55 +1,65 @@
 {
-    "solution_files": [
-        "src/lib.rs"
-    ],
-    "tests": [
-        {
-            "name": "test_01",
-            "cmd": "hands_match(01)"
-        },
-        {
-            "name": "test_02",
-            "cmd": "hands_match(02)"
-        },
-        {
-            "name": "test_03",
-            "cmd": "hands_match(03)"
-        },
-        {
-            "name": "test_04",
-            "cmd": "hands_match(04)"
-        },
-        {
-            "name": "test_05",
-            "cmd": "hands_match(05)"
-        },
-        {
-            "name": "test_06",
-            "cmd": "hands_match(06)"
-        },
-        {
-            "name": "test_07",
-            "cmd": "hands_match(07)"
-        },
-        {
-            "name": "test_08",
-            "cmd": "hands_match(08)"
-        },
-        {
-            "name": "test_09",
-            "cmd": "hands_match(09)"
-        },
-        {
-            "name": "test_10",
-            "cmd": "hands_match(10)"
-        },
-        {
-            "name": "test_11",
-            "cmd": "hands_match(11)"
-        },
-        {
-            "name": "test_12",
-            "cmd": "hands_match(12)"
-        }
-    ]
+  "solution_files": ["src/lib.rs"],
+  "tests": [
+    {
+      "name": "test_01",
+      "cmd": "hands_match(01)",
+      "expected": "327"
+    },
+    {
+      "name": "test_02",
+      "cmd": "hands_match(02)",
+      "expected": "655"
+    },
+    {
+      "name": "test_03",
+      "cmd": "hands_match(03)",
+      "expected": "982"
+    },
+    {
+      "name": "test_04",
+      "cmd": "hands_match(04)",
+      "expected": "1309"
+    },
+    {
+      "name": "test_05",
+      "cmd": "hands_match(05)",
+      "expected": "1636"
+    },
+    {
+      "name": "test_06",
+      "cmd": "hands_match(06)",
+      "expected": "1964"
+    },
+    {
+      "name": "test_07",
+      "cmd": "hands_match(07)",
+      "expected": "2291"
+    },
+    {
+      "name": "test_08",
+      "cmd": "hands_match(08)",
+      "expected": "2618"
+    },
+    {
+      "name": "test_09",
+      "cmd": "hands_match(09)",
+      "expected": "2945"
+    },
+    {
+      "name": "test_10",
+      "cmd": "hands_match(10)",
+      "expected": "3273"
+    },
+    {
+      "name": "test_11",
+      "cmd": "hands_match(11)",
+      "expected": "0"
+    },
+    {
+      "name": "test_12",
+      "cmd": "hands_match(12)",
+      "expected": "0"
+    }
+  ]
 }
