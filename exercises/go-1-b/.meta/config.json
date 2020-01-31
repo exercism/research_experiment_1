@@ -4,27 +4,33 @@
   "tests": [
     {
       "name": "TestNumericWin",
-      "cmd": "PlayerWins(\"279\", \"368\")"
+      "cmd": "PlayerWins(\"279\", \"368\")",
+      "expected": "true"
     },
     {
       "name": "TestBlackjackWin",
-      "cmd": "PlayerWins(\"JA\", \"J8\")"
+      "cmd": "PlayerWins(\"JA\", \"J8\")",
+      "expected": "true"
     },
     {
       "name": "TestDrawLoss",
-      "cmd": "PlayerWins(\"27Q\", \"K9\")"
+      "cmd": "PlayerWins(\"27Q\", \"K9\")",
+      "expected": "false"
     },
     {
       "name": "TestBustLoss",
-      "cmd": "PlayerWins(\"K67\", \"J8\")"
+      "cmd": "PlayerWins(\"K67\", \"J8\")",
+      "expected": "false"
     },
     {
       "name": "TestBustWin",
-      "cmd": "PlayerWins(\"8432\", \"J8K\")"
+      "cmd": "PlayerWins(\"8432\", \"J8K\")",
+      "expected": "true"
     },
     {
       "name": "TestAceAsElevenWin",
-      "cmd": "PlayerWins(\"7A\", \"K7\")"
+      "cmd": "PlayerWins(\"7A\", \"K7\")",
+      "expected": "true"
     }
   ]
 }

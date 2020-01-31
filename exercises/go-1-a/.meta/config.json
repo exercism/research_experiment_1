@@ -4,35 +4,43 @@
   "tests": [
     {
       "name": "TestTwelve",
-      "cmd": "Describe(12)"
+      "cmd": "Describe(12)",
+      "expected": "\"1 dozen or 12\""
     },
     {
       "name": "TestTwenty",
-      "cmd": "Describe(20)"
+      "cmd": "Describe(20)",
+      "expected": "\"1 score or 20\""
     },
     {
       "name": "TestOneHundredFourtyFour",
-      "cmd": "Describe(144)"
+      "cmd": "Describe(144)",
+      "expected": "\"1 gross or 12 dozen or 144\""
     },
     {
       "name": "TestOne",
-      "cmd": "Describe(1)"
+      "cmd": "Describe(1)",
+      "expected": "\"1\""
     },
     {
       "name": "TestFourty",
-      "cmd": "Describe(40)"
+      "cmd": "Describe(40)",
+      "expected": "\"2 score or 40\""
     },
     {
       "name": "TestSeventyTwo",
-      "cmd": "Describe(72)"
+      "cmd": "Describe(72)",
+      "expected": "\"6 dozen or 72\""
     },
     {
       "name": "TestTwoHundredEightyEight",
-      "cmd": "Describe(288)"
+      "cmd": "Describe(288)",
+      "expected": "\"2 gross or 24 dozen or 288\""
     },
     {
       "name": "TestSixtyFive",
-      "cmd": "Describe(65)"
+      "cmd": "Describe(65)",
+      "expected": "\"65\""
     }
   ]
 }
