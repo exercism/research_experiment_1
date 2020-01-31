@@ -4,31 +4,38 @@
   "tests": [
     {
       "name": "test_red",
-      "cmd": "color_name(buf, RED)"
+      "cmd": "color_name(buf, RED)",
+      "expected": "\"RED\""
     },
     {
       "name": "test_orange",
-      "cmd": "color_name(buf, ORANGE)"
+      "cmd": "color_name(buf, ORANGE)",
+      "expected": "\"ORANGE\""
     },
     {
       "name": "test_yellow",
-      "cmd": "color_name(buf, YELLOW)"
+      "cmd": "color_name(buf, YELLOW)",
+      "expected": "\"YELLOW\""
     },
     {
       "name": "test_green",
-      "cmd": "color_name(buf, GREEN)"
+      "cmd": "color_name(buf, GREEN)",
+      "expected": "\"GREEN\""
     },
     {
       "name": "test_blue",
-      "cmd": "color_name(buf, BLUE)"
+      "cmd": "color_name(buf, BLUE)",
+      "expected": "\"BLUE\""
     },
     {
       "name": "test_indigo",
-      "cmd": "color_name(buf, INDIGO)"
+      "cmd": "color_name(buf, INDIGO)",
+      "expected": "\"INDIGO\""
     },
     {
       "name": "test_violet",
-      "cmd": "color_name(buf, VIOLET)"
+      "cmd": "color_name(buf, VIOLET)",
+      "expected": "\"VIOLET\""
     }
   ]
 }

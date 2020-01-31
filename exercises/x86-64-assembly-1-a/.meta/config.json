@@ -4,35 +4,43 @@
   "tests": [
     {
       "name": "test_empty_string",
-      "cmd": "str_isalpha(\"\")"
+      "cmd": "str_isalpha(\"\")",
+      "expected": "false"
     },
     {
       "name": "test_uppercase",
-      "cmd": "str_isalpha(\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\")"
+      "cmd": "str_isalpha(\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\")",
+      "expected": "true"
     },
     {
       "name": "test_uppercase_low_limit",
-      "cmd": "str_isalpha(\"@ABCDEFGHIJKLMNOPQRSTUVWXYZ\")"
+      "cmd": "str_isalpha(\"@ABCDEFGHIJKLMNOPQRSTUVWXYZ\")",
+      "expected": "false"
     },
     {
       "name": "test_uppercase_high_limit",
-      "cmd": "str_isalpha(\"ABCDEFGHIJKLMNOPQRSTUVWXYZ[\")"
+      "cmd": "str_isalpha(\"ABCDEFGHIJKLMNOPQRSTUVWXYZ[\")",
+      "expected": "false"
     },
     {
       "name": "test_lowercase",
-      "cmd": "str_isalpha(\"abcdefghijklmnopqrstuvwxyz\")"
+      "cmd": "str_isalpha(\"abcdefghijklmnopqrstuvwxyz\")",
+      "expected": "true"
     },
     {
       "name": "test_lowercase_low_limit",
-      "cmd": "str_isalpha(\"`abcdefghijklmnopqrstuvwxyz\")"
+      "cmd": "str_isalpha(\"`abcdefghijklmnopqrstuvwxyz\")",
+      "expected": "false"
     },
     {
       "name": "test_lowercase_high_limit",
-      "cmd": "str_isalpha(\"abcdefghijklmnopqrstuvwxyz{\")"
+      "cmd": "str_isalpha(\"abcdefghijklmnopqrstuvwxyz{\")",
+      "expected": "false"
     },
     {
       "name": "test_letters",
-      "cmd": "str_isalpha(\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\")"
+      "cmd": "str_isalpha(\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\")",
+      "expected": "true"
     }
   ]
 }
