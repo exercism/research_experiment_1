@@ -3,23 +3,28 @@
   "tests": [
     {
       "name": "doesn't change a single scorer",
-      "cmd": "aggregateScorers [ \"Anna\" ]"
+      "cmd": "aggregateScorers [ \"Anna\" ]",
+      "expected": "[ \"Anna\" ]"
     },
     {
       "name": "doesn't change multiple unique scorers",
-      "cmd": "aggregateScorers [ \"Anna\", \"Lisa\" ]"
+      "cmd": "aggregateScorers [ \"Anna\", \"Lisa\" ]",
+      "expected": "[ \"Anna\", \"Lisa\" ]"
     },
     {
       "name": "converts duplicates into goals",
-      "cmd": "aggregateScorers [ \"Anna\", \"Anna\" ]"
+      "cmd": "aggregateScorers [ \"Anna\", \"Anna\" ]",
+      "expected": "[ \"Anna (2)\" ]"
     },
     {
       "name": "orders alphabetically",
-      "cmd": "aggregateScorers [ \"Lisa\", \"Anna\" ]"
+      "cmd": "aggregateScorers [ \"Lisa\", \"Anna\" ]",
+      "expected": "[ \"Anna\", \"Lisa\" ]"
     },
     {
       "name": "converts duplicates into goals and maintain single scorers",
-      "cmd": "aggregateScorers [ \"Lisa\", \"Anna\", \"Anna\" ]"
+      "cmd": "aggregateScorers [ \"Lisa\", \"Anna\", \"Anna\" ]",
+      "expected": "[ \"Anna (2)\", \"Lisa\" ]"
     }
   ]
 }

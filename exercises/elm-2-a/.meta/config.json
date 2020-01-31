@@ -3,23 +3,28 @@
   "tests": [
     {
       "name": "adds brackets to goal time for single scorer",
-      "cmd": "aggregateScorers [ \"Anna 21\" ]"
+      "cmd": "aggregateScorers [ \"Anna 21\" ]",
+      "expected": "[ \"Anna (21)\" ]"
     },
     {
       "name": "adds brackets to goal time for multiple unique scorers",
-      "cmd": "aggregateScorers [ \"Anna 13\", \"Lisa 17\" ]"
+      "cmd": "aggregateScorers [ \"Anna 13\", \"Lisa 17\" ]",
+      "expected": "[ \"Anna (13)\", \"Lisa (17)\" ]"
     },
     {
       "name": "adds comma separated goal times for duplicate scorers",
-      "cmd": "aggregateScorers [ \"Anna 28\", \"Anna 32\" ]"
+      "cmd": "aggregateScorers [ \"Anna 28\", \"Anna 32\" ]",
+      "expected": "[ \"Anna (28, 32)\" ]"
     },
     {
       "name": "orders alphabetically",
-      "cmd": "aggregateScorers [ \"Lisa\", \"Anna\" ]"
+      "cmd": "aggregateScorers [ \"Lisa\", \"Anna\" ]",
+      "expected": "[ \"Anna (28, 32)\" ]"
     },
     {
       "name": "adds comma separated goal times for duplicates and maintain single scorers",
-      "cmd": "aggregateScorers [ \"Lisa 76\", \"Anna 78\", \"Anna 82\" ]"
+      "cmd": "aggregateScorers [ \"Lisa 76\", \"Anna 78\", \"Anna 82\" ]",
+      "expected": "[ \"Anna (78, 82)\", \"Lisa (76)\" ]"
     }
   ]
 }
