@@ -1,0 +1,48 @@
+{
+  "solution_files": ["python_1_b.py"],
+  "test_file": "python_1_b_test.py",
+  "tests": [
+    {
+      "test": "TestTransmit.test_empty_string",
+      "name": "Empty string",
+      "cmd": "transmit(\"\")",
+      "expected": "\"\""
+    },
+    {
+      "test": "TestTransmit.test_hello_world",
+      "name": "Hello world",
+      "cmd": "transmit(\"Hello, World!\")",
+      "expected": "\"HOTEL ECHO LIMA LIMA OSCAR WHISKEY OSCAR ROMEO LIMA DELTA\""
+    },
+    {
+      "test": "TestTransmit.test_enterprise",
+      "name": "Enterprise",
+      "cmd": "transmit(\"NCC-1701-D\")",
+      "expected": "\"NOVEMBER CHARLIE CHARLIE ONE SEVEN ZERO ONE DELTA\""
+    },
+    {
+      "test": "TestTransmit.test_only_ascii_alphanum",
+      "name": "Only ASCII alphanum",
+      "cmd": "receive(\"\\N{GREEK CAPITAL LETTER NU}\\N{CHEROKEE LETTER TLI}\\N{CHEROKEE LETTER TLI}-1701-\\N{CHEROKEE LETTER A}\" + string.whitespace + string.punctuation\")",
+      "expected": "\"ONE SEVEN ZERO ONE\""
+    },
+    {
+      "test": "TestReceive.test_empty_string",
+      "name": "Empty string",
+      "cmd": "receive(\"\")",
+      "expected": "\"\""
+    },
+    {
+      "test": "TestReceive.test_hello_world",
+      "name": "Hello world",
+      "cmd": "receive(\"HOTEL ECHO LIMA LIMA OSCAR WHISKEY OSCAR ROMEO LIMA DELTA\")",
+      "expected": "\"HELLOWORLD\""
+    },
+    {
+      "test": "TestReceive.test_enterprise",
+      "name": "Enterprise",
+      "cmd": "receive(\"NOVEMBER CHARLIE CHARLIE ONE SEVEN ZERO ONE DELTA\")",
+      "expected": "\"NCC1701D\""
+    }
+  ]
+}

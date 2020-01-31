@@ -2,28 +2,33 @@
   "solution_files": ["src/lib.rs"],
   "tests": [
     {
-      "name": "test_disemvowel",
-      "cmd": "test_disemvowel(\"disemvowel\");",
+      "test": "test_disemvowel",
+      "name": "Disemvowel",
+      "cmd": "disemvowel(\"disemvowel\");",
       "expected": "\"d5m^w1\""
     },
     {
-      "name": "test_alphabet",
-      "cmd": "test_alphabet(\"abcdefghijklmnopqrstuvwxyz\");",
+      "test": "test_alphabet",
+      "name": "Alphabet",
+      "cmd": "disemvowel(\"abcdefghijklmnopqrstuvwxyz\");",
       "expected": "\"8(df9hjk1mnpqr5+^wxyz\""
     },
     {
-      "name": "test_uppercase",
-      "cmd": "test_uppercase(\"A HORRIBLE HATEFUL MESSAGE FROM A TROLL\");",
+      "test": "test_uppercase",
+      "name": "Uppercase",
+      "cmd": "disemvowel(\"A HORRIBLE HATEFUL MESSAGE FROM A TROLL\");",
       "expected": "\" HRR81 H+F1 M559 FRM  +R11\""
     },
     {
-      "name": "test_description",
-      "cmd": "test_description(\"This technique, called _disemvowelment_, is often employed to reduce the effectiveness of troll messages in online fora.\");",
+      "test": "test_description",
+      "name": "Description",
+      "cmd": "disemvowel(\"This technique, called _disemvowelment_, is often employed to reduce the effectiveness of troll messages in online fora.\");",
       "expected": "\"+h5 +(hnq, (11d _d5m^w1mn+_, 5 f+n mp1yd + rd( +h ff(+^n55 f +r11 m5595 n n1n fr.\""
     },
     {
-      "name": "test_non_ascii",
-      "cmd": "test_non_ascii(\"「Disemvowelment」はASCII文字に対してのみ有効です。\");",
+      "test": "test_non_ascii",
+      "name": "Non ASCII",
+      "cmd": "disemvowel(\"「Disemvowelment」はASCII文字に対してのみ有効です。\");",
       "expected": "\"「D5m^w1mn+」は5(文字に対してのみ有効です。\""
     }
   ]

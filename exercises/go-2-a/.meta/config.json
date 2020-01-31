@@ -3,47 +3,56 @@
   "test_file": "go_2_a_test.go",
   "tests": [
     {
-      "name": "TestTwelve",
+      "test": "TestTwelve",
+      "name": "Twelve",
       "cmd": "Describe(12)",
       "expected": "\"1 dozen\""
     },
     {
-      "name": "TestTwenty",
+      "test": "TestTwenty",
+      "name": "Twenty",
       "cmd": "Describe(20)",
       "expected": "\"1 score\""
     },
     {
-      "name": "TestOneHundredFourtyFour",
+      "test": "TestOneHundredFourtyFour",
+      "name": "One hundred fourty four",
       "cmd": "Describe(144)",
       "expected": "\"1 gross\""
     },
     {
-      "name": "TestOne",
+      "test": "TestOne",
+      "name": "One",
       "cmd": "Describe(1)",
       "expected": "\"1\""
     },
     {
-      "name": "TestFourty",
+      "test": "TestFourty",
+      "name": "Fourty",
       "cmd": "Describe(40)",
       "expected": "\"2 score\""
     },
     {
-      "name": "TestSeventyTwo",
+      "test": "TestSeventyTwo",
+      "name": "Seventy two",
       "cmd": "Describe(72)",
       "expected": "\"3 score and 1 dozen\""
     },
     {
-      "name": "TestTwoHundredEightyEight",
+      "test": "TestTwoHundredEightyEight",
+      "name": "Two hundred eighty eight",
       "cmd": "Describe(288)",
       "expected": "\"2 gross\""
     },
     {
-      "name": "TestSixtyFive",
+      "test": "TestSixtyFive",
+      "name": "Sixty five",
       "cmd": "Describe(65)",
       "expected": "\"3 score and 5\""
     },
     {
-      "name": "TestThreeHunderedAndFourtyFive",
+      "test": "TestThreeHunderedAndFourtyFive",
+      "name": "Three hundered and fourty five",
       "cmd": "Describe(345)",
       "expected": "\"2 gross, 2 score, 1 dozen and 5\""
     }

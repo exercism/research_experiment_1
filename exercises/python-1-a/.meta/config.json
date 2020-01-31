@@ -3,82 +3,98 @@
   "test_file": "python_1_a_test.py",
   "tests": [
     {
-      "name": "TestCompress.test_empty_string",
+      "test": "TestCompress.test_empty_string",
+      "name": "Empty string",
       "cmd": "compress(\"\")",
       "expected": "b\"\""
     },
     {
-      "name": "TestCompress.test_single_ascii_letter",
+      "test": "TestCompress.test_single_ascii_letter",
+      "name": "Single ASCII letter",
       "cmd": "compress(\"a\")",
       "expected": "b\"\\x01a\""
     },
     {
-      "name": "TestCompress.test_unique_ascii_letters",
+      "test": "TestCompress.test_unique_ascii_letters",
+      "name": "Unique ASCII letters",
       "cmd": "compress(\"ab\")",
       "expected": "b\"\\x01a\\x02b\\x03c\""
     },
     {
-      "name": "TestCompress.test_duplicated_ascii_letters",
+      "test": "TestCompress.test_duplicated_ascii_letters",
+      "name": "Duplicated ASCII letters",
       "cmd": "compress(\"abbccc\")",
       "expected": "b\"\\x01a\\x02b\\x03c"
     },
     {
-      "name": "TestCompress.test_single_ascii_digit",
+      "test": "TestCompress.test_single_ascii_digit",
+      "name": "Single ASCII digit",
       "cmd": "compress(\"0\")",
       "expected": "b\"\\x010"
     },
     {
-      "name": "TestCompress.test_unique_ascii_digits",
+      "test": "TestCompress.test_unique_ascii_digits",
+      "name": "Unique ASCII digits",
       "cmd": "compress(\"01\")",
       "expected": "b\"\\x010\\x011"
     },
     {
-      "name": "TestCompress.test_duplicated_ascii_digits",
+      "test": "TestCompress.test_duplicated_ascii_digits",
+      "name": "Duplicated ASCII digits",
       "cmd": "compress(\"011222\")",
       "expected": "b\"\\x010\\x021\\x032"
     },
     {
-      "name": "TestCompress.test_mixed_ascii_alphanum",
+      "test": "TestCompress.test_mixed_ascii_alphanum",
+      "name": "Mixed ASCII alphanum",
       "cmd": "compress(\"a0bb11ccc222\")",
       "expected": "b\"\\x01a\\x010\\x02b\\x021\\x03c\\x032"
     },
     {
-      "name": "TestCompress.test_very_long_run",
+      "test": "TestCompress.test_very_long_run",
+      "name": "Very long run",
       "cmd": "compress(\"a\" + \"b\" * 255 + \"c\")",
       "expected": "b\"\\x01a\\xffb\\x01c"
     },
     {
-      "name": "TestCompress.test_very_long_runs",
+      "test": "TestCompress.test_very_long_runs",
+      "name": "Very long runs",
       "cmd": "compress(\"a\" * 255 + \"0\" * 255 + \"b\" * 255)",
       "expected": "b\"\\xffa\\xff0\\xffb"
     },
     {
-      "name": "TestCompress.test_all_ascii_letters",
+      "test": "TestCompress.test_all_ascii_letters",
+      "name": "All ASCII letters",
       "cmd": "compress(string.ascii_letters)",
       "expected": "bytes(chain.from_iterable((1, ord(c)) for c in text))"
     },
     {
-      "name": "TestCompress.test_all_ascii_digits",
+      "test": "TestCompress.test_all_ascii_digits",
+      "name": "All ASCII digits",
       "cmd": "compress(string.digits)",
       "expected": "bytes(chain.from_iterable((1, ord(c)) for c in text))"
     },
     {
-      "name": "TestCompress.test_all_ascii_punctuation",
+      "test": "TestCompress.test_all_ascii_punctuation",
+      "name": "All ASCII punctuation",
       "cmd": "compress(string.punctuation)",
       "expected": "bytes(chain.from_iterable((1, ord(c)) for c in text))"
     },
     {
-      "name": "TestCompress.test_all_ascii_whitespace",
+      "test": "TestCompress.test_all_ascii_whitespace",
+      "name": "All ASCII whitespace",
       "cmd": "compress(string.whitespace)",
       "expected": "bytes(chain.from_iterable((1, ord(c)) for c in text))"
     },
     {
-      "name": "TestCompress.test_all_ascii_printable",
+      "test": "TestCompress.test_all_ascii_printable",
+      "name": "All ASCII printable",
       "cmd": "compress(string.printable)",
       "expected": "bytes(chain.from_iterable((1, ord(c)) for c in text))"
     },
     {
-      "name": "TestCompress.test_mutlibyte_unicode",
+      "test": "TestCompress.test_multibyte_unicode",
+      "name": "Multibyte unicode",
       "cmd": "compress(\"\\N{GRINNING FACE} \\N{SHAMROCK}\")",
       "expected": "b\"\\x01\\xf0\\x01\\x9f\\x01\\x98\\x01\\x80\\x01 \\x01\\xe2\\x02\\x98"
     }

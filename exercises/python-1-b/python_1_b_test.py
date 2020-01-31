@@ -11,7 +11,7 @@ class TestTransmit(unittest.TestCase):
     def assertCanTransmit(self, string, expect, slug):
         # format the command for display
         short = string if len(string) <= 10 else string[:6] + "[...]"
-        cmd = f"compress({short!r})"
+        cmd = f"transmit({short!r})"
 
         nato = transmit(string)
         self.assertIsNotNone(nato, msg=f"{cmd} should return a value")
@@ -45,7 +45,7 @@ class TestReceive(unittest.TestCase):
     def assertCanReceive(self, string, expect, slug):
         # format the command for display
         short = string if len(string) <= 10 else string[:6] + "[...]"
-        cmd = f"compress({short!r})"
+        cmd = f"receive({short!r})"
 
         message = receive(string)
         self.assertIsNotNone(message, msg=f"{cmd} should return a value")

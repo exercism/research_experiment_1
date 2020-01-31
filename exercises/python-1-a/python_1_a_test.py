@@ -93,7 +93,7 @@ class TestCompress(unittest.TestCase):
         expect = bytes(chain.from_iterable((1, ord(c)) for c in text))
         self.assertCanCompress(text, expect, "all printable ASCII chars")
 
-    def test_mutlibyte_unicode(self):
+    def test_multibyte_unicode(self):
         text = "\N{GRINNING FACE} \N{SHAMROCK}"
         expect = b"\x01\xf0\x01\x9f\x01\x98\x01\x80\x01 \x01\xe2\x02\x98"
         self.assertCanCompress(text, expect, "multibyte Unicode chars")

@@ -3,42 +3,50 @@
   "test_file": "x86_64_assembly_1_a_test.c",
   "tests": [
     {
-      "name": "test_empty_string",
+      "test": "test_empty_string",
+      "name": "Empty string",
       "cmd": "str_isalpha(\"\")",
       "expected": "false"
     },
     {
-      "name": "test_uppercase",
+      "test": "test_uppercase",
+      "name": "Uppercase",
       "cmd": "str_isalpha(\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\")",
       "expected": "true"
     },
     {
-      "name": "test_uppercase_low_limit",
+      "test": "test_uppercase_low_limit",
+      "name": "Uppercase low limit",
       "cmd": "str_isalpha(\"@ABCDEFGHIJKLMNOPQRSTUVWXYZ\")",
       "expected": "false"
     },
     {
-      "name": "test_uppercase_high_limit",
+      "test": "test_uppercase_high_limit",
+      "name": "Uppercase high limit",
       "cmd": "str_isalpha(\"ABCDEFGHIJKLMNOPQRSTUVWXYZ[\")",
       "expected": "false"
     },
     {
-      "name": "test_lowercase",
+      "test": "test_lowercase",
+      "name": "Lowercase",
       "cmd": "str_isalpha(\"abcdefghijklmnopqrstuvwxyz\")",
       "expected": "true"
     },
     {
-      "name": "test_lowercase_low_limit",
+      "test": "test_lowercase_low_limit",
+      "name": "Lowercase low limit",
       "cmd": "str_isalpha(\"`abcdefghijklmnopqrstuvwxyz\")",
       "expected": "false"
     },
     {
-      "name": "test_lowercase_high_limit",
+      "test": "test_lowercase_high_limit",
+      "name": "Lowercase high limit",
       "cmd": "str_isalpha(\"abcdefghijklmnopqrstuvwxyz{\")",
       "expected": "false"
     },
     {
-      "name": "test_letters",
+      "test": "test_letters",
+      "name": "Letters",
       "cmd": "str_isalpha(\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\")",
       "expected": "true"
     }

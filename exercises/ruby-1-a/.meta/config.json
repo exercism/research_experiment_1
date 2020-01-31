@@ -4,43 +4,43 @@
   "tests": [
     {
       "test": "test_initial_total_amount",
-      "name": "Test initial total amount",
+      "name": "Initial total amount",
       "cmd": "ShoppingCart.new.total_amount",
       "expected": "0"
     },
     {
       "test": "test_one_item",
-      "name": "Test one item",
+      "name": "One item",
       "cmd": "cart = ShoppingCart.new\ncart.add(:STAPOT)\ncard.total_amount",
       "expected": "10"
     },
     {
       "test": "test_two_items",
-      "name": "Test two items",
+      "name": "Two items",
       "cmd": "cart = ShoppingCart.new\ncart.add(:STAPOT)\ncart.add(:STARIC)\ncart.total_amount",
       "expected": "40"
     },
     {
       "test": "test_list_items",
-      "name": "Test list_items",
+      "name": "List items",
       "cmd": "cart = ShoppingCart.new\ncart.add(:STAPOT)\ncart.add(:STARIC)\ncart.items_list",
       "expected": "\"Potatoes, Rice\""
     },
     {
       "test": "test_items_ordered_alphabetically",
-      "name": "Test list_items is alphabetical",
+      "name": "List items alphabetically",
       "cmd": "cart = ShoppingCart.new\ncart.add(:STARIC)\ncart.add(:STAPOT)\ncart.items_list",
       "expected": "\"Potatoes, Rice\""
     },
     {
       "test": "test_duplicate_items_sums_price",
-      "name": "Test total_amount works with duplicates",
+      "name": "Total amount works with duplicates",
       "cmd": "cart = ShoppingCart.new\ncart.add(:STARIC)\ncart.add(:STACOF)\ncart.add(:STACOF)\ncart.total_amount",
       "expected": "59.98"
     },
     {
       "test": "test_duplicate_items_uniqs_list",
-      "name": "Test items_list works with duplicates",
+      "name": "Items list does not contain duplicates",
       "cmd": "cart = ShoppingCart.new\ncart.add(:STARIC)\ncart.add(:MEDNEW)\ncart.add(:MEDNEW)\ncart.items_list",
       "expected": "\"Newspaper, Rice\""
     }
