@@ -4,39 +4,48 @@
   "tests": [
     {
       "name": "TestTwelve",
-      "cmd": "Describe(12)"
+      "cmd": "Describe(12)",
+      "expected": "\"1 dozen\""
     },
     {
       "name": "TestTwenty",
-      "cmd": "Describe(20)"
+      "cmd": "Describe(20)",
+      "expected": "\"1 score\""
     },
     {
       "name": "TestOneHundredFourtyFour",
-      "cmd": "Describe(144)"
+      "cmd": "Describe(144)",
+      "expected": "\"1 gross\""
     },
     {
       "name": "TestOne",
-      "cmd": "Describe(1)"
+      "cmd": "Describe(1)",
+      "expected": "\"1\""
     },
     {
       "name": "TestFourty",
-      "cmd": "Describe(40)"
+      "cmd": "Describe(40)",
+      "expected": "\"2 score\""
     },
     {
       "name": "TestSeventyTwo",
-      "cmd": "Describe(72)"
+      "cmd": "Describe(72)",
+      "expected": "\"3 score and 1 dozen\""
     },
     {
       "name": "TestTwoHundredEightyEight",
-      "cmd": "Describe(288)"
+      "cmd": "Describe(288)",
+      "expected": "\"2 gross\""
     },
     {
       "name": "TestSixtyFive",
-      "cmd": "Describe(65)"
+      "cmd": "Describe(65)",
+      "expected": "\"3 score and 5\""
     },
     {
       "name": "TestThreeHunderedAndFourtyFive",
-      "cmd": "Describe(345)"
+      "cmd": "Describe(345)",
+      "expected": "\"2 gross, 2 score, 1 dozen and 5\""
     }
   ]
 }
