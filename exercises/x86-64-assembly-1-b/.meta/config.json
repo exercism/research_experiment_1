@@ -3,37 +3,44 @@
   "test_file": "x86_64_assembly_1_b_test.c",
   "tests": [
     {
-      "name": "test_red",
+      "test": "test_red",
+      "name": "Red",
       "cmd": "color_name(RED)",
       "expected": "\"RED\""
     },
     {
-      "name": "test_orange",
+      "test": "test_orange",
+      "name": "Orange",
       "cmd": "color_name(ORANGE)",
       "expected": "\"ORANGE\""
     },
     {
-      "name": "test_yellow",
+      "test": "test_yellow",
+      "name": "Yellow",
       "cmd": "color_name(YELLOW)",
       "expected": "\"YELLOW\""
     },
     {
-      "name": "test_green",
+      "test": "test_green",
+      "name": "Green",
       "cmd": "color_name(GREEN)",
       "expected": "\"GREEN\""
     },
     {
-      "name": "test_blue",
+      "test": "test_blue",
+      "name": "Blue",
       "cmd": "color_name(BLUE)",
       "expected": "\"BLUE\""
     },
     {
+      "test": "test_indigo",
+      "name": "Indigo",
       "cmd": "color_name(INDIGO)",
-      "name": "test_indigo",
       "expected": "\"INDIGO\""
     },
     {
-      "name": "test_violet",
+      "test": "test_violet",
+      "name": "Violet",
       "cmd": "color_name(VIOLET)",
       "expected": "\"VIOLET\""
     }

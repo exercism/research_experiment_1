@@ -3,77 +3,92 @@
   "test_file": "x86_64_assembly_2_a_test.c",
   "tests": [
     {
-      "name": "test_empty_string",
+      "test": "test_empty_string",
+      "name": "Empty string",
       "cmd": "str_isidentifier(\"\")",
       "expected": "false"
     },
     {
-      "name": "test_uppercase",
+      "test": "test_uppercase",
+      "name": "Uppercase",
       "cmd": "str_isidentifier(\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\")",
       "expected": "true"
     },
     {
-      "name": "test_uppercase_low_limit",
+      "test": "test_uppercase_low_limit",
+      "name": "Uppercase low limit",
       "cmd": "str_isidentifier(\"ABCDEFGHIJKLMNOPQRSTUVWXYZ@\")",
       "expected": "false"
     },
     {
-      "name": "test_uppercase_high_limit",
+      "test": "test_uppercase_high_limit",
+      "name": "Uppercase high limit",
       "cmd": "str_isidentifier(\"ABCDEFGHIJKLMNOPQRSTUVWXYZ[\")",
       "expected": "false"
     },
     {
-      "name": "test_lowercase",
+      "test": "test_lowercase",
+      "name": "Lowercase",
       "cmd": "str_isidentifier(\"abcdefghijklmnopqrstuvwxyz\")",
       "expected": "true"
     },
     {
-      "name": "test_lowercase_low_limit",
+      "test": "test_lowercase_low_limit",
+      "name": "Lowercase low limit",
       "cmd": "str_isidentifier(\"abcdefghijklmnopqrstuvwxyz`\")",
       "expected": "false"
     },
     {
-      "name": "test_lowercase_high_limit",
+      "test": "test_lowercase_high_limit",
+      "name": "Lowercase high limit",
       "cmd": "str_isidentifier(\"abcdefghijklmnopqrstuvwxyz{\")",
       "expected": "false"
     },
     {
-      "name": "test_letters",
+      "test": "test_letters",
+      "name": "Letters",
       "cmd": "str_isidentifier(\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\")",
       "expected": "true"
     },
     {
-      "name": "test_underscore",
+      "test": "test_underscore",
+      "name": "Underscore",
       "cmd": "str_isidentifier(\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_\")",
       "expected": "true"
     },
     {
-      "name": "test_underscore_low_limit",
+      "test": "test_underscore_low_limit",
+      "name": "Underscore low limit",
       "cmd": "str_isidentifier(\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_^\")",
       "expected": "false"
     },
     {
-      "name": "test_digits",
+      "test": "test_digits",
+      "name": "Digits",
       "cmd": "str_isidentifier(\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_0123456789\")",
       "expected": "true"
     },
     {
-      "name": "test_digits_low_limit",
+      "test": "test_digits_low_limit",
+      "name": "Digits low limit",
       "cmd": "str_isidentifier(\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_0123456789/\")",
       "expected": "false"
     },
     {
-      "name": "test_digits_high_limit",
+      "test": "test_digits_high_limit",
+      "name": "Digits high limit",
       "cmd": "str_isidentifier(\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_0123456789:\")",
       "expected": "false"
     },
     {
-      "name": "test_letters_underscore_digits",
+      "test": "test_letters_underscore_digits",
+      "name": "Letters underscore digits",
       "cmd": "str_isidentifier(\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_0123456789\")",
       "expected": "true"
     },
     {
-      "name": "test_first_letter_digit",
+      "test": "test_first_letter_digit",
+      "name": "First letter digit",
       "cmd": "str_isidentifier(\"0ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_0123456789\")",
       "expected": "false"
     }

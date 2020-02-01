@@ -3,52 +3,62 @@
   "test_file": "go_2_b_test.go",
   "tests": [
     {
-      "name": "TestNumericWin",
+      "test": "TestNumericWin",
+      "name": "Numeric win",
       "cmd": "PlayerWins(\"279\", \"368\")",
       "expected": "true"
     },
     {
-      "name": "TestBlackjackWin",
+      "test": "TestBlackjackWin",
+      "name": "Blackjack win",
       "cmd": "PlayerWins(\"JA\", \"J8\")",
       "expected": "true"
     },
     {
-      "name": "TestDrawLoss",
+      "test": "TestDrawLoss",
+      "name": "Draw loss",
       "cmd": "PlayerWins(\"27Q\", \"K9\")",
       "expected": "false"
     },
     {
-      "name": "TestBustLoss",
+      "test": "TestBustLoss",
+      "name": "Bust loss",
       "cmd": "PlayerWins(\"K67\", \"J8\")",
       "expected": "false"
     },
     {
-      "name": "TestBustWin",
+      "test": "TestBustWin",
+      "name": "Bust win",
       "cmd": "PlayerWins(\"8432\", \"J8K\")",
       "expected": "true"
     },
     {
-      "name": "TestAceAsElevenWin",
+      "test": "TestAceAsElevenWin",
+      "name": "Ace as eleven win",
       "cmd": "PlayerWins(\"7A\", \"K7\")",
       "expected": "true"
     },
     {
-      "name": "TestBlackjackDrawWin",
+      "test": "TestBlackjackDrawWin",
+      "name": "Blackjack draw win",
       "cmd": "PlayerWins(\"AQ\", \"K92\")",
       "expected": "true"
     },
     {
-      "name": "TestBlackjackDrawLoss",
+      "test": "TestBlackjackDrawLoss",
+      "name": "Blackjack draw loss",
       "cmd": "PlayerWins(\"KA\", \"AX\")",
       "expected": "false"
     },
     {
-      "name": "TestAceAsOneWin",
+      "test": "TestAceAsOneWin",
+      "name": "Ace as one win",
       "cmd": "PlayerWins(\"89A\", \"97\")",
       "expected": "true"
     },
     {
-      "name": "TestAceAsOneAndAceAsElevenWin",
+      "test": "TestAceAsOneAndAceAsElevenWin",
+      "name": "Ace as one and ace as eleven win",
       "cmd": "PlayerWins(\"AA8\", \"Q9\")",
       "expected": "true"
     }

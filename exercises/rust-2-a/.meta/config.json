@@ -2,97 +2,116 @@
   "solution_files": ["src/lib.rs"],
   "tests": [
     {
-      "name": "test_std_01",
+      "test": "test_std_01",
+      "name": "std 01",
       "cmd": "hands_match(&STANDARD, 01)",
       "expected": "327"
     },
     {
-      "name": "test_std_02",
+      "test": "test_std_02",
+      "name": "std 02",
       "cmd": "hands_match(&STANDARD, 02)",
       "expected": "655"
     },
     {
-      "name": "test_std_03",
+      "test": "test_std_03",
+      "name": "std 03",
       "cmd": "hands_match(&STANDARD, 03)",
       "expected": "982"
     },
     {
-      "name": "test_std_04",
+      "test": "test_std_04",
+      "name": "std 04",
       "cmd": "hands_match(&STANDARD, 04)",
       "expected": "1309"
     },
     {
-      "name": "test_std_05",
+      "test": "test_std_05",
+      "name": "std 05",
       "cmd": "hands_match(&STANDARD, 05)",
       "expected": "1636"
     },
     {
-      "name": "test_std_06",
+      "test": "test_std_06",
+      "name": "std 06",
       "cmd": "hands_match(&STANDARD, 06)",
       "expected": "1964"
     },
     {
-      "name": "test_std_07",
+      "test": "test_std_07",
+      "name": "std 07",
       "cmd": "hands_match(&STANDARD, 07)",
       "expected": "2291"
     },
     {
-      "name": "test_std_08",
+      "test": "test_std_08",
+      "name": "std 08",
       "cmd": "hands_match(&STANDARD, 08)",
       "expected": "2618"
     },
     {
-      "name": "test_std_09",
+      "test": "test_std_09",
+      "name": "std 09",
       "cmd": "hands_match(&STANDARD, 09)",
       "expected": "2945"
     },
     {
-      "name": "test_std_10",
+      "test": "test_std_10",
+      "name": "std 10",
       "cmd": "hands_match(&STANDARD, 10)",
       "expected": "3273"
     },
     {
-      "name": "test_std_11",
+      "test": "test_std_11",
+      "name": "std 11",
       "cmd": "hands_match(&STANDARD, 11)",
       "expected": "0"
     },
     {
-      "name": "test_std_12",
+      "test": "test_std_12",
+      "name": "std 12",
       "cmd": "hands_match(&STANDARD, 12)",
       "expected": "0"
     },
     {
-      "name": "test_24_01",
+      "test": "test_24_01",
+      "name": "24 01",
       "cmd": "hands_match(&TWENTY_FOUR, 01)",
       "expected": "157"
     },
     {
-      "name": "test_24_02",
+      "test": "test_24_02",
+      "name": "24 02",
       "cmd": "hands_match(&TWENTY_FOUR, 02)",
       "expected": "313"
     },
     {
-      "name": "test_24_03",
+      "test": "test_24_03",
+      "name": "24 03",
       "cmd": "hands_match(&TWENTY_FOUR, 03)",
       "expected": "470"
     },
     {
-      "name": "test_24_23",
+      "test": "test_24_23",
+      "name": "24 23",
       "cmd": "hands_match(&TWENTY_FOUR, 23)",
       "expected": "0"
     },
     {
-      "name": "test_long_1",
+      "test": "test_long_1",
+      "name": "long 1",
       "cmd": "hands_match(&LONG_NOW, 1)",
       "expected": "3504000000"
     },
     {
-      "name": "test_long_5",
+      "test": "test_long_5",
+      "name": "long 5",
       "cmd": "hands_match(&LONG_NOW, 5)",
       "expected": "17520000000"
     },
     {
-      "name": "test_long_9",
+      "test": "test_long_9",
+      "name": "long 9",
       "cmd": "hands_match(&LONG_NOW, 9)",
       "expected": "0"
     }
