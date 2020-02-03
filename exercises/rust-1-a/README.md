@@ -4,22 +4,17 @@ This is Part 1 of our research into how people write Rust in varying styles. Thi
 
 ## Instructions
 
-Your task is to find the moment when a clock's hands are perfectly aligned for a given hour. Given a standard 12-hour clock, with hour and minute hands which sweep continuously through time, there exists some second in each hour in which the hands are best lined up with each other.
+Your task is to find the longest incrementing subslice of a slice of integers. For example, given the slice `[1, 2, 4, 4, 5, 6, 7, 3, 2, 7, 8, 9, 1]`, the longest incrementing subslice is `[4, 5,6, 7]`, from indices `3` through `6` inclusive.
 
-We provide a stub method with the signature:
-
-```rust
-fn hands_match(hour: u8) -> u32
-```
-
-The range of possible values for `hour` is 1-12. The output must be the number of seconds after the hour at which the hands best line up.
-
-For example:
+We provide a function stub:
 
 ```rust
-// the clock's hands align at noon and midnight precisely
-assert_eq!(hands_match(12), 0);
+pub fn longest_incrementing_subslice(s: &[u8]) -> &[u8]
 ```
+
+Note the signature: you should return a subsection of the input slice, not a newly-allocated vector.
+
+It is safe to assume that every input contains exactly one longest subslice.
 
 ## Troubleshooting
 

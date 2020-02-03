@@ -1,4 +1,4 @@
-use rust_1_a::hands_match;
+use rust_1_a::longest_incrementing_subslice;
 
 macro_rules! tests {
     ($test_func:ident {
@@ -15,18 +15,12 @@ macro_rules! tests {
 }
 
 tests! {
-    hands_match {
-        test_01(1,  327);
-        test_02(2,  655);
-        test_03(3,  982);
-        test_04(4,  1309);
-        test_05(5,  1636);
-        test_06(6,  1964);
-        test_07(7,  2291);
-        test_08(8,  2618);
-        test_09(9,  2945);
-        test_10(10, 3273);
-        test_11(11, 0); // these two cases are a fun degenerate result
-        test_12(12, 0); // can you work out why they act like this?
+    longest_incrementing_subslice {
+        test_example(&[1, 2, 4, 4, 5, 6, 7, 3, 2, 7, 8, 9, 1], &[4, 5, 6, 7]);
+        test_head(&[1, 2, 3, 5], &[1, 2, 3]);
+        test_tail(&[8, 1, 2, 3], &[1, 2, 3]);
+        test_full(&[1, 2, 3], &[1, 2, 3]);
+        test_min(&[2, 1, 0, 1, 2, 5, 6], &[0, 1, 2]);
+        test_max(&[2, 5, 2, 253, 254, 255, 1], &[253, 254, 255]);
     }
 }
