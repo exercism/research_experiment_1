@@ -1,0 +1,78 @@
+{
+  "solution_files": ["ruby_1_a.rb"],
+  "test_file": "ruby_1_a_test.rb",
+  "tests": [
+    {
+      "test": "test_initial_total_amount",
+      "name": "Initial total amount",
+      "cmd": "ShoppingCart.new.total_amount",
+      "expected": "0"
+    },
+    {
+      "test": "test_one_item",
+      "name": "One item",
+      "cmd": "cart = ShoppingCart.new\ncart.add(:STAPOT)\ncard.total_amount",
+      "expected": "10"
+    },
+    {
+      "test": "test_two_items",
+      "name": "Two items",
+      "cmd": "cart = ShoppingCart.new\ncart.add(:STAPOT)\ncart.add(:STARIC)\ncart.total_amount",
+      "expected": "40"
+    },
+    {
+      "test": "test_list_items",
+      "name": "List items",
+      "cmd": "cart = ShoppingCart.new\ncart.add(:STAPOT)\ncart.add(:STARIC)\ncart.items_list",
+      "expected": "\"Potatoes, Rice\""
+    },
+    {
+      "test": "test_items_ordered_alphabetically",
+      "name": "List items alphabetically",
+      "cmd": "cart = ShoppingCart.new\ncart.add(:STARIC)\ncart.add(:STAPOT)\ncart.items_list",
+      "expected": "\"Potatoes, Rice\""
+    },
+    {
+      "test": "test_duplicate_items_sums_price",
+      "name": "Total amount works with duplicates",
+      "cmd": "cart = ShoppingCart.new\ncart.add(:STARIC)\ncart.add(:STACOF)\ncart.add(:STACOF)\ncart.total_amount",
+      "expected": "59.98"
+    },
+    {
+      "test": "test_duplicate_items_uniqs_list",
+      "name": "Items list does not contain duplicates",
+      "cmd": "cart = ShoppingCart.new\ncart.add(:STARIC)\ncart.add(:MEDNEW)\ncart.add(:MEDNEW)\ncart.items_list",
+      "expected": "\"Newspaper, Rice\""
+    },
+    {
+      "test": "test_fix_price_coupon",
+      "name": "Apply fix price coupon, amount = 10",
+      "cmd": "cart = ShoppingCart.new\ncart.add(:STAPOT)\ncart.add(:MEDNEW)\ncart.add(:MEDNEW)\ncart.scan_coupon(:FIX_TEN)\ncart.total_amount",
+      "expected": "5.98"
+    },
+    {
+      "test": "test_items_list_does_not_include_discounts",
+      "name": "Discounts are not included on the items list",
+      "cmd": "cart = ShoppingCart.new\ncart.add(:MEDNEW)\ncart.scan_coupon(:FIX_TEN)\ncart.items_list",
+      "expected": "\"Newspaper\""
+    },
+    {
+      "test": "test_product_discount_coupon",
+      "name": "Apply product discount coupon: Potatoes are half price",
+      "cmd": "cart = ShoppingCart.new\ncart.add(:STAPOT)\ncart.add(:STAPOT)\ncart.add(:MEDNEW)\ncart.scan_coupon(:HALF_STAPOT)\ncart.total_amount",
+      "expected": "12.99"
+    },
+    {
+      "test": "test_coupon_does_not_apply",
+      "name": "Scan a coupon that doesn't exist keeps the total unchanged",
+      "cmd": "cart = ShoppingCart.new\ncart.add(:STAPOT)\ncart.add(:STAPOT)\ncart.scan_coupon(:INVALID)\ncart.total_amount",
+      "expected": "20.00"
+    },
+    {
+      "test": "test_negative_balance",
+      "name": "Cart's total amount minimum value is 0",
+      "cmd": "cart = ShoppingCart.new\ncart.add(:MEDNEW)\ncart.scan_coupon(:FIX_TEN)\ncart.total_amount",
+      "expected": "0.00"
+    }
+  ]
+}
