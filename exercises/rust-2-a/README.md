@@ -4,41 +4,39 @@ This is Part 2 of our research into how people write Rust in varying styles. Thi
 
 ## Instructions
 
-Your task is to extend existing code with new functionality. The code you'll be working with has a function named `hands_match`, which finds the moment when a clock's hour and minute hands are perfectly aligned for a given hour, on a standard, 12-hour clock.
+Your task is to extend existing code with new functionality. The code you'll be working with has a function named `longest_incrementing_subslice`, which finds the longest contiguous subslice of an input slice for which each member is 1 higher than its predecessor:
 
 ```rust
-fn hands_match(clock: &Clock, big_hand: u32) -> u64
+pub fn longest_incrementing_subslice(s: &[u8]) -> &[u8]
 ```
 
-You need to extend this function so it computes the correct results on nonstandard clocks. You may have seen [24-hour clocks](https://i.pinimg.com/originals/d0/0c/c2/d00cc2c17993ca8e1faf603fbd308d27.png) in the past; in this portion of the exercise, you will solve for those and [others](https://en.wikipedia.org/wiki/Clock_of_the_Long_Now).
+You need to write a new function, `longest_increasing_subslices`, which differs from `longest_incrementing_subslice` in two ways:
 
-A standard 12-hour clock is constructed like this:
+- Increasing subslices are still contiguous, but members may be any positive amount higher than their predecessor, not just 1
+- There may be any number of increasing subslices present in the input; you must output all of the longest.
 
 ```rust
-const STANDARD: Clock = Clock {
-    big: Hand {
-        name: "hour",
-        qty: 12,
-        seconds: 3600,
-    },
-    little: Hand {
-        name: "minute",
-        qty: 60,
-        seconds: 60,
-    },
-}
+pub fn longest_increasing_subslices<'a>(s: &'a [u8]) -> Vec<&'a [u8]>
 ```
-
-The output must be the number of seconds after the previous big hand interval at which the hands line up.
 
 For example:
 
 ```rust
-// on a standard clock, the clock's hands align at noon and midnight precisely
-assert_eq!(hands_match(&STANDARD, 12), 0);
+assert_eq!(
+    longest_increasing_subslices(&[5, 2, 3, 4, 4, 1, 3, 5, 0, 1]),
+    &[&[2, 3, 4], &[1, 3, 5]],
+);
 ```
 
-It is safe to assume that `clock.little.seconds` is a multiple of `clock.big.seconds`.
+## Notes
+
+If there are no increasing subslices, return an empty vector.
+
+The return vector must be sorted according to the initial index of the returned slices.
+
+As before, you must return subslices of the initial slice, not copy the data.
+
+You may do whatever you wish with the existing `longest_incrementing_subslice` implementation: modify it, call it, ignore it; there are no restrictions, it is provided only for inspiration.
 
 ## Troubleshooting
 
