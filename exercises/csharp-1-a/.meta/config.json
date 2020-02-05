@@ -11,8 +11,8 @@
     {
       "test": "SentenceTest.OneWordWithOneVowelAndOneConsonant",
       "name": "One word with one vowel and one consonant",
-      "cmd": "Sentence.WordWithMostVowels(\"at\")",
-      "expected": "\"at\""
+      "cmd": "Sentence.WordWithMostVowels(\"oh\")",
+      "expected": "\"oh\""
     },
     {
       "test": "SentenceTest.OneWordWithTwoVowelsAndOneConsonant",
@@ -29,8 +29,8 @@
     {
       "test": "SentenceTest.LastWordIsWordWithMostVowels",
       "name": "Last word is word with most vowels",
-      "cmd": "Sentence.WordWithMostVowels(\"extremely fresh vegetables\")",
-      "expected": "\"vegetables\""
+      "cmd": "Sentence.WordWithMostVowels(\"do you fancy cooking\")",
+      "expected": "\"cooking\""
     },
     {
       "test": "SentenceTest.MixedCasing",
@@ -41,8 +41,14 @@
     {
       "test": "SentenceTest.IgnoreWordWithoutVowels",
       "name": "Ignore word without vowels",
-      "cmd": "Sentence.WordWithMostVowels(\"great rhythm\")",
-      "expected": "\"great\""
+      "cmd": "Sentence.WordWithMostVowels(\"fantastic rhythm guitarist\")",
+      "expected": "\"guitarist\""
+    },
+    {
+      "test": "SentenceTest.WordWithAllVowels",
+      "name": "Word with all vowels",
+      "cmd": "Sentence.WordWithMostVowels(\"Mountain Sequoia Trees\")",
+      "expected": "\"Sequoia\""
     }
   ]
 }
