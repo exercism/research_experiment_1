@@ -1,15 +1,21 @@
-pub struct Hand {
-    pub name: &'static str, // for human-readable documentation only
-    pub qty: u32,           // how many intervals appear on the clock face
-    pub seconds: u64,       // how many seconds are in this period of time
+pub fn longest_incrementing_subslice(s: &[u8]) -> &[u8] {
+    let mut lssl = vec![0; s.len()];
+    let mut lidx = vec![-1_isize; 256];
+
+    for idx in 0..s.len() {
+        if idx > 0 && s[idx] > 0 && (lidx[s[idx] as usize - 1] + 1) as usize == idx {
+            lssl[idx] = lssl[idx - 1] + 1;
+        } else {
+            lssl[idx] = 0;
+        }
+        lidx[s[idx] as usize] = idx as isize;
+    }
+
+    let (l, high) = lssl.iter().enumerate().map(|(i, l)| (l, i)).max().unwrap();
+    let low = high - l;
+    &s[low..=high]
 }
 
-pub struct Clock {
-    pub big: Hand,
-    pub little: Hand,
-}
-
-pub fn hands_match(_clock: &Clock, mut big_hand: u32) -> u64 {
-    big_hand %= 12;
-    ((big_hand as f64 * 12.0 / 11.0) % 1.0 * 3600.0).round() as u64
+pub fn longest_increasing_subslices<'a>(s: &'a [u8]) -> Vec<&'a [u8]> {
+    unimplemented!()
 }
