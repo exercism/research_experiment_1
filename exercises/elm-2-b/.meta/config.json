@@ -1,0 +1,23 @@
+{
+  "solution_files": ["src/Pizza.elm"],
+  "tests": [
+    {
+      "test": "retrieve single pizza",
+      "name": "Retrieve single pizza",
+      "cmd": "retrieveMenu \"regina, tomato sauce, ham, mushrooms, cantal, 11€\"",
+      "expected": "[ regina ]"
+    },
+    {
+      "test": "retrieve single vegetarian pizza",
+      "name": "Retrieve single vegetarian pizza",
+      "cmd": "retrieveMenu \"formaggio (v), tomato sauce, emmental, 8€\"",
+      "expected": "[ formaggio ]"
+    },
+    {
+      "test": "retrieve multiple pizzas",
+      "name": "Retrieve multiple pizzas",
+      "cmd": "retrieveMenu \"formaggio (v), tomato sauce, emmental, 8€, regina, tomato sauce, ham, mushrooms, cantal, 11€\"",
+      "expected": "[ formaggio, regina ]"
+    }
+  ]
+}
