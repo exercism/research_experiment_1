@@ -104,6 +104,14 @@
       "topics": []
     },
     {
+      "slug": "javascript-2-a",
+      "uuid": "959d95dd-57f7-4a68-8670-01e5f7fafc69",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
       "slug": "python-1-a",
       "uuid": "a1a32260-7a0f-4c97-9e47-3e0a0fbf1608",
       "core": false,
