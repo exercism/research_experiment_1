@@ -1,8 +1,6 @@
 {
-  "solution_files": [
-    "javascript-1-a.js"
-  ],
-  "test_file": "javascript-1-a.spec.js",
+  "solution_files": ["javascript-2-a.js"],
+  "test_file": "javascript-2-a.spec.js",
   "tests": [
     {
       "test": "magic-moves > arrange > arrange([ ♠, ♣, ♥, ♦, ✨ ], 3, 0): it moves the ♦ (index 3) to the front (index 0)",
