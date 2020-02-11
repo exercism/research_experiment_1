@@ -1,14 +1,14 @@
 {
-  "name": "@exercism/javascript-experiment-1-a",
-  "description": "Exercism research experiment exercise, 1a",
-  "author": "Derk-Jan Karrenbeld <derk-jan+github@karrenbeld.info>",
+  "name": "@exercism/javascript-experiment-2-a",
+  "description": "Exercism research experiment exercise, 2a",
+  "author": "Derk-Jan Karrenbeld <derk-jan+github@karrenbeld.info>, Rob Styles <rob@styles.to>",
   "version": "1.0.0",
   "license": "MIT",
   "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/exercism/research_experiment_1.git",
-    "directory": "exercises/javascript-1-a"
+    "directory": "exercises/javascript-2-a"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.5",
