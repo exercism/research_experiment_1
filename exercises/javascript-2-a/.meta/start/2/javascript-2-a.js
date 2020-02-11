@@ -1,7 +1,6 @@
 // @ts-check
 // Using iteration to move, then splice, using concat to copy
 
-
 /**
  * Re-arranges the input array by moving an item from from, to to.
  * Mutates the input array.
@@ -9,8 +8,8 @@
  * @template T
  *
  * @param {T[]} array the input array
- * @param {number} from the position to move from
- * @param {number} to the position to move to
+ * @param {number|array} from the position to move from, or an array of from/to pairs
+ * @param {number=} to the position to move to, only used when from is a number
  *
  * @returns {T[]}
  */
@@ -25,7 +24,7 @@ export function rearrange(array, from, to) {
 
   if (to >= array.length) {
     let k = to - array.length;
-    while ((k--) + 1) {
+    while (k-- + 1) {
       array.push(undefined);
     }
   }
@@ -41,12 +40,11 @@ export function rearrange(array, from, to) {
  * @template T
  *
  * @param {T[]} array the input array
- * @param {number} from the position to move from
- * @param {number} to the position to move to
+ * @param {number|array} from the position to move from, or an array of from/to pairs
+ * @param {number=} to the position to move to, only used when from is a number
  *
  * @returns {T[]}
  */
 export function arrange(array, from, to) {
-  return rearrange(array.concat([]), from, to)
+  return rearrange(array.concat([]), from, to);
 }
-
