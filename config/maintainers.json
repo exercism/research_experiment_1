@@ -26,6 +26,18 @@
       "contributions": [
         "go/test-runner",
       ]
+    },
+    {
+      "github_username": "coriolinus",
+      "name": "Peter Goodspeed-Niklaus",
+      "link_text": null,
+      "link_url": null,
+      "avatar_url": "https://avatars0.githubusercontent.com/u/7822926",
+      "bio": "definitely not an ai gone rogue",
+      "contributions": [
+        "rust/test-runner",
+        "rust/research-exercise"
+      ]
     }
   ]
 }
