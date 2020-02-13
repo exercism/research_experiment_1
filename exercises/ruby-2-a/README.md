@@ -13,7 +13,7 @@ Your task is to extend the existing shopping cart with a new functionality. Once
 
 You task is to define a new `ShoppingCart#scan_coupon` method which takes a coupon SKU and adds it to the cart. The SKU is a `Symbol` comprised of the first three uppercase letters of the discount type + the SKU of the relevant product. In case the coupon type is fixed price, the second part of the SKU is the discounted amount in uppercase letters. Coupons are unique and can be applied only once.
 
-Please bear in mind that the `total_amount` can't be a negative number, the minimum value for the `total_amount` is 0.
+Please bear in mind that the `total_amount` must not be a negative number, the minimum value for the `total_amount` must be 0.
 
 Example:
 
