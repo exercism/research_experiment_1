@@ -25,6 +25,7 @@
       "bio": "Since early 2016 I'm a fulltime Go developer. I love it because it's so simple and yet so powerful.",
       "contributions": [
         "go/test-runner",
+        "go/research-exercise"
       ]
     }
   ]
