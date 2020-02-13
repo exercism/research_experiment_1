@@ -11,7 +11,7 @@ Your task is to extend the existing shopping cart with a new functionality. Once
 | Fixed price discount | FIX_TEN     | Discounts 10.00 off the total amount of the cart |
 | Product discount     | HALF_STAPOT | Reduces all STAPOT items to half price           |
 
-You task is to define a new `ShoppingCart#scan_coupon` method which takes a coupon SKU and adds it to the cart. The SKU is a `Symbol` comprised of the first three uppercase letters of the discount type + the SKU of the relevant product. In case the coupon type is fixed price, the second part of the SKU is the discounted amount in uppercase letters. Coupons are unique and can be applied only once.
+You task is to define a new `ShoppingCart#scan_coupon` method which takes a coupon stock-keeping unit (SKU) and adds it to the cart. The SKU is a `Symbol` comprised of the first three uppercase letters of the discount type + the SKU of the relevant product. In case the coupon type is fixed price, the second part of the SKU is the discounted amount in uppercase letters. Coupons are unique and can be applied only once.
 
 Please bear in mind that the `total_amount` must not be a negative number, the minimum value for the `total_amount` must be 0.
 
