@@ -1,7 +1,6 @@
 """
-Perform RLE compression using imperative programming techniques.
+Perform Run Length Encoding compression on a string.
 """
-
 
 def compress(raw: str) -> bytes:
     """
@@ -20,7 +19,4 @@ def decompress(compressed: bytes) -> str:
     """
     Decompress RLE-encoded bytes back to UTF-8 text.
     """
-    packed, unpacked = bytearray(compressed), bytearray()
-    while packed:
-        unpacked.extend(packed.pop(0) * [packed.pop(0)])
-    return unpacked.decode("utf-8")
+    pass  # <- implement your function
