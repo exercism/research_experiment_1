@@ -38,6 +38,18 @@
         "rust/test-runner",
         "rust/research-exercise"
       ]
+    },
+    {
+      "github_username": "ceddlyburge",
+      "name": "Cedd Burge",
+      "link_text": "Blog posts",
+      "link_url": "https://www.freecodecamp.org/news/author/cedd/",
+      "avatar_url": "https://github.com/ceddlyburge.png",
+      "bio": "I am a software lead / manager / architect type thing. I mostly program in Elm, C#, Python, Typescript and Delphi",
+      "contributions": [
+        "elm/test-runner",
+        "elm/research-exercise"
+      ]
     }
   ]
 }
