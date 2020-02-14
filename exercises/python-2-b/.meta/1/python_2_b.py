@@ -59,19 +59,14 @@ def receive(transmission: str) -> str:
     """
     return "".join(map(NATO_TO_ALPHANUM.get, transmission.split()))
 
-ALPHANUM = "".join(ALPHANUM_TO_NATO.keys())
-CAESAR = str.maketrans(ALPHANUM, ALPHANUM[-3:] + ALPHANUM[:-3])
-RASEAC = {v: k for k, v in CAESAR.items()}
-
 def transmit_encoded(plaintext: str) -> str:
     """
     Encode a message and transmit as NATO code words.
     """
-    ciphertext = plaintext.upper().translate(CAESAR)
-    return transmit(ciphertext)
+    pass  # <- implement your function
 
 def receive_encoded(ciphertext: str) -> str:
     """
     Receive an encoded message via NATO code word transmission.
     """
-    return receive(ciphertext).translate(RASEAC)
+    pass  # <- implement your function
