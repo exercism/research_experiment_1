@@ -65,6 +65,17 @@
       ]
     },
     {
+      "github_username": "pvcarrera",
+      "name": "Pablo Vicente",
+      "link_text": "",
+      "link_url": "",
+      "avatar_url": "https://s.gravatar.com/avatar/5b36c6cfb4083458ae9e12a377692efc?s=400",
+      "bio": "I am a software developer with experience on web development and API design. When I'm not coding you can find me in the mountains.",
+      "contributions": [
+        "ruby/research-exercise"
+      ]
+    },
+    {
       "github_username": "bergjohan",
       "name": "Johan Berg",
       "link_text": null,
