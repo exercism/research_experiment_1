@@ -34,4 +34,5 @@ parsePizza str =
     Maybe.map4 Pizza
         name
         vegetarian
+        (Just [])
         price

@@ -35,6 +35,7 @@ pizzaParser =
         |= wordParser
         |. Parser.spaces
         |= vegetarianParser
+        |= Parser.succeed []
         |. Parser.spaces
         |= Parser.int
         |. Parser.symbol "€"
