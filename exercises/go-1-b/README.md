@@ -1,6 +1,6 @@
 ## Introduction
 
-This is Part 1 of our research into how people write Go differently. This exercise should take 10-15 minutes. There is no right or wrong way to approach it - just do what feels the most natural to you. Feel free to use books, Google or Stack Overflow, just like you would if you were programming normally, but please don't actively look for a solution to the problem as this will negatively affect the research.
+This is Part 1 of our research into how people write Go differently. This exercise should take 10-15 minutes for a programmer who is proficient in Go. There is no right or wrong way to approach it - just do what feels the most natural to you. Feel free to use books, Google or Stack Overflow, just like you would if you were programming normally, but please don't actively look for a solution to the problem as this will negatively affect the research.
 
 ## Instructions
 
@@ -13,7 +13,7 @@ The casino uses the following, simplified rules to determine if a player wins:
 
 To further simplify things, the casino has decided that an Ace will always be worth `11`.
 
-Your task is to define a function with the signature `PlayerWins`, which takes a player- and dealer hand, and returns `true` if the player wins, and `false` if the dealer wins. The hands are passed as strings, where each character in the string represents a single card. The characters '2' to '9' are worth their numeric value; 'X' (representing the `10` card), 'J', 'Q' and 'K' are worth `10` and 'A' is worth `11`.
+Your task is to define a function named `PlayerWins`, which takes a player- and dealer hand, and returns `true` if the player wins, and `false` if the dealer wins. The hands are passed as strings, where each character in the string represents a single card. The characters '2' to '9' are worth their numeric value; 'X' (representing the `10` card), 'J', 'Q' and 'K' are worth `10` and 'A' is worth `11`.
 
 For example:
 

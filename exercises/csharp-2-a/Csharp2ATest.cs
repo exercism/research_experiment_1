@@ -8,7 +8,7 @@ public class SentenceTest
 
     [Fact]
     public void OneWordWithOneVowelAndOneConsonant() =>
-        Assert.Equal("at", Sentence.WordWithMostVowels("at"));
+        Assert.Equal("oh", Sentence.WordWithMostVowels("oh"));
 
     [Fact]
     public void OneWordWithTwoVowelsAndOneConsonant() =>
@@ -20,7 +20,7 @@ public class SentenceTest
 
     [Fact]
     public void LastWordIsWordWithMostVowels() =>
-        Assert.Equal("vegetables", Sentence.WordWithMostVowels("extremely fresh vegetables"));
+        Assert.Equal("cooking", Sentence.WordWithMostVowels("do you fancy cooking"));
 
     [Fact]
     public void MixedCasing() =>
@@ -28,7 +28,11 @@ public class SentenceTest
 
     [Fact]
     public void IgnoreWordWithoutVowels() =>
-        Assert.Equal("great", Sentence.WordWithMostVowels("great rhythm"));
+        Assert.Equal("guitarist", Sentence.WordWithMostVowels("fantastic rhythm guitarist"));
+
+    [Fact]
+    public void WordWithAllVowels() =>
+        Assert.Equal("Sequoia", Sentence.WordWithMostVowels("Mountain Sequoia Trees"));
 
     [Fact]
     public void TieBreakerWithEquallyLongWords() =>

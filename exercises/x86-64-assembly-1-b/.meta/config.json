@@ -3,32 +3,46 @@
   "test_file": "x86_64_assembly_1_b_test.c",
   "tests": [
     {
-      "name": "test_red",
-      "cmd": "color_name(RED)"
+      "test": "test_red",
+      "name": "Red",
+      "cmd": "color_name(RED)",
+      "expected": "\"RED\""
     },
     {
-      "name": "test_orange",
-      "cmd": "color_name(ORANGE)"
+      "test": "test_orange",
+      "name": "Orange",
+      "cmd": "color_name(ORANGE)",
+      "expected": "\"ORANGE\""
     },
     {
-      "name": "test_yellow",
-      "cmd": "color_name(YELLOW)"
+      "test": "test_yellow",
+      "name": "Yellow",
+      "cmd": "color_name(YELLOW)",
+      "expected": "\"YELLOW\""
     },
     {
-      "name": "test_green",
-      "cmd": "color_name(GREEN)"
+      "test": "test_green",
+      "name": "Green",
+      "cmd": "color_name(GREEN)",
+      "expected": "\"GREEN\""
     },
     {
-      "name": "test_blue",
-      "cmd": "color_name(BLUE)"
+      "test": "test_blue",
+      "name": "Blue",
+      "cmd": "color_name(BLUE)",
+      "expected": "\"BLUE\""
     },
     {
-      "name": "test_indigo",
-      "cmd": "color_name(INDIGO)"
+      "test": "test_indigo",
+      "name": "Indigo",
+      "cmd": "color_name(INDIGO)",
+      "expected": "\"INDIGO\""
     },
     {
-      "name": "test_violet",
-      "cmd": "color_name(VIOLET)"
+      "test": "test_violet",
+      "name": "Violet",
+      "cmd": "color_name(VIOLET)",
+      "expected": "\"VIOLET\""
     }
   ]
 }

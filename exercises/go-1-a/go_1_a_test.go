@@ -37,6 +37,6 @@ func TestSixtyFive(t *testing.T) {
 func AssertDescribe(t *testing.T, input int, expected string) {
 	actual := Describe(input)
 	if actual != expected {
-		t.Errorf("Describe(%d) = %q, expected %q.", input, actual, expected)
+		t.Errorf("Describe(%d)\n   got: %q\n  want: %q.", input, actual, expected)
 	}
 }

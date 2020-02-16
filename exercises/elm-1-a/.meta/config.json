@@ -2,24 +2,34 @@
   "solution_files": ["src/AggregateScorers.elm"],
   "tests": [
     {
-      "name": "doesn't change a single scorer",
-      "cmd": "aggregateScorers [ \"Anna\" ]"
+      "test": "doesn't change a single scorer",
+      "name": "Doesn't change a single scorer",
+      "cmd": "aggregateScorers [ \"Anna\" ]",
+      "expected": "[ \"Anna\" ]"
     },
     {
-      "name": "doesn't change multiple unique scorers",
-      "cmd": "aggregateScorers [ \"Anna\", \"Lisa\" ]"
+      "test": "doesn't change multiple unique scorers",
+      "name": "Doesn't change multiple unique scorers",
+      "cmd": "aggregateScorers [ \"Anna\", \"Lisa\" ]",
+      "expected": "[ \"Anna\", \"Lisa\" ]"
     },
     {
-      "name": "converts duplicates into goals",
-      "cmd": "aggregateScorers [ \"Anna\", \"Anna\" ]"
+      "test": "converts duplicates into goals",
+      "name": "Converts duplicates into goals",
+      "cmd": "aggregateScorers [ \"Anna\", \"Anna\" ]",
+      "expected": "[ \"Anna (2)\" ]"
     },
     {
-      "name": "orders alphabetically",
-      "cmd": "aggregateScorers [ \"Lisa\", \"Anna\" ]"
+      "test": "orders alphabetically",
+      "name": "Orders alphabetically",
+      "cmd": "aggregateScorers [ \"Lisa\", \"Anna\" ]",
+      "expected": "[ \"Anna\", \"Lisa\" ]"
     },
     {
-      "name": "converts duplicates into goals and maintain single scorers",
-      "cmd": "aggregateScorers [ \"Lisa\", \"Anna\", \"Anna\" ]"
+      "test": "converts duplicates into goals and maintain single scorers",
+      "name": "Converts duplicates into goals and maintain single scorers",
+      "cmd": "aggregateScorers [ \"Lisa\", \"Anna\", \"Anna\" ]",
+      "expected": "[ \"Anna (2)\", \"Lisa\" ]"
     }
   ]
 }

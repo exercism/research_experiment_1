@@ -1,27 +1,35 @@
 {
-    "solution_files": [
-        "src/lib.rs"
-    ],
-    "tests": [
-        {
-            "name": "test_disemvowel",
-            "cmd": "test_disemvowel(\"disemvowel\");"
-        },
-        {
-            "name": "test_alphabet",
-            "cmd": "test_alphabet(\"abcdefghijklmnopqrstuvwxyz\");"
-        },
-        {
-            "name": "test_uppercase",
-            "cmd": "test_uppercase(\"A HORRIBLE HATEFUL MESSAGE FROM A TROLL\");"
-        },
-        {
-            "name": "test_description",
-            "cmd": "test_description(\"This technique, called _disemvowelment_, is often employed to reduce the effectiveness of troll messages in online fora.\");"
-        },
-        {
-            "name": "test_non_ascii",
-            "cmd": "test_non_ascii(\"「Disemvowelment」はASCII文字に対してのみ有効です。\");"
-        }
-    ]
+  "solution_files": ["src/lib.rs"],
+  "tests": [
+    {
+      "test": "test_disemvowel",
+      "name": "Disemvowel",
+      "cmd": "disemvowel(\"disemvowel\");",
+      "expected": "\"dsmvwl\""
+    },
+    {
+      "test": "test_alphabet",
+      "name": "Alphabet",
+      "cmd": "disemvowel(\"abcdefghijklmnopqrstuvwxyz\");",
+      "expected": "\"bcdfghjklmnpqrstvwxyz\""
+    },
+    {
+      "test": "test_uppercase",
+      "name": "Uppercase",
+      "cmd": "disemvowel(\"A HORRIBLE HATEFUL MESSAGE FROM A TROLL\");",
+      "expected": "\" HRRBL HTFL MSSG FRM  TRLL\""
+    },
+    {
+      "test": "test_description",
+      "name": "Description",
+      "cmd": "disemvowel(\"This technique, called _disemvowelment_, is often employed to reduce the effectiveness of troll messages in online fora.\");",
+      "expected": "\"Ths tchnq, clld _dsmvwlmnt_, s ftn mplyd t rdc th ffctvnss f trll mssgs n nln fr.\""
+    },
+    {
+      "test": "test_non_ascii",
+      "name": "Non ASCII",
+      "cmd": "disemvowel(\"「Disemvowelment」はASCII文字に対してのみ有効です。\");",
+      "expected": "\"「Dsmvwlmnt」はSC文字に対してのみ有効です。\""
+    }
+  ]
 }

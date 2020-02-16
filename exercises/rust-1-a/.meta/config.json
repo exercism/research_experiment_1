@@ -1,55 +1,43 @@
 {
-    "solution_files": [
-        "src/lib.rs"
-    ],
-    "tests": [
-        {
-            "name": "test_01",
-            "cmd": "hands_match(01)"
-        },
-        {
-            "name": "test_02",
-            "cmd": "hands_match(02)"
-        },
-        {
-            "name": "test_03",
-            "cmd": "hands_match(03)"
-        },
-        {
-            "name": "test_04",
-            "cmd": "hands_match(04)"
-        },
-        {
-            "name": "test_05",
-            "cmd": "hands_match(05)"
-        },
-        {
-            "name": "test_06",
-            "cmd": "hands_match(06)"
-        },
-        {
-            "name": "test_07",
-            "cmd": "hands_match(07)"
-        },
-        {
-            "name": "test_08",
-            "cmd": "hands_match(08)"
-        },
-        {
-            "name": "test_09",
-            "cmd": "hands_match(09)"
-        },
-        {
-            "name": "test_10",
-            "cmd": "hands_match(10)"
-        },
-        {
-            "name": "test_11",
-            "cmd": "hands_match(11)"
-        },
-        {
-            "name": "test_12",
-            "cmd": "hands_match(12)"
-        }
-    ]
+  "solution_files": [
+    "src/lib.rs"
+  ],
+  "tests": [
+    {
+      "test": "test_example",
+      "name": "Example",
+      "cmd": "longest_incrementing_subslice(&[1, 2, 4, 4, 5, 6, 7, 3, 2, 7, 8, 9, 1])",
+      "expected": "&[4, 5, 6, 7]"
+    },
+    {
+      "test": "test_head",
+      "name": "Head",
+      "cmd": "longest_incrementing_subslice(&[1, 2, 3, 5])",
+      "expected": "&[1, 2, 3]"
+    },
+    {
+      "test": "test_tail",
+      "name": "Tail",
+      "cmd": "longest_incrementing_subslice(&[8, 1, 2, 3])",
+      "expected": "&[1, 2, 3]"
+    },
+    {
+      "test": "test_full",
+      "name": "Full",
+      "cmd": "longest_incrementing_subslice(&[1, 2, 3])",
+      "expected": "&[1, 2, 3]"
+    },
+    {
+      "test": "test_min",
+      "name": "Minimum",
+      "cmd": "longest_incrementing_subslice(&[2, 1, 0, 1, 2, 5, 6])",
+      "expected": " &[0, 1, 2]"
+    },
+    {
+      "test": "test_max",
+      "name": "Maximum",
+      "cmd": "longest_incrementing_subslice(&[2, 5, 2, 253, 254, 255, 1])",
+      "expected": "&[253, 254, 255]"
+    }
+  ]
 }

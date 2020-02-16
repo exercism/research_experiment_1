@@ -1,6 +1,6 @@
 ## Introduction
 
-This is Part 1 of our research into how people write Python differently. This exercise should take 10-15 minutes. There is no right or wrong way to approach it - just do what feels the most natural to you. Feel free to use books, Google or Stack Overflow, just like you would if you were programming normally, but please don't actively look for a solution to the problem as this will negatively affect the research.
+This is Part 1 of our research into how people write Python differently. This exercise should take 10-15 minutes for a programmer who is proficient in Python. There is no right or wrong way to approach it - just do what feels the most natural to you. Feel free to use books, Google or Stack Overflow, just like you would if you were programming normally, but please don't actively look for a solution to the problem as this will negatively affect the research.
 
 ## Instructions
 
@@ -11,8 +11,8 @@ We expect you to define a function `compress` that takes a single argument which
 For example:
 
 ```python
->>> encode("abbcccddddaaaaaa")
-b'\x01a\x02b\x03c\x04d\x05a'
+>>> compress("abbcccddddaaaaaa")
+b'\x01a\x02b\x03c\x04d\x06a'
 ```
 
 [str]: https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str

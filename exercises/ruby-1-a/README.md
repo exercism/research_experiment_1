@@ -1,6 +1,6 @@
 ## Introduction
 
-This is Part 1 of our research into how people write Ruby differently. This exercise should take 10-15 minutes. There is no right or wrong way to approach it - just do what feels the most natural to you. Feel free to use books, Google or Stack Overflow, just like you would if you were programming normally, but please don't actively look for a solution to the problem as this will negatively affect the research.
+This is Part 1 of our research into how people write Ruby differently. This exercise should take 10-15 minutes for a programmer who is proficient in Ruby. There is no right or wrong way to approach it - just do what feels the most natural to you. Feel free to use books, Google or Stack Overflow, just like you would if you were programming normally, but please don't actively look for a solution to the problem as this will negatively affect the research.
 
 ## Instructions
 
@@ -10,28 +10,29 @@ Items are added to the basket using stock-keeping unit (SKU) codes. The items in
 
 | Name      | Price | SKU    |
 |-----------|-------|--------|
-| Potatoes  | 10    | STAPOT |
-| Rice      | 30    | STARIC |
+| Potatoes  | 10.00 | STAPOT |
+| Rice      | 30.00 | STARIC |
 | Coffee    | 14.99 | STACOF |
-| Newspaper | 2.99  | MEDNEW |
+| Newspaper |  2.99 | MEDNEW |
+
 
 You need to define a `ShoppingCart` class, with three public methods:
-- `add`: Takes an SKU and adds it to the cart. The SKU is comprised of the first three upcased chars of the product type + the first three upcased chars of the product name.
+- `add`: Takes a SKU and adds it to the cart. The SKU is a `Symbol` comprised of the first three uppercase letters of the product type + the first three uppercase letters of the product name.
 - `total_amount`: The value of the items in the cart as a number with two decimal places (e.g. 3.99).
-- `items_list`: A list of the names of the items in the cart, ordered alphabetically, separated by a comma and a space.
+- `items_list`: A list of the names of the items in the cart, ordered alphabetically, with no duplicates, separated by a comma and a space.
 
 For example:
 
 ```ruby
 shopping_cart = ShoppingCart.new
-shopping_cart.add(STAPOT)
-shopping_cart.add(STARIC)
+shopping_cart.add(:STAPOT)
+shopping_cart.add(:STARIC)
 
 shopping_cart.total_amount
-// Returns: 40
+// Returns: 40.00
 
 shopping_cart.items_list
-// Returns: "potatoes, rice"
+// Returns: "Potatoes, Rice"
 ```
 
 **Note:** You can use `debug("some test")` to output debugging information for yourself.

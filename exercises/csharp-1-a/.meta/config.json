@@ -3,32 +3,52 @@
   "test_file": "Csharp1ATest.cs",
   "tests": [
     {
-      "name": "SentenceTest.OneWordWithOneVowel",
-      "cmd": "Sentence.WordWithMostVowels(\"a\")"
+      "test": "SentenceTest.OneWordWithOneVowel",
+      "name": "One word with one vowel",
+      "cmd": "Sentence.WordWithMostVowels(\"a\")",
+      "expected": "\"a\""
     },
     {
-      "name": "SentenceTest.OneWordWithOneVowelAndOneConsonant",
-      "cmd": "Sentence.WordWithMostVowels(\"at\")"
+      "test": "SentenceTest.OneWordWithOneVowelAndOneConsonant",
+      "name": "One word with one vowel and one consonant",
+      "cmd": "Sentence.WordWithMostVowels(\"oh\")",
+      "expected": "\"oh\""
     },
     {
-      "name": "SentenceTest.OneWordWithTwoVowelsAndOneConsonant",
-      "cmd": "Sentence.WordWithMostVowels(\"tea\")"
+      "test": "SentenceTest.OneWordWithTwoVowelsAndOneConsonant",
+      "name": "One word with two vowels and one consonant",
+      "cmd": "Sentence.WordWithMostVowels(\"tea\")",
+      "expected": "\"tea\""
     },
     {
-      "name": "SentenceTest.LongestWordIsNotWordWithMostVowels",
-      "cmd": "Sentence.WordWithMostVowels(\"the area of a circle\")"
+      "test": "SentenceTest.LongestWordIsNotWordWithMostVowels",
+      "name": "Longest word is not word with most vowels",
+      "cmd": "Sentence.WordWithMostVowels(\"the area of a circle\")",
+      "expected": "\"area\""
     },
     {
-      "name": "SentenceTest.LastWordIsWordWithMostVowels",
-      "cmd": "Sentence.WordWithMostVowels(\"extremely fresh vegetables\")"
+      "test": "SentenceTest.LastWordIsWordWithMostVowels",
+      "name": "Last word is word with most vowels",
+      "cmd": "Sentence.WordWithMostVowels(\"do you fancy cooking\")",
+      "expected": "\"cooking\""
     },
     {
-      "name": "SentenceTest.MixedCasing",
-      "cmd": "Sentence.WordWithMostVowels(\"TEST YOUR MIGHT\")"
+      "test": "SentenceTest.MixedCasing",
+      "name": "Mixed casing",
+      "cmd": "Sentence.WordWithMostVowels(\"TEST YOUR MIGHT\")",
+      "expected": "\"YOUR\""
     },
     {
-      "name": "SentenceTest.IgnoreWordWithoutVowels",
-      "cmd": "Sentence.WordWithMostVowels(\"great rhythm\")"
+      "test": "SentenceTest.IgnoreWordWithoutVowels",
+      "name": "Ignore word without vowels",
+      "cmd": "Sentence.WordWithMostVowels(\"fantastic rhythm guitarist\")",
+      "expected": "\"guitarist\""
+    },
+    {
+      "test": "SentenceTest.WordWithAllVowels",
+      "name": "Word with all vowels",
+      "cmd": "Sentence.WordWithMostVowels(\"Mountain Sequoia Trees\")",
+      "expected": "\"Sequoia\""
     }
   ]
 }

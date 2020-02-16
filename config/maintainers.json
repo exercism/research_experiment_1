@@ -1,4 +1,91 @@
 {
   "docs_url": "https://github.com/exercism/docs/blob/master/maintaining-a-track/maintainer-configuration.md",
-  "maintainers": []
+  "maintainers": [
+    {
+      "github_username": "ErikSchierboom",
+      "name": "Erik Schierboom",
+      "link_text": "My blog",
+      "link_url": "http://www.erikschierboom.com/",
+      "avatar_url": "https://nl.gravatar.com/userimage/27030165/76c834a4087478d5f9ff6ff8c6c1429e.jpg",
+      "bio": "I am a developer with a passion for learning new languages. My favorite languages are F# and Kotlin.",
+      "contributions": [
+        "csharp/test-runner",
+        "csharp/research-exercise",
+        "go/test-runner",
+        "go/research-exercise",
+        "elm/test-runner"
+      ]
+    },
+    {
+      "github_username": "tehsphinx",
+      "name": "Gabriel Nelle",
+      "link_text": "",
+      "link_url": "",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/6624571",
+      "bio": "Since early 2016 I'm a fulltime Go developer. I love it because it's so simple and yet so powerful.",
+      "contributions": [
+        "go/test-runner",
+        "go/research-exercise"
+      ]
+    },
+    {
+      "github_username": "coriolinus",
+      "name": "Peter Goodspeed-Niklaus",
+      "link_text": null,
+      "link_url": null,
+      "avatar_url": "https://avatars0.githubusercontent.com/u/7822926",
+      "bio": "definitely not an ai gone rogue",
+      "contributions": [
+        "rust/test-runner",
+        "rust/research-exercise"
+      ]
+    },
+    {
+      "github_username": "ceddlyburge",
+      "name": "Cedd Burge",
+      "link_text": "Blog posts",
+      "link_url": "https://www.freecodecamp.org/news/author/cedd/",
+      "avatar_url": "https://github.com/ceddlyburge.png",
+      "bio": "I am a software lead / manager / architect type thing. I mostly program in Elm, C#, Python, Typescript and Delphi",
+      "contributions": [
+        "elm/test-runner",
+        "elm/research-exercise"
+      ]
+    },
+    {
+      "github_username": "yawpitch",
+      "name": "Michael Morehouse",
+      "link_text": "My Techie Blog",
+      "link_url": "https://yawpitchroll.com/",
+      "avatar_url": null,
+      "bio": "Although Python wasn't my first -- and won't be my last -- programming language, it remains my favorite for introducing others to the joys, the pains, the infrequent ecstacies, and the occasional terrors of life before the REPL.",
+      "contributions": [
+        "python/test-runner",
+        "python/research-exercise"
+      ]
+    },
+    {
+      "github_username": "pvcarrera",
+      "name": "Pablo Vicente",
+      "link_text": "",
+      "link_url": "",
+      "avatar_url": "https://s.gravatar.com/avatar/5b36c6cfb4083458ae9e12a377692efc?s=400",
+      "bio": "I am a software developer with experience on web development and API design. When I'm not coding you can find me in the mountains.",
+      "contributions": [
+        "ruby/research-exercise"
+      ]
+    },
+    {
+      "github_username": "bergjohan",
+      "name": "Johan Berg",
+      "link_text": null,
+      "link_url": null,
+      "avatar_url": "https://avatars.githubusercontent.com/u/47738833",
+      "bio": "I have been writing C code professionally since 2014. Interested in low-level stuff.",
+      "contributions": [
+        "x86-64-assembly/test-runner",
+        "x86-64-assembly/research-exercise"
+      ]
+    }
+  ]
 }

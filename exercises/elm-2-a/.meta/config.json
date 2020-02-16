@@ -2,24 +2,34 @@
   "solution_files": ["src/AggregateScorers.elm"],
   "tests": [
     {
-      "name": "adds brackets to goal time for single scorer",
-      "cmd": "aggregateScorers [ \"Anna 21\" ]"
+      "test": "adds brackets to goal time for single scorer",
+      "name": "Adds brackets to goal time for single scorer",
+      "cmd": "aggregateScorers [ \"Anna 21\" ]",
+      "expected": "[ \"Anna (21)\" ]"
     },
     {
-      "name": "adds brackets to goal time for multiple unique scorers",
-      "cmd": "aggregateScorers [ \"Anna 13\", \"Lisa 17\" ]"
+      "test": "adds brackets to goal time for multiple unique scorers",
+      "name": "Adds brackets to goal time for multiple unique scorers",
+      "cmd": "aggregateScorers [ \"Anna 13\", \"Lisa 17\" ]",
+      "expected": "[ \"Anna (13)\", \"Lisa (17)\" ]"
     },
     {
-      "name": "adds comma separated goal times for duplicate scorers",
-      "cmd": "aggregateScorers [ \"Anna 28\", \"Anna 32\" ]"
+      "test": "adds comma separated goal times for duplicate scorers",
+      "name": "Adds comma separated goal times for duplicate scorers",
+      "cmd": "aggregateScorers [ \"Anna 28\", \"Anna 32\" ]",
+      "expected": "[ \"Anna (28, 32)\" ]"
     },
     {
-      "name": "orders alphabetically",
-      "cmd": "aggregateScorers [ \"Lisa\", \"Anna\" ]"
+      "test": "orders alphabetically",
+      "name": "Orders alphabetically",
+      "cmd": "aggregateScorers [ \"Lisa\", \"Anna\" ]",
+      "expected": "[ \"Anna (28, 32)\" ]"
     },
     {
-      "name": "adds comma separated goal times for duplicates and maintain single scorers",
-      "cmd": "aggregateScorers [ \"Lisa 76\", \"Anna 78\", \"Anna 82\" ]"
+      "test": "adds comma separated goal times for duplicates and maintain single scorers",
+      "name": "Adds comma separated goal times for duplicates and maintain single scorers",
+      "cmd": "aggregateScorers [ \"Lisa 76\", \"Anna 78\", \"Anna 82\" ]",
+      "expected": "[ \"Anna (78, 82)\", \"Lisa (76)\" ]"
     }
   ]
 }

@@ -3,36 +3,52 @@
   "test_file": "x86_64_assembly_1_a_test.c",
   "tests": [
     {
-      "name": "test_empty_string",
-      "cmd": "str_isalpha(\"\")"
+      "test": "test_empty_string",
+      "name": "Empty string",
+      "cmd": "str_isalpha(\"\")",
+      "expected": "false"
     },
     {
-      "name": "test_uppercase",
-      "cmd": "str_isalpha(\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\")"
+      "test": "test_uppercase",
+      "name": "Uppercase",
+      "cmd": "str_isalpha(\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\")",
+      "expected": "true"
     },
     {
-      "name": "test_uppercase_low_limit",
-      "cmd": "str_isalpha(\"@ABCDEFGHIJKLMNOPQRSTUVWXYZ\")"
+      "test": "test_uppercase_low_limit",
+      "name": "Uppercase low limit",
+      "cmd": "str_isalpha(\"@ABCDEFGHIJKLMNOPQRSTUVWXYZ\")",
+      "expected": "false"
     },
     {
-      "name": "test_uppercase_high_limit",
-      "cmd": "str_isalpha(\"ABCDEFGHIJKLMNOPQRSTUVWXYZ[\")"
+      "test": "test_uppercase_high_limit",
+      "name": "Uppercase high limit",
+      "cmd": "str_isalpha(\"ABCDEFGHIJKLMNOPQRSTUVWXYZ[\")",
+      "expected": "false"
     },
     {
-      "name": "test_lowercase",
-      "cmd": "str_isalpha(\"abcdefghijklmnopqrstuvwxyz\")"
+      "test": "test_lowercase",
+      "name": "Lowercase",
+      "cmd": "str_isalpha(\"abcdefghijklmnopqrstuvwxyz\")",
+      "expected": "true"
     },
     {
-      "name": "test_lowercase_low_limit",
-      "cmd": "str_isalpha(\"`abcdefghijklmnopqrstuvwxyz\")"
+      "test": "test_lowercase_low_limit",
+      "name": "Lowercase low limit",
+      "cmd": "str_isalpha(\"`abcdefghijklmnopqrstuvwxyz\")",
+      "expected": "false"
     },
     {
-      "name": "test_lowercase_high_limit",
-      "cmd": "str_isalpha(\"abcdefghijklmnopqrstuvwxyz{\")"
+      "test": "test_lowercase_high_limit",
+      "name": "Lowercase high limit",
+      "cmd": "str_isalpha(\"abcdefghijklmnopqrstuvwxyz{\")",
+      "expected": "false"
     },
     {
-      "name": "test_letters",
-      "cmd": "str_isalpha(\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\")"
+      "test": "test_letters",
+      "name": "Letters",
+      "cmd": "str_isalpha(\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\")",
+      "expected": "true"
     }
   ]
 }
