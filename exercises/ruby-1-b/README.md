@@ -5,18 +5,26 @@ This is Part 1 of our research into how people write Ruby differently. This exer
 ## Instructions
 
 You are given a collection of library books, and your job is to import them into
-the library's catalog system. The books are in a text file which provides a title,
-ISBN, author, and publishing year for each book.
+the library's catalog system. The books are in the constant `Library::BOOKS`, and
+each book has the following columns:
+title, ISBN, author, and publishing year.
 
-Write the methods that will import the data for the books from the text file to
-the library's catalog system.
+You need to write the logic for finding a book, adding new copies to the library's
+inventory, lending a book, and returning a book
 
-The data is stored in plain text in a file called `books.txt`. One record for each line,
-and the `;` character is used as a delimiter. The first two lines look like this:
-
+A book should be findable with it's ISBN
 ```
-Title;ISBN;Author;Published
-The Adventures of Tom Sawyer;9780191604928;Mark Twain;2007
+book = Library.new.find("9780191604928")
+```
+And it should have getters for the attribute values provided in `Library::BOOKS`
+```
+book.author
+=> "Mark Twain"
+
+book.title
+=> "The Adventures of Tom Sawyer"
+
+# and so on ...
 ```
 
 **Note:** You can use `debug("some test")` to output debugging information for yourself.
