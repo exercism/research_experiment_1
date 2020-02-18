@@ -1,0 +1,198 @@
+{
+  "solution_files": ["python_2_a.py"],
+  "test_file": "python_2_a_test.py",
+  "tests": [
+    {
+      "test": "TestCompress.test_empty_string",
+      "name": "Compress empty string",
+      "cmd": "compress(\"\")",
+      "expected": "b\"\""
+    },
+    {
+      "test": "TestCompress.test_single_ascii_letter",
+      "name": "Compress single ASCII letter",
+      "cmd": "compress(\"a\")",
+      "expected": "b\"\\x01a\""
+    },
+    {
+      "test": "TestCompress.test_unique_ascii_letters",
+      "name": "Compress unique ASCII letters",
+      "cmd": "compress(\"ab\")",
+      "expected": "b\"\\x01a\\x02b\\x03c\""
+    },
+    {
+      "test": "TestCompress.test_duplicated_ascii_letters",
+      "name": "Compress duplicated ASCII letters",
+      "cmd": "compress(\"abbccc\")",
+      "expected": "b\"\\x01a\\x02b\\x03c"
+    },
+    {
+      "test": "TestCompress.test_single_ascii_digit",
+      "name": "Compress single ASCII digit",
+      "cmd": "compress(\"0\")",
+      "expected": "b\"\\x010"
+    },
+    {
+      "test": "TestCompress.test_unique_ascii_digits",
+      "name": "Compress unique ASCII digits",
+      "cmd": "compress(\"01\")",
+      "expected": "b\"\\x010\\x011"
+    },
+    {
+      "test": "TestCompress.test_duplicated_ascii_digits",
+      "name": "Compress duplicated ASCII digits",
+      "cmd": "compress(\"011222\")",
+      "expected": "b\"\\x010\\x021\\x032"
+    },
+    {
+      "test": "TestCompress.test_mixed_ascii_alphanum",
+      "name": "Compress mixed ASCII alphanum",
+      "cmd": "compress(\"a0bb11ccc222\")",
+      "expected": "b\"\\x01a\\x010\\x02b\\x021\\x03c\\x032"
+    },
+    {
+      "test": "TestCompress.test_very_long_run",
+      "name": "Compress very long run",
+      "cmd": "compress(\"a\" + \"b\" * 255 + \"c\")",
+      "expected": "b\"\\x01a\\xffb\\x01c"
+    },
+    {
+      "test": "TestCompress.test_very_long_runs",
+      "name": "Compress very long runs",
+      "cmd": "compress(\"a\" * 255 + \"0\" * 255 + \"b\" * 255)",
+      "expected": "b\"\\xffa\\xff0\\xffb"
+    },
+    {
+      "test": "TestCompress.test_all_ascii_letters",
+      "name": "Compress all ASCII letters",
+      "cmd": "compress(string.ascii_letters)",
+      "expected": "bytes(chain.from_iterable((1, ord(c)) for c in text))"
+    },
+    {
+      "test": "TestCompress.test_all_ascii_digits",
+      "name": "Compress all ASCII digits",
+      "cmd": "compress(string.digits)",
+      "expected": "bytes(chain.from_iterable((1, ord(c)) for c in text))"
+    },
+    {
+      "test": "TestCompress.test_all_ascii_punctuation",
+      "name": "Compress all ASCII punctuation",
+      "cmd": "compress(string.punctuation)",
+      "expected": "bytes(chain.from_iterable((1, ord(c)) for c in text))"
+    },
+    {
+      "test": "TestCompress.test_all_ascii_whitespace",
+      "name": "Compress all ASCII whitespace",
+      "cmd": "compress(string.whitespace)",
+      "expected": "bytes(chain.from_iterable((1, ord(c)) for c in text))"
+    },
+    {
+      "test": "TestCompress.test_all_ascii_printable",
+      "name": "Compress all ASCII printable",
+      "cmd": "compress(string.printable)",
+      "expected": "bytes(chain.from_iterable((1, ord(c)) for c in text))"
+    },
+    {
+      "test": "TestCompress.test_multibyte_unicode",
+      "name": "Compress multibyte unicode",
+      "cmd": "compress(\"\\N{GRINNING FACE} \\N{SHAMROCK}\")",
+      "expected": "b\"\\x01\\xf0\\x01\\x9f\\x01\\x98\\x01\\x80\\x01 \\x01\\xe2\\x02\\x98"
+    },
+    {
+      "test": "TestDecompress.test_empty_string",
+      "name": "Decompress empty string",
+      "cmd": "decompress(b\"\")",
+      "expected": "\"\""
+    },
+    {
+      "test": "TestDecompress.test_single_ascii_letter",
+      "name": "Decompress single ASCII letter",
+      "cmd": "decompress(b\"\\x01a\")",
+      "expected": "\"a\""
+    },
+    {
+      "test": "TestDecompress.test_unique_ascii_letters",
+      "name": "Decompress unique ASCII letters",
+      "cmd": "decompress(b\"\\x01a\\x02b\\x03c\")",
+      "expected": "\"ab\""
+    },
+    {
+      "test": "TestDecompress.test_duplicated_ascii_letters",
+      "name": "Decompress duplicated ASCII letters",
+      "cmd": "decompress(b\"\\x01a\\x02b\\x03c)",
+      "expected": "\"abbccc\""
+    },
+    {
+      "test": "TestDecompress.test_single_ascii_digit",
+      "name": "Decompress single ASCII digit",
+      "cmd": "decompress(b\"\\x010)",
+      "expected": "\"0\""
+    },
+    {
+      "test": "TestDecompress.test_unique_ascii_digits",
+      "name": "Decompress unique ASCII digits",
+      "cmd": "decompress(b\"\\x010\\x011)",
+      "expected": "\"01\""
+    },
+    {
+      "test": "TestDecompress.test_duplicated_ascii_digits",
+      "name": "Decompress duplicated ASCII digits",
+      "cmd": "decompress(b\"\\x010\\x021\\x032)",
+      "expected": "\"011222\""
+    },
+    {
+      "test": "TestDecompress.test_mixed_ascii_alphanum",
+      "name": "Decompress mixed ASCII alphanum",
+      "cmd": "decompress(b\"\\x01a\\x010\\x02b\\x021\\x03c\\x032)",
+      "expected": "\"a0bb11ccc222\""
+    },
+    {
+      "test": "TestDecompress.test_very_long_run",
+      "name": "Decompress very long run",
+      "cmd": "decompress(b\"\\x01a\\xffb\\x01c)",
+      "expected": "\"a\" + \"b\" * 255 + \"c\""
+    },
+    {
+      "test": "TestDecompress.test_very_long_runs",
+      "name": "Decompress very long runs",
+      "cmd": "decompress(b\"\\xffa\\xff0\\xffb)",
+      "expected": "\"a\" * 255 + \"0\" * 255 + \"b\" * 255"
+    },
+    {
+      "test": "TestDecompress.test_all_ascii_letters",
+      "name": "Decompress all ASCII letters",
+      "cmd": "decompress(bytes(chain.from_iterable((1, ord(c)) for c in text)))",
+      "expected": "string.ascii_letters"
+    },
+    {
+      "test": "TestDecompress.test_all_ascii_digits",
+      "name": "Decompress all ASCII digits",
+      "cmd": "decompress(bytes(chain.from_iterable((1, ord(c)) for c in text)))",
+      "expected": "string.digits"
+    },
+    {
+      "test": "TestDecompress.test_all_ascii_punctuation",
+      "name": "Decompress all ASCII punctuation",
+      "cmd": "decompress(bytes(chain.from_iterable((1, ord(c)) for c in text)))",
+      "expected": "string.punctuation"
+    },
+    {
+      "test": "TestDecompress.test_all_ascii_whitespace",
+      "name": "Decompress all ASCII whitespace",
+      "cmd": "decompress(bytes(chain.from_iterable((1, ord(c)) for c in text)))",
+      "expected": "string.whitespace"
+    },
+    {
+      "test": "TestDecompress.test_all_ascii_printable",
+      "name": "Decompress all ASCII printable",
+      "cmd": "decompress(bytes(chain.from_iterable((1, ord(c)) for c in text)))",
+      "expected": "string.printable"
+    },
+    {
+      "test": "TestDecompress.test_multibyte_unicode",
+      "name": "Decompress multibyte unicode",
+      "cmd": "decompress(b\"\\x01\\xf0\\x01\\x9f\\x01\\x98\\x01\\x80\\x01 \\x01\\xe2\\x02\\x98)",
+      "expected": "\"\\N{GRINNING FACE} \\N{SHAMROCK}\""
+    }
+  ]
+}
