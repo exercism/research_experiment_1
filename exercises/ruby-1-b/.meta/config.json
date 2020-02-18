@@ -5,87 +5,104 @@
     {
       "test": "test_find_by_empty_isbn_returns_nil",
       "cmd": "Library.new.find(\"\")",
-      "name": "find by empty isbn returns nil"
+      "name": "find by empty isbn returns nil",
+      "expected": "nil"
     },
     {
       "test": "test_find_by_isbn_without_corresponding_book",
       "cmd": "Library.new.find(\"123456789\")",
-      "name": "find by isbn without corresponding book"
+      "name": "find by isbn without corresponding book",
+      "expected": "nil"
     },
     {
       "test": "test_find_first_book",
       "cmd": "Library.new.find(\"9780191604928\")",
-      "name": "find first book"
+      "name": "find first book",
+      "expected": "???"
     },
     {
       "test": "test_find_last_book",
       "cmd": "Library.new.find(\"9780451524935\")",
-      "name": "find last book"
+      "name": "find last book",
+      "expected": "???"
     },
     {
       "test": "test_book_has_title",
       "cmd": "Library.new.find(\"9780191604928\").title",
-      "name": "book has title"
+      "name": "book has title",
+      "expected": "\"The Adventures of Tom Sawyer\""
     },
     {
       "test": "test_book_has_author",
       "cmd": "Library.new.find(\"9780718198916\").author",
-      "name": "book has author"
+      "name": "book has author",
+      "expected": "\"Plato\""
     },
     {
       "test": "test_book_has_isbn",
       "cmd": "Library.new.find(\"9780974514055\").isbn",
-      "name": "book has isbn"
+      "name": "book has isbn",
+      "expected": "\"9780974514055\""
     },
     {
       "test": "test_book_has_published",
       "cmd": "Library.new.find(\"9780446310789\").published",
-      "name": "book has published"
+      "name": "book has published",
+      "expected": "\"1988\""
     },
     {
       "test": "test_add_copies_with_invalid_isbn_raises_argument_error",
       "cmd": "Library.new.add_copies(\"123456789\", count: 10)",
-      "name": "add_copies with invalid isbn raises argument error"
+      "name": "add_copies with invalid isbn raises argument error",
+      "expected": "???"
     },
     {
       "test": "test_add_copies_with_valid_isbn_returns_the_added_count",
       "cmd": "Library.new.add_copies(\"9780544003415\", count: 10)",
-      "name": "add_copies with valid isbn returns the added count"
+      "name": "add_copies with valid isbn returns the added count",
+      "expected": "10"
     },
     {
       "test": "test_borrowing_when_there_are_no_copies_returns_nil",
       "cmd": "Library.new.borrow(\"9780544003415\")",
-      "name": "borrowing when there are no copies returns nil"
+      "name": "borrowing when there are no copies returns nil",
+      "expected": "nil"
     },
     {
       "test": "test_borrowing_a_book_after_copies_have_been_added_returns_the_book",
       "cmd": "isbn = \"9780544003415\"\nlibrary = Library.new\nlibrary.add_copies(isbn, count: 1)\nlibrary.borrow(isbn)",
-      "name": "borrowing a book after copies have been added returns the book"
+      "name": "borrowing a book after copies have been added returns the book",
+      "expected": "???"
     },
     {
       "test": "test_borrowing_a_book_when_all_copies_have_been_borrowed_returns_nil",
       "cmd": "isbn = \"9780544003415\"\nlibrary = Library.new\nlibrary.add_copies(isbn, count: 1)\nlibrary.borrow(isbn)\nlibrary.borrow(isbn)",
-      "name": "borrowing a book when all copies have been borrowed returns nil"
+      "name": "borrowing a book when all copies have been borrowed returns nil",
+      "expected": "nil"
     },
     {
       "test": "test_returning_a_book_when_none_have_been_borrowed_returns_nil",
       "cmd": "Library.new.return(\"9780544003415\")",
-      "name": "returning a book when none have been borrowed returns nil"
+      "name": "returning a book when none have been borrowed returns nil",
+      "expected": "nil"
     },
     {
       "test": "test_returning_a_book_when_some_have_been_borrowed_returns_the_book",
       "cmd": "isbn = \"9780544003415\"\nlibrary = Library.new\nlibrary.add_copies(isbn, count: 1)\n@library.borrow(isbn)\nlibrary.return(isbn)",
-      "name": "returning a book when some have been borrowed returns the book"
+      "name": "returning a book when some have been borrowed returns the book",
+      "expected": "???"
     },
     {
       "test": "test_borrowed_returns_total_count_of_borrowed_books",
       "cmd": "isbns = [\"9780191604928\", \"9780718198916\", \"9780974514055\"]\nlibrary = Library.new\nisbns.each { |isbn| library.add_copies(isbn, count: 1) ; library.borrow(isbn) }\nlibrary.borrowed",
-      "name": "borrowed returns total count of borrowed books"
+      "name": "borrowed returns total count of borrowed books",
+      "expected": "3"
     },
     {
       "test": "test_borrowed_returns_zero_when_nothing_is_borrowed",
       "cmd": "Library.new.borrowed",
-      "name": "borrowed returns zero when nothing is borrowed"
+      "name": "borrowed returns zero when nothing is borrowed",
+      "expected": "0"
     },
   ]
 }
