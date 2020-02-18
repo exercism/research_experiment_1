@@ -64,6 +64,14 @@
       "topics": []
     },
     {
+      "slug": "elm-2-b",
+      "uuid": "50af4402-68f8-45a1-a688-1b7c7104687f",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
       "slug": "go-1-a",
       "uuid": "f5cf0015-1fb4-42f8-95a8-7a92e279ead6",
       "core": false,
