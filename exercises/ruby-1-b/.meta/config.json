@@ -4,71 +4,71 @@
   "tests": [
     {
       "name": "test_find_by_empty_isbn_returns_nil",
-      "cmd": "@library.find(\"\")"
+      "cmd": "Library.new.find(\"\")"
     },
     {
       "name": "test_find_by_isbn_without_corresponding_book",
-      "cmd": "@library.find(\"123456789\")"
+      "cmd": "Library.new.find(\"123456789\")"
     },
     {
       "name": "test_find_first_book",
-      "cmd": "@library.find(\"9780191604928\")"
+      "cmd": "Library.new.find(\"9780191604928\")"
     },
     {
       "name": "test_find_last_book",
-      "cmd": "@library.find(\"9780451524935\")"
+      "cmd": "Library.new.find(\"9780451524935\")"
     },
     {
       "name": "test_book_has_title",
-      "cmd": "@library.find(\"9780191604928\").title"
+      "cmd": "Library.new.find(\"9780191604928\").title"
     },
     {
       "name": "test_book_has_author",
-      "cmd": "@library.find(\"9780718198916\").author"
+      "cmd": "Library.new.find(\"9780718198916\").author"
     },
     {
       "name": "test_book_has_isbn",
-      "cmd": "@library.find(\"9780974514055\").isbn"
+      "cmd": "Library.new.find(\"9780974514055\").isbn"
     },
     {
       "name": "test_book_has_published",
-      "cmd": "@library.find(\"9780446310789\").published"
+      "cmd": "Library.new.find(\"9780446310789\").published"
     },
     {
       "name": "test_add_copies_with_invalid_isbn_raises_argument_error",
-      "cmd": "@library.add_copies(\"123456789\", count: 10)"
+      "cmd": "Library.new.add_copies(\"123456789\", count: 10)"
     },
     {
       "name": "test_add_copies_with_valid_isbn_returns_the_added_count",
-      "cmd": "@library.add_copies(\"9780544003415\", count: 10)"
+      "cmd": "Library.new.add_copies(\"9780544003415\", count: 10)"
     },
     {
       "name": "test_borrowing_when_there_are_no_copies_returns_nil",
-      "cmd": "@library.borrow(\"9780544003415\")"
+      "cmd": "Library.new.borrow(\"9780544003415\")"
     },
     {
       "name": "test_borrowing_a_book_after_copies_have_been_added_returns_the_book",
-      "cmd": "@library.borrow(\"9780544003415\")"
+      "cmd": "isbn = \"9780544003415\"\nlibrary = Library.new\nlibrary.add_copies(isbn, count: 1)\nlibrary.borrow(isbn)"
     },
     {
       "name": "test_borrowing_a_book_when_all_copies_have_been_borrowed_returns_nil",
-      "cmd": "@library.borrow(\"9780544003415\")"
+      "cmd": "isbn = \"9780544003415\"\nlibrary = Library.new\nlibrary.add_copies(isbn, count: 1)\nlibrary.borrow(isbn)\nlibrary.borrow(isbn)"
     },
     {
       "name": "test_returning_a_book_when_none_have_been_borrowed_returns_nil",
-      "cmd": "@library.return(\"9780544003415\")"
+      "cmd": "Library.new.return(\"9780544003415\")"
     },
     {
       "name": "test_returning_a_book_when_some_have_been_borrowed_returns_the_book",
-      "cmd": "@library.return(\"9780544003415\")"
+      "cmd": "isbn = \"9780544003415\"\nlibrary = Library.new\nlibrary.add_copies(isbn, count: 1)\n@library.borrow(isbn)\nlibrary.return(isbn)"
     },
     {
       "name": "test_borrowed_returns_total_count_borrowed_books",
-      "cmd": "@library.borrowed"
+      "cmd": "isbns = [\"9780191604928\", \"9780718198916\", \"9780974514055\"]\nlibrary = Library.new\nisbns.each { |isbn| library.add_copies(isbn, count: 1) ; library.borrow(isbn) }\nlibrary.borrowed"
     },
     {
       "name": "test_borrowed_returns_zero_when_nothing_is_borrowed",
-      "cmd": "@library.borrowed"
+      "cmd": "Library.new.borrowed"
     },
   ]
 }
