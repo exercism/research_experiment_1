@@ -5,19 +5,19 @@
       "test": "retrieve single pizza",
       "name": "Retrieve single pizza",
       "cmd": "retrieveMenu \"regina, tomato sauce, ham, mushrooms, cantal, 11€\"",
-      "expected": "[ regina ]"
+      "expected": "[ Pizza \"regina\" False [\"tomato sauce\", \"ham\", \"mushrooms\", \"cantal\"] 11 ]"
     },
     {
       "test": "retrieve single vegetarian pizza",
       "name": "Retrieve single vegetarian pizza",
       "cmd": "retrieveMenu \"formaggio (v), tomato sauce, emmental, 8€\"",
-      "expected": "[ formaggio ]"
+      "expected": "[ Pizza \"formaggio\" True [\"tomato sauce\", \"emmental\"] 8 ]"
     },
     {
       "test": "retrieve multiple pizzas",
       "name": "Retrieve multiple pizzas",
       "cmd": "retrieveMenu \"formaggio (v), tomato sauce, emmental, 8€, regina, tomato sauce, ham, mushrooms, cantal, 11€\"",
-      "expected": "[ formaggio, regina ]"
+      "expected": "[ Pizza \"formaggio\" True [\"tomato sauce\", \"emmental\"] 8, Pizza \"regina\" False [\"tomato sauce\", \"ham\", \"mushrooms\", \"cantal\"] 11 ]"
     }
   ]
 }

@@ -5,19 +5,19 @@
       "test": "retrieve single pizza",
       "name": "Retrieve single pizza",
       "cmd": "retrieveMenu \"regina 11€\"",
-      "expected": "[ regina ]"
+      "expected": "[ Pizza \"regina\" False 11 ]"
     },
     {
       "test": "retrieve single vegetarian pizza",
       "name": "Retrieve single vegetarian pizza",
       "cmd": "retrieveMenu \"formaggio (v) 8€\"",
-      "expected": "[ formaggio ]"
+      "expected": "[ Pizza \"formaggio\" True 8 ]"
     },
     {
       "test": "retrieve multiple pizzas",
       "name": "Retrieve multiple pizzas",
       "cmd": "retrieveMenu \"formaggio (v) 8€, regina 11€\"",
-      "expected": "[ formaggio, regina ]"
+      "expected": "[ Pizza \"formaggio\" True 8, Pizza \"regina\" False 11 ]"
     }
   ]
 }
