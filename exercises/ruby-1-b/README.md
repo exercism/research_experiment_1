@@ -10,7 +10,7 @@ each book has the following columns:
 title, ISBN, author, and publishing year.
 
 You need to write the logic for finding a book, adding new copies to the library's
-inventory, lending a book, and returning a book
+inventory, lending a book, and returning a book.
 
 A book should be findable with it's ISBN
 ```
