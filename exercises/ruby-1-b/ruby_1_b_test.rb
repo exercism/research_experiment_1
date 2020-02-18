@@ -79,7 +79,7 @@ class LibraryTest < Minitest::Test
     assert_equal book, @library.return(isbn)
   end
 
-  def test_borrowed_returns_total_count_borrowed_books
+  def test_borrowed_returns_total_count_of_borrowed_books
     isbns = ["9780191604928", "9780718198916", "9780974514055"]
     isbns.each do |isbn|
       @library.add_copies(isbn, count: 1)

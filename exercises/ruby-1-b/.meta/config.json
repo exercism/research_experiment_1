@@ -4,71 +4,88 @@
   "tests": [
     {
       "test": "test_find_by_empty_isbn_returns_nil",
-      "cmd": "Library.new.find(\"\")"
+      "cmd": "Library.new.find(\"\")",
+      "name": "find by empty isbn returns nil"
     },
     {
       "test": "test_find_by_isbn_without_corresponding_book",
-      "cmd": "Library.new.find(\"123456789\")"
+      "cmd": "Library.new.find(\"123456789\")",
+      "name": "find by isbn without corresponding book"
     },
     {
       "test": "test_find_first_book",
-      "cmd": "Library.new.find(\"9780191604928\")"
+      "cmd": "Library.new.find(\"9780191604928\")",
+      "name": "find first book"
     },
     {
       "test": "test_find_last_book",
-      "cmd": "Library.new.find(\"9780451524935\")"
+      "cmd": "Library.new.find(\"9780451524935\")",
+      "name": "find last book"
     },
     {
       "test": "test_book_has_title",
-      "cmd": "Library.new.find(\"9780191604928\").title"
+      "cmd": "Library.new.find(\"9780191604928\").title",
+      "name": "book has title"
     },
     {
       "test": "test_book_has_author",
-      "cmd": "Library.new.find(\"9780718198916\").author"
+      "cmd": "Library.new.find(\"9780718198916\").author",
+      "name": "book has author"
     },
     {
       "test": "test_book_has_isbn",
-      "cmd": "Library.new.find(\"9780974514055\").isbn"
+      "cmd": "Library.new.find(\"9780974514055\").isbn",
+      "name": "book has isbn"
     },
     {
       "test": "test_book_has_published",
-      "cmd": "Library.new.find(\"9780446310789\").published"
+      "cmd": "Library.new.find(\"9780446310789\").published",
+      "name": "book has published"
     },
     {
       "test": "test_add_copies_with_invalid_isbn_raises_argument_error",
-      "cmd": "Library.new.add_copies(\"123456789\", count: 10)"
+      "cmd": "Library.new.add_copies(\"123456789\", count: 10)",
+      "name": "add_copies with invalid isbn raises argument error"
     },
     {
       "test": "test_add_copies_with_valid_isbn_returns_the_added_count",
-      "cmd": "Library.new.add_copies(\"9780544003415\", count: 10)"
+      "cmd": "Library.new.add_copies(\"9780544003415\", count: 10)",
+      "name": "add_copies with valid isbn returns the added count"
     },
     {
       "test": "test_borrowing_when_there_are_no_copies_returns_nil",
-      "cmd": "Library.new.borrow(\"9780544003415\")"
+      "cmd": "Library.new.borrow(\"9780544003415\")",
+      "name": "borrowing when there are no copies returns nil"
     },
     {
       "test": "test_borrowing_a_book_after_copies_have_been_added_returns_the_book",
-      "cmd": "isbn = \"9780544003415\"\nlibrary = Library.new\nlibrary.add_copies(isbn, count: 1)\nlibrary.borrow(isbn)"
+      "cmd": "isbn = \"9780544003415\"\nlibrary = Library.new\nlibrary.add_copies(isbn, count: 1)\nlibrary.borrow(isbn)",
+      "name": "borrowing a book after copies have been added returns the book"
     },
     {
       "test": "test_borrowing_a_book_when_all_copies_have_been_borrowed_returns_nil",
-      "cmd": "isbn = \"9780544003415\"\nlibrary = Library.new\nlibrary.add_copies(isbn, count: 1)\nlibrary.borrow(isbn)\nlibrary.borrow(isbn)"
+      "cmd": "isbn = \"9780544003415\"\nlibrary = Library.new\nlibrary.add_copies(isbn, count: 1)\nlibrary.borrow(isbn)\nlibrary.borrow(isbn)",
+      "name": "borrowing a book when all copies have been borrowed returns nil"
     },
     {
       "test": "test_returning_a_book_when_none_have_been_borrowed_returns_nil",
-      "cmd": "Library.new.return(\"9780544003415\")"
+      "cmd": "Library.new.return(\"9780544003415\")",
+      "name": "returning a book when none have been borrowed returns nil"
     },
     {
       "test": "test_returning_a_book_when_some_have_been_borrowed_returns_the_book",
-      "cmd": "isbn = \"9780544003415\"\nlibrary = Library.new\nlibrary.add_copies(isbn, count: 1)\n@library.borrow(isbn)\nlibrary.return(isbn)"
+      "cmd": "isbn = \"9780544003415\"\nlibrary = Library.new\nlibrary.add_copies(isbn, count: 1)\n@library.borrow(isbn)\nlibrary.return(isbn)",
+      "name": "returning a book when some have been borrowed returns the book"
     },
     {
-      "test": "test_borrowed_returns_total_count_borrowed_books",
-      "cmd": "isbns = [\"9780191604928\", \"9780718198916\", \"9780974514055\"]\nlibrary = Library.new\nisbns.each { |isbn| library.add_copies(isbn, count: 1) ; library.borrow(isbn) }\nlibrary.borrowed"
+      "test": "test_borrowed_returns_total_count_of_borrowed_books",
+      "cmd": "isbns = [\"9780191604928\", \"9780718198916\", \"9780974514055\"]\nlibrary = Library.new\nisbns.each { |isbn| library.add_copies(isbn, count: 1) ; library.borrow(isbn) }\nlibrary.borrowed",
+      "name": "borrowed returns total count of borrowed books"
     },
     {
       "test": "test_borrowed_returns_zero_when_nothing_is_borrowed",
-      "cmd": "Library.new.borrowed"
+      "cmd": "Library.new.borrowed",
+      "name": "borrowed returns zero when nothing is borrowed"
     },
   ]
 }
