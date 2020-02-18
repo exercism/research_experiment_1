@@ -16,7 +16,7 @@ A book should be findable with it's ISBN
 ```
 book = Library.new.find("9780191604928")
 ```
-And it should have getters for the attribute values provided in `Library::BOOKS`
+And it should have getters for the book's attributes:
 ```
 book.author
 => "Mark Twain"
