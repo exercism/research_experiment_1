@@ -13,7 +13,23 @@ class Library
     1984: A Novel;9780451524935;George Orwell;2009
   DATA
 
-  def find
+  def find(isbn)
     # start by implementing this Library#find method
+  end
+
+  def add_copies(isbn, count: count)
+    # TODO: implement
+  end
+
+  def borrow(isbn)
+    # TODO: implement
+  end
+
+  def return(isbn)
+    # TODO: implement
+  end
+
+  def borrowed
+    # TODO: implement
   end
 end
