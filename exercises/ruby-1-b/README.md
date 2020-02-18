@@ -12,14 +12,14 @@ title, ISBN, author, and publishing year.
 You need to write the logic for finding a book, adding new copies to the library's
 inventory, lending a book, and returning a book.
 
-A book should be findable with it's ISBN
+A book should be findable with it's ISBN:
 ```
 book = Library.new.find("9780191604928")
 ```
 And it should have getters for the book's attributes:
 ```
 book.author
-=> "Mark Twain"
+// Returns: "Mark Twain"
 
 book.title
 // Returns: "The Adventures of Tom Sawyer"
