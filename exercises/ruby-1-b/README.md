@@ -22,7 +22,7 @@ book.author
 => "Mark Twain"
 
 book.title
-=> "The Adventures of Tom Sawyer"
+// Returns: "The Adventures of Tom Sawyer"
 
 # and so on ...
 ```
