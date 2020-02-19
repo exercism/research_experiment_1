@@ -53,6 +53,19 @@
       ]
     },
     {
+      "github_username": "mpizenberg",
+      "name": "Matthieu Pizenberg",
+      "link_text": "Website",
+      "link_url": "https://matthieu.pizenberg.fr",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/2905865",
+      "bio": "Passionate about robotics, photo, computer vision, and raclette!",
+      "contributions": [
+        "elm/test-runner",
+        "elm/research-exercise",
+        "rust/test-runner"
+      ]
+    },
+    {
       "github_username": "yawpitch",
       "name": "Michael Morehouse",
       "link_text": "My Techie Blog",
