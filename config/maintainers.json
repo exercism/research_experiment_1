@@ -86,6 +86,19 @@
         "x86-64-assembly/test-runner",
         "x86-64-assembly/research-exercise"
       ]
+    },
+    {
+      "github_username": "SleeplessByte",
+      "name": "Derk-Jan Karrenbeld",
+      "link_text": null,
+      "link_url": null,
+      "avatar_url": null,
+      "bio": "All-round programmer, manager and owner of a Dutch software agency specializing in bespoke and tailored code.",
+      "contributions": [
+        "javascript/test-runner",
+        "javascript/research-exercise",
+        "typescript/test-runner"
+      ]
     }
   ]
 }
