@@ -1,7 +1,7 @@
 class Library
 
   # Title;ISBN;Author;Published
-  BOOKS = <<~DATA
+  CATALOG_DATA = <<~DATA
     The Adventures of Tom Sawyer;9780191604928;Mark Twain;2007
     Republic;9780718198916;Plato;2012
     Programming Ruby: The Pragmatic Programmers' Guide;9780974514055;David Thomas;2004
@@ -14,82 +14,92 @@ class Library
   DATA
 
   def initialize
-    @inventory = books.keys.map { |isbn| [isbn, InventoryItem.new(isbn)] }.to_h
-  end
-
-  def books
-    @books ||=
-      BOOKS.each_line(chomp: true)
-        .map { |line| line.split(";") }
-        .map { |fields| Book.new(*fields) }
-        .map { |book| [book.isbn, book] }
-        .to_h
-  end
-
-  def inventory
-    @inventory ||=
-      books.keys
-        .map { |isbn| [isbn, InventoryItem.new(isbn)] }
-        .to_h
-  end
-
-  def find(isbn)
-    books[isbn]
-  end
-
-  def borrow(isbn)
-    if inventory_item(isbn).borrowable > 0
-      inventory_item(isbn).borrowed += 1
-      find(isbn)
+    @catalog = CATALOG_DATA.each_line(chomp: true).with_object({}) do |line, obj|
+      book_attributes = *line.split(';')
+      isbn = book_attributes[1]
+      obj[isbn] = Book.new(*book_attributes)
     end
   end
 
-  def return(isbn)
-    if inventory_item(isbn).borrowed > 0
-      inventory_item(isbn).borrowed -= 1
-      find(isbn)
-    end
+  def lookup_title(isbn)
+    find_book(isbn).title
   end
 
-  def add_copies(isbn, count: count)
-    raise ArgumentError unless inventory_item(isbn)
-
-    inventory_item(isbn).copies += count
+  def lookup_author(isbn)
+    find_book(isbn).author
   end
 
-  def borrowed
-    inventory.values.sum(&:borrowed)
+  def lookup_publication_year(isbn)
+    find_book(isbn).publication_year
+  end
+
+  def add_stock!(isbn, count)
+    find_book(isbn).add_stock!(count)
+  end
+
+  def lookup_stock(isbn)
+    find_book(isbn).num_in_stock
+  end
+
+  def borrow!(isbn)
+    find_book(isbn).borrow!
+  end
+
+  def put_back!(isbn)
+    find_book(isbn).put_back!
+  end
+
+  def book_in_stock?(isbn)
+    find_book(isbn).in_stock?
+  end
+
+  def books_in_stock
+    catalog.values.select(&:in_stock?).map(&:isbn)
+  end
+
+  def total_books_in_stock
+    catalog.values.sum(&:num_in_stock)
   end
 
   private
+  attr_reader :catalog
 
-  def inventory_item(isbn)
-    inventory[isbn]
-  end
-end
-
-class Book
-  attr_reader :title, :isbn, :author, :published
-
-  def initialize(title, isbn, author, published)
-    @title = title
-    @isbn = isbn
-    @author = author
-    @published = published
-  end
-end
-
-class InventoryItem
-  attr_reader :isbn
-  attr_accessor :copies, :borrowed
-
-  def initialize(isbn)
-    @isbn = isbn
-    @copies = 0
-    @borrowed = 0
+  def find_book(isbn)
+    catalog[isbn]
   end
 
-  def borrowable
-    @copies - @borrowed
+  Book = Struct.new(:title, :isbn, :author, :publication_year) do
+    def initialize(*args)
+      super
+
+      @num_owned = 0
+      @num_loaned = 0
+    end
+
+    def add_stock!(count)
+      self.num_owned = num_owned + count
+    end
+
+    def borrow!
+      self.num_loaned = num_loaned + 1
+    end
+
+    def put_back!
+      self.num_loaned = num_loaned - 1 if num_loaned > 0
+    end
+
+    def num_in_stock
+      (num_owned - num_loaned)
+    end
+
+    def in_stock?
+      num_in_stock > 0
+    end
+
+    private
+
+    attr_accessor :num_owned, :num_loaned
   end
+
+  private_constant :Book
 end
