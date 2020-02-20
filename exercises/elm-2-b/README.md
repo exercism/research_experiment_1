@@ -10,21 +10,30 @@ but please don't actively look for a solution to the problem as this will negati
 ## Instructions
 
 Your task is to extend existing code with new functionality.
-The provided starting code is able to parse pizzas name,
-vegetarian hint (v) and price for a string such as:
+The existing code deals wth parsing a scanned menu of a pizzeria, which contains a list of all the pizzas on the menu. Each pizza entry has three components: its name, an optional vegetarian indicator, and its price. The pizzas themselves are separated by a comma followed by a space.
+
+The code you'll be working with has a function named `retrieveMenu`, which takes the scanned menu as a `string`, and returns a `List Pizza`:
+
+For example:
 
 ```elm
-scannedMenu = "formaggio (v) 8€, regina 11€, ..."
+retrieveMenu "formaggio (v) 8€"
+-- Returns: [ Pizza "formaggio" True 8 ]
 ```
 
 Now we also need to parse ingredients! They are listed as follows,
-between pizzas name and the price.
+between a pizza's name and its price.
 Note that ingredients are separated by commas.
 
 ```elm
-scannedMenu = "formaggio (v), tomato sauce, emmental, 8€, regina, tomato sauce, ham, mushrooms, cantal, 11€, ..."
+"formaggio (v), tomato sauce, emmental, 8€, regina, tomato sauce, ham, mushrooms, cantal, 11€, ..."
 ```
 
-**Your task is still to convert this string into a list of pizzas.**
-The `Pizza` type is already provided for convenience,
-and has been updated to contain a list of ingredients.
+Your job is to update the `retrieveMenu` function to also parse the pizza's ingredients.
+
+For example:
+
+```elm
+retrieveMenu "formaggio (v), tomato sauce, emmental, 8€, regina, tomato sauce, ham, mushrooms, cantal, 11€"
+-- Returns: [ Pizza "formaggio" True ["tomato sauce", "emmental"] 8 ]
+```
