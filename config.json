@@ -120,6 +120,22 @@
       "topics": []
     },
     {
+      "slug": "javascript-1-b",
+      "uuid": "c1445866-57ca-11ea-82b4-0242ac130003",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "javascript-2-b",
+      "uuid": "73a27680-57cd-11ea-82b4-0242ac130003",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
       "slug": "python-1-a",
       "uuid": "a1a32260-7a0f-4c97-9e47-3e0a0fbf1608",
       "core": false,
