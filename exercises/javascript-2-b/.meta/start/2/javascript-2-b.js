@@ -11,12 +11,7 @@
  * @returns {T}
  */
 export function extract(object, path) {
-  let current = object;
-  let parts = path.split(".");
-
-  for (const part of parts) {
-    current = (current && current[part]) || null;
-  }
-
-  return current;
+  return path
+    .split(".")
+    .reduce((current, part) => (current && current[part]) || null, object);
 }
