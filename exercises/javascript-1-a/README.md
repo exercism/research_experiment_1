@@ -1,6 +1,6 @@
 ## Introduction
 
-This is Part 1 of our research into how people write JavaScript differently. This exercise should take 10-15 minutes for a programmer who is proficient in JavaScript. There is no right or wrong way to approach it - just do what feels the most natural to you. Feel free to use books, Google or Stack Overflow, just like you would if you were programming normally, but please don't actively look for a solution to the problem as this will negatively affect the research.
+This is Part 1 of our research into differences in the ways in which people write JavaScript. This exercise should take 10-15 minutes for a programmer who is proficient in JavaScript. There is no right or wrong way to approach it - just do what feels the most natural to you. Feel free to use books, Google or Stack Overflow, just like you would if you were programming normally, but please don't actively look for a solution to the problem as this will negatively affect the research.
 
 ## Instructions
 
@@ -17,20 +17,21 @@ Positive numbers means that you move cards from the bottom of the deck (the left
 It returns a _new array_ with the `item` moved from the position `from` to the position `to`:
 
 ```javascript
-const before = ['❤ A', '❤ 9', '❤ 3', '❤ 6', '♣ A']
-const magics = arrange(original, 1, -2)
-magics
+const before = ["❤ A", "❤ 9", "❤ 3", "❤ 6", "♣ A"];
+const magics = arrange(original, 1, -2);
+magics;
 // => ['❤ A', '❤ 3', '❤ 6', '❤ 9', '♣ A']
 //                          ^--- has moved from position 1 to -2 (from the right side)
 ```
+
 Create a second function `rearrange` that does the same thing, but **mutates** the original input `array`:
 
 ```javascript
-const before = ['❤ A', '❤ 3', '❤ 6', '❤ 9', '♣ A']
-const magics = rearrange(before, 4, 0)
-magics
+const before = ["❤ A", "❤ 3", "❤ 6", "❤ 9", "♣ A"];
+const magics = rearrange(before, 4, 0);
+magics;
 // => ['♣ A', '❤ A', '❤ 3', '❤ 6', '❤ 9']
 //      ^--- has moved from position 4 to 0
-magics === before
+magics === before;
 // => true
 ```
