@@ -19,7 +19,7 @@ It returns a _new array_ with the `item` moved from the position `from` to the p
 ```javascript
 const before = ['❤ A', '❤ 9', '❤ 3', '❤ 6', '♣ A']
 const magics = arrange(original, 1, -2)
-magics;
+magics
 // => ['❤ A', '❤ 3', '❤ 6', '❤ 9', '♣ A']
 //                          ^--- has moved from position 1 to -2 (from the right side)
 ```
@@ -27,11 +27,11 @@ magics;
 Create a second function `rearrange` that does the same thing, but **mutates** the original input `array`:
 
 ```javascript
-const before = ["❤ A", "❤ 3", "❤ 6", "❤ 9", "♣ A"];
-const magics = rearrange(before, 4, 0);
-magics;
+const before = ['❤ A', '❤ 3', '❤ 6', '❤ 9', '♣ A']
+const magics = rearrange(before, 4, 0)
+magics
 // => ['♣ A', '❤ A', '❤ 3', '❤ 6', '❤ 9']
 //      ^--- has moved from position 4 to 0
-magics === before;
+magics === before
 // => true
 ```
