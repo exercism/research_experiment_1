@@ -23,7 +23,6 @@ magics
 // => ['❤ A', '❤ 3', '❤ 6', '❤ 9', '♣ A']
 //                          ^--- has moved from position 1 to -2 (from the right side)
 ```
-
 Create a second function `rearrange` that does the same thing, but **mutates** the original input `array`:
 
 ```javascript
