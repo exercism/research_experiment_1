@@ -17,8 +17,8 @@ Positive numbers means that you move cards from the bottom of the deck (the left
 It returns a _new array_ with the `item` moved from the position `from` to the position `to`:
 
 ```javascript
-const before = ["❤ A", "❤ 9", "❤ 3", "❤ 6", "♣ A"];
-const magics = arrange(original, 1, -2);
+const before = ['❤ A', '❤ 9', '❤ 3', '❤ 6', '♣ A']
+const magics = arrange(original, 1, -2)
 magics;
 // => ['❤ A', '❤ 3', '❤ 6', '❤ 9', '♣ A']
 //                          ^--- has moved from position 1 to -2 (from the right side)
