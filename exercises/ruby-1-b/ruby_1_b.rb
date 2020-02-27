@@ -1,7 +1,7 @@
 class Library
 
   # Title;ISBN;Author;Published
-  BOOKS = <<~DATA
+  CATALOG_DATA = <<~DATA
     The Adventures of Tom Sawyer;9780191604928;Mark Twain;2007
     Republic;9780718198916;Plato;2012
     Programming Ruby: The Pragmatic Programmers' Guide;9780974514055;David Thomas;2004
@@ -13,23 +13,36 @@ class Library
     1984: A Novel;9780451524935;George Orwell;2009
   DATA
 
-  def find(isbn)
-    # start by implementing this Library#find method
+  def initialize
   end
 
-  def add_copies(isbn, count:)
-    # TODO: implement
+  def lookup_title(isbn)
   end
 
-  def borrow(isbn)
-    # TODO: implement
+  def lookup_author(isbn)
   end
 
-  def return(isbn)
-    # TODO: implement
+  def lookup_publication_year(isbn)
   end
 
-  def borrowed
-    # TODO: implement
+  def add_stock!(isbn, count)
+  end
+
+  def lookup_stock(isbn)
+  end
+
+  def borrow!(isbn)
+  end
+
+  def put_back!(isbn)
+  end
+
+  def book_in_stock?(isbn)
+  end
+
+  def books_in_stock
+  end
+
+  def total_books_in_stock
   end
 end
