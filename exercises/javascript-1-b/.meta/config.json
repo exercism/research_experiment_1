@@ -1,0 +1,42 @@
+{
+  "solution_files": ["javascript-1-b.js"],
+  "test_file": "javascript-1-b.spec.js",
+  "tests": [
+    {
+      "test": "extract > property: name",
+      "name": "extract the root string 'name' property",
+      "cmd": "const TEAM = {\n  name: \"Buzzer Beaters\",\n  coach: {\n    name: \"Nancy\",\n    achievements: {\n      titles: 2,\n      hallOfFame: true\n    }\n    },\n  location: {\n    town: \"Miami\",\n    state: \"Florida\"\n  }\n});\nextract(TEAM, \"name\");",
+      "expected": "\"Buzzer Beaters\""
+    },
+    {
+      "test": "extract > property: coach -> name",
+      "name": "extract the nested string 'name' property",
+      "cmd": "const TEAM = {\n  name: \"Buzzer Beaters\",\n  coach: {\n    name: \"Nancy\",\n    achievements: {\n      titles: 2,\n      hallOfFame: true\n    }\n    },\n  location: {\n    town: \"Miami\",\n    state: \"Florida\"\n  }\n});\nextract(TEAM, \"coach.name\");",
+      "expected": "\"Nancy\""
+    },
+    {
+      "test": "extract > property: coach -> achievement -> titles",
+      "name": "extract the doubly-nested number 'titles' property",
+      "cmd": "const TEAM = {\n  name: \"Buzzer Beaters\",\n  coach: {\n    name: \"Nancy\",\n    achievements: {\n      titles: 2,\n      hallOfFame: true\n    }\n    },\n  location: {\n    town: \"Miami\",\n    state: \"Florida\"\n  }\n});\nextract(TEAM, \"coach.achievements.titles\");",
+      "expected": "3"
+    },
+    {
+      "test": "extract > property: coach -> achievement -> hallOfFame",
+      "name": "extract the doubly-nested boolean 'hallOfFame' property",
+      "cmd": "const TEAM = {\n  name: \"Buzzer Beaters\",\n  coach: {\n    name: \"Nancy\",\n    achievements: {\n      titles: 2,\n      hallOfFame: true\n    }\n    },\n  location: {\n    town: \"Miami\",\n    state: \"Florida\"\n  }\n});\nextract(TEAM, \"coach.achievements.hallOfFame\");",
+      "expected": "true"
+    },
+    {
+      "test": "extract > property: location",
+      "name": "extract the root object 'location' property",
+      "cmd": "const TEAM = {\n  name: \"Buzzer Beaters\",\n  coach: {\n    name: \"Nancy\",\n    achievements: {\n      titles: 2,\n      hallOfFame: true\n    }\n    },\n  location: {\n    town: \"Miami\",\n    state: \"Florida\"\n  }\n});\nextract(TEAM, \"location\");",
+      "expected": "{\n  town: \"Miami\",\n  state: \"Florida\"\n}"
+    },
+    {
+      "test": "extract > property: salary",
+      "name": "extract unknown 'salary' property",
+      "cmd": "const TEAM = {\n  name: \"Buzzer Beaters\",\n  coach: {\n    name: \"Nancy\",\n    achievements: {\n      titles: 2,\n      hallOfFame: true\n    }\n    },\n  location: {\n    town: \"Miami\",\n    state: \"Florida\"\n  }\n});\nextract(TEAM, \"salary\");",
+      "expected": "null"
+    }
+  ]
+}

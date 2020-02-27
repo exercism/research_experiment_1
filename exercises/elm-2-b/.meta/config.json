@@ -1,0 +1,29 @@
+{
+  "solution_files": ["src/Pizza.elm"],
+  "tests": [
+    {
+      "test": "retrieve single pizza",
+      "name": "Retrieve single pizza",
+      "cmd": "retrieveMenu \"regina, tomato sauce, ham, mushrooms, cantal, 11€\"",
+      "expected": "[ Pizza \"regina\" False [\"tomato sauce\", \"ham\", \"mushrooms\", \"cantal\"] 11 ]"
+    },
+    {
+      "test": "retrieve single vegetarian pizza",
+      "name": "Retrieve single vegetarian pizza",
+      "cmd": "retrieveMenu \"formaggio (v), tomato sauce, emmental, 8€\"",
+      "expected": "[ Pizza \"formaggio\" True [\"tomato sauce\", \"emmental\"] 8 ]"
+    },
+    {
+      "test": "retrieve multiple pizzas",
+      "name": "Retrieve multiple pizzas",
+      "cmd": "retrieveMenu \"formaggio (v), tomato sauce, emmental, 8€, regina, tomato sauce, ham, mushrooms, cantal, 11€\"",
+      "expected": "[ Pizza \"formaggio\" True [\"tomato sauce\", \"emmental\"] 8, Pizza \"regina\" False [\"tomato sauce\", \"ham\", \"mushrooms\", \"cantal\"] 11 ]"
+    },
+    {
+      "test": "retrieve large number of pizzas",
+      "name": "Retrieve large number of pizzas",
+      "cmd": "retrieveMenu \"formaggio (v), tomato sauce, emmental, 8€, tonno, tomato sauce, tuna, 10€, regina, tomato sauce, ham, mushrooms, cantal, 11€, margherita (v), tomato sauce, mozzarella, 7€, caprese (v), tomato sauce, spinach, mozzarella, 8€, hawaii, tomato sauce, pineapple, ham, 9€\"",
+      "expected": "[ Pizza \"Pizza \"formaggio\" True [\"tomato sauce\", \"emmental\"] 8, Pizza \"tonno\" False 10, Pizza \"regina\" False [\"tomato sauce\", \"ham\", \"mushrooms\", \"cantal\"] 11, Pizza \"margherita\" True [ \"tomato sauce\", \"mozzarella\" ] 7, Pizza \"caprese\" True [ \"tomato sauce\", \"spinach\", \"mozzarella\" ] 8, Pizza \"hawaii\" False [ \"tomato sauce\", \"pineapple\", \"ham\" ] 9 ]"
+    }
+  ]
+}

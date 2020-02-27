@@ -1,0 +1,90 @@
+{
+  "solution_files": ["python_2_b.py"],
+  "test_file": "python_2_b_test.py",
+  "tests": [
+    {
+      "test": "TestTransmit.test_empty_string",
+      "name": "Transmit empty string",
+      "cmd": "transmit(\"\")",
+      "expected": "\"\""
+    },
+    {
+      "test": "TestTransmit.test_hello_world",
+      "name": "Transmit Hello world",
+      "cmd": "transmit(\"Hello, World!\")",
+      "expected": "\"HOTEL ECHO LIMA LIMA OSCAR WHISKEY OSCAR ROMEO LIMA DELTA\""
+    },
+    {
+      "test": "TestTransmit.test_enterprise",
+      "name": "Transmit enterprise",
+      "cmd": "transmit(\"NCC-1701-D\")",
+      "expected": "\"NOVEMBER CHARLIE CHARLIE ONE SEVEN ZERO ONE DELTA\""
+    },
+    {
+      "test": "TestTransmit.test_only_ascii_alphanum",
+      "name": "Transmit only ASCII alphanum",
+      "cmd": "receive(\"\\N{GREEK CAPITAL LETTER NU}\\N{CHEROKEE LETTER TLI}\\N{CHEROKEE LETTER TLI}-1701-\\N{CHEROKEE LETTER A}\" + string.whitespace + string.punctuation\")",
+      "expected": "\"ONE SEVEN ZERO ONE\""
+    },
+    {
+      "test": "TestReceive.test_empty_string",
+      "name": "Receive empty string",
+      "cmd": "receive(\"\")",
+      "expected": "\"\""
+    },
+    {
+      "test": "TestReceive.test_hello_world",
+      "name": "Receive Hello world",
+      "cmd": "receive(\"HOTEL ECHO LIMA LIMA OSCAR WHISKEY OSCAR ROMEO LIMA DELTA\")",
+      "expected": "\"HELLOWORLD\""
+    },
+    {
+      "test": "TestReceive.test_enterprise",
+      "name": "Receive enterprise",
+      "cmd": "receive(\"NOVEMBER CHARLIE CHARLIE ONE SEVEN ZERO ONE DELTA\")",
+      "expected": "\"NCC1701D\""
+    },
+    {
+      "test": "TestTransmitEncoded.test_empty_string",
+      "name": "Transmit encoded empty string",
+      "cmd": "transmit_encoded(\"\")",
+      "expected": "\"\""
+    },
+    {
+      "test": "TestTransmitEncoded.test_hello_world",
+      "name": "Transmit encoded Hello world",
+      "cmd": "transmit_encoded(\"Hello, World!\")",
+      "expected": "\"ECHO BRAVO INDIA INDIA LIMA TANGO LIMA OSCAR INDIA ALFA\""
+    },
+    {
+      "test": "TestTransmitEncoded.test_enterprise",
+      "name": "Transmit encoded enterprise",
+      "cmd": "transmit_encoded(\"NCC-1701-D\")",
+      "expected": "\"KILO NINER NINER YANKEE FOUR XRAY YANKEE ALFA\""
+    },
+    {
+      "test": "TestTransmitEncoded.test_only_ascii_alphanum",
+      "name": "Transmit encoded only ASCII alphanum",
+      "cmd": "transmit_encoded(\"\\N{GREEK CAPITAL LETTER NU}\\N{CHEROKEE LETTER TLI}\\N{CHEROKEE LETTER TLI}-1701-\\N{CHEROKEE LETTER A}\" + string.whitespace + string.punctuation\")",
+      "expected": "\"YANKEE FOUR XRAY YANKEE\""
+    },
+    {
+      "test": "TestReceiveEncoded.test_empty_string",
+      "name": "Receive encoded empty string",
+      "cmd": "receive_encoded(\"\")",
+      "expected": "\"\""
+    },
+    {
+      "test": "TestReceiveEncoded.test_hello_world",
+      "name": "Receive encoded Hello world",
+      "cmd": "receive_encoded(\"ECHO BRAVO INDIA INDIA LIMA TANGO LIMA OSCAR INDIA ALFA\")",
+      "expected": "\"HELLOWORLD\""
+    },
+    {
+      "test": "TestReceiveEncoded.test_enterprise",
+      "name": "Receive encoded enterprise",
+      "cmd": "receive_encoded(\"KILO NINER NINER YANKEE FOUR XRAY YANKEE ALFA\")",
+      "expected": "\"NCC1701D\""
+    }
+  ]
+}

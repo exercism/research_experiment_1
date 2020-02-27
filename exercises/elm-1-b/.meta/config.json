@@ -5,19 +5,25 @@
       "test": "retrieve single pizza",
       "name": "Retrieve single pizza",
       "cmd": "retrieveMenu \"regina 11€\"",
-      "expected": "[ regina ]"
+      "expected": "[ Pizza \"regina\" False 11 ]"
     },
     {
       "test": "retrieve single vegetarian pizza",
       "name": "Retrieve single vegetarian pizza",
       "cmd": "retrieveMenu \"formaggio (v) 8€\"",
-      "expected": "[ formaggio ]"
+      "expected": "[ Pizza \"formaggio\" True 8 ]"
     },
     {
       "test": "retrieve multiple pizzas",
       "name": "Retrieve multiple pizzas",
       "cmd": "retrieveMenu \"formaggio (v) 8€, regina 11€\"",
-      "expected": "[ formaggio, regina ]"
+      "expected": "[ Pizza \"formaggio\" True 8, Pizza \"regina\" False 11 ]"
+    },
+    {
+      "test": "retrieve large number of pizzas",
+      "name": "Retrieve large number of pizzas",
+      "cmd": "retrieveMenu \"formaggio (v) 8€, tonno 10€, regina 11€, margherita (v) 7€, caprese (v) 8€, hawaii 9€\"",
+      "expected": "[ Pizza \"Pizza \"formaggio\" True 8, Pizza \"tonno\" False 10, Pizza \"regina\" False 11, Pizza \"margherita\" True 7, Pizza \"caprese\" True 8, Pizza \"hawaii\" False 9 ]"
     }
   ]
 }

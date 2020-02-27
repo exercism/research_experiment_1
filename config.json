@@ -64,6 +64,14 @@
       "topics": []
     },
     {
+      "slug": "elm-2-b",
+      "uuid": "50af4402-68f8-45a1-a688-1b7c7104687f",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
       "slug": "go-1-a",
       "uuid": "f5cf0015-1fb4-42f8-95a8-7a92e279ead6",
       "core": false,
@@ -106,6 +114,22 @@
     {
       "slug": "javascript-2-a",
       "uuid": "959d95dd-57f7-4a68-8670-01e5f7fafc69",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "javascript-1-b",
+      "uuid": "c1445866-57ca-11ea-82b4-0242ac130003",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "javascript-2-b",
+      "uuid": "73a27680-57cd-11ea-82b4-0242ac130003",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,

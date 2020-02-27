@@ -23,10 +23,7 @@
       "link_url": "",
       "avatar_url": "https://avatars0.githubusercontent.com/u/6624571",
       "bio": "Since early 2016 I'm a fulltime Go developer. I love it because it's so simple and yet so powerful.",
-      "contributions": [
-        "go/test-runner",
-        "go/research-exercise"
-      ]
+      "contributions": ["go/test-runner", "go/research-exercise"]
     },
     {
       "github_username": "coriolinus",
@@ -35,10 +32,7 @@
       "link_url": null,
       "avatar_url": "https://avatars0.githubusercontent.com/u/7822926",
       "bio": "definitely not an ai gone rogue",
-      "contributions": [
-        "rust/test-runner",
-        "rust/research-exercise"
-      ]
+      "contributions": ["rust/test-runner", "rust/research-exercise"]
     },
     {
       "github_username": "ceddlyburge",
@@ -47,9 +41,19 @@
       "link_url": "https://www.freecodecamp.org/news/author/cedd/",
       "avatar_url": "https://github.com/ceddlyburge.png",
       "bio": "I am a software lead / manager / architect type thing. I mostly program in Elm, C#, Python, Typescript and Delphi",
+      "contributions": ["elm/test-runner", "elm/research-exercise"]
+    },
+    {
+      "github_username": "mpizenberg",
+      "name": "Matthieu Pizenberg",
+      "link_text": "Website",
+      "link_url": "https://matthieu.pizenberg.fr",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/2905865",
+      "bio": "Passionate about robotics, photo, computer vision, and raclette!",
       "contributions": [
         "elm/test-runner",
-        "elm/research-exercise"
+        "elm/research-exercise",
+        "rust/test-runner"
       ]
     },
     {
@@ -59,10 +63,7 @@
       "link_url": "https://yawpitchroll.com/",
       "avatar_url": null,
       "bio": "Although Python wasn't my first -- and won't be my last -- programming language, it remains my favorite for introducing others to the joys, the pains, the infrequent ecstacies, and the occasional terrors of life before the REPL.",
-      "contributions": [
-        "python/test-runner",
-        "python/research-exercise"
-      ]
+      "contributions": ["python/test-runner", "python/research-exercise"]
     },
     {
       "github_username": "pvcarrera",
@@ -71,9 +72,7 @@
       "link_url": "",
       "avatar_url": "https://s.gravatar.com/avatar/5b36c6cfb4083458ae9e12a377692efc?s=400",
       "bio": "I am a software developer with experience on web development and API design. When I'm not coding you can find me in the mountains.",
-      "contributions": [
-        "ruby/research-exercise"
-      ]
+      "contributions": ["ruby/research-exercise"]
     },
     {
       "github_username": "bergjohan",
@@ -97,6 +96,28 @@
       "contributions": [
         "ruby/research-exercise"
       ]
+    },
+    {
+      "github_username": "SleeplessByte",
+      "name": "Derk-Jan Karrenbeld",
+      "link_text": null,
+      "link_url": null,
+      "avatar_url": null,
+      "bio": "All-round programmer, manager and owner of a Dutch software agency specializing in bespoke and tailored code.",
+      "contributions": [
+        "javascript/test-runner",
+        "javascript/research-exercise",
+        "typescript/test-runner"
+      ]
+    },
+    {
+      "github_username": "mmmmmrob",
+      "name": "Rob Styles",
+      "link_text": null,
+      "link_url": null,
+      "avatar_url": null,
+      "bio": "Developer/Architect/CTO building internet things since 1996.",
+      "contributions": ["javascript/research-exercise"]
     }
   ]
 }
