@@ -64,10 +64,7 @@ class LibraryTest < Minitest::Test
   def test_books_in_stock
     isbns = ["9780544003415", "9780140283334", "9780451524935"]
     isbns.each { |isbn| @library.add_stock!(isbn, 1) }
-    assert_includes @library.books_in_stock, "9780544003415"
-    assert_includes @library.books_in_stock, "9780140283334"
-    assert_includes @library.books_in_stock, "9780451524935"
-    assert_equal 3, @library.books_in_stock.size
+    assert_equal isbns.sort, @library.books_in_stock.sort
   end
 
   def test_total_books_in_stock
