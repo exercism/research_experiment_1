@@ -53,7 +53,7 @@
     {
       "test": "test_borrowing_book_with_stock_more_than_one",
       "cmd": "library = Library.new\nlibrary.add_stock!(\"9780330319089\", 2)\nlibrary.borrow!(\"9780330319089\")\nlibrary.book_in_stock?(\"9780330319089\")",
-      "name": "checking if book is in stock after adding two to stock, then borrowing one, returns true"",
+      "name": "checking if book is in stock after adding two to stock, then borrowing one, returns true",
       "expected": "true"
     },
     {
@@ -79,6 +79,6 @@
       "cmd": "isbns = [\"9780544003415\", \"9780140283334\", \"9780451524935\"]\nlibrary = Library.new\nisbns.each { |isbn| @library.add_stock!(isbn, 2) }\nlibrary.total_books_in_stock",
       "name": "total book in stock returns the total number of books in stock",
       "expected": "6"
-    },
+    }
   ]
 }
