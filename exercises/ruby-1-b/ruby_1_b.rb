@@ -13,9 +13,6 @@ class Library
     1984: A Novel;9780451524935;George Orwell;2009
   DATA
 
-  def initialize
-  end
-
   def lookup_title(isbn)
   end
 
