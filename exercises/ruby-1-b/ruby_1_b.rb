@@ -39,6 +39,7 @@ class Library
   end
 
   def books_in_stock
+    raise NotImplementedError, 'Please implement the Library#books_in_stock method'
   end
 
   def total_books_in_stock
