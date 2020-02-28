@@ -22,6 +22,7 @@ class Library
   end
 
   def lookup_publication_year(isbn)
+    raise NotImplementedError, 'Please implement the Library#lookup_publication_year method'
   end
 
   def add_stock!(isbn, count)
