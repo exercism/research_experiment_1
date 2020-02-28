@@ -4,17 +4,85 @@ This is Part 1 of our research into differences in the ways in which people writ
 
 ## Instructions
 
-Your task is to determine which word in a sentence has the most vowels (a, e, i, o, u). A sentence is defined as a [Ruby string][docs-string] consisting of one or more words. A word consists of one or more upper- or lowercase letters. Words are separated from each other by a single space character.
+You are given a collection of library books, and your job is to import them into
+the library's catalog system. The books are in the constant `Library::CATALOG_DATA`, and
+each book has the following columns:
+title, ISBN, author, and publishing year.
 
-Your job is to define a function named `word_with_most_vowels`, which takes a sentence, and returns the word with the most vowels.
+The public methods that you need to implement have been provided for you, but they're
+currently empty. This is what each method should do:
 
-For example:
-
+`lookup_title` takes an `isbn` as an argument, and returns the title of the
+corresponding book
 ```ruby
-word_with_most_vowels("Hi there aunt jeanie")
-// Returns: "jeanie"
+library = Library.new
+library.lookup_title("9780191604928")
+=> "The Adventures of Tom Sawyer"
 ```
 
-[docs-string]: https://ruby-doc.org/core-2.4.1/String.html
+Similarly `lookup_author` returns the author
+```ruby
+library.lookup_author("9780718198916")
+=> "Plato"
+```
+and `lookup_publication_year` returns the publication year
+```ruby
+library.lookup_publication_year("9781986431484")
+=> "2018"
+```
+
+`add_stock!` increases the stock count of a book, and `lookup_stock` returns
+the current stock of a book
+```ruby
+library.add_stock!("9780451524935", 5)
+library.lookup_stock("9780451524935")
+=> 5
+```
+
+`borrow!` decreases the stock count of a book if there are books in stock.
+If the stock is already zero, then `borrow!` does nothing
+```ruby
+library.add_stock!("9780451524935", 1)
+library.lookup_stock("9780451524935")
+=> 1
+library.borrow("9780451524935")
+library.lookup_stock("9780451524935")
+=> 0
+library.borrow("9780451524935")
+library.lookup_stock("9780451524935")
+=> 0
+```
+
+`put_back!` does the opposite of `borrow!`. It increases the stock if any of the
+books are still borrowed. If none of the books are borrowed it does nothing
+```ruby
+library.add_stock!("9780451524935", 1)
+library.borrow("9780451524935")
+library.put_back!("9780451524935")
+library.lookup_stock("9780451524935")
+=> 1
+library.put_back!("9780451524935")
+library.lookup_stock("9780451524935")
+=> 1
+```
+
+`book_in_stock?` returns true if there's at least 1 book in stock, otherwise it
+returns false
+
+`books_in_stock` returns the isbns of books that have at least 1 book in stock
+```ruby
+isbns = ["9780544003415", "9780140283334", "9780451524935"]
+isbns.each { |isbn| library.add_stock!(isbn, 1) }
+library.books_in_stock
+=> ["9780544003415", "9780140283334", "9780451524935"]
+```
+
+`total_books_in_stock` returns the summed stock of all books
+```ruby
+isbns = ["9780544003415", "9780140283334", "9780451524935"]
+isbns.each { |isbn| library.add_stock!(isbn, 3) }
+library.total_books_in_stock
+=> 9
+```
 
 **Note:** You can use `debug("some test")` to output debugging information for yourself.
