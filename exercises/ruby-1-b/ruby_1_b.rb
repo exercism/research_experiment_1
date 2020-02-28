@@ -23,6 +23,7 @@ class Library
   end
 
   def add_stock!(isbn, count)
+    raise NotImplementedError, 'Please implement the Library#add_stock! method'
   end
 
   def lookup_stock(isbn)
