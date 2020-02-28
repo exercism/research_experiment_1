@@ -32,6 +32,7 @@ class Library
   end
 
   def put_back!(isbn)
+    raise NotImplementedError, 'Please implement the Library#put_back! method'
   end
 
   def book_in_stock?(isbn)
