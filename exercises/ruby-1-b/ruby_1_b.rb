@@ -30,6 +30,7 @@ class Library
   end
 
   def lookup_stock(isbn)
+    raise NotImplementedError, 'Please implement the Library#lookup_stock method'
   end
 
   def borrow!(isbn)
