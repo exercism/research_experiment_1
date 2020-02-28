@@ -35,6 +35,7 @@ class Library
   end
 
   def book_in_stock?(isbn)
+    raise NotImplementedError, 'Please implement the Library#book_in_stock? method'
   end
 
   def books_in_stock
