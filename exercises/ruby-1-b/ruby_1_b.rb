@@ -34,6 +34,7 @@ class Library
   end
 
   def borrow!(isbn)
+    raise NotImplementedError, 'Please implement the Library#borrow! method'
   end
 
   def put_back!(isbn)
