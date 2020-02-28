@@ -14,6 +14,7 @@ class Library
   DATA
 
   def lookup_title(isbn)
+    raise NotImplementedError, 'Please implement the Library#lookup_title method'
   end
 
   def lookup_author(isbn)
