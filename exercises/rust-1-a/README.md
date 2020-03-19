@@ -1,7 +1,3 @@
-## Introduction
-
-This is Part 1 of our research into differences in the ways in which people write Rust. This exercise should take 10-15 minutes for a programmer who is proficient in Rust. There is no right or wrong way to approach it - just do what feels the most natural to you. Feel free to use books, Google or Stack Overflow, just like you would if you were programming normally, but please don't look for a complete solution to the problem as this will negatively affect the research.
-
 ## Instructions
 
 Your task is to find the longest incrementing subslice of a slice of integers. For example, given the slice `[1, 2, 4, 4, 5, 6, 7, 3, 2, 7, 8, 9, 1]`, the longest incrementing subslice is `[4, 5, 6, 7]`, from indices `3` through `6` inclusive.

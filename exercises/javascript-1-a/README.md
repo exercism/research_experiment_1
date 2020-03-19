@@ -1,7 +1,3 @@
-## Introduction
-
-This is Part 1 of our research into differences in the ways in which people write JavaScript. This exercise should take 10-15 minutes for a programmer who is proficient in JavaScript. There is no right or wrong way to approach it - just do what feels the most natural to you. Feel free to use books, Google or Stack Overflow, just like you would if you were programming normally, but please don't actively look for a solution to the problem as this will negatively affect the research.
-
 ## Instructions
 
 You're a magician and you handle a deck of cards. In order to correctly execute your magic trick, you need to be able to _move_ a card from one position to another position. That is, you need to be able to `rearrange` the deck. Naturally, you want to be able to move cards in _both directions_, and be able to say "from the top of the deck" or "from the bottom of the deck".
