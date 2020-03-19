@@ -1,7 +1,3 @@
-## Introduction
-
-This is Part 2 of our research into differences in the ways in which people write Go. This exercise should take 10-15 minutes for a programmer who is proficient in Go. There is no right or wrong way to approach it - just do what feels the most natural to you. Feel free to use books, Google or Stack Overflow, just like you would if you were programming normally, but please don't actively look for a solution to the problem as this will negatively affect the research.
-
 ## Instructions
 
 Your task is to extend existing code with new functionality. The existing code represents a [blackjack][wikipedia.org-blackjack] dealer at a casino. Blackjack is a card game that uses a regular [deck of cards][wikipedia.org-playing_card], where each card is assigned a value. The numerical cards' values are simply their numeric values. The Jack, Queen and King are worth `10`, and an Ace can be worth either `1` or `11`. A hand's score is defined as the sum of the values of its cards.

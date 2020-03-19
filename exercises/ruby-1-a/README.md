@@ -1,7 +1,3 @@
-## Introduction
-
-This is Part 1 of our research into differences in the ways in which people write Ruby. This exercise should take 10-15 minutes for a programmer who is proficient in Ruby. There is no right or wrong way to approach it - just do what feels the most natural to you. Feel free to use books, Google or Stack Overflow, just like you would if you were programming normally, but please don't actively look for a solution to the problem as this will negatively affect the research.
-
 ## Instructions
 
 Your task is to define a shopping cart for a corner shop. The cart should keep track of the list of items added, and correctly calculate the price.

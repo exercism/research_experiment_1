@@ -1,7 +1,3 @@
-## Introduction
-
-This is Part 1 of our research into differences in the ways in which people write Go. This exercise should take 10-15 minutes for a programmer who is proficient in Go. There is no right or wrong way to approach it - just do what feels the most natural to you. Feel free to use books, Google or Stack Overflow, just like you would if you were programming normally, but please don't actively look for a solution to the problem as this will negatively affect the research.
-
 ## Instructions
 
 Your task is to define a function named `Describe`, which takes an integer and returns the possible descriptions of that number as a string. Besides the obvious literal representation of a number (`1` being written as `"1"`), the following units are also supported:

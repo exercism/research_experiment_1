@@ -1,7 +1,3 @@
-## Introduction
-
-This is Part 1 of our research into differences in the ways in which people write Python. This exercise should take 10-15 minutes for a programmer who is proficient in Python. There is no right or wrong way to approach it - just do what feels the most natural to you. Feel free to use books, Google or Stack Overflow, just like you would if you were programming normally, but please don't actively look for a solution to the problem as this will negatively affect the research.
-
 ## Instructions
 
 Your task is to compress a UTF-8 [`str`][str] to [`bytes`][bytes] using [Run Length Encoding (RLE)][rle], a relatively straightforward compression scheme that takes any continuous run of 1 or more of the same byte and compresses it into two bytes, the first being the length of the run and the second being the byte itself.

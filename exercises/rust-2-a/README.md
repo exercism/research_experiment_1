@@ -1,7 +1,3 @@
-## Introduction
-
-This is Part 2 of our research into differences in the ways in which people write Rust. This exercise should take 10-15 minutes for a programmer who is proficient in Rust. There is no right or wrong way to approach it - just do what feels the most natural to you. Feel free to use books, Google or Stack Overflow, just like you would if you were programming normally, but please don't look for a complete solution to the problem as this will negatively affect the research.
-
 ## Instructions
 
 Your task is to extend existing code with new functionality. The code you'll be working with has a function named `longest_incrementing_subslice`, which finds the longest contiguous subslice of an input slice for which each member is 1 higher than its predecessor:
