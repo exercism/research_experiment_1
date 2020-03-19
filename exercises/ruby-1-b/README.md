@@ -14,6 +14,7 @@ currently empty. This is what each method should do:
 
 `lookup_title` takes an `isbn` as an argument, and returns the title of the
 corresponding book
+
 ```ruby
 library = Library.new
 library.lookup_title("9780191604928")
@@ -21,11 +22,14 @@ library.lookup_title("9780191604928")
 ```
 
 Similarly `lookup_author` returns the author
+
 ```ruby
 library.lookup_author("9780718198916")
 => "Plato"
 ```
+
 and `lookup_publication_year` returns the publication year
+
 ```ruby
 library.lookup_publication_year("9781986431484")
 => "2018"
@@ -33,6 +37,7 @@ library.lookup_publication_year("9781986431484")
 
 `add_stock!` increases the stock count of a book, and `lookup_stock` returns
 the current stock of a book
+
 ```ruby
 library.add_stock!("9780451524935", 5)
 library.lookup_stock("9780451524935")
@@ -41,6 +46,7 @@ library.lookup_stock("9780451524935")
 
 `borrow!` decreases the stock count of a book if there are books in stock.
 If the stock is already zero, then `borrow!` does nothing
+
 ```ruby
 library.add_stock!("9780451524935", 1)
 library.lookup_stock("9780451524935")
@@ -55,6 +61,7 @@ library.lookup_stock("9780451524935")
 
 `put_back!` does the opposite of `borrow!`. It increases the stock if any of the
 books are still borrowed. If none of the books are borrowed it does nothing
+
 ```ruby
 library.add_stock!("9780451524935", 1)
 library.borrow("9780451524935")
@@ -70,6 +77,7 @@ library.lookup_stock("9780451524935")
 returns false
 
 `books_in_stock` returns the isbns of books that have at least 1 book in stock
+
 ```ruby
 isbns = ["9780544003415", "9780140283334", "9780451524935"]
 isbns.each { |isbn| library.add_stock!(isbn, 1) }
@@ -78,6 +86,7 @@ library.books_in_stock
 ```
 
 `total_books_in_stock` returns the summed stock of all books
+
 ```ruby
 isbns = ["9780544003415", "9780140283334", "9780451524935"]
 isbns.each { |isbn| library.add_stock!(isbn, 3) }
@@ -85,4 +94,10 @@ library.total_books_in_stock
 => 9
 ```
 
-**Note:** You can use `debug("some test")` to output debugging information for yourself.
+## Debugging
+
+When a test fails, a message is displayed describing what went wrong and for which input. You can also use the fact that any console output will be shown too. You can write to the console using:
+
+```ruby
+debug("Debug message")
+```

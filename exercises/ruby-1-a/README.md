@@ -35,4 +35,10 @@ shopping_cart.items_list
 // Returns: "Potatoes, Rice"
 ```
 
-**Note:** You can use `debug("some test")` to output debugging information for yourself.
+## Debugging
+
+When a test fails, a message is displayed describing what went wrong and for which input. You can also use the fact that any console output will be shown too. You can write to the console using:
+
+```ruby
+debug("Debug message")
+```
