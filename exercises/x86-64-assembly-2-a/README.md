@@ -25,7 +25,7 @@ str_isidentifier("my_variable1");
 
 The string is passed into the function via the `rdi` register, and the return value should be stored in the `rax` register.
 
-## Troubleshooting
+## Debugging
 
 When a test fails, a message is displayed describing what went wrong and for which input. You can also use the fact that any console output will be shown too. By including the file "debug.asm" using the [%include](https://www.nasm.us/xdoc/2.14.02/html/nasmdoc4.html#section-4.6.1) directive, you gain access to some useful macros:
 

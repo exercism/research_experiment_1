@@ -36,7 +36,7 @@ color_name(buf, RED);
 
 The user-provided buffer is passed into the function via the `rdi` register, and the enum value is passed into the function via the `rsi` register.
 
-## Troubleshooting
+## Debugging
 
 When a test fails, a message is displayed describing what went wrong and for which input. You can also use the fact that any console output will be shown too. By including the file "debug.asm" using the [%include](https://www.nasm.us/xdoc/2.14.02/html/nasmdoc4.html#section-4.6.1) directive, you gain access to some useful macros:
 

@@ -15,7 +15,7 @@ Store.QueueWithMinimalWaitingTime(customersInQueue1: 2, customersInQueue2: 3, cu
 // Returns: 3
 ```
 
-## Troubleshooting
+## Debugging
 
 When a test fails, a message is displayed describing what went wrong and for which input. You can also use the fact that any [console output][programiz.com-basic-input-output] will be shown too. You can write to the console using:
 

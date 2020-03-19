@@ -22,6 +22,14 @@ Next, we expect you to define a function `receive` that will take a NATO code wo
 "NCC1701D
 ```
 
+## Debugging
+
+When a test fails, a message is displayed describing what went wrong and for which input. You can also use the fact that any console output will be shown too. You can write to the console using:
+
+```python
+print("Debug message")
+```
+
 [str]: https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str
 [ascii]: https://en.wikipedia.org/wiki/ASCII
 [nato]: https://en.wikipedia.org/wiki/NATO_phonetic_alphabet#
