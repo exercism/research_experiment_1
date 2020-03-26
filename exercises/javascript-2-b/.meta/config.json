@@ -33,7 +33,7 @@
       "expected": "{\n  town: \"Miami\",\n  state: \"Florida\"\n}"
     },
     {
-      "test": "extract > property: salary",
+      "test": "extract > property: unknown",
       "name": "extract unknown 'salary' property",
       "cmd": "const TEAM = {\n  name: \"Buzzer Beaters\",\n  coach: {\n    name: \"Nancy\",\n    achievements: {\n      titles: 2,\n      hallOfFame: true\n    }\n    },\n  location: {\n    town: \"Miami\",\n    state: \"Florida\"\n  },\n  players: [\n    { name: \"Candace\", position: \"Point guard\" },\n    { name: \"Dawn\", position: \"Center\" }\n  ]\n};\nextract(TEAM, \"salary\");",
       "expected": "null"
