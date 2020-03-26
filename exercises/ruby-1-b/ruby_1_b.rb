@@ -4,7 +4,7 @@ class Library
   CATALOG_DATA = <<~DATA
     The Adventures of Tom Sawyer;9780191604928;Mark Twain;2007
     Republic;9780718198916;Plato;2012
-    Programming Ruby: The Pragmatic Programmers' Guide;9780974514055;David Thomas;2004
+    Programming Ruby: The Pragmatic Programmers Guide;9780974514055;David Thomas;2004
     Pride and Prejudice by Jane Austen;9781986431484;Jane Austen;2018
     To Kill a Mockingbird;9780446310789;Harper Lee;1988
     Cosmicomics;9780330319089;Italo Calvino;1969
@@ -12,44 +12,4 @@ class Library
     Lord of the Flies;9780140283334;William Golding;1999
     1984: A Novel;9780451524935;George Orwell;2009
   DATA
-
-  def lookup_title(isbn)
-    raise NotImplementedError, 'Please implement the Library#lookup_title method'
-  end
-
-  def lookup_author(isbn)
-    raise NotImplementedError, 'Please implement the Library#lookup_author method'
-  end
-
-  def lookup_publication_year(isbn)
-    raise NotImplementedError, 'Please implement the Library#lookup_publication_year method'
-  end
-
-  def add_stock!(isbn, count)
-    raise NotImplementedError, 'Please implement the Library#add_stock! method'
-  end
-
-  def lookup_stock(isbn)
-    raise NotImplementedError, 'Please implement the Library#lookup_stock method'
-  end
-
-  def borrow!(isbn)
-    raise NotImplementedError, 'Please implement the Library#borrow! method'
-  end
-
-  def put_back!(isbn)
-    raise NotImplementedError, 'Please implement the Library#put_back! method'
-  end
-
-  def book_in_stock?(isbn)
-    raise NotImplementedError, 'Please implement the Library#book_in_stock? method'
-  end
-
-  def books_in_stock
-    raise NotImplementedError, 'Please implement the Library#books_in_stock method'
-  end
-
-  def total_books_in_stock
-    raise NotImplementedError, 'Please implement the Library#total_books_in_stock method'
-  end
 end
