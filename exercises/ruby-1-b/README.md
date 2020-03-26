@@ -6,88 +6,66 @@ each book has the following columns:
 title, ISBN, author, and publishing year.
 
 The public methods that you need to implement have been provided for you, but they're
-currently empty. This is what each method should do:
+currently empty.
 
-`lookup_title` takes an `isbn` as an argument, and returns the title of the
-corresponding book
+The first three methods return information about the books:
 
 ```ruby
 library = Library.new
-library.lookup_title("9780191604928")
-=> "The Adventures of Tom Sawyer"
+library.lookup_title("9780718198916")
+#=> "Republic"
+
+library.lookup_author("9780191604928")
+#=> "Mark Twain"
+
+library.lookup_publication_year("9780451524935")
+#=> "2009"
 ```
 
-Similarly `lookup_author` returns the author
+The library then has methods that need adding to handle stock.
 
-```ruby
-library.lookup_author("9780718198916")
-=> "Plato"
-```
+- `add_stock!` increases the stock count of a book.
+- `borrow!` decreases the stock count of a book if there are books in stock.
+- `put_back!` increases the stock if any of the books are still borrowed.
+- `lookup_stock` returns the current stock of a book.
+- `book_in_stock?` returns a boolean representing whether there is at least 1 book in stock.
+- `books_in_stock` lists the ISBNs of all books in stock, sorted alphabetically.
+- `total_books_in_stock` returns the summed stock of all books.
 
-and `lookup_publication_year` returns the publication year
-
-```ruby
-library.lookup_publication_year("9781986431484")
-=> "2018"
-```
-
-`add_stock!` increases the stock count of a book, and `lookup_stock` returns
-the current stock of a book
-
-```ruby
-library.add_stock!("9780451524935", 5)
-library.lookup_stock("9780451524935")
-=> 5
-```
-
-`borrow!` decreases the stock count of a book if there are books in stock.
-If the stock is already zero, then `borrow!` does nothing
+A sample flow might look like this:
 
 ```ruby
 library.add_stock!("9780451524935", 1)
 library.lookup_stock("9780451524935")
-=> 1
+#=> 1
+library.book_in_stock?("9780451524935")
+#=> true
+
 library.borrow("9780451524935")
 library.lookup_stock("9780451524935")
-=> 0
+# => 0
+library.book_in_stock?("9780451524935")
+#=> false
+
+# Borrowing a book that's out of stock does nothing
 library.borrow("9780451524935")
 library.lookup_stock("9780451524935")
-=> 0
-```
+# => 0
 
-`put_back!` does the opposite of `borrow!`. It increases the stock if any of the
-books are still borrowed. If none of the books are borrowed it does nothing
-
-```ruby
-library.add_stock!("9780451524935", 1)
-library.borrow("9780451524935")
 library.put_back!("9780451524935")
 library.lookup_stock("9780451524935")
-=> 1
+# => 1
+
+# Putting back a book that's not been borrowed does nothing
 library.put_back!("9780451524935")
 library.lookup_stock("9780451524935")
-=> 1
-```
+# => 1
 
-`book_in_stock?` returns true if there's at least 1 book in stock, otherwise it
-returns false
-
-`books_in_stock` returns the isbns of books that have at least 1 book in stock
-
-```ruby
-isbns = ["9780544003415", "9780140283334", "9780451524935"]
-isbns.each { |isbn| library.add_stock!(isbn, 1) }
+library.add_stock!("9780140283334", 2)
 library.books_in_stock
-=> ["9780544003415", "9780140283334", "9780451524935"]
-```
-
-`total_books_in_stock` returns the summed stock of all books
-
-```ruby
-isbns = ["9780544003415", "9780140283334", "9780451524935"]
-isbns.each { |isbn| library.add_stock!(isbn, 3) }
+# => ["9780140283334", "9780451524935"]
 library.total_books_in_stock
-=> 9
+# => 3
 ```
 
 ## Debugging
