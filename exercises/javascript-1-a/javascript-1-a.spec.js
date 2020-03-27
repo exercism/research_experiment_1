@@ -19,11 +19,11 @@ function card(index) {
 
 describe('magic-moves', () => {
   describe('arrange', () => {
-    test(`arrange([ ${CARDS.join(', ')} ], 3, 0): it moves the ${card(3)} (index 3) to the front (index 0)`, () => {
+    test(`arrange([ ${CARDS.join(', ')} ], 3, 0): moves the ${card(3)} (index 3) to the front (index 0)`, () => {
       expect(arrange(CARDS.slice(), 3, 0)).toEqual(cardify(4, 1, 2, 3, 5))
     })
 
-    test(`arrange([ ${CARDS.join(', ')} ], 3, 0): it does not mutate the input`, () => {
+    test(`arrange([ ${CARDS.join(', ')} ], 3, 0): does not mutate the input`, () => {
       const before = CARDS.slice()
       const magixs = arrange(before, 3, 0)
       expect(before).not.toBe(magixs)
@@ -49,11 +49,11 @@ describe('magic-moves', () => {
   })
 
   describe('rearrange', () => {
-    test(`rearrange([ ${CARDS.join(', ')} ], 3, 0): it moves the ${card(3)} (index 3) to the front (index 0)`, () => {
+    test(`rearrange([ ${CARDS.join(', ')} ], 3, 0): moves the ${card(3)} (index 3) to the front (index 0)`, () => {
       expect(rearrange(CARDS.slice(), 3, 0)).toEqual(cardify(4, 1, 2, 3, 5))
     })
 
-    test(`rearrange([ ${CARDS.join(', ')} ], 3, 0): it mutates the input`, () => {
+    test(`rearrange([ ${CARDS.join(', ')} ], 3, 0): mutates the input`, () => {
       const before = CARDS.slice()
       const magixs = rearrange(before, 3, 0)
       expect(before).toBe(magixs)

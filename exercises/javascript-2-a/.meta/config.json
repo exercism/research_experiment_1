@@ -3,14 +3,14 @@
   "test_file": "javascript-2-a.spec.js",
   "tests": [
     {
-      "test": "magic-moves > arrange > arrange([ ♠, ♣, ♥, ♦, ✨ ], 3, 0): it moves the ♦ (index 3) to the front (index 0)",
-      "name": "it moves the ♦ (index 3) to the front (index 0)",
+      "test": "magic-moves > arrange > arrange([ ♠, ♣, ♥, ♦, ✨ ], 3, 0): moves the ♦ (index 3) to the front (index 0)",
+      "name": "moves the ♦ (index 3) to the front (index 0)",
       "cmd": "arrange(['♠', '♣', '♥', '♦', '✨'], 3, 0)",
       "expected": "['♦', '♠', '♣', '♥', '✨']"
     },
     {
-      "test": "magic-moves > arrange > arrange([ ♠, ♣, ♥, ♦, ✨ ], 3, 0): it does not mutate the input",
-      "name": "it does not mutate the input",
+      "test": "magic-moves > arrange > arrange([ ♠, ♣, ♥, ♦, ✨ ], 3, 0): does not mutate the input",
+      "name": "does not mutate the input",
       "cmd": "arrange(['♠', '♣', '♥', '♦', '✨'], 3, 0)",
       "expected": "['♠', '♣', '♥', '♦', '✨']"
     },
@@ -39,14 +39,14 @@
       "expected": "['♠', '♣', '♥', '♦', '✨']"
     },
     {
-      "test": "magic-moves > rearrange > rearrange([ ♠, ♣, ♥, ♦, ✨ ], 3, 0): it moves the ♦ (index 3) to the front (index 0)",
-      "name": "it moves the ♦ (index 3) to the front (index 0)",
+      "test": "magic-moves > rearrange > rearrange([ ♠, ♣, ♥, ♦, ✨ ], 3, 0): moves the ♦ (index 3) to the front (index 0)",
+      "name": "moves the ♦ (index 3) to the front (index 0)",
       "cmd": "rearrange(['♠', '♣', '♥', '♦', '✨'], 3, 0)",
       "expected": "['♦', '♠', '♣', '♥', '✨']"
     },
     {
-      "test": "magic-moves > rearrange > rearrange([ ♠, ♣, ♥, ♦, ✨ ], 3, 0): it mutates the input",
-      "name": "it mutates the input",
+      "test": "magic-moves > rearrange > rearrange([ ♠, ♣, ♥, ♦, ✨ ], 3, 0): mutates the input",
+      "name": "mutates the input",
       "cmd": "rearrange(['♠', '♣', '♥', '♦', '✨'], 3, 0)",
       "expected": "['♦', '♠', '♣', '♥', '✨']"
     },
@@ -75,62 +75,62 @@
       "expected": "['♠', '♣', '♥', '♦', '✨']"
     },
     {
-      "test": "magic-moves > arrange multiple steps > arrange([ ♠, ♣, ♥, ♦, ✨ ], [[3, 0]]): it moves the ♦ (index 3) to the front (index 0)",
-      "name": "it moves the ♦ (index 3) to the front (index 0)",
+      "test": "magic-moves > arrange multiple steps > arrange([ ♠, ♣, ♥, ♦, ✨ ], [[3, 0]]): moves the ♦ (index 3) to the front (index 0)",
+      "name": "moves the ♦ (index 3) to the front (index 0)",
       "cmd": "arrange(['♠', '♣', '♥', '♦', '✨'], [[3, 0]])",
       "expected": "['♦', '♠', '♣', '♥', '✨']"
     },
     {
-      "test": "magic-moves > arrange multiple steps > arrange([ ♠, ♣, ♥, ♦, ✨ ], [[3, 0]]): it does not mutate the input",
-      "name": "it does not mutate the input",
+      "test": "magic-moves > arrange multiple steps > arrange([ ♠, ♣, ♥, ♦, ✨ ], [[3, 0]]): does not mutate the input",
+      "name": "does not mutate the input",
       "cmd": "arrange(['♠', '♣', '♥', '♦', '✨'], [[3, 0]])",
       "expected": "['♠', '♣', '♥', '♦', '✨']"
     },
     {
-      "test": "magic-moves > arrange multiple steps > arrange([ ♠, ♣, ♥, ♦, ✨ ], [[3, 0],[3, 0],[3, 0]]): it moves the fourth card (index 3) to the front (index 0) three times",
-      "name": "it moves the fourth card (index 3) to the front (index 0) three times",
+      "test": "magic-moves > arrange multiple steps > arrange([ ♠, ♣, ♥, ♦, ✨ ], [[3, 0], [3, 0], [3, 0]]): moves the ♦ (index 3) to the front (index 0) three times",
+      "name": "moves the fourth card (index 3) to the front (index 0) three times",
       "cmd": "arrange(['♠', '♣', '♥', '♦', '✨'], [[3, 0],[3, 0],[3, 0]])",
       "expected": "['♣', '♥', '♦', '♠', '✨']"
     },
     {
-      "test": "magic-moves > arrange multiple steps > arrange([ ♠, ♣, ♥, ♦, ✨ ], [[-1, 0],[-1, 0]]): it moves the last card to the front twice",
-      "name": "it moves the last card to the front twice",
+      "test": "magic-moves > arrange multiple steps > arrange([ ♠, ♣, ♥, ♦, ✨ ], [[-1, 0],[-1, 0]]): moves the ✨ (last card) to the front (index 0) twice",
+      "name": "moves the last card to the front twice",
       "cmd": "arrange(['♠', '♣', '♥', '♦', '✨'], [[-1, 0],[-1, 0]])",
       "expected": "['♦', '✨', '♠', '♣', '♥']"
     },
     {
-      "test": "magic-moves > arrange multiple steps > arrange([ ♠, ♣, ♥, ♦, ✨ ], [[1, 3],[3, 1]]): it moves the second card to fourth place and then back again",
-      "name": "it moves the second card to fourth place and then back again",
+      "test": "magic-moves > arrange multiple steps > arrange([ ♠, ♣, ♥, ♦, ✨ ], [[1, 3],[3, 1]]): moves the second ♣ (index 1) to fourth place (index 3) and then back again",
+      "name": "moves the second card to fourth place and then back again",
       "cmd": "arrange(['♠', '♣', '♥', '♦', '✨'], [[1, 3],[3, 1]])",
       "expected": "['♠', '♣', '♥', '♦', '✨']"
     },
     {
-      "test": "magic-moves > rearrange multiple steps > rearrange([ ♠, ♣, ♥, ♦, ✨ ], [[3, 0]]): it moves the ♦ (index 3) to the front (index 0)",
-      "name": "it moves the ♦ (index 3) to the front (index 0)",
+      "test": "magic-moves > rearrange multiple steps > rearrange([ ♠, ♣, ♥, ♦, ✨ ], [[3, 0]]): moves the ♦ (index 3) to the front (index 0)",
+      "name": "moves the ♦ (index 3) to the front (index 0)",
       "cmd": "rearrange(['♠', '♣', '♥', '♦', '✨'], [[3, 0]])",
       "expected": "['♦', '♠', '♣', '♥', '✨']"
     },
     {
-      "test": "magic-moves > rearrange multiple steps > rearrange([ ♠, ♣, ♥, ♦, ✨ ], [[3, 0]]): it does not mutate the input",
-      "name": "it mutates the input",
+      "test": "magic-moves > rearrange multiple steps > rearrange([ ♠, ♣, ♥, ♦, ✨ ], [[3, 0]]): mutates the input",
+      "name": "mutates the input",
       "cmd": "rearrange(['♠', '♣', '♥', '♦', '✨'], [[3, 0]])",
       "expected": "['♦', '♠', '♣', '♥', '✨']"
     },
     {
-      "test": "magic-moves > rearrange multiple steps > rearrange([ ♠, ♣, ♥, ♦, ✨ ], [[3, 0],[3, 0],[3, 0]]): it moves the fourth card (index 3) to the front (index 0) three times",
-      "name": "it moves the fourth card (index 3) to the front (index 0) three times",
+      "test": "magic-moves > rearrange multiple steps > rearrange([ ♠, ♣, ♥, ♦, ✨ ], [[3, 0],[3, 0],[3, 0]]): moves the ♦ (index 3) to the front (index 0) three times",
+      "name": "moves the fourth card (index 3) to the front (index 0) three times",
       "cmd": "rearrange(['♠', '♣', '♥', '♦', '✨'], [[3, 0],[3, 0],[3, 0]])",
       "expected": "['♣', '♥', '♦', '♠', '✨']"
     },
     {
-      "test": "magic-moves > rearrange multiple steps > rearrange([ ♠, ♣, ♥, ♦, ✨ ], [[-1, 0],[-1, 0]]): it moves the last card to the front twice",
-      "name": "it moves the last card to the front twice",
+      "test": "magic-moves > rearrange multiple steps > rearrange([ ♠, ♣, ♥, ♦, ✨ ], [[-1, 0],[-1, 0]]): moves the ✨ (last card) to the front (index 0) twice",
+      "name": "moves the last card to the front twice",
       "cmd": "rearrange(['♠', '♣', '♥', '♦', '✨'], [[-1, 0],[-1, 0]])",
       "expected": "['♦', '✨', '♠', '♣', '♥']"
     },
     {
-      "test": "magic-moves > rearrange multiple steps > rearrange([ ♠, ♣, ♥, ♦, ✨ ], [[1, 3],[3, 1]]): it moves the second card to fourth place and then back again",
-      "name": "it moves the second card to fourth place and then back again",
+      "test": "magic-moves > rearrange multiple steps > rearrange([ ♠, ♣, ♥, ♦, ✨ ], [[1, 3],[3, 1]]): moves the second ♣ (index 1) to fourth place (index 3) and then back again",
+      "name": "moves the second card to fourth place and then back again",
       "cmd": "rearrange(['♠', '♣', '♥', '♦', '✨'], [[1, 3],[3, 1]])",
       "expected": "['♠', '♣', '♥', '♦', '✨']"
     }
