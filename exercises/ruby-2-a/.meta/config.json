@@ -69,6 +69,12 @@
       "expected": "20.00"
     },
     {
+      "test": "test_duplicated_coupons",
+      "name": "Scan a coupon that doesn't exist keeps the total unchanged",
+      "cmd": "cart = ShoppingCart.new\ncart.add(:STAPOT)\ncart.add(:STAPOT)\ncart.scan_coupon(:FIX_TEN)\ncart.scan_coupon(:FIX_TEN)\ncart.total_amount",
+      "expected": "10.00"
+    },
+    {
       "test": "test_negative_balance",
       "name": "Cart's total amount minimum value is 0",
       "cmd": "cart = ShoppingCart.new\ncart.add(:MEDNEW)\ncart.scan_coupon(:FIX_TEN)\ncart.total_amount",
