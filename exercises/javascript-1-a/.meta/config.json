@@ -1,18 +1,16 @@
 {
-  "solution_files": [
-    "javascript-1-a.js"
-  ],
+  "solution_files": ["javascript-1-a.js"],
   "test_file": "javascript-1-a.spec.js",
   "tests": [
     {
-      "test": "magic-moves > arrange > arrange([ ♠, ♣, ♥, ♦, ✨ ], 3, 0): it moves the ♦ (index 3) to the front (index 0)",
-      "name": "it moves the ♦ (index 3) to the front (index 0)",
+      "test": "magic-moves > arrange > arrange([ ♠, ♣, ♥, ♦, ✨ ], 3, 0): moves the ♦ (index 3) to the front (index 0)",
+      "name": "moves the ♦ (index 3) to the front (index 0)",
       "cmd": "arrange(['♠', '♣', '♥', '♦', '✨'], 3, 0)",
       "expected": "['♦', '♠', '♣', '♥', '✨']"
     },
     {
-      "test": "magic-moves > arrange > arrange([ ♠, ♣, ♥, ♦, ✨ ], 3, 0): it does not mutate the input",
-      "name": "it does not mutate the input",
+      "test": "magic-moves > arrange > arrange([ ♠, ♣, ♥, ♦, ✨ ], 3, 0): does not mutate the input",
+      "name": "does not mutate the input",
       "cmd": "arrange(['♠', '♣', '♥', '♦', '✨'], 3, 0)",
       "expected": "['♠', '♣', '♥', '♦', '✨']"
     },
@@ -41,14 +39,14 @@
       "expected": "['♠', '♣', '♥', '♦', '✨']"
     },
     {
-      "test": "magic-moves > rearrange > rearrange([ ♠, ♣, ♥, ♦, ✨ ], 3, 0): it moves the ♦ (index 3) to the front (index 0)",
-      "name": "it moves the ♦ (index 3) to the front (index 0)",
+      "test": "magic-moves > rearrange > rearrange([ ♠, ♣, ♥, ♦, ✨ ], 3, 0): moves the ♦ (index 3) to the front (index 0)",
+      "name": "moves the ♦ (index 3) to the front (index 0)",
       "cmd": "rearrange(['♠', '♣', '♥', '♦', '✨'], 3, 0)",
       "expected": "['♦', '♠', '♣', '♥', '✨']"
     },
     {
-      "test": "magic-moves > rearrange > rearrange([ ♠, ♣, ♥, ♦, ✨ ], 3, 0): it mutates the input",
-      "name": "it mutates the input",
+      "test": "magic-moves > rearrange > rearrange([ ♠, ♣, ♥, ♦, ✨ ], 3, 0): mutates the input",
+      "name": "mutates the input",
       "cmd": "rearrange(['♠', '♣', '♥', '♦', '✨'], 3, 0)",
       "expected": "['♦', '♠', '♣', '♥', '✨']"
     },

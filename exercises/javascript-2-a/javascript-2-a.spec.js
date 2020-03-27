@@ -20,13 +20,13 @@ function card(index) {
 
 describe("magic-moves", () => {
   describe("arrange", () => {
-    test(`arrange([ ${cards} ], 3, 0): it moves the ${card(
+    test(`arrange([ ${cards} ], 3, 0): moves the ${card(
       3
     )} (index 3) to the front (index 0)`, () => {
       expect(arrange(CARDS.slice(), 3, 0)).toEqual(cardify(4, 1, 2, 3, 5));
     });
 
-    test(`arrange([ ${cards} ], 3, 0): it does not mutate the input`, () => {
+    test(`arrange([ ${cards} ], 3, 0): does not mutate the input`, () => {
       const before = CARDS.slice();
       const magixs = arrange(before, 3, 0);
       expect(before).not.toBe(magixs);
@@ -65,13 +65,13 @@ describe("magic-moves", () => {
       freshCards = CARDS.slice();
     });
 
-    test(`rearrange([ ${cards} ], 3, 0): it moves the ${card(
+    test(`rearrange([ ${cards} ], 3, 0): moves the ${card(
       3
     )} (index 3) to the front (index 0)`, () => {
       expect(rearrange(freshCards, 3, 0)).toEqual(cardify(4, 1, 2, 3, 5));
     });
 
-    test(`rearrange([ ${cards} ], 3, 0): it mutates the input`, () => {
+    test(`rearrange([ ${cards} ], 3, 0): mutates the input`, () => {
       const magixs = rearrange(freshCards, 3, 0);
       expect(freshCards).toBe(magixs);
       expect(freshCards).toEqual(cardify(4, 1, 2, 3, 5));
@@ -109,7 +109,7 @@ describe("magic-moves", () => {
       expect(arrange(CARDS, [[3, 0]])).toEqual(cardify(4, 1, 2, 3, 5));
     });
 
-    test(`arrange([ ${cards} ], [[3, 0]]): it does not mutate the input`, () => {
+    test(`arrange([ ${cards} ], [[3, 0]]): does not mutate the input`, () => {
       const before = CARDS.slice();
       const magixs = arrange(before, [[3, 0]]);
       expect(before).not.toBe(magixs);
@@ -117,7 +117,7 @@ describe("magic-moves", () => {
       expect(magixs).toEqual(cardify(4, 1, 2, 3, 5));
     });
 
-    test(`arrange([ ${cards} ], [[3, 0], [3,0], [3,0]]): moves the ${card(
+    test(`arrange([ ${cards} ], [[3, 0], [3, 0], [3, 0]]): moves the ${card(
       3
     )} (index 3) to the front (index 0) three times`, () => {
       const actual = arrange(CARDS, [
@@ -161,13 +161,13 @@ describe("magic-moves", () => {
       expect(rearrange(freshCards, [[3, 0]])).toEqual(cardify(4, 1, 2, 3, 5));
     });
 
-    test(`rearrange([ ${cards} ], [[3, 0]]): it mutates the input`, () => {
+    test(`rearrange([ ${cards} ], [[3, 0]]): mutates the input`, () => {
       const magixs = rearrange(freshCards, [[3, 0]]);
       expect(freshCards).toBe(magixs);
       expect(magixs).toEqual(cardify(4, 1, 2, 3, 5));
     });
 
-    test(`rearrange([ ${cards} ], [[3, 0], [3,0], [3,0]]): moves the ${card(
+    test(`rearrange([ ${cards} ], [[3, 0],[3, 0],[3, 0]]): moves the ${card(
       3
     )} (index 3) to the front (index 0) three times`, () => {
       const actual = rearrange(freshCards, [
