@@ -23,7 +23,7 @@
     {
       "test": "TestTransmit.test_only_ascii_alphanum",
       "name": "Only ASCII alphanum",
-      "cmd": "receive(\"\\N{GREEK CAPITAL LETTER NU}\\N{CHEROKEE LETTER TLI}\\N{CHEROKEE LETTER TLI}-1701-\\N{CHEROKEE LETTER A}\" + string.whitespace + string.punctuation\")",
+      "cmd": "transmit(\"\\N{GREEK CAPITAL LETTER NU}\\N{CHEROKEE LETTER TLI}\\N{CHEROKEE LETTER TLI}-1701-\\N{CHEROKEE LETTER A}\" + string.whitespace + string.punctuation\")",
       "expected": "\"ONE SEVEN ZERO ONE\""
     },
     {
