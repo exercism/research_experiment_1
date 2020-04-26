@@ -11,7 +11,7 @@
     {
       "test": "test_one_item",
       "name": "One item",
-      "cmd": "cart = ShoppingCart.new\ncart.add(:STAPOT)\ncard.total_amount",
+      "cmd": "cart = ShoppingCart.new\ncart.add(:STAPOT)\ncart.total_amount",
       "expected": "10"
     },
     {
