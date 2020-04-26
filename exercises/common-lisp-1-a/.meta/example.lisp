@@ -16,4 +16,4 @@
      (when (< (pokemon-hp ,b) 1) (return (pokemon-name ,a)))))
 
 (defun battle (a b)
-  (loop (print a) (attack a b) (print b) (attack b a)))
+  (loop (attack a b) (attack b a)))

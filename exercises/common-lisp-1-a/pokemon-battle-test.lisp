@@ -21,7 +21,7 @@
   (is (equal "A" (battle (make-test-pokemon "A" 'water)
                          (make-test-pokemon "B" 'water)))))
 
-(test different-type-pokemon "If otherwise identical Pokémon with different types are battling, the type with advantage wins"
+(test different-type-pokemon "If otherwise identical Pokémon with different types are battling, the one with type-advantage wins"
   (is (equal "A" (battle (make-test-pokemon "A" 'fire)
                          (make-test-pokemon "B" 'grass))))
   (is (equal "B" (battle (make-test-pokemon "A" 'grass)
@@ -34,6 +34,26 @@
                          (make-test-pokemon "B" 'fire))))
   (is (equal "B" (battle (make-test-pokemon "A" 'fire)
                          (make-test-pokemon "B" 'water)))))
+
+(test different-atk-pokemon "If otherwise identical Pokémon with different atk are battling, the one with higher atk wins"
+  (is (equal "A" (battle (make-test-pokemon "A" 'fire 10)
+                         (make-test-pokemon "B" 'fire 5))))
+  (is (equal "B" (battle (make-test-pokemon "A" 'grass 5)
+                         (make-test-pokemon "B" 'grass 10)))))
+
+(test different-hp-pokemon "If otherwise identical Pokémon with different hp are battling, the one with higher hp wins"
+  (is (equal "A" (battle (make-test-pokemon "A" 'water 5 40)
+                         (make-test-pokemon "B" 'water 5 35))))
+  (is (equal "B" (battle (make-test-pokemon "A" 'fire 5 35)
+                         (make-test-pokemon "B" 'fire 5 40)))))
+
+(test long-battle "A really long battle"
+  (is (equal "B" (battle (make-test-pokemon "A" 'fire 1 1000000)
+                         (make-test-pokemon "B" 'fire 1 1000001)))))
+
+(test short-battle "A really short battle"
+  (is (equal "A" (battle (make-test-pokemon "A" 'grass 1 1)
+                         (make-test-pokemon "B" 'water 5 2)))))
 
 (defun run-tests (&optional (explain t))
   (let ((tests (run 'pokemon-battle-suite)))
