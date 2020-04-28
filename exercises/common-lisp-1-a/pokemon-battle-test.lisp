@@ -13,45 +13,54 @@
 (defun make-test-pokemon (name &optional (type 'fire) (atk 5) (hp 40))
   (make-pokemon :name name :type type :atk atk :hp hp))
 
-(test twin-pokemon "If identical Pokémon are battling, the first always wins"
+(test twin-pokemon-1
   (is (equal "A" (battle (make-test-pokemon "A")
-                         (make-test-pokemon "B"))))
+                         (make-test-pokemon "B")))))
+(test twin-pokemon-2
   (is (equal "A" (battle (make-test-pokemon "A" 'grass)
-                         (make-test-pokemon "B" 'grass))))
+                         (make-test-pokemon "B" 'grass)))))
+(test twin-pokemon-3
   (is (equal "A" (battle (make-test-pokemon "A" 'water)
                          (make-test-pokemon "B" 'water)))))
 
-(test different-atk-pokemon "If otherwise identical Pokémon with different atk are battling, the one with higher atk wins"
+(test different-atk-pokemon-1
   (is (equal "A" (battle (make-test-pokemon "A" 'fire 10)
-                         (make-test-pokemon "B" 'fire 5))))
+                         (make-test-pokemon "B" 'fire 5)))))
+(test different-atk-pokemon-2
   (is (equal "B" (battle (make-test-pokemon "A" 'grass 5)
                          (make-test-pokemon "B" 'grass 10)))))
 
-(test different-hp-pokemon "If otherwise identical Pokémon with different hp are battling, the one with higher hp wins"
+(test different-hp-pokemon-1
   (is (equal "A" (battle (make-test-pokemon "A" 'water 5 40)
-                         (make-test-pokemon "B" 'water 5 35))))
+                         (make-test-pokemon "B" 'water 5 35)))))
+(test different-hp-pokemon-2
   (is (equal "B" (battle (make-test-pokemon "A" 'fire 5 35)
                          (make-test-pokemon "B" 'fire 5 40)))))
 
-(test different-type-pokemon "If otherwise identical Pokémon with different types are battling, the one with type-advantage wins"
+(test different-type-pokemon-1
   (is (equal "A" (battle (make-test-pokemon "A" 'fire)
-                         (make-test-pokemon "B" 'grass))))
+                         (make-test-pokemon "B" 'grass)))))
+(test different-type-pokemon-2
   (is (equal "B" (battle (make-test-pokemon "A" 'grass)
-                         (make-test-pokemon "B" 'fire))))
+                         (make-test-pokemon "B" 'fire)))))
+(test different-type-pokemon-3
   (is (equal "A" (battle (make-test-pokemon "A" 'grass)
-                         (make-test-pokemon "B" 'water))))
+                         (make-test-pokemon "B" 'water)))))
+(test different-type-pokemon-4
   (is (equal "B" (battle (make-test-pokemon "A" 'water)
-                         (make-test-pokemon "B" 'grass))))
+                         (make-test-pokemon "B" 'grass)))))
+(test different-type-pokemon-5
   (is (equal "A" (battle (make-test-pokemon "A" 'water)
-                         (make-test-pokemon "B" 'fire))))
+                         (make-test-pokemon "B" 'fire)))))
+(test different-type-pokemon-6
   (is (equal "B" (battle (make-test-pokemon "A" 'fire)
                          (make-test-pokemon "B" 'water)))))
 
-(test long-battle "A really long battle"
+(test long-battle
   (is (equal "B" (battle (make-test-pokemon "A" 'grass 1 2000000)
                          (make-test-pokemon "B" 'fire 1 1000001)))))
 
-(test short-battle "A really short battle"
+(test short-battle
   (is (equal "A" (battle (make-test-pokemon "A" 'grass 1 1)
                          (make-test-pokemon "B" 'water 5 2)))))
 
