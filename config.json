@@ -8,6 +8,14 @@
   "test_pattern": "([Tt]est|[Ss]pec)",
   "exercises": [
     {
+      "slug": "common-lisp-1-a",
+      "uuid": "c0df445c-ed95-4595-9d9a-61499dd38f38",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    }
+    {
       "slug": "csharp-1-a",
       "uuid": "d9afa8e1-2688-472e-b95b-b932a084a99a",
       "core": false,

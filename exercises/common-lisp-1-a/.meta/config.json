@@ -1,0 +1,5 @@
+{
+  "solution_files": ["pokemon-battle.lisp"],
+  "test_file": "pokemon-battle-test.lisp",
+  "tests": []
+}

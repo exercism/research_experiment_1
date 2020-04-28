@@ -1,4 +1,4 @@
-## Pokémon Battle
+## Instructions
 
 As an aspiring [Pokémon][pokemon] trainer, you're looking to get some battle
 experience so you can hone your skills. The only problem is, you don't have any
