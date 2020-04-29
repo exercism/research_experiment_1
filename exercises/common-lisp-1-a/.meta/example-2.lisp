@@ -1,8 +1,7 @@
-(defpackage :pokemon-battle
+(defpackage common-lisp-1-a
   (:use :cl)
-  (:shadow :type)
-  (:export :make-pokemon :battle
-           :fire :grass :water))
+  (:export :make-pokemon :battle))
+(in-package :common-lisp-1-a)
 
 (in-package :pokemon-battle)
 
