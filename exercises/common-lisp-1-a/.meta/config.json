@@ -1,0 +1,96 @@
+{
+  "solution_files": ["pokemon-battle.lisp"],
+  "test_file": "pokemon-battle-test.lisp",
+  "tests": [
+    {
+      "test": "TWIN-POKEMON-1",
+      "name": "If identical Pokémon are battling, the first always wins",
+      "cmd": "(battle (make-pokemon :name \"A\" :type 'fire :atk 5 :hp 40)\n        (make-pokemon :name \"B\" :type 'fire :atk 5 :hp 40))",
+      "expected": "\"A\""
+    },
+    {
+      "test": "TWIN-POKEMON-2",
+      "name": "If identical Pokémon are battling, the first always wins",
+      "cmd": "(battle (make-pokemon :name \"A\" :type 'grass :atk 5 :hp 40)\n        (make-pokemon :name \"B\" :type 'grass :atk 5 :hp 40))",
+      "expected": "\"A\""
+    },
+    {
+      "test": "TWIN-POKEMON-3",
+      "name": "If identical Pokémon are battling, the first always wins",
+      "cmd": "(battle (make-pokemon :name \"A\" :type 'water :atk 5 :hp 40)\n        (make-pokemon :name \"B\" :type 'water :atk 5 :hp 40))",
+      "expected": "\"A\""
+    },
+    {
+      "test": "DIFFERENT-ATK-POKEMON-1",
+      "name": "If otherwise identical Pokémon with different atk are battling, the one with higher atk wins",
+      "cmd": "(battle (make-pokemon :name \"A\" :type 'fire :atk 10 :hp 40)\n        (make-pokemon :name \"B\" :type 'fire :atk 5 :hp 40))",
+      "expected": "\"A\""
+    },
+    {
+      "test": "DIFFERENT-ATK-POKEMON-2",
+      "name": "If otherwise identical Pokémon with different atk are battling, the one with higher atk wins",
+      "cmd": "(battle (make-pokemon :name \"A\" :type 'grass :atk 5 :hp 40)\n        (make-pokemon :name \"B\" :type 'grass :atk 10 :hp 40))",
+      "expected": "\"B\""
+    },
+    {
+      "test": "DIFFERENT-HP-POKEMON-1",
+      "name": "If otherwise identical Pokémon with different hp are battling, the one with higher hp wins",
+      "cmd": "(battle (make-pokemon :name \"A\" :type 'water :atk 5 :hp 40)\n        (make-pokemon :name \"B\" :type 'water :atk 5 :hp 35))",
+      "expected": "\"A\""
+    },
+    {
+      "test": "DIFFERENT-HP-POKEMON-2",
+      "name": "If otherwise identical Pokémon with different hp are battling, the one with higher hp wins",
+      "cmd": "(battle (make-pokemon :name \"A\" :type 'fire :atk 5 :hp 35)\n        (make-pokemon :name \"B\" :type 'fire :atk 5 :hp 40))",
+      "expected": "\"B\""
+    },
+    {
+      "test": "DIFFERENT-TYPE-POKEMON-1",
+      "name": "If otherwise identical Pokémon with different types are battling, the one with type-advantage wins",
+      "cmd": "(battle (make-pokemon :name \"A\" :type 'fire :atk 5 :hp 40)\n        (make-pokemon :name \"B\" :type 'grass :atk 5 :hp 40))",
+      "expected": "\"A\""
+    },
+    {
+      "test": "DIFFERENT-TYPE-POKEMON-2",
+      "name": "If otherwise identical Pokémon with different types are battling, the one with type-advantage wins",
+      "cmd": "(battle (make-pokemon :name \"A\" :type 'grass :atk 5 :hp 40)\n        (make-pokemon :name \"B\" :type 'fire :atk 5 :hp 40))",
+      "expected": "\"B\""
+        },
+    {
+      "test": "DIFFERENT-TYPE-POKEMON-3",
+      "name": "If otherwise identical Pokémon with different types are battling, the one with type-advantage wins",
+      "cmd": "(battle (make-pokemon :name \"A\" :type 'grass :atk 5 :hp 40)\n        (make-pokemon :name \"B\" :type 'water :atk 5 :hp 40))",
+      "expected": "\"A\""
+        },
+    {
+      "test": "DIFFERENT-TYPE-POKEMON-4",
+      "name": "If otherwise identical Pokémon with different types are battling, the one with type-advantage wins",
+      "cmd": "(battle (make-pokemon :name \"A\" :type 'water :atk 5 :hp 40)\n        (make-pokemon :name \"B\" :type 'grass :atk 5 :hp 40))",
+      "expected": "\"B\""
+        },
+    {
+      "test": "DIFFERENT-TYPE-POKEMON-5",
+      "name": "If otherwise identical Pokémon with different types are battling, the one with type-advantage wins",
+      "cmd": "(battle (make-pokemon :name \"A\" :type 'water :atk 5 :hp 40)\n        (make-pokemon :name \"B\" :type 'fire :atk 5 :hp 40))",
+      "expected": "\"A\""
+        },
+    {
+      "test": "DIFFERENT-TYPE-POKEMON-6",
+      "name": "If otherwise identical Pokémon with different types are battling, the one with type-advantage wins",
+      "cmd": "(battle (make-pokemon :name \"A\" :type 'fire :atk 5 :hp 40)\n        (make-pokemon :name \"B\" :type 'water :atk 5 :hp 40))",
+      "expected": "\"B\""
+    },
+    {
+      "test": "LONG-BATTLE",
+      "name": "A really long battle",
+      "cmd": "(battle (make-pokemon :name \"A\" :type 'grass :atk 1 :hp 2000000)\n        (make-pokemon :name \"B\" :type 'fire :atk 1 :hp 1000001))",
+      "expected": "\"B\""
+    },
+    {
+      "test": "SHORT-BATTLE",
+      "name": "A really short battle",
+      "cmd": "(battle (make-pokemon :name \"A\" :type 'grass :atk 1 :hp 1)\n        (make-pokemon :name \"B\" :type 'water :atk 5 :hp 2))",
+      "expected": "\"A\""
+    }
+  ]
+}
