@@ -1,14 +1,14 @@
-(load "pokemon-battle")
+(load "common-lisp-1-a")
 (ql:quickload :fiveam)
-(defpackage pokemon-battle-test
-  (:use :cl :fiveam :pokemon-battle)
+(defpackage common-lisp-1-a-test
+  (:use :cl :fiveam :common-lisp-1-a)
   (:export :run-tests))
-(in-package :pokemon-battle-test)
+(in-package :common-lisp-1-a-test)
 
-(def-suite pokemon-battle-suite)
-(in-suite pokemon-battle-suite)
+(def-suite common-lisp-1-a-suite)
+(in-suite common-lisp-1-a-suite)
 
-(import '(pokemon-battle::fire pokemon-battle::grass pokemon-battle::water))
+(import '(common-lisp-1-a::fire common-lisp-1-a::grass common-lisp-1-a::water))
 
 (defun make-test-pokemon (name &optional (type 'fire) (atk 5) (hp 40))
   (make-pokemon :name name :type type :atk atk :hp hp))
@@ -65,5 +65,5 @@
                          (make-test-pokemon "B" 'water 5 2)))))
 
 (defun run-tests (&optional (explain t))
-  (let ((tests (run 'pokemon-battle-suite)))
+  (let ((tests (run 'common-lisp-1-a-suite)))
     (if explain (explain! tests) tests)))
