@@ -14,7 +14,15 @@
       "unlocked_by": null,
       "difficulty": 1,
       "topics": []
-    }
+    },
+    {
+      "slug": "common-lisp-1-b",
+      "uuid": "795dbcb2-5085-4e3d-accc-9bd63070ff5d",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
     {
       "slug": "csharp-1-a",
       "uuid": "d9afa8e1-2688-472e-b95b-b932a084a99a",
