@@ -1,6 +1,6 @@
 {
-  "solution_files": ["pokemon-battle.lisp"],
-  "test_file": "pokemon-battle-test.lisp",
+  "solution_files": ["common-lisp-1-a.lisp"],
+  "test_file": "common-lisp-1-a-test.lisp",
   "tests": [
     {
       "test": "TWIN-POKEMON-1",
@@ -55,25 +55,25 @@
       "name": "If otherwise identical Pokémon with different types are battling, the one with type-advantage wins",
       "cmd": "(battle (make-pokemon :name \"A\" :type 'grass :atk 5 :hp 40)\n        (make-pokemon :name \"B\" :type 'fire :atk 5 :hp 40))",
       "expected": "\"B\""
-        },
+    },
     {
       "test": "DIFFERENT-TYPE-POKEMON-3",
       "name": "If otherwise identical Pokémon with different types are battling, the one with type-advantage wins",
       "cmd": "(battle (make-pokemon :name \"A\" :type 'grass :atk 5 :hp 40)\n        (make-pokemon :name \"B\" :type 'water :atk 5 :hp 40))",
       "expected": "\"A\""
-        },
+    },
     {
       "test": "DIFFERENT-TYPE-POKEMON-4",
       "name": "If otherwise identical Pokémon with different types are battling, the one with type-advantage wins",
       "cmd": "(battle (make-pokemon :name \"A\" :type 'water :atk 5 :hp 40)\n        (make-pokemon :name \"B\" :type 'grass :atk 5 :hp 40))",
       "expected": "\"B\""
-        },
+    },
     {
       "test": "DIFFERENT-TYPE-POKEMON-5",
       "name": "If otherwise identical Pokémon with different types are battling, the one with type-advantage wins",
       "cmd": "(battle (make-pokemon :name \"A\" :type 'water :atk 5 :hp 40)\n        (make-pokemon :name \"B\" :type 'fire :atk 5 :hp 40))",
       "expected": "\"A\""
-        },
+    },
     {
       "test": "DIFFERENT-TYPE-POKEMON-6",
       "name": "If otherwise identical Pokémon with different types are battling, the one with type-advantage wins",
