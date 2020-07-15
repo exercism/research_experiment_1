@@ -7,18 +7,15 @@ include("tictactoe.jl")
         """
         XOO
         X  
-        X  
-        """,
+        X  """,
         """
         OXO
          X 
-         X 
-        """,
+         X """,
         """
         OOX
           X
-          X
-        """
+          X"""
     ]
 
     for b in boards
@@ -31,18 +28,15 @@ end
         """
         OXX
         OX 
-        O  
-        """,
+        O  """,
         """
         XOX
          OX
-         O 
-        """,
+         O """,
         """
         XXO
          XO
-          O
-        """
+          O"""
     ]
 
     for b in boards
@@ -55,18 +49,15 @@ end
         """
         XXX
         XOO
-        O  
-        """,
+        O  """,
         """
         O O
         XXX
-         O 
-        """,
+         O """,
         """
          OO
         O X
-        XXX
-        """
+        XXX"""
     ]
 
     for b in boards
@@ -79,18 +70,15 @@ end
         """
         OOO
         XXO
-        XX 
-        """,
+        XX """,
         """
         XX 
         OOO
-        X
-        """,
+        X  """,
         """
         XOX
          XX
-        OOO
-        """
+        OOO"""
     ]
 
     for b in boards
@@ -103,13 +91,11 @@ end
         """
         XOO
          X 
-          X
-        """,
+          X""",
         """
         O X
         OX 
-        X  
-        """
+        X  """
     ]
 
     for b in boards
@@ -121,14 +107,12 @@ end
     boards = [
         """
         OXX
-        OOX 
-        X O
-        """,
+        OOX
+        X O""",
         """
           O
          OX
-        OXX
-        """
+        OXX"""
     ]
 
     for b in boards
@@ -141,13 +125,11 @@ end
         """
         XOX
         XXO
-        OXO
-        """,
+        OXO""",
         """
         XXO
-        OOX
         OXX
-        """
+        XOO"""
     ]
 
     for b in boards
@@ -155,23 +137,20 @@ end
     end
 end
 
-@testset "Not-yet-finished games" begin
+@testset "Ongoing games" begin
     boards = [
         """
            
-         X  
-           
-        """,
+         X 
+           """,
         """
         O  
-         X
-           
-        """,
+         X 
+           """,
         """
         X  
          XO
-        OX 
-        """
+        OX """
     ]
 
     for b in boards
@@ -184,28 +163,23 @@ end
         """
         XX 
            
-           
-        """,
+           """,
         """
         OOX
            
-           
-        """,
+           """,
         """
         XXX
         XOO
-        XOO
-        """,
+        XOO""",
         """
         XOX
         OXO
-        XOX
-        """,
+        XOX""",
         """
         XXX
         OOO
-           
-        """
+           """
     ]
 
     for b in boards
