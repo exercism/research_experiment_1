@@ -138,11 +138,12 @@ end
 end
 
 @testset "Ongoing games" begin
+    # The first test is parsed strangely so it requires extra trailing spaces
     boards = [
         """
-           
-         X 
-           """,
+            
+         X  
+            """,
         """
         O  
          X 
