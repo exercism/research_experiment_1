@@ -6,8 +6,9 @@ function gamestate(bs)
     nₒ = count(x -> x == "O", b)
     nₓ = count(x -> x == "X", b)
     # Not taking turns in order 
-    nₒ > nₓ && throw(DomainError(b, "Invalid board: did not take turns in order"))
-    abs(nₒ - nₓ) > 1 && throw(DomainError(b, "Invalid board: did not take turns in order"))
+    if nₒ > nₓ || abs(nₒ - nₓ) > 1
+        throw(DomainError(b, "Invalid board: did not take turns in order"))
+    end
 
     wins = 0
 
