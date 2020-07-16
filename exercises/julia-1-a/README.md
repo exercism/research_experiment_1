@@ -9,7 +9,7 @@ The game ends when one player has won by placing three of marks in a row, column
 
 Without loss of generality we will assume that `X` starts.
 
-At first, you will create create a function `gamestate` that takes the game board represented a string as its sole argument and returns a Symbol describing the state of the game.
+Create a function `gamestate` that takes the game board represented a string as its sole argument and returns a Symbol describing the state of the game.
 The board will be given as a 3-line string containing `X`s, `O`s and ` `s:
 
 ```julia
