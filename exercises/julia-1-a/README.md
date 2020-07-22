@@ -7,7 +7,7 @@ The games is played on a 3x3 grid.
 Players take turns to place `X`s and `O`s on the grid.
 The game ends when one player has won by placing three of marks in a row, column, or along a diagonal of the grid, or when the entire grid is filled up.
 
-Without loss of generality we will assume that `X` starts.
+In this exercise, we will assume that `X` starts.
 
 Create a function `gamestate` that takes the game board represented a string as its sole argument and returns a Symbol describing the state of the game.
 The board will be given as a 3-line string containing `X`s, `O`s and ` `s:
