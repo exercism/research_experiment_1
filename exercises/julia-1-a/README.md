@@ -101,3 +101,27 @@ ___|___|___
 julia> gamestate("XXX\n OO\n   ")
 :win
 ```
+
+## Debugging
+
+When a test fails, a message is displayed describing what went wrong and for which input.
+You can also use the fact that [everything sent to `stdout`](https://docs.julialang.org/en/v1/base/io-network/#Text-I/O-1) will be shown too.
+For example, you can write to `stdout` using `println` or `@show`:
+
+```julia
+julia> println("Debug message")
+Debug message
+
+julia> x = 20; @show x
+x = 20
+```
+
+[Logging commands](https://docs.julialang.org/en/v1/stdlib/Logging/) with a `LogLevel` higher than `Debug` will also be shown:
+
+```julia
+julia> x = 20; @info "I wonder what x is:" x
+┌ Info: I wonder what x is:
+└   x = 20
+```
+
+_The return value in these examples is what would be displayed to you._
