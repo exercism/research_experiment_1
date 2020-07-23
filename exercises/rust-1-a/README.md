@@ -1,6 +1,6 @@
 ## Instructions
 
-Your task is to find the longest incrementing subslice of a slice of integers. For example, given the slice `[1, 2, 4, 4, 5, 6, 7, 3, 2, 7, 8, 9, 1]`, the longest incrementing subslice is `[4, 5, 6, 7]`, from indices `3` through `6` inclusive.
+Your task is to find the longest contiguous subslice of a slice of integers for which each member is 1 higher than its predecessor. For example, given the slice `[1, 2, 4, 4, 5, 6, 7, 3, 2, 7, 8, 9, 1]`, the longest subslice where each member is 1 higher than its predecessor is `[4, 5, 6, 7]`, from indices `3` through `6` inclusive.
 
 We provide a function stub:
 
