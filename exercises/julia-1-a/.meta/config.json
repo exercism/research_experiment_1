@@ -1,0 +1,162 @@
+{
+    "solution_files": ["example.jl", "example2.jl"],
+    "test_file": "runtests.jl",
+    "tests": [
+        {
+            "test": "Finished game where X won via colum victory: \"XOO\nX  \nX  \"",
+            "name": "Finished game where X won via colum victory: \"XOO\nX  \nX  \"",
+            "cmd": "gamestate(\"XOO\nX  \nX  \")",
+            "expected": ":win"
+        },
+        {
+            "test": "Finished game where X won via colum victory: \"OXO\n X \n X \"",
+            "name": "Finished game where X won via colum victory: \"OXO\n X \n X \"",
+            "cmd": "gamestate(\"OXO\n X \n X \")",
+            "expected": ":win"
+        },
+        {
+            "test": "Finished game where X won via colum victory: \"OOX\n  X\n  X\"",
+            "name": "Finished game where X won via colum victory: \"OOX\n  X\n  X\"",
+            "cmd": "gamestate(\"OOX\n  X\n  X\")",
+            "expected": ":win"
+        },
+        {
+            "test": "Finished game where O won via colum victory: \"OXX\nOX \nO  \"",
+            "name": "Finished game where O won via colum victory: \"OXX\nOX \nO  \"",
+            "cmd": "gamestate(\"OXX\nOX \nO  \")",
+            "expected": ":win"
+        },
+        {
+            "test": "Finished game where O won via colum victory: \"XOX\n OX\n O \"",
+            "name": "Finished game where O won via colum victory: \"XOX\n OX\n O \"",
+            "cmd": "gamestate(\"XOX\n OX\n O \")",
+            "expected": ":win"
+        },
+        {
+            "test": "Finished game where O won via colum victory: \"XXO\n XO\n  O\"",
+            "name": "Finished game where O won via colum victory: \"XXO\n XO\n  O\"",
+            "cmd": "gamestate(\"XXO\n XO\n  O\")",
+            "expected": ":win"
+        },
+        {
+            "test": "Finished game where X won via row victory: \"XXX\nXOO\nO  \"",
+            "name": "Finished game where X won via row victory: \"XXX\nXOO\nO  \"",
+            "cmd": "gamestate(\"XXX\nXOO\nO  \")",
+            "expected": ":win"
+        },
+        {
+            "test": "Finished game where X won via row victory: \"O O\nXXX\n O \"",
+            "name": "Finished game where X won via row victory: \"O O\nXXX\n O \"",
+            "cmd": "gamestate(\"O O\nXXX\n O \")",
+            "expected": ":win"
+        },
+        {
+            "test": "Finished game where X won via row victory: \" OO\nO X\nXXX\"",
+            "name": "Finished game where X won via row victory: \" OO\nO X\nXXX\"",
+            "cmd": "gamestate(\" OO\nO X\nXXX\")",
+            "expected": ":win"
+        },
+        {
+            "test": "Finished game where O won via row victory: \"OOO\nXXO\nXX \"",
+            "name": "Finished game where O won via row victory: \"OOO\nXXO\nXX \"",
+            "cmd": "gamestate(\"OOO\nXXO\nXX \")",
+            "expected": ":win"
+        },
+        {
+            "test": "Finished game where O won via row victory: \"XX \nOOO\nX  \"",
+            "name": "Finished game where O won via row victory: \"XX \nOOO\nX  \"",
+            "cmd": "gamestate(\"XX \nOOO\nX  \")",
+            "expected": ":win"
+        },
+        {
+            "test": "Finished game where O won via row victory: \"XOX\n XX\nOOO\"",
+            "name": "Finished game where O won via row victory: \"XOX\n XX\nOOO\"",
+            "cmd": "gamestate(\"XOX\n XX\nOOO\")",
+            "expected": ":win"
+        },
+        {
+            "test": "Finished game where X won via diagonal victory: \"XOO\n X \n  X\"",
+            "name": "Finished game where X won via diagonal victory: \"XOO\n X \n  X\"",
+            "cmd": "gamestate(\"XOO\n X \n  X\")",
+            "expected": ":win"
+        },
+        {
+            "test": "Finished game where X won via diagonal victory: \"O X\nOX \nX  \"",
+            "name": "Finished game where X won via diagonal victory: \"O X\nOX \nX  \"",
+            "cmd": "gamestate(\"O X\nOX \nX  \")",
+            "expected": ":win"
+        },
+        {
+            "test": "Finished game where O won via diagonal victory: \"OXX\nOOX\nX O\"",
+            "name": "Finished game where O won via diagonal victory: \"OXX\nOOX\nX O\"",
+            "cmd": "gamestate(\"OXX\nOOX\nX O\")",
+            "expected": ":win"
+        },
+        {
+            "test": "Finished game where O won via diagonal victory: \"  O\n OX\nOXX\"",
+            "name": "Finished game where O won via diagonal victory: \"  O\n OX\nOXX\"",
+            "cmd": "gamestate(\"  O\n OX\nOXX\")",
+            "expected": ":win"
+        },
+        {
+            "test": "Draw: \"XOX\nXXO\nOXO\"",
+            "name": "Draw: \"XOX\nXXO\nOXO\"",
+            "cmd": "gamestate(\"XOX\nXXO\nOXO\")",
+            "expected": ":draw"
+        },
+        {
+            "test": "Draw: \"XXO\nOXX\nXOO\"",
+            "name": "Draw: \"XXO\nOXX\nXOO\"",
+            "cmd": "gamestate(\"XXO\nOXX\nXOO\")",
+            "expected": ":draw"
+        },
+        {
+            "test": "Ongoing game: \"   \nX  \n   \"",
+            "name": "Ongoing game: \"   \nX  \n   \"",
+            "cmd": "gamestate(\"   \nX  \n   \")",
+            "expected": ":ongoing"
+        },
+        {
+            "test": "Ongoing game: \"O  \n X \n   \"",
+            "name": "Ongoing game: \"O  \n X \n   \"",
+            "cmd": "gamestate(\"O  \n X \n   \")",
+            "expected": ":ongoing"
+        },
+        {
+            "test": "Ongoing game: \"X  \n XO\nOX \"",
+            "name": "Ongoing game: \"X  \n XO\nOX \"",
+            "cmd": "gamestate(\"X  \n XO\nOX \")",
+            "expected": ":ongoing"
+        },
+        {
+            "test": "Invalid board: \"XX \n   \n   \"",
+            "name": "Invalid board: \"XX \n   \n   \"",
+            "cmd": "gamestate(\"XX \n   \n   \")",
+            "expected": "ERROR"
+        },
+        {
+            "test": "Invalid board: \"OOX\n   \n   \"",
+            "name": "Invalid board: \"OOX\n   \n   \"",
+            "cmd": "gamestate(\"OOX\n   \n   \")",
+            "expected": "ERROR"
+        },
+        {
+            "test": "Invalid board: \"XXX\nXOO\nXOO\"",
+            "name": "Invalid board: \"XXX\nXOO\nXOO\"",
+            "cmd": "gamestate(\"XXX\nXOO\nXOO\")",
+            "expected": "ERROR"
+        },
+        {
+            "test": "Invalid board: \"XOX\nOXO\nXOX\"",
+            "name": "Invalid board: \"XOX\nOXO\nXOX\"",
+            "cmd": "gamestate(\"XOX\nOXO\nXOX\")",
+            "expected": "ERROR"
+        },
+        {
+            "test": "Invalid board: \"XXX\nOOO\n   \"",
+            "name": "Invalid board: \"XXX\nOOO\n   \"",
+            "cmd": "gamestate(\"XXX\nOOO\n   \")",
+            "expected": "ERROR"
+        }
+    ]
+}
