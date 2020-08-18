@@ -14,8 +14,8 @@ For example:
 Describe(12)
 // Returns: "1 dozen or 12"
 
-Describe(52)
-// Returns: "2 score or 3 dozen or 52"
+Describe(60)
+// Returns: "3 score or 5 dozen or 60"
 
 Describe(5)
 // Returns: "5"
