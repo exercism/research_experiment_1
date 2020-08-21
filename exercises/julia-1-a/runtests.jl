@@ -18,7 +18,7 @@ let boards = [
 ]
    
 
-    @testset "Finished game where X won via colum victory: \"$(escape_string(b))\"" for b in boards
+    @testset "Finished game where X won via column victory: \"$(escape_string(b))\"" for b in boards
         @test gamestate(b) == :win
     end
 end
@@ -38,7 +38,7 @@ let boards = [
       O"""
 ]
 
-    @testset "Finished game where O won via colum victory: \"$(escape_string(b))\"" for b in boards
+    @testset "Finished game where O won via column victory: \"$(escape_string(b))\"" for b in boards
         @test gamestate(b) == :win
     end
 end

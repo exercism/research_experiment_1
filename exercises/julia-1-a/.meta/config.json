@@ -3,38 +3,38 @@
     "test_file": "runtests.jl",
     "tests": [
         {
-            "test": "Finished game where X won via colum victory: \"XOO\nX  \nX  \"",
-            "name": "Finished game where X won via colum victory: \"XOO\nX  \nX  \"",
+            "test": "Finished game where X won via column victory: \"XOO\nX  \nX  \"",
+            "name": "Finished game where X won via column victory: \"XOO\nX  \nX  \"",
             "cmd": "gamestate(\"XOO\nX  \nX  \")",
             "expected": ":win"
         },
         {
-            "test": "Finished game where X won via colum victory: \"OXO\n X \n X \"",
-            "name": "Finished game where X won via colum victory: \"OXO\n X \n X \"",
+            "test": "Finished game where X won via column victory: \"OXO\n X \n X \"",
+            "name": "Finished game where X won via column victory: \"OXO\n X \n X \"",
             "cmd": "gamestate(\"OXO\n X \n X \")",
             "expected": ":win"
         },
         {
-            "test": "Finished game where X won via colum victory: \"OOX\n  X\n  X\"",
-            "name": "Finished game where X won via colum victory: \"OOX\n  X\n  X\"",
+            "test": "Finished game where X won via column victory: \"OOX\n  X\n  X\"",
+            "name": "Finished game where X won via column victory: \"OOX\n  X\n  X\"",
             "cmd": "gamestate(\"OOX\n  X\n  X\")",
             "expected": ":win"
         },
         {
-            "test": "Finished game where O won via colum victory: \"OXX\nOX \nO  \"",
-            "name": "Finished game where O won via colum victory: \"OXX\nOX \nO  \"",
+            "test": "Finished game where O won via column victory: \"OXX\nOX \nO  \"",
+            "name": "Finished game where O won via column victory: \"OXX\nOX \nO  \"",
             "cmd": "gamestate(\"OXX\nOX \nO  \")",
             "expected": ":win"
         },
         {
-            "test": "Finished game where O won via colum victory: \"XOX\n OX\n O \"",
-            "name": "Finished game where O won via colum victory: \"XOX\n OX\n O \"",
+            "test": "Finished game where O won via column victory: \"XOX\n OX\n O \"",
+            "name": "Finished game where O won via column victory: \"XOX\n OX\n O \"",
             "cmd": "gamestate(\"XOX\n OX\n O \")",
             "expected": ":win"
         },
         {
-            "test": "Finished game where O won via colum victory: \"XXO\n XO\n  O\"",
-            "name": "Finished game where O won via colum victory: \"XXO\n XO\n  O\"",
+            "test": "Finished game where O won via column victory: \"XXO\n XO\n  O\"",
+            "name": "Finished game where O won via column victory: \"XXO\n XO\n  O\"",
             "cmd": "gamestate(\"XXO\n XO\n  O\")",
             "expected": ":win"
         },
