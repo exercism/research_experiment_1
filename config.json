@@ -152,6 +152,14 @@
       "topics": []
     },
     {
+      "slug": "julia-1-a",
+      "uuid": "5c6a129a-0180-42b2-8d77-61d56c6ed85f",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
       "slug": "python-1-a",
       "uuid": "a1a32260-7a0f-4c97-9e47-3e0a0fbf1608",
       "core": false,
