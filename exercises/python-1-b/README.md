@@ -19,7 +19,7 @@ Next, we expect you to define a function `receive` that will take a NATO code wo
 "HELLOWORLD"
 
 >>> receive("NOVEMBER CHARLIE CHARLIE ONE SEVEN ZERO ONE DELTA")
-"NCC1701D
+"NCC1701D"
 ```
 
 ## Debugging
