@@ -40,7 +40,7 @@ ALPHANUM_TO_NATO = {
     "6": "SIX",
     "7": "SEVEN",
     "8": "EIGHT",
-    "9": "NINER",
+    "9": "NINE",
 }
 
 
