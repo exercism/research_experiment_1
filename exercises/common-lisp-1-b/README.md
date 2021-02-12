@@ -6,7 +6,7 @@ Pokémon! Being the resourceful trainer you are, you decide to write a simple
 computer program that will allow you to simulate Pokémon battles so you can be
 prepared for the real deal.
 
-### Making Pokémon
+## Making Pokémon
 
 In this simplified simulator, every Pokémon has a name, type, attack stat, and
 some HP (hit-points). You should define a function `make-pokemon` for
@@ -21,7 +21,7 @@ Where `:type` can be one of `'grass`, `'fire`, or `'water` and `:atk` and `:hp`
 are numbers representing the attack stat and hit-points of the Pokémon
 respectively.
 
-### Battling Pokémon
+## Battling Pokémon
 
 You should then define a `battle` function that takes two Pokémon and returns
 the name of the victor:
