@@ -1,4 +1,4 @@
-## Instructions
+# Instructions
 
 You're working on a website for basketball team. The website displays lots of data, but unfortunately what is displayed changes often. As the data is stored in a single object, this is not hard to do, but it is time-consuming and boring. You've therefore decided to automate things. Your goal is to allow the content team to select which data to display by themselves. They'll do this by specifying a _path_ to the data to be displayed in the website's content editor.
 

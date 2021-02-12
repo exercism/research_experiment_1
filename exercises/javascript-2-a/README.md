@@ -1,4 +1,4 @@
-## Instructions
+# Instructions
 
 You're a magician and you handle a deck of cards. You can already _move_ a card from one position to another position within a deck. In order to correctly execute your magic trick, you need to be able to perform a _sequence_ of moves. You already have two functions named `arrange` and `rearrange` which perform a single move, in _either direction_.
 

@@ -1,3 +1,5 @@
+# Readme
+
 ## Instructions
 
 Your task is to extend existing code with new functionality. The code you'll be working with has a function named `str_isalpha`. This function takes a pointer to a null-terminated byte string, and returns a non-zero value if all characters in the string are alphabetic and there is at least one character, zero otherwise.

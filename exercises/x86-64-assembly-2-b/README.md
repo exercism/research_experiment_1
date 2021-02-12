@@ -1,3 +1,5 @@
+# Readme
+
 ## Instructions
 
 Your task is to extend existing code with new functionality. The code you'll be working with has a function named `color_name`. This function takes an enum value, and returns the name of the constant in the enumeration that has the specified value.

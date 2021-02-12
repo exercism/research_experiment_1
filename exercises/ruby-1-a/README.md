@@ -1,3 +1,5 @@
+# Readme
+
 ## Instructions
 
 Your task is to define a shopping cart for a corner shop. The cart should keep track of the list of items added, and correctly calculate the price.

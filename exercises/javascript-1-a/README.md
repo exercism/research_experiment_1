@@ -1,4 +1,4 @@
-## Instructions
+# Instructions
 
 You're a magician and you handle a deck of cards. In order to correctly execute your magic trick, you need to be able to _move_ a card from one position to another position. That is, you need to be able to `rearrange` the deck. Naturally, you want to be able to move cards in _both directions_, and be able to say "from the top of the deck" or "from the bottom of the deck".
 

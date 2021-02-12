@@ -1,3 +1,5 @@
+# Readme
+
 ## Instructions
 
 You're working as a [blackjack][wikipedia.org-blackjack] dealer at a casino. Blackjack is a card game that uses a regular [deck of cards][wikipedia.org-playing_card], where each card is assigned a value. The numerical cards' values are simply their numeric values. The Jack, Queen and King are worth `10`, and an Ace can be worth either `1` or `11`. A hand's score is defined as the sum of the values of its cards.

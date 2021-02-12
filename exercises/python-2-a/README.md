@@ -1,3 +1,5 @@
+# Readme
+
 ## Instructions
 
 Your task is to extend existing code with new functionality. The existing code can compress a UTF-8 [`str`][str] to [`bytes`][bytes] using [Run Length Encoding (RLE)][rle], which a relatively straightforward compression scheme that takes any continuous run of 1 or more of the same byte and compresses it into two bytes, the first being the length of the run and the second being the byte itself.

@@ -1,3 +1,5 @@
+# Readme
+
 ## Instructions
 
 Your job is to define a function named `color_name`, which takes an enum value, and returns the name of the constant in the enumeration that has the specified value.

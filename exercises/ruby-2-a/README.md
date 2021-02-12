@@ -1,3 +1,5 @@
+# Readme
+
 ## Instructions
 
 Your task is to extend the existing code with new functionality. The existing code simulates a shopping cart from the corner shop. The current shopping cart has a limited list of available products:

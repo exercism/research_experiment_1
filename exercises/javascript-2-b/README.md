@@ -1,4 +1,4 @@
-## Instructions
+# Instructions
 
 Your task is to extend existing code with new functionality. The existing code deals with a website for basketball team. The website displays lots of data, but unfortunately what is displayed changes often. As the data is stored in a single object, this is not hard to do, but it is time-consuming and boring. To automate this, the content team can specify which data to display by specifying a _path_ to the data to be displayed in the website's content editor.
 

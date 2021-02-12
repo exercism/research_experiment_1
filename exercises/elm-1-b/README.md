@@ -1,4 +1,4 @@
-## Instructions
+# Instructions
 
 You are the proud owner of an amazing pizzeria but your website is missing the menu.
 So you scanned a printed menu and the scanner was able to extract the text in the image.

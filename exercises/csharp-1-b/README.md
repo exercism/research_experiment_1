@@ -1,3 +1,5 @@
+# Readme
+
 ## Instructions
 
 You are standing in a store and want to pay. Your task is to determine which of the three available queues to join, depending on the number of customers in the queue and its processing speed. The three queues process customers at the following rate:

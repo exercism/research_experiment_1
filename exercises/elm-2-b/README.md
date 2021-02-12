@@ -1,4 +1,4 @@
-## Instructions
+# Instructions
 
 Your task is to extend existing code with new functionality.
 The existing code deals wth parsing a scanned menu of a pizzeria, which contains a list of all the pizzas on the menu. Each pizza entry has three components: its name, an optional vegetarian indicator, and its price. The pizzas themselves are separated by a comma followed by a space.

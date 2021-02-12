@@ -1,4 +1,4 @@
-## Instructions
+# Instructions
 
 Your task is to take a list of scorers for a football game, and aggregate any duplicates.
 

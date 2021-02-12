@@ -1,3 +1,5 @@
+# Readme
+
 ## Instructions
 
 Your task is to extend existing code with new functionality. The existing code deals with a customer standing in a store and wanting to pay. There are three available queues to join, depending on the number of customers in the queue and its processing speed. The three queues process customers at the following rate:
