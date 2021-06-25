@@ -11,275 +11,377 @@
     "practice": [
       {
         "slug": "common-lisp-1-a",
+        "name": "common-lisp-1-a",
         "uuid": "c0df445c-ed95-4595-9d9a-61499dd38f38",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "common-lisp-1-b",
+        "name": "common-lisp-1-b",
         "uuid": "795dbcb2-5085-4e3d-accc-9bd63070ff5d",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "csharp-1-a",
+        "name": "csharp-1-a",
         "uuid": "d9afa8e1-2688-472e-b95b-b932a084a99a",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "csharp-2-a",
+        "name": "csharp-2-a",
         "uuid": "54582449-e183-44d1-af49-51fa027dca69",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "csharp-1-b",
+        "name": "csharp-1-b",
         "uuid": "5459cb7a-1de3-4f37-942b-e77104b31ebe",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "csharp-2-b",
+        "name": "csharp-2-b",
         "uuid": "f4eeb02f-4340-4833-9136-f5ca95fca72e",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "elm-1-a",
+        "name": "elm-1-a",
         "uuid": "3c4508d5-50cb-43a6-9a52-df56651baafb",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "elm-1-b",
+        "name": "elm-1-b",
         "uuid": "5bae8d76-7814-4c47-9352-f5a8f4387e31",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "elm-2-a",
+        "name": "elm-2-a",
         "uuid": "a5400e06-75a8-477d-9af8-7ce569404df9",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "elm-2-b",
+        "name": "elm-2-b",
         "uuid": "50af4402-68f8-45a1-a688-1b7c7104687f",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "go-1-a",
+        "name": "go-1-a",
         "uuid": "f5cf0015-1fb4-42f8-95a8-7a92e279ead6",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "go-1-b",
+        "name": "go-1-b",
         "uuid": "8b677f5e-a800-40af-a4fb-7a4b46baa200",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "go-2-a",
+        "name": "go-2-a",
         "uuid": "b8f67d5c-c44e-4c4f-90b7-5fad9cb8e29b",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "go-2-b",
+        "name": "go-2-b",
         "uuid": "f023d9c6-adf8-4158-8728-c6b97c411fe3",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "javascript-1-a",
+        "name": "javascript-1-a",
         "uuid": "8e917282-3504-43fc-82fb-060895177a3e",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "javascript-2-a",
+        "name": "javascript-2-a",
         "uuid": "959d95dd-57f7-4a68-8670-01e5f7fafc69",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "javascript-1-b",
+        "name": "javascript-1-b",
         "uuid": "a8e0d0ca-d8c8-4e3c-91a2-5e9c815d472d",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "javascript-2-b",
+        "name": "javascript-2-b",
         "uuid": "1b34a2cc-1e19-4f85-b45a-b1b63b0fa63b",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "python-1-a",
+        "name": "python-1-a",
         "uuid": "a1a32260-7a0f-4c97-9e47-3e0a0fbf1608",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "python-1-b",
+        "name": "python-1-b",
         "uuid": "1bdeccdf-75a7-4338-b02f-14b4697d6729",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "python-2-a",
+        "name": "python-2-a",
         "uuid": "2c61fcd6-6c6f-43e0-a0df-516a78d093f8",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "python-2-b",
+        "name": "python-2-b",
         "uuid": "1f179b51-b553-4c73-96ca-a927ebd6a094",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "ruby-1-a",
+        "name": "ruby-1-a",
         "uuid": "ddf82893-adaf-4821-8697-9e447cd5502a",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "ruby-2-a",
+        "name": "ruby-2-a",
         "uuid": "97c8e1ad-5e13-49c2-9b58-198a8da15f29",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "ruby-1-b",
+        "name": "ruby-1-b",
         "uuid": "cf807b20-53a6-45fb-bb4e-93970d8dbbf2",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "ruby-2-b",
+        "name": "ruby-2-b",
         "uuid": "e8c83d72-eb59-4839-bdf5-fff4f17ecf8b",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "rust-1-a",
+        "name": "rust-1-a",
         "uuid": "0ea9c484-612f-4fb5-b2fe-6fe04d1d218c",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "rust-2-a",
+        "name": "rust-2-a",
         "uuid": "92917559-d195-437f-a7ed-1857c57c6bf5",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "rust-1-b",
+        "name": "rust-1-b",
         "uuid": "3b466621-e2af-4e0d-a269-fc307d901c7d",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "rust-2-b",
+        "name": "rust-2-b",
         "uuid": "c000faee-5735-4257-beea-1b664f01cca9",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "x86-64-assembly-1-a",
+        "name": "x86-64-assembly-1-a",
         "uuid": "a24e25c8-94a6-4ef9-bc57-7e2f5127b0eb",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "x86-64-assembly-2-a",
+        "name": "x86-64-assembly-2-a",
         "uuid": "a2d973f7-2717-41fb-98b5-ce73ae9eef1c",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "x86-64-assembly-1-b",
+        "name": "x86-64-assembly-1-b",
         "uuid": "a78a9583-cb7f-4eaf-be8f-a9bc4ed7ffc9",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       },
       {
         "slug": "x86-64-assembly-2-b",
+        "name": "x86-64-assembly-2-b",
         "uuid": "876fb47d-a5b9-4ad4-916a-3474c3f9c9ea",
         "core": false,
         "unlocked_by": null,
         "difficulty": 1,
-        "topics": []
+        "topics": [],
+        "prerequisites": [],
+        "practices": []
       }
     ]
   }
