@@ -1,5 +1,5 @@
 {
-  "solution_files": ["src/lib.rs"],
+  "files": { "solution":["src/lib.rs"],
   "tests": [
     {
       "test": "test_disemvowel",

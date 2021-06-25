@@ -1,5 +1,5 @@
 {
-  "solution_files": ["src/AggregateScorers.elm"],
+  "files": { "solution":["src/AggregateScorers.elm"],
   "tests": [
     {
       "test": "doesn't change a single scorer",

@@ -1,6 +1,5 @@
 {
-  "solution_files": ["python_2_b.py"],
-  "test_file": "python_2_b_test.py",
+  "files": { "solution": ["python_2_b.py"], "test": ["python_2_b_test.py"] },
   "tests": [
     {
       "test": "TestTransmit.test_empty_string",

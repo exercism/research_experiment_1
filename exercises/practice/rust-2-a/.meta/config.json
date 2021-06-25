@@ -1,5 +1,5 @@
 {
-  "solution_files": [
+  "files": { "solution":[
     "src/lib.rs"
   ],
   "tests": [

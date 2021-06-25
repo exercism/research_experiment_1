@@ -1,6 +1,8 @@
 {
-  "solution_files": ["x86_64_assembly_2_a.asm"],
-  "test_file": "x86_64_assembly_2_a_test.c",
+  "files": {
+    "solution": ["x86_64_assembly_2_a.asm"],
+    "test": ["x86_64_assembly_2_a_test.c"]
+  },
   "tests": [
     {
       "test": "test_empty_string",

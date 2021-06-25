@@ -1,6 +1,8 @@
 {
-  "solution_files": ["javascript-2-b.js"],
-  "test_file": "javascript-2-b.spec.js",
+  "files": {
+    "solution": ["javascript-2-b.js"],
+    "test": ["javascript-2-b.spec.js"]
+  },
   "tests": [
     {
       "test": "extract > property: name",

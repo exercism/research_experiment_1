@@ -1,6 +1,8 @@
 {
-  "solution_files": ["common-lisp-1-b.lisp"],
-  "test_file": "common-lisp-1-b-test.lisp",
+  "files": {
+    "solution": ["common-lisp-1-b.lisp"],
+    "test": ["common-lisp-1-b-test.lisp"]
+  },
   "tests": [
     {
       "test": "TWIN-POKEMON-1",

@@ -1,6 +1,5 @@
 {
-  "solution_files": ["ruby_1_a.rb"],
-  "test_file": "ruby_1_a_test.rb",
+  "files": { "solution": ["ruby_1_a.rb"], "test": ["ruby_1_a_test.rb"] },
   "tests": [
     {
       "test": "test_initial_total_amount",

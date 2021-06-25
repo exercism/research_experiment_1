@@ -1,6 +1,8 @@
 {
-  "solution_files": ["x86_64_assembly_2_b.asm"],
-  "test_file": "x86_64_assembly_2_b_test.c",
+  "files": {
+    "solution": ["x86_64_assembly_2_b.asm"],
+    "test": ["x86_64_assembly_2_b_test.c"]
+  },
   "tests": [
     {
       "test": "test_red",

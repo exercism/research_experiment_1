@@ -1,6 +1,5 @@
 {
-  "solution_files": ["Csharp2A.cs"],
-  "test_file": "Csharp2ATest.cs",
+  "files": { "solution": ["Csharp2A.cs"], "test": ["Csharp2ATest.cs"] },
   "tests": [
     {
       "test": "SentenceTest.OneWordWithOneVowel",

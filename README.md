@@ -24,7 +24,7 @@ Each exercise should provide a `.meta/config.json` file as follows:
 
 ```json
 {
-  "solution_files": ["ruby_1_a.rb"],
+  "files": { "solution": ["ruby_1_a.rb"] },
   "tests": []
 }
 ```
@@ -97,7 +97,6 @@ If it makes more sense for the track to describe how to run the equivalent manua
     }
   ]
 }
-
 ```
 
 ### Test order

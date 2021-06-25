@@ -1,6 +1,5 @@
 {
-  "solution_files": ["ruby_1_b.rb"],
-  "test_file": "ruby_1_b_test.rb",
+  "files": { "solution": ["ruby_1_b.rb"], "test": ["ruby_1_b_test.rb"] },
   "tests": [
     {
       "test": "test_lookup_title_returns_correct_title",

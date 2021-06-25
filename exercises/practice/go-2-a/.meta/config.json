@@ -1,6 +1,5 @@
 {
-  "solution_files": ["go_2_a.go"],
-  "test_file": "go_2_a_test.go",
+  "files": { "solution": ["go_2_a.go"], "test": ["go_2_a_test.go"] },
   "tests": [
     {
       "test": "TestTwelve",

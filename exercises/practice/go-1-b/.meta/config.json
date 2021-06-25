@@ -1,6 +1,5 @@
 {
-  "solution_files": ["go_1_b.go"],
-  "test_file": "go_1_b_test.go",
+  "files": { "solution": ["go_1_b.go"], "test": ["go_1_b_test.go"] },
   "tests": [
     {
       "test": "TestNumericWin",

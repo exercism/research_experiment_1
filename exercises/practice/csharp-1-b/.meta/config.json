@@ -1,6 +1,5 @@
 {
-  "solution_files": ["Csharp1B.cs"],
-  "test_file": "Csharp1BTest.cs",
+  "files": { "solution": ["Csharp1B.cs"], "test": ["Csharp1BTest.cs"] },
   "tests": [
     {
       "test": "StoreTest.OnlyEmptyQueueIsQueue1",
